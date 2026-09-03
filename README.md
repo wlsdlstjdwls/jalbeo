@@ -23,8 +23,10 @@
 | [docs/04-research-demand.md](docs/04-research-demand.md) | 검색 수요 조사 — B층 가설 반증 |
 | [docs/05-naming-domain.md](docs/05-naming-domain.md) | 프로젝트명 + 도메인 가용성 |
 | [docs/06-action-plan.md](docs/06-action-plan.md) | 실행 계획 · 체크리스트 |
+| [docs/07-keyword-seed.md](docs/07-keyword-seed.md) | 품목 시드 325개 수집 결과 · 수식어 분포 |
 | [data/raw/](data/raw/) | 조사 원본 데이터 |
 
 ## 다음 작업
 
-`docs/06-action-plan.md`의 3번 — 네이버 자동완성 재귀 크롤링으로 품목 시드 CSV 생성.
+`docs/06-action-plan.md`의 2번 — **게이트 1**. `data/keywords/items.csv`(품목 325개)를
+네이버 검색광고 키워드도구에 넣어 월간 검색량 실측. 상위 100개 합계 10만 미만이면 중단.
