@@ -200,6 +200,8 @@ const jsonLd = {
   #opt-1:checked ~ .step3 .pk-1 { display: inline; }
   #opt-0:checked ~ .step2 .op-0 .lb::after,
   #opt-1:checked ~ .step2 .op-1 .lb::after { content: ' ✓'; }
+  #opt-0:checked ~ .step2 .op-0,
+  #opt-1:checked ~ .step2 .op-1 { background: var(--bg); }
   #opt-0:focus-visible ~ .step2 .op-0,
   #opt-1:focus-visible ~ .step2 .op-1 { outline: 3px solid var(--ink); outline-offset: 4px; }
 
@@ -219,13 +221,13 @@ const jsonLd = {
   .opt {
     cursor: pointer;
     border: 2px solid var(--ink);
-    background: var(--bg);
+    background: var(--card);
     padding: 22px 22px 24px;
     display: grid;
     gap: 8px;
     align-content: end;
     min-height: 132px;
-    transition: transform .16s cubic-bezier(.2,.7,.2,1), box-shadow .16s ease;
+    transition: background .16s ease, transform .16s cubic-bezier(.2,.7,.2,1), box-shadow .16s ease;
   }
   .opt .lb {
     display: block;
@@ -335,20 +337,20 @@ const jsonLd = {
     max-width: 70ch;
   }
   .body :global(ul > li) {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 12px;
-    align-items: baseline;
+    position: relative;
+    padding-left: 21px;
     font-size: 15.5px;
     line-height: 1.7;
     color: var(--body);
   }
   .body :global(ul > li)::before {
     content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
     width: 9px;
     height: 9px;
     background: var(--ink);
-    transform: translateY(-2px);
   }
   .body :global(ol) {
     margin: 14px 0 0;
