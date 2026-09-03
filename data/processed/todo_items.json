@@ -1,0 +1,1337 @@
+[
+  {
+    "slug": "ibul",
+    "name": "이불",
+    "monthly_volume": 26905,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 25,
+      "median": 2000,
+      "min": 1500,
+      "max": 4000,
+      "panel_rows": 0,
+      "top_specs": [
+        "솜이불(장당)",
+        "홑이불(장당)",
+        "장당",
+        "솜이불",
+        "대(겨울용)"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "의류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "huraipaen",
+    "name": "후라이팬",
+    "monthly_volume": 12100,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "yuri",
+    "name": "유리",
+    "monthly_volume": 11395,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 27,
+      "median": 2000,
+      "min": 1000,
+      "max": 7000,
+      "panel_rows": 0,
+      "top_specs": [
+        "1㎡ 당",
+        "1㎡당",
+        "1㎥당",
+        "식탁유리, 깨진유리",
+        "1m미만"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "유리병",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      },
+      {
+        "verdict": "X",
+        "category": "유리병",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "baeteori",
+    "name": "배터리",
+    "monthly_volume": 10345,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "usan",
+    "name": "우산",
+    "monthly_volume": 9450,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": {
+      "regions": 13,
+      "median": 1000,
+      "min": 750,
+      "max": 2000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든규격",
+        "모든 규격",
+        "개당",
+        "개 당",
+        "짧은우산/어린이우산"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "kaerieo",
+    "name": "캐리어",
+    "monthly_volume": 8730,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": {
+      "regions": 3,
+      "median": 3000,
+      "min": 2000,
+      "max": 3000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든 규격",
+        "대형",
+        "중형",
+        "소형"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "hwabun",
+    "name": "화분",
+    "monthly_volume": 8635,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 26,
+      "median": 1750,
+      "min": 1000,
+      "max": 4500,
+      "panel_rows": 0,
+      "top_specs": [
+        "소형",
+        "대형",
+        "지름 50cm 미만",
+        "지름 50cm 이상",
+        "모든 규격"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "geureut",
+    "name": "그릇",
+    "monthly_volume": 7780,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "sinbal",
+    "name": "신발",
+    "monthly_volume": 6595,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "chimdae",
+    "name": "침대",
+    "monthly_volume": 6515,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 40,
+      "median": 9500,
+      "min": 3000,
+      "max": 25000,
+      "panel_rows": 0,
+      "top_specs": [
+        "1인용",
+        "2인용",
+        "모든규격",
+        "모든 규격",
+        "2인용(더블) 구조물"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "begae",
+    "name": "베개",
+    "monthly_volume": 6290,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": {
+      "regions": 4,
+      "median": 1000,
+      "min": 1000,
+      "max": 3000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든규격",
+        "개당",
+        "1인용",
+        "모든 규격"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "의류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "naembi",
+    "name": "냄비",
+    "monthly_volume": 5910,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "maeteuriseu",
+    "name": "매트리스",
+    "monthly_volume": 5420,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 22,
+      "median": 6500,
+      "min": 4000,
+      "max": 14000,
+      "panel_rows": 0,
+      "top_specs": [
+        "1인용",
+        "2인용",
+        "유아용",
+        "싱글",
+        "2인용 이상"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "uija",
+    "name": "의자",
+    "monthly_volume": 4270,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 45,
+      "median": 3500,
+      "min": 1500,
+      "max": 12500,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든 규격",
+        "모든규격",
+        "1인용",
+        "2인용",
+        "안마의자"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "subakkkeopjil",
+    "name": "수박껍질",
+    "monthly_volume": 3850,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "geonjeonji",
+    "name": "건전지",
+    "monthly_volume": 3760,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "sugeon",
+    "name": "수건",
+    "monthly_volume": 3700,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "sikyongyu",
+    "name": "식용유",
+    "monthly_volume": 3430,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "anmauija",
+    "name": "안마의자",
+    "monthly_volume": 3330,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 23,
+      "median": 10000,
+      "min": 6000,
+      "max": 21500,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든 규격",
+        "모든규격",
+        "1인용",
+        "1인용 대형",
+        "일반규격"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "syopa",
+    "name": "쇼파",
+    "monthly_volume": 3300,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 21,
+      "median": 4000,
+      "min": 2000,
+      "max": 12000,
+      "panel_rows": 0,
+      "top_specs": [
+        "1인용",
+        "3인용",
+        "2인용",
+        "1인 추가시",
+        "4인용 이상"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "doma",
+    "name": "도마",
+    "monthly_volume": 3120,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 9,
+      "median": 1000,
+      "min": 500,
+      "max": 2000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든규격",
+        "모든 규격",
+        "가정용(50cm마다)",
+        "가정용 나무도마",
+        "업소용 나무도마"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "somibul",
+    "name": "솜이불",
+    "monthly_volume": 2980,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": {
+      "regions": 4,
+      "median": 2250,
+      "min": 2000,
+      "max": 3000,
+      "panel_rows": 0,
+      "top_specs": [
+        "장당",
+        "1장당"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "의류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "noteubuk",
+    "name": "노트북",
+    "monthly_volume": 2970,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "bananakkeopjil",
+    "name": "바나나껍질",
+    "monthly_volume": 2710,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "gabang",
+    "name": "가방",
+    "monthly_volume": 2460,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 26,
+      "median": 3000,
+      "min": 2000,
+      "max": 5000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든규격",
+        "골프가방",
+        "모든 규격",
+        "가로 50cm 이상",
+        "가로 50cm 미만"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "의류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      },
+      {
+        "verdict": "X",
+        "category": "의류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "keompyuteo",
+    "name": "컴퓨터",
+    "monthly_volume": 2375,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 23,
+      "median": 2500,
+      "min": 2000,
+      "max": 4000,
+      "panel_rows": 0,
+      "top_specs": [
+        "본체",
+        "모니터",
+        "키보드",
+        "모든 규격",
+        "프린터"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "gireum",
+    "name": "기름",
+    "monthly_volume": 2230,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "seutiropom",
+    "name": "스티로폼",
+    "monthly_volume": 2120,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "발포합성수지·",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "sopa",
+    "name": "소파",
+    "monthly_volume": 1985,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 23,
+      "median": 5000,
+      "min": 2500,
+      "max": 10000,
+      "panel_rows": 0,
+      "top_specs": [
+        "3인용",
+        "2인용",
+        "1인용",
+        "4인용",
+        "4인용 이상"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "jangnangam",
+    "name": "장난감",
+    "monthly_volume": 1965,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 10,
+      "median": 2750,
+      "min": 1000,
+      "max": 4000,
+      "panel_rows": 0,
+      "top_specs": [
+        "소형",
+        "모든규격",
+        "길이 50cm 미만",
+        "길이 50cm 이상",
+        "대형"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "naengjanggo",
+    "name": "냉장고",
+    "monthly_volume": 1910,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 36,
+      "median": 7000,
+      "min": 5000,
+      "max": 20000,
+      "panel_rows": 0,
+      "top_specs": [
+        "500ℓ 이상",
+        "300ℓ 이상",
+        "300ℓ 미만",
+        "300ℓ미만",
+        "500ℓ이상"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "O",
+        "category": "전기·전자제품·",
+        "basis": "해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "heonot",
+    "name": "헌옷",
+    "monthly_volume": 1765,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "geoul",
+    "name": "거울",
+    "monthly_volume": 1690,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 26,
+      "median": 2000,
+      "min": 1000,
+      "max": 4500,
+      "panel_rows": 0,
+      "top_specs": [
+        "1㎡ 이상",
+        "1㎡이상",
+        "1㎡미만",
+        "모든규격",
+        "1m이상"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "chaeksang",
+    "name": "책상",
+    "monthly_volume": 1455,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 45,
+      "median": 5000,
+      "min": 4000,
+      "max": 8500,
+      "panel_rows": 0,
+      "top_specs": [
+        "양수(대형)",
+        "편수(소형)",
+        "양수, 대형",
+        "편수, 소형",
+        "컴퓨터책상"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "hwajangpum",
+    "name": "화장품",
+    "monthly_volume": 1310,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "hyangsu",
+    "name": "향수",
+    "monthly_volume": 1280,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "gimchi",
+    "name": "김치",
+    "monthly_volume": 1040,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "chikinppyeo",
+    "name": "치킨뼈",
+    "monthly_volume": 960,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "jangpan",
+    "name": "장판",
+    "monthly_volume": 930,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 33,
+      "median": 2500,
+      "min": 1000,
+      "max": 5000,
+      "panel_rows": 0,
+      "top_specs": [
+        "5m당",
+        "3.3㎡당",
+        "3㎡당",
+        "모든규격",
+        "모든 규격"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "합성수지 비닐류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "moniteo",
+    "name": "모니터",
+    "monthly_volume": 750,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 7,
+      "median": 3000,
+      "min": 1000,
+      "max": 3000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든규격",
+        "모든 규격",
+        "6인치(15cm)마다"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "onsumaeteu",
+    "name": "온수매트",
+    "monthly_volume": 630,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 10,
+      "median": 4000,
+      "min": 2000,
+      "max": 9500,
+      "panel_rows": 0,
+      "top_specs": [
+        "1인용",
+        "2인용",
+        "모든규격",
+        "일반매트",
+        "모든 규격"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "otjang",
+    "name": "옷장",
+    "monthly_volume": 460,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 25,
+      "median": 2500,
+      "min": 2000,
+      "max": 12500,
+      "panel_rows": 10,
+      "top_specs": [
+        "모든 규격",
+        "모든규격",
+        "개당",
+        "비키니옷장",
+        "반쪽장, 틈새장(폭 70cm 미만)"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "jangnong",
+    "name": "장농",
+    "monthly_volume": 455,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 7,
+      "median": 12500,
+      "min": 9000,
+      "max": 13500,
+      "panel_rows": 14,
+      "top_specs": [
+        "120cm이상1쪽",
+        "120㎝이상 1쪽",
+        "120㎝미만 1쪽",
+        "120cm미만1쪽",
+        "폭1.2m이상 장 1쪽"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "otgeoli",
+    "name": "옷걸이",
+    "monthly_volume": 390,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 32,
+      "median": 2000,
+      "min": 1000,
+      "max": 4000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든규격",
+        "모든 규격",
+        "스탠드형",
+        "모든 종류",
+        "행거"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "합성수지용기· 트레이류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "jeongijangpan",
+    "name": "전기장판",
+    "monthly_volume": 380,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": {
+      "regions": 11,
+      "median": 3500,
+      "min": 2000,
+      "max": 6000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든규격",
+        "모든 규격",
+        "1인용",
+        "2인용",
+        "일반매트"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "합성수지 비닐류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "setakgi",
+    "name": "세탁기",
+    "monthly_volume": 340,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 34,
+      "median": 5000,
+      "min": 2000,
+      "max": 10000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든 규격",
+        "모든규격",
+        "가정용",
+        "10kg 이상",
+        "10kg 미만"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "O",
+        "category": "전기·전자제품·",
+        "basis": "해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "hyudaepon",
+    "name": "휴대폰",
+    "monthly_volume": 300,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "byeongi",
+    "name": "변기",
+    "monthly_volume": 240,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 35,
+      "median": 5000,
+      "min": 2000,
+      "max": 12500,
+      "panel_rows": 0,
+      "top_specs": [
+        "양변기",
+        "좌변기",
+        "모든규격",
+        "모든 규격",
+        "유아용"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "chaekjang",
+    "name": "책장",
+    "monthly_volume": 220,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 20,
+      "median": 5000,
+      "min": 3000,
+      "max": 12500,
+      "panel_rows": 0,
+      "top_specs": [
+        "1m 이상",
+        "1m 미만",
+        "높이1m이상",
+        "높이1m미만",
+        "1m이상"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "gaseurenji",
+    "name": "가스렌지",
+    "monthly_volume": 205,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 4,
+      "median": 2000,
+      "min": 2000,
+      "max": 3000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든 규격",
+        "높이 1m이상",
+        "높이 1m미만"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "gimchinaengjanggo",
+    "name": "김치냉장고",
+    "monthly_volume": 170,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 7,
+      "median": 4000,
+      "min": 4000,
+      "max": 10000,
+      "panel_rows": 0,
+      "top_specs": [
+        "130ℓ 미만",
+        "300ℓ 이상",
+        "500ℓ 이상",
+        "130ℓ 이상",
+        "300ℓ 미만"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "O",
+        "category": "전기·전자제품·",
+        "basis": "해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "hyeonggwangdeung",
+    "name": "형광등",
+    "monthly_volume": 160,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "heukchimdae",
+    "name": "흙침대",
+    "monthly_volume": 145,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "geumgo",
+    "name": "금고",
+    "monthly_volume": 105,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 19,
+      "median": 12000,
+      "min": 5000,
+      "max": 40000,
+      "panel_rows": 0,
+      "top_specs": [
+        "100cm 미만",
+        "100cm 이상",
+        "모든규격",
+        "대형(70㎝×100㎝ 이상)",
+        "중형(70㎝×100㎝ 미만)"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "golpeugabang",
+    "name": "골프가방",
+    "monthly_volume": 100,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 4,
+      "median": 4000,
+      "min": 3000,
+      "max": 5000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든 규격",
+        "개당",
+        "모든규격"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "의류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "jongikeop",
+    "name": "종이컵",
+    "monthly_volume": 100,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": null,
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "골판지 외 종이류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "jongi",
+    "name": "종이",
+    "monthly_volume": 95,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "골판지 외 종이류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      },
+      {
+        "verdict": "X",
+        "category": "골판지 외 종이류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "tail",
+    "name": "타일",
+    "monthly_volume": 95,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "peteubyeong",
+    "name": "페트병",
+    "monthly_volume": 70,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "yangpakkeopjil",
+    "name": "양파껍질",
+    "monthly_volume": 65,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "eohang",
+    "name": "어항",
+    "monthly_volume": 60,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 17,
+      "median": 4000,
+      "min": 3000,
+      "max": 10000,
+      "panel_rows": 0,
+      "top_specs": [
+        "1m 미만",
+        "1m 이상",
+        "받침대",
+        "2m 이상",
+        "1미터 이상"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "uyupaek",
+    "name": "우유팩",
+    "monthly_volume": 55,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": [
+      {
+        "verdict": "O",
+        "category": "골판지류",
+        "basis": "해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "peurinteo",
+    "name": "프린터",
+    "monthly_volume": 50,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 7,
+      "median": 3000,
+      "min": 2500,
+      "max": 7500,
+      "panel_rows": 0,
+      "top_specs": [
+        "높이 1m 이상",
+        "대형(레이저)",
+        "소형(잉크젯)",
+        "사무실용",
+        "가정용"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "binil",
+    "name": "비닐",
+    "monthly_volume": 45,
+    "region_varies": true,
+    "housing_split": false,
+    "fee": null,
+    "guideline": [
+      {
+        "verdict": "O",
+        "category": "합성수지 비닐류",
+        "basis": "해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "munjjak",
+    "name": "문짝",
+    "monthly_volume": 35,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 35,
+      "median": 3500,
+      "min": 1500,
+      "max": 6000,
+      "panel_rows": 2,
+      "top_specs": [
+        "창문",
+        "목재",
+        "모든규격",
+        "방문",
+        "철재"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "gwailkkeopjil",
+    "name": "과일껍질",
+    "monthly_volume": 35,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "reoningmeosin",
+    "name": "러닝머신",
+    "monthly_volume": 25,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 6,
+      "median": 10000,
+      "min": 4500,
+      "max": 10000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든규격",
+        "모든 규격",
+        "폭1미터 이상",
+        "폭1미터 미만"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "seonban",
+    "name": "선반",
+    "monthly_volume": 25,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 5,
+      "median": 3000,
+      "min": 2000,
+      "max": 5000,
+      "panel_rows": 1,
+      "top_specs": [
+        "1쪽(폭 60cm 이하 )",
+        "1m²당",
+        "150㎝이하",
+        "120㎝이하",
+        "90㎝이하"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "aekja",
+    "name": "액자",
+    "monthly_volume": 25,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 40,
+      "median": 2000,
+      "min": 1000,
+      "max": 5000,
+      "panel_rows": 0,
+      "top_specs": [
+        "1㎡이상",
+        "1㎡미만",
+        "소형",
+        "대형",
+        "모든규격"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "nakyeop",
+    "name": "낙엽",
+    "monthly_volume": 10,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "daiso",
+    "name": "다이소",
+    "monthly_volume": 10,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "boilreo",
+    "name": "보일러",
+    "monthly_volume": 10,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 26,
+      "median": 6000,
+      "min": 3000,
+      "max": 11000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든규격",
+        "모든 규격",
+        "20평미만",
+        "대형",
+        "중형"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "galbippyeo",
+    "name": "갈비뼈",
+    "monthly_volume": 10,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  }
+]

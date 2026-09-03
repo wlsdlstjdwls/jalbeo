@@ -7,13 +7,14 @@ export const VERDICT_BG: Record<string, string> = {
   '무상수거': '#a9c7ff',
   '전용수거함': '#d5c2ff',
   '대형폐기물': '#f7c65a',
+  '음식물': '#8fd9a8',
   '조건부': '#e4e0d6',
   '일반쓰레기': '#ff9f8f',
 };
 
 /** 칩·목록 정렬 순서 */
 export const VERDICT_ORDER = [
-  '재활용', '무상수거', '전용수거함', '대형폐기물', '조건부', '일반쓰레기',
+  '재활용', '무상수거', '전용수거함', '대형폐기물', '음식물', '조건부', '일반쓰레기',
 ];
 
 export function bg(verdict: string): string {
