@@ -1,33 +1,36 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import { items as dbItems } from '../lib/items';
 
-const items = (await getCollection('items')).sort(
-  (a, b) => (b.data.monthlyVolume ?? 0) - (a.data.monthlyVolume ?? 0),
-);
+const bodies = new Set((await getCollection('items')).map((b) => b.id));
+const live = dbItems.filter((row) => bodies.has(row.slug));
 ---
 
 <Base
   title="잘버려 — 이거 어디에 버려요?"
-  description="품목별 분리배출 방법과 O·X 판정. 환경부 기준과 지자체 조례 근거를 출처와 함께 표시합니다."
+  description="품목별 분리배출 방법과 O·X 판정. 환경부 기준과 지자체 조례 근거를 출처·기준일자와 함께 표시합니다."
 >
   <h1>이거 어디에 버려요?</h1>
-  <p class="lead">
-    품목별로 재활용인지 일반쓰레기인지, 근거와 함께 정리합니다.
-  </p>
+  <p class="lead">품목별로 재활용인지 일반쓰레기인지, 근거와 함께 정리합니다.</p>
 
-  <ul class="items">
-    {items.map((item) => (
-      <li>
-        <a href={`/${item.id}/`}>{item.data.name}</a>
-        <span class="v">{item.data.verdict}</span>
-      </li>
-    ))}
-  </ul>
+  {live.length === 0 ? (
+    <p class="empty">아직 발행된 품목이 없습니다.</p>
+  ) : (
+    <ul class="items">
+      {live.map((row) => (
+        <li>
+          <a href={`/${row.slug}/`}>{row.name}</a>
+          <span class="v">{row.verdict}</span>
+        </li>
+      ))}
+    </ul>
+  )}
 </Base>
 
 <style>
   .lead { color: var(--muted); margin-top: -.4rem; }
+  .empty { color: var(--muted); }
   .items { list-style: none; padding: 0; margin: 1.5rem 0 0; }
   .items li {
     display: flex; justify-content: space-between; gap: 1rem;
