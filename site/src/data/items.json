@@ -790,20 +790,6 @@
   "updated_at": "2026-09-03T12:13:46.179753+00:00"
  },
  {
-  "slug": "jangnong",
-  "name": "장농",
-  "aliases": [],
-  "verdict": "대형폐기물",
-  "verdict_line": "'장롱'의 흔한 오기지만 지자체 요금표에 이 표기가 실제로 쓰입니다.",
-  "category": "가구류",
-  "housing_split": false,
-  "region_varies": false,
-  "monthly_volume": 455,
-  "competitor_has": false,
-  "published": true,
-  "updated_at": "2026-09-03T12:13:46.179753+00:00"
- },
- {
   "slug": "jangrong",
   "name": "장롱",
   "aliases": [
@@ -818,6 +804,20 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-03T07:54:36.502608+00:00"
+ },
+ {
+  "slug": "jangnong",
+  "name": "장농",
+  "aliases": [],
+  "verdict": "대형폐기물",
+  "verdict_line": "'장롱'의 흔한 오기지만 지자체 요금표에 이 표기가 실제로 쓰입니다.",
+  "category": "가구류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 455,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T12:13:46.179753+00:00"
  },
  {
   "slug": "siktak",
@@ -936,6 +936,20 @@
   "updated_at": "2026-09-03T07:54:36.502608+00:00"
  },
  {
+  "slug": "chaekjang",
+  "name": "책장",
+  "aliases": [],
+  "verdict": "대형폐기물",
+  "verdict_line": "칸 수·재질과 상관없이 가구류라 대형폐기물 신고 대상입니다.",
+  "category": "가구류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 220,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
+ },
+ {
   "slug": "golpeuchae",
   "name": "골프채",
   "aliases": [],
@@ -948,6 +962,51 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-03T07:54:36.502608+00:00"
+ },
+ {
+  "slug": "gimchinaengjanggo",
+  "name": "김치냉장고",
+  "aliases": [],
+  "verdict": "무상수거",
+  "verdict_line": "냉장고와 같은 대형가전 등급이라 1대만 있어도 무상방문수거가 됩니다.",
+  "category": "폐전기·전자제품",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 170,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
+ },
+ {
+  "slug": "hyeonggwangdeung",
+  "name": "형광등",
+  "aliases": [],
+  "verdict": "전용수거함",
+  "verdict_line": "수은이 소량 들어 있어 종량제봉투가 아니라 전용수거함으로 갑니다.",
+  "category": "유해폐기물",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 160,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
+ },
+ {
+  "slug": "heukchimdae",
+  "name": "흙침대",
+  "aliases": [
+   "돌침대",
+   "황토침대"
+  ],
+  "verdict": "대형폐기물",
+  "verdict_line": "신고 화면에서는 대개 돌침대로 검색해야 나옵니다. 무게가 100kg을 넘습니다.",
+  "category": "가구류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 145,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
  },
  {
   "slug": "gyerankkeopjil",
@@ -990,5 +1049,135 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-03T07:54:36.502608+00:00"
+ },
+ {
+  "slug": "geumgo",
+  "name": "금고",
+  "aliases": [],
+  "verdict": "대형폐기물",
+  "verdict_line": "잠금장치와 전자부품이 있어 고철이 아니라 대형폐기물로 신고해야 합니다.",
+  "category": "금속류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 105,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
+ },
+ {
+  "slug": "golpeugabang",
+  "name": "골프가방",
+  "aliases": [],
+  "verdict": "조건부",
+  "verdict_line": "클럽 포함 풀세트는 대형폐기물, 가방만 남았으면 종량제봉투도 가능합니다.",
+  "category": "섬유류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 100,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
+ },
+ {
+  "slug": "jongikeop",
+  "name": "종이컵",
+  "aliases": [],
+  "verdict": "일반쓰레기",
+  "verdict_line": "양면 코팅 때문에 종이류 재활용 대상이 아닙니다. 종이팩과 다릅니다.",
+  "category": "종이류",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 100,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
+ },
+ {
+  "slug": "tail",
+  "name": "타일",
+  "aliases": [],
+  "verdict": "조건부",
+  "verdict_line": "대형폐기물이 아니라 공사장 생활폐기물입니다. 신고 경로 자체가 다릅니다.",
+  "category": "건축폐자재",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 95,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
+ },
+ {
+  "slug": "jongi",
+  "name": "종이",
+  "aliases": [],
+  "verdict": "재활용",
+  "verdict_line": "신문지·책·상자는 재활용입니다. 코팅·오염된 종이는 걸러야 합니다.",
+  "category": "종이류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 95,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
+ },
+ {
+  "slug": "peteubyeong",
+  "name": "페트병",
+  "aliases": [],
+  "verdict": "재활용",
+  "verdict_line": "무색 투명 페트병만 별도 수거함입니다. 라벨을 떼고 압착해야 합니다.",
+  "category": "플라스틱류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 70,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
+ },
+ {
+  "slug": "yangpakkeopjil",
+  "name": "양파껍질",
+  "aliases": [],
+  "verdict": "일반쓰레기",
+  "verdict_line": "섬유질이 질겨 사료화가 안 됩니다. 음식물쓰레기가 아닙니다.",
+  "category": "음식물",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 65,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
+ },
+ {
+  "slug": "eohang",
+  "name": "어항",
+  "aliases": [
+   "수족관"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "종량제봉투에 들어가는 소형은 일반쓰레기, 크면 대형폐기물입니다.",
+  "category": "유리류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 60,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
+ },
+ {
+  "slug": "uyupaek",
+  "name": "우유팩",
+  "aliases": [
+   "두유팩"
+  ],
+  "verdict": "재활용",
+  "verdict_line": "종이컵과 달리 종이팩(살균팩)으로 별도 분리배출 대상입니다.",
+  "category": "종이류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 55,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-03T14:57:33.140154+00:00"
  }
 ]
