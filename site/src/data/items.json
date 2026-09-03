@@ -54,5 +54,47 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-03T07:36:08.364975+00:00"
+ },
+ {
+  "slug": "ppalraegeonjodae",
+  "name": "빨래건조대",
+  "aliases": [],
+  "verdict": "대형폐기물",
+  "verdict_line": "접으면 봉투에 안 들어가면 스티커. 분해되면 금속은 고철로 무료.",
+  "category": null,
+  "housing_split": true,
+  "region_varies": false,
+  "monthly_volume": 2400,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T07:44:58.283647+00:00"
+ },
+ {
+  "slug": "jeonjareinji",
+  "name": "전자레인지",
+  "aliases": [],
+  "verdict": "무상수거",
+  "verdict_line": "12kg을 넘으면 1대부터 무료. 소형은 다른 폐가전과 함께 신청.",
+  "category": "폐전기·전자제품",
+  "housing_split": true,
+  "region_varies": false,
+  "monthly_volume": 1550,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T07:44:58.283647+00:00"
+ },
+ {
+  "slug": "reogeu",
+  "name": "러그",
+  "aliases": [],
+  "verdict": "대형폐기물",
+  "verdict_line": "의류수거함에 넣으면 안 됩니다. 작은 매트는 종량제, 카펫은 스티커.",
+  "category": null,
+  "housing_split": true,
+  "region_varies": false,
+  "monthly_volume": 1490,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T07:44:58.283647+00:00"
  }
 ]
