@@ -24,6 +24,7 @@
 | [docs/05-naming-domain.md](docs/05-naming-domain.md) | 프로젝트명 + 도메인 가용성 |
 | [docs/06-action-plan.md](docs/06-action-plan.md) | 실행 계획 · 체크리스트 |
 | [docs/07-keyword-seed.md](docs/07-keyword-seed.md) | 품목 시드 325개 수집 결과 · 수식어 분포 |
+| [docs/08-guideline-data.md](docs/08-guideline-data.md) | 환경부 분리배출 근거 데이터 · 커버리지 18% |
 | [data/raw/](data/raw/) | 조사 원본 데이터 |
 
 ## 다음 작업
