@@ -12,5 +12,47 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-03T07:23:50.06721+00:00"
+ },
+ {
+  "slug": "inhyeong",
+  "name": "인형",
+  "aliases": [],
+  "verdict": "일반쓰레기",
+  "verdict_line": "의류수거함에 넣으면 안 됩니다. 봉제인형은 종량제봉투, 큰 것은 대형폐기물.",
+  "category": null,
+  "housing_split": true,
+  "region_varies": false,
+  "monthly_volume": 7110,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T07:36:08.364975+00:00"
+ },
+ {
+  "slug": "sohwagi",
+  "name": "소화기",
+  "aliases": [],
+  "verdict": "대형폐기물",
+  "verdict_line": "소방서는 받지 않습니다. 지자체 87.3%가 대형폐기물로 처리합니다.",
+  "category": null,
+  "housing_split": true,
+  "region_varies": false,
+  "monthly_volume": 3795,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T07:36:08.364975+00:00"
+ },
+ {
+  "slug": "cheongsogi",
+  "name": "청소기",
+  "aliases": [],
+  "verdict": "무상수거",
+  "verdict_line": "캐니스터형은 1대부터 무료. 무선 스틱형은 5개 이상부터.",
+  "category": "폐전기·전자제품",
+  "housing_split": true,
+  "region_varies": false,
+  "monthly_volume": 2600,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T07:36:08.364975+00:00"
  }
 ]
