@@ -6,6 +6,11 @@ interface Props {
 }
 const { title, description, jsonLd } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+
+// 정식 도메인이 아니면 색인을 막는다. robots.txt와 같은 이유 (게이트 2 오염 방지).
+const PRODUCTION_HOST = 'jalbeo.com';
+const host = Astro.site?.host ?? '';
+const indexable = host === PRODUCTION_HOST || host.endsWith(`.${PRODUCTION_HOST}`);
 ---
 
 <!doctype html>
@@ -16,6 +21,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {!indexable && <meta name="robots" content="noindex, nofollow" />}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="article" />
