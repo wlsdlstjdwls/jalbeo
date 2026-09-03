@@ -1,37 +1,57 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import Verdict from '../components/Verdict.astro';
 import Sources from '../components/Sources.astro';
 import { items as dbItems } from '../lib/items';
-import { tone } from '../lib/verdict';
+import { bg } from '../lib/verdict';
+import { HOUSING_OPTIONS, HOUSING_NOTE, ctaFor } from '../lib/flow';
 
 export async function getStaticPaths() {
   const bodies = await getCollection('items');
   const byId = new Map(bodies.map((b) => [b.id, b]));
 
   // DB에 발행 표시가 있고 본문도 있는 품목만 페이지가 된다.
-  return dbItems
-    .filter((row) => byId.has(row.slug))
-    .map((row) => ({
-      params: { slug: row.slug },
-      props: { row, entry: byId.get(row.slug)! },
-    }));
+  const live = dbItems.filter((row) => byId.has(row.slug));
+
+  return live.map((row) => ({
+    params: { slug: row.slug },
+    props: { row, entry: byId.get(row.slug)!, itemCount: live.length },
+  }));
 }
 
-const { row, entry } = Astro.props;
+const { row, entry, itemCount } = Astro.props;
 const meta = entry.data;
 const { Content } = await render(entry);
 
-const related = meta.related
+// STEP 2에서 물어볼 갈래. 품목이 특수하면 frontmatter가 이긴다.
+const options = meta.options ?? HOUSING_OPTIONS;
+const note = meta.optionsNote ?? HOUSING_NOTE;
+const cta = meta.cta ?? ctaFor(row.verdict);
+
+// 헷갈리는 품목 — 지정이 없으면 같은 판정의 다른 품목으로 채운다.
+const picked = meta.related
   .map((slug) => dbItems.find((x) => x.slug === slug))
   .filter((x) => x !== undefined);
+const related = (picked.length > 0
+  ? picked
+  : dbItems.filter((x) => x.slug !== row.slug && x.verdict === row.verdict)
+).slice(0, 4);
 
 // 어미가 '버리는법'과 '분리수거'로 갈려 있다 (docs/07). 페이지는 하나로 두고
 // 타이틀에 둘 다 태운다. 어미별로 URL을 나누면 중복 페이지가 된다.
 const title = `${row.name} 버리는법 · 분리수거 방법 | 잘버려`;
 const description = `${row.name}은(는) ${row.verdict}. ${row.verdict_line}`;
 const aliases = row.aliases ?? [];
+
+const vol = row.monthly_volume;
+const hint3 = [
+  '분리수거 방법',
+  vol ? `월 검색량 ${vol.toLocaleString('ko-KR')}` : null,
+  `최종 확인 ${meta.updated}`,
+].filter(Boolean).join(' · ');
+
+const titleStep2 = `${row.name},\n어느 쪽인가요?`;
+const titleStep3 = `${row.name}\n버리는법`;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -44,101 +64,374 @@ const jsonLd = {
 };
 ---
 
-<Base title={title} description={description} jsonLd={jsonLd}>
-  <nav class="crumb"><a href="/">← 품목 목록</a></nav>
+<Base title={title} description={description} jsonLd={jsonLd} itemCount={itemCount}>
+  <div class="stephead">
+    <div class="stepbar">
+      <span class="stepno" id="stepno">3 / 3 · 결과</span>
+      <span class="grow"></span>
+      <a class="back press" id="back" href="/">← 이전</a>
+    </div>
 
-  <h1>{row.name} 버리는법</h1>
-  {aliases.length > 0 && (
-    <p class="aliases">{aliases.map((a) => `‘${a}’`).join(' · ')} 로도 불립니다</p>
-  )}
+    <h1 class="display" id="title" data-t2={titleStep2} data-t3={titleStep3}>{titleStep3}</h1>
 
-  <Verdict verdict={row.verdict} line={row.verdict_line} category={row.category ?? undefined} />
+    <p
+      class="hint"
+      id="hint"
+      data-h2="고른 조건에 맞는 답만 보여드립니다."
+      data-h3={hint3}
+    >{hint3}</p>
 
-  <article class="body"><Content /></article>
+    {aliases.length > 0 && (
+      <p class="aliases">{aliases.map((a) => `‘${a}’`).join(' · ')} 로도 불립니다</p>
+    )}
+  </div>
 
-  {related.length > 0 && (
-    <section class="related">
-      <h2>헷갈리는 품목</h2>
-      <ul>
-        {related.map((r) => (
-          <li data-tone={tone(r.verdict)}>
-            <a href={`/${r.slug}/`}>
-              <span class="name">{r.name}</span>
-              <span class="chip">{r.verdict}</span>
-            </a>
-          </li>
+  <div class="flow">
+    {options.map((_, i) => (
+      <input class="optin" type="radio" name="opt" id={`opt-${i}`} checked={i === 0} />
+    ))}
+
+    <section class="step2 rise" id="step2">
+      <div class="opts">
+        {options.map((o, i) => (
+          <label class={`opt press hard op-${i}`} for={`opt-${i}`} style={`--bg:${bg(o.tone)}`}>
+            <span class="lb">{o.label}</span>
+            <span class="hn">{o.hint}</span>
+          </label>
         ))}
-      </ul>
+      </div>
+      <p class="note">{note}</p>
     </section>
-  )}
 
-  <Sources sources={meta.sources} updated={meta.updated} />
+    <section class="step3" id="step3">
+      <div class="answer rise" style={`--bg:${bg(row.verdict)}`}>
+        <div class="ahead">
+          <span class="vbadge">{row.verdict}</span>
+          <span class="pick">
+            {options.map((o, i) => <span class={`pk pk-${i}`}>{o.label}</span>)}
+            <span class="region">{row.region_varies ? '지자체별 차이 있음' : '전국 공통'}</span>
+          </span>
+        </div>
+
+        {options.map((o, i) => (
+          <div class={`ans ans-${i}`}>
+            <p class="ah">{o.head}</p>
+            <p class="ab">{o.body}</p>
+          </div>
+        ))}
+
+        <div class="ctas">
+          <a class="press hard cta-1" href={cta.href} rel="nofollow noopener">{cta.label} →</a>
+          <a class="press hard cta-2" href="#sources">근거 {meta.sources.length}건</a>
+        </div>
+        <p class="ctabody">{cta.body}</p>
+      </div>
+
+      <div class="blocks">
+        <article class="body rise"><Content /></article>
+
+        {related.length > 0 && (
+          <div class="related rise">
+            <p class="caption">헷갈리는 품목</p>
+            <div class="rgrid">
+              {related.map((r) => (
+                <a class="press hard rcard" href={`/${r.slug}/`}>
+                  <span class="rn">{r.name}</span>
+                  <span class="badge sm" style={`--bg:${bg(r.verdict)}`}>{r.verdict}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div class="rise"><Sources sources={meta.sources} updated={meta.updated} /></div>
+
+        <a class="press reset" href="/">다른 물건 확인하기</a>
+      </div>
+    </section>
+  </div>
+
+  <script is:inline>
+    (function () {
+      var step2 = document.getElementById('step2');
+      var step3 = document.getElementById('step3');
+      var stepno = document.getElementById('stepno');
+      var title = document.getElementById('title');
+      var hint = document.getElementById('hint');
+      var back = document.getElementById('back');
+      var radios = document.querySelectorAll('.optin');
+      var step = 3;
+
+      function show(n, scroll) {
+        step = n;
+        // STEP 2로 돌아오면 고른 조건을 지운다. 아직 고르지 않은 상태로 보여야 한다.
+        if (n === 2) for (var j = 0; j < radios.length; j++) radios[j].checked = false;
+        step2.hidden = n !== 2;
+        step3.hidden = n !== 3;
+        stepno.textContent = n === 2 ? '2 / 3 · 조건 고르기' : '3 / 3 · 결과';
+        title.textContent = n === 2 ? title.dataset.t2 : title.dataset.t3;
+        hint.textContent = n === 2 ? hint.dataset.h2 : hint.dataset.h3;
+        if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      function sync(scroll) {
+        var opt = new URLSearchParams(location.search).get('opt');
+        var i = Number(opt);
+        if (opt !== null && radios[i]) {
+          radios[i].checked = true;
+          show(3, scroll);
+        } else {
+          show(2, scroll);
+        }
+      }
+
+      for (var i = 0; i < radios.length; i++) {
+        radios[i].addEventListener('change', function (e) {
+          history.pushState({}, '', '?opt=' + e.target.id.slice(4));
+          show(3, true);
+        });
+      }
+
+      back.addEventListener('click', function (e) {
+        if (step !== 3) return;       // STEP 2에서는 목록으로 나간다
+        e.preventDefault();
+        history.pushState({}, '', location.pathname);
+        show(2, true);
+      });
+
+      window.addEventListener('popstate', function () { sync(true); });
+      sync(false);
+    })();
+  </script>
 </Base>
 
 <style>
-  .crumb { margin: 0 0 .3rem; font-size: .85rem; }
-  .crumb a { color: var(--muted); text-decoration: none; }
-  .crumb a:hover { color: var(--brand); }
-  .aliases { color: var(--muted); font-size: .86rem; margin: -.7rem 0 1rem; }
+  .aliases { margin: 10px 0 0; font-size: 12.5px; font-weight: 600; color: var(--faint-2); }
 
-  .body { margin-top: .4rem; }
-  .body :global(p) { margin: .9rem 0; }
+  /* --- 라디오로 답을 바꾼다. JS가 없어도 두 답 사이를 오갈 수 있다 --- */
+  .optin { position: absolute; opacity: 0; width: 0; height: 0; }
+  .ans, .pk { display: none; }
+  #opt-0:checked ~ .step3 .ans-0,
+  #opt-1:checked ~ .step3 .ans-1 { display: block; }
+  #opt-0:checked ~ .step3 .pk-0,
+  #opt-1:checked ~ .step3 .pk-1 { display: inline; }
+  #opt-0:checked ~ .step2 .op-0 .lb::after,
+  #opt-1:checked ~ .step2 .op-1 .lb::after { content: ' ✓'; }
+  #opt-0:focus-visible ~ .step2 .op-0,
+  #opt-1:focus-visible ~ .step2 .op-1 { outline: 3px solid var(--ink); outline-offset: 4px; }
+
+  /* --- STEP 2 조건 고르기 --- */
+  .step2 { padding: clamp(18px,3vw,30px) var(--pad) clamp(26px,4vw,46px); }
+  .opts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+  }
+  .opt {
+    cursor: pointer;
+    border: 2px solid var(--ink);
+    background: var(--bg);
+    padding: 22px 22px 24px;
+    display: grid;
+    gap: 8px;
+    align-content: end;
+    min-height: 132px;
+    transition: transform .16s cubic-bezier(.2,.7,.2,1), box-shadow .16s ease;
+  }
+  .opt .lb {
+    display: block;
+    font-weight: 800;
+    font-size: clamp(24px, 3vw, 34px);
+    letter-spacing: -.04em;
+    line-height: 1.1;
+  }
+  .opt .hn {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .note {
+    margin: 18px 0 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--muted);
+    max-width: 70ch;
+  }
+
+  /* --- STEP 3 결과 헤더 (풀블리드) --- */
+  .answer {
+    background: var(--bg);
+    border-bottom: 2px solid var(--ink);
+    padding: clamp(20px,3.4vw,38px) var(--pad);
+  }
+  .ahead { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .vbadge {
+    background: var(--ink);
+    color: #fff;
+    padding: 6px 13px;
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: .08em;
+  }
+  .pick { font-size: 13px; font-weight: 700; }
+  .region::before { content: ' · '; }
+  .ah {
+    margin: 14px 0 0;
+    font-weight: 800;
+    font-size: clamp(26px,4.6vw,52px);
+    line-height: 1.06;
+    letter-spacing: -.045em;
+    max-width: 24ch;
+  }
+  .ab { margin: 14px 0 0; font-size: 16px; line-height: 1.72; max-width: 62ch; }
+
+  .ctas { margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .ctas a {
+    border: 2px solid var(--ink);
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: 800;
+    transition: transform .16s ease, box-shadow .16s ease;
+  }
+  .cta-1 { background: var(--ink); color: #fff; }
+  .cta-2 { background: var(--card); }
+  .ctabody {
+    margin: 14px 0 0;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--muted-2);
+    max-width: 62ch;
+  }
+
+  /* --- STEP 3 본문 블록 --- */
+  .blocks {
+    padding: clamp(18px,3vw,32px) var(--pad) 0;
+    display: grid;
+    gap: clamp(18px,3vw,30px);
+  }
+
   .body :global(h2) {
-    font-size: 1.16rem;
-    margin: 2.3rem 0 .6rem;
-    padding-top: 1.1rem;
-    border-top: 1px solid var(--line);
+    margin: clamp(18px,3vw,30px) 0 6px;
+    padding-top: 14px;
+    border-top: 2px solid var(--ink);
+    font-weight: 800;
+    font-size: clamp(23px,3.2vw,34px);
+    letter-spacing: -.04em;
   }
-  .body :global(h3) { font-size: 1rem; margin: 1.5rem 0 .4rem; }
-  .body :global(ul) { padding-left: 1.15rem; }
-  .body :global(li) { margin: .35rem 0; }
-  .body :global(table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
-    font-size: .92rem;
+  .body :global(h2:first-child) { margin-top: 0; }
+  .body :global(h3) {
+    margin: 22px 0 4px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: -.03em;
   }
-  .body :global(th), .body :global(td) {
-    border: 1px solid var(--line);
-    padding: .55rem .65rem;
-    text-align: left;
-    vertical-align: top;
+  .body :global(p) {
+    margin: 12px 0 0;
+    font-size: 16px;
+    line-height: 1.78;
+    color: var(--body);
+    max-width: 70ch;
   }
-  .body :global(th) { background: var(--surface); font-weight: 700; }
-  .body :global(strong) { font-weight: 700; }
+  .body :global(strong) { font-weight: 800; }
+  .body :global(a) { box-shadow: inset 0 -2px 0 var(--lime); }
 
-  .related ul {
+  .body :global(ul) {
     list-style: none;
     padding: 0;
-    margin: .4rem 0 0;
+    margin: 14px 0 0;
     display: grid;
-    gap: .5rem;
+    gap: 10px;
+    max-width: 70ch;
   }
-  .related li { --tone: var(--slate); --tone-bg: var(--slate-bg); }
-  .related li[data-tone="green"]  { --tone: var(--green);  --tone-bg: var(--green-bg); }
-  .related li[data-tone="blue"]   { --tone: var(--blue);   --tone-bg: var(--blue-bg); }
-  .related li[data-tone="violet"] { --tone: var(--violet); --tone-bg: var(--violet-bg); }
-  .related li[data-tone="amber"]  { --tone: var(--amber);  --tone-bg: var(--amber-bg); }
-  .related li[data-tone="red"]    { --tone: var(--red);    --tone-bg: var(--red-bg); }
-  .related a {
+  .body :global(ul > li) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    align-items: baseline;
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--body);
+  }
+  .body :global(ul > li)::before {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: var(--ink);
+    transform: translateY(-2px);
+  }
+  .body :global(ol) {
+    margin: 14px 0 0;
+    padding-left: 1.3em;
+    max-width: 70ch;
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--body);
+  }
+
+  .body :global(table) {
+    width: 100%;
+    margin: 16px 0 0;
+    border: 2px solid var(--ink);
+    border-collapse: collapse;
+    background: var(--card);
+  }
+  .body :global(th), .body :global(td) {
+    border-bottom: 1px solid var(--line);
+    padding: 13px 15px;
+    text-align: left;
+    vertical-align: baseline;
+    overflow-wrap: anywhere;
+  }
+  .body :global(th) {
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: .06em;
+    color: var(--faint);
+    border-bottom: 2px solid var(--ink);
+  }
+  .body :global(td) { font-size: 14.5px; line-height: 1.55; color: var(--muted); }
+  .body :global(td:first-child) { font-weight: 800; font-size: 15px; color: var(--ink); }
+  /* 결론에 해당하는 칸(원문에서 굵게 쓴 값)은 라임으로 잡아준다 */
+  .body :global(td:last-child strong) {
+    background: var(--lime);
+    padding: 2px 8px;
+    color: var(--ink);
+  }
+  .body :global(tr:last-child td) { border-bottom: 0; }
+  @media (max-width: 480px) {
+    .body :global(th), .body :global(td) { padding: 10px 11px; font-size: 13.5px; }
+  }
+
+  /* --- 헷갈리는 품목 --- */
+  .related .caption { padding-top: 14px; border-top: 2px solid var(--ink); }
+  .rgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 10px;
+  }
+  .rcard {
+    border: 2px solid var(--ink);
+    background: var(--card);
+    padding: 14px 16px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: .6rem;
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    padding: .7rem .9rem;
-    text-decoration: none;
-    color: inherit;
+    justify-content: space-between;
+    gap: 10px;
+    transition: transform .16s ease, box-shadow .16s ease;
   }
-  .related a:hover { border-color: var(--tone); }
-  .related .name { font-weight: 600; }
-  .related .chip {
-    font-size: .74rem;
-    white-space: nowrap;
-    color: var(--tone);
-    background: var(--tone-bg);
-    border-radius: 999px;
-    padding: .12rem .5rem;
+  .rn { font-weight: 800; font-size: 18px; letter-spacing: -.03em; }
+  .badge.sm { padding: 3px 9px; font-size: 12px; }
+
+  .reset {
+    margin-bottom: 44px;
+    display: block;
+    text-align: center;
+    border: 2px dashed var(--ink);
+    padding: 18px;
+    font-size: 15px;
+    font-weight: 800;
   }
+  .reset:hover { background: var(--lime); }
 </style>

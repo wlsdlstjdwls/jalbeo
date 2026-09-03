@@ -2,187 +2,243 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import { items as dbItems } from '../lib/items';
-import { tone } from '../lib/verdict';
+import { bg, VERDICT_ORDER } from '../lib/verdict';
 
 const bodies = new Set((await getCollection('items')).map((b) => b.id));
 const live = dbItems.filter((row) => bodies.has(row.slug));
 
-// 판정별로 몇 개인지 — 목록 위 요약 칩
 const counts = live.reduce<Record<string, number>>((acc, r) => {
   acc[r.verdict] = (acc[r.verdict] ?? 0) + 1;
   return acc;
 }, {});
+
+// 첫 칩은 '전체', 나머지는 판정 순서대로. 비활성 배경 = 판정 색.
+const chips = [
+  { v: '', label: '전체', n: live.length, color: '#fff' },
+  ...VERDICT_ORDER.filter((v) => counts[v]).map((v) => ({
+    v, label: v, n: counts[v], color: bg(v),
+  })),
+];
 ---
 
 <Base
   title="잘버려 — 이거 어디에 버려요?"
   description="품목별 분리배출 방법과 판정. 환경부 기준과 지자체 조례 근거를 출처·기준일자와 함께 표시합니다."
+  itemCount={live.length}
 >
-  <section class="hero">
-    <h1>이거 어디에 버려요?</h1>
-    <p class="lead">
-      품목별로 재활용인지 일반쓰레기인지, <strong>왜 그런지</strong>까지 근거와 함께.
-    </p>
+  <div class="stephead">
+    <div class="stepbar">
+      <span class="stepno">1 / 3 · 품목 고르기</span>
+      <span class="grow"></span>
+      <span class="back" style="visibility:hidden" aria-hidden="true">← 이전</span>
+    </div>
 
-    <div class="search">
-      <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
-        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
-        <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" />
-      </svg>
+    <h1 class="display">이거 어디에<br />버려요?</h1>
+    <p class="hint">품목 → 조건 → 배출 방법. 세 번만 누르면 답이 나옵니다.</p>
+
+    <div class="searchbar">
       <input
         id="q"
         type="search"
-        placeholder="품목 이름을 입력하세요 (예: 선풍기)"
-        autocomplete="off"
         aria-label="품목 검색"
+        placeholder="선풍기, 계란껍질, 자전거…"
+        autocomplete="off"
       />
+      <span class="count" id="count" aria-live="polite">{live.length} / {live.length}</span>
     </div>
 
-    <ul class="counts">
-      {Object.entries(counts)
-        .sort((a, b) => b[1] - a[1])
-        .map(([verdict, n]) => (
-          <li data-tone={tone(verdict)}>{verdict} <b>{n}</b></li>
-        ))}
-    </ul>
+    <div class="chips" id="chips" role="group" aria-label="판정 필터">
+      {chips.map((c) => (
+        <button
+          type="button"
+          class="press chip"
+          data-v={c.v}
+          aria-pressed={c.v === '' ? 'true' : 'false'}
+          style={`--chip:${c.color}`}
+        >{c.label} <span class="n">{c.n}</span></button>
+      ))}
+    </div>
+  </div>
+
+  <section class="rise listwrap">
+    <p class="caption" id="listhead">많이 찾는 품목</p>
+
+    <div class="rows" id="list">
+      {live.map((row) => {
+        const aliases = row.aliases ?? [];
+        return (
+          <a
+            class="row"
+            href={`/${row.slug}/`}
+            data-v={row.verdict}
+            data-key={`${row.name} ${aliases.join(' ')} ${row.verdict}`}
+          >
+            <span class="nm">
+              <span class="n">{row.name}</span>
+              {aliases.length > 0 && (
+                <span class="al">{`‘${aliases.join('’ · ‘')}’`}</span>
+              )}
+            </span>
+            <span class="ln">{row.verdict_line}</span>
+            <span class="rt">
+              <span class="badge" style={`--bg:${bg(row.verdict)}`}>{row.verdict}</span>
+              <span class="go" aria-hidden="true">→</span>
+            </span>
+          </a>
+        );
+      })}
+    </div>
+
+    <p class="empty" id="empty" hidden>찾는 품목이 아직 없습니다. 품목은 계속 추가됩니다.</p>
   </section>
 
-  <ul class="items" id="list">
-    {live.map((row) => (
-      <li
-        class="card"
-        data-tone={tone(row.verdict)}
-        data-key={`${row.name} ${(row.aliases ?? []).join(' ')} ${row.verdict}`}
-      >
-        <a href={`/${row.slug}/`}>
-          <span class="name">{row.name}</span>
-          <span class="chip">{row.verdict}</span>
-          <span class="line">{row.verdict_line}</span>
-        </a>
-      </li>
-    ))}
-  </ul>
-
-  <p class="empty" id="empty" hidden>찾는 품목이 아직 없습니다.</p>
-
   <script is:inline>
-    const q = document.getElementById('q');
-    const list = document.getElementById('list');
-    const empty = document.getElementById('empty');
-    q?.addEventListener('input', () => {
-      const term = q.value.trim().toLowerCase();
-      let shown = 0;
-      for (const li of list.children) {
-        const hit = !term || li.dataset.key.toLowerCase().includes(term);
-        li.hidden = !hit;
-        if (hit) shown++;
+    (function () {
+      var q = document.getElementById('q');
+      var list = document.getElementById('list');
+      var chips = document.getElementById('chips');
+      var count = document.getElementById('count');
+      var head = document.getElementById('listhead');
+      var empty = document.getElementById('empty');
+      var total = list.children.length;
+      var filter = '';
+
+      function apply() {
+        var term = q.value.trim().toLowerCase();
+        var shown = 0;
+        for (var i = 0; i < list.children.length; i++) {
+          var el = list.children[i];
+          var hit = (!filter || el.dataset.v === filter) &&
+                    (!term || el.dataset.key.toLowerCase().indexOf(term) !== -1);
+          el.hidden = !hit;
+          if (hit) shown++;
+        }
+        count.textContent = shown + ' / ' + total;
+        head.textContent = filter ? filter + ' ' + shown + '개'
+          : term ? '검색 결과 ' + shown + '개'
+          : '많이 찾는 품목';
+        empty.hidden = shown !== 0;
       }
-      empty.hidden = shown !== 0;
-    });
+
+      q.addEventListener('input', apply);
+      chips.addEventListener('click', function (e) {
+        var btn = e.target.closest('.chip');
+        if (!btn) return;
+        filter = btn.dataset.v;
+        for (var i = 0; i < chips.children.length; i++) {
+          var c = chips.children[i];
+          var on = c.dataset.v === filter;
+          c.classList.toggle('on', on);
+          c.setAttribute('aria-pressed', on ? 'true' : 'false');
+        }
+        apply();
+      });
+    })();
   </script>
 </Base>
 
 <style>
-  .hero { margin-bottom: 1.6rem; }
-  .lead { color: var(--muted); margin: -.5rem 0 1.2rem; font-size: 1.02rem; }
-  .lead strong { color: var(--fg); }
-
-  .search {
+  /* --- 검색 바 --- */
+  .searchbar {
+    margin-top: clamp(16px, 2.6vw, 26px);
     display: flex;
-    align-items: center;
-    gap: .6rem;
-    border: 1px solid var(--line);
-    background: var(--surface);
-    border-radius: 999px;
-    padding: .1rem .5rem .1rem .95rem;
+    align-items: stretch;
+    border: 2px solid var(--ink);
+    background: var(--card);
   }
-  .search:focus-within { border-color: var(--brand); }
-  .search .icon { width: 1.05rem; height: 1.05rem; color: var(--muted); flex: none; }
-  .search input {
+  .searchbar input {
     flex: 1;
+    min-width: 0;
     border: 0;
     background: transparent;
-    color: inherit;
-    font: inherit;
-    padding: .7rem .3rem;
     outline: none;
+    padding: 16px 18px;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 700;
+  }
+  .searchbar input::placeholder { color: var(--ph); }
+  .searchbar .count {
+    display: grid;
+    place-items: center;
+    padding: 0 clamp(14px, 2vw, 22px);
+    border-left: 2px solid var(--ink);
+    font-size: 13px;
+    font-weight: 800;
+    white-space: nowrap;
+    background: var(--lime);
+  }
+
+  /* --- 판정 필터 칩 --- */
+  .chips {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    margin-top: 14px;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip {
+    flex: none;
+    cursor: pointer;
+    border: 2px solid var(--ink);
+    padding: 8px 15px;
+    font-size: 13.5px;
+    font-weight: 800;
+    background: var(--chip);
+  }
+  .chip .n { opacity: .55; }
+  .chip.on { background: var(--ink); color: #fff; }
+
+  /* --- 품목 리스트 --- */
+  .listwrap { padding: clamp(18px,3vw,30px) var(--pad) clamp(24px,4vw,44px); }
+  .rows { border-top: 2px solid var(--ink); }
+
+  .row {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1.55fr) auto;
+    gap: 6px clamp(12px, 2.4vw, 24px);
+    align-items: center;
+    padding: 15px 8px;
+    border-bottom: 1px solid var(--line);
+    transition: background .14s ease;
+  }
+  .row:hover { background: var(--hover); }
+  .row .nm {
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+    flex-wrap: wrap;
     min-width: 0;
   }
-
-  .counts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .4rem;
-    list-style: none;
-    padding: 0;
-    margin: .9rem 0 0;
-    font-size: .8rem;
+  .row .nm .n {
+    font-weight: 800;
+    font-size: clamp(21px, 2.5vw, 29px);
+    letter-spacing: -.035em;
   }
-  .counts li {
-    --tone: var(--slate); --tone-bg: var(--slate-bg);
-    color: var(--tone);
-    background: var(--tone-bg);
-    border-radius: 999px;
-    padding: .15rem .6rem;
-  }
-  .counts li b { font-weight: 700; }
-  .counts li[data-tone="green"]  { --tone: var(--green);  --tone-bg: var(--green-bg); }
-  .counts li[data-tone="blue"]   { --tone: var(--blue);   --tone-bg: var(--blue-bg); }
-  .counts li[data-tone="violet"] { --tone: var(--violet); --tone-bg: var(--violet-bg); }
-  .counts li[data-tone="amber"]  { --tone: var(--amber);  --tone-bg: var(--amber-bg); }
-  .counts li[data-tone="red"]    { --tone: var(--red);    --tone-bg: var(--red-bg); }
-
-  .items {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    gap: .55rem;
-    grid-template-columns: 1fr;
-  }
-  @media (min-width: 620px) {
-    .items { grid-template-columns: 1fr 1fr; }
-  }
-
-  .card { --tone: var(--slate); --tone-bg: var(--slate-bg); }
-  .card[data-tone="green"]  { --tone: var(--green);  --tone-bg: var(--green-bg); }
-  .card[data-tone="blue"]   { --tone: var(--blue);   --tone-bg: var(--blue-bg); }
-  .card[data-tone="violet"] { --tone: var(--violet); --tone-bg: var(--violet-bg); }
-  .card[data-tone="amber"]  { --tone: var(--amber);  --tone-bg: var(--amber-bg); }
-  .card[data-tone="red"]    { --tone: var(--red);    --tone-bg: var(--red-bg); }
-
-  .card a {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: .2rem .6rem;
-    height: 100%;
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    padding: .85rem .95rem;
-    text-decoration: none;
-    color: inherit;
-    background: var(--bg);
-    transition: border-color .12s, transform .12s;
-  }
-  .card a:hover { border-color: var(--tone); transform: translateY(-1px); }
-
-  .card .name { font-weight: 700; font-size: 1.02rem; letter-spacing: -.01em; }
-  .card .chip {
-    align-self: start;
-    font-size: .74rem;
+  .row .al { font-size: 12.5px; font-weight: 600; color: var(--faint-2); }
+  .row .ln { font-size: 14.5px; line-height: 1.55; color: var(--muted); }
+  .row .rt {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     white-space: nowrap;
-    color: var(--tone);
-    background: var(--tone-bg);
-    border-radius: 999px;
-    padding: .12rem .5rem;
   }
-  .card .line {
-    grid-column: 1 / -1;
-    color: var(--muted);
-    font-size: .86rem;
-    line-height: 1.55;
+  .row .go {
+    font-weight: 800;
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity .16s ease, transform .16s ease;
+  }
+  .row:hover .go, .row:focus-visible .go { opacity: 1; transform: none; }
+
+  /* 좁은 화면에서는 요약문을 이름 아래로. 판정은 이름 옆에 붙여 둔다 */
+  @media (max-width: 640px) {
+    .row { grid-template-columns: minmax(0,1fr) auto; align-items: start; }
+    .row .nm { grid-area: 1 / 1; }
+    .row .rt { grid-area: 1 / 2; }
+    .row .ln { grid-area: 2 / 1 / 3 / 3; }
   }
 
-  .empty { color: var(--muted); margin-top: 1.2rem; }
+  .empty { margin: 16px 0 0; font-size: 15px; font-weight: 600; color: var(--muted); }
 </style>

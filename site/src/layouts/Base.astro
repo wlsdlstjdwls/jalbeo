@@ -3,8 +3,10 @@ interface Props {
   title: string;
   description: string;
   jsonLd?: unknown;
+  /** 상단 바에 노출하는 발행 품목 수 */
+  itemCount: number;
 }
-const { title, description, jsonLd } = Astro.props;
+const { title, description, jsonLd, itemCount } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 
 // 정식 도메인이 아니면 색인을 막는다. robots.txt와 같은 이유 (게이트 2 오염 방지).
@@ -22,147 +24,151 @@ const indexable = host === PRODUCTION_HOST || host.endsWith(`.${PRODUCTION_HOST}
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     {!indexable && <meta name="robots" content="noindex, nofollow" />}
-    <meta name="theme-color" content="#0f7a4f" />
+    <meta name="theme-color" content="#f5f3ee" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="ko_KR" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+    />
     {jsonLd && (
       <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
     )}
   </head>
   <body>
-    <header class="site">
-      <a href="/" class="brand">
-        <span class="mark" aria-hidden="true">잘</span>
-        <span class="name">잘버려</span>
-      </a>
-      <span class="tag">이거 어디에 버려요?</span>
-    </header>
+    <div class="topbar">
+      <a href="/" class="logo">잘버려</a>
+      <span class="topmeta">환경부 기준 · {itemCount}개 품목 · 출처 표기</span>
+    </div>
 
     <main><slot /></main>
 
-    <footer class="site">
-      <p class="disclaimer">
-        배출 기준은 지자체 조례에 따라 다를 수 있습니다.
-        각 페이지에 근거 출처와 확인 날짜를 표시합니다.
-      </p>
-      <p class="copy">잘버려</p>
-    </footer>
-
     <style is:global>
       :root {
-        --bg: #ffffff;
-        --surface: #f7f8f7;
-        --fg: #16181a;
-        --muted: #5f6672;
-        --line: #e3e6e4;
-        --brand: #0f7a4f;
-        --brand-soft: #e8f4ee;
-
-        --green: #0f7a4f;   --green-bg: #e8f4ee;
-        --blue: #1857b8;    --blue-bg: #e7eefb;
-        --violet: #6b3fb5;  --violet-bg: #f0eafc;
-        --amber: #9a5b06;   --amber-bg: #fdf0dd;
-        --red: #b3261e;     --red-bg: #fceceb;
-        --slate: #475467;   --slate-bg: #eef1f5;
-
-        --radius: 14px;
-        color-scheme: light dark;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #101214;
-          --surface: #191c1f;
-          --fg: #e9ecec;
-          --muted: #9aa3ad;
-          --line: #2a2f34;
-          --brand: #4fc98a;
-          --brand-soft: #14301f;
-
-          --green: #4fc98a;   --green-bg: #14301f;
-          --blue: #7fb0ff;    --blue-bg: #14213a;
-          --violet: #b79bf0;  --violet-bg: #241a3a;
-          --amber: #e5a552;   --amber-bg: #33240f;
-          --red: #f28e88;     --red-bg: #35191a;
-          --slate: #a9b3c0;   --slate-bg: #21262c;
-        }
+        --paper: #f5f3ee;
+        --card: #fff;
+        --ink: #111;
+        --line: #d9d5cb;
+        --hover: #ebe7dd;
+        --lime: #c9f24d;
+        --muted: #43413c;
+        --muted-2: #3c3a35;
+        --body: #2b2a26;
+        --faint: #6b6862;
+        --faint-2: #7d7a72;
+        --ph: #8d8a82;
+        --pad: clamp(14px, 4vw, 40px);
+        color-scheme: light;
       }
 
       * { box-sizing: border-box; }
       html { -webkit-text-size-adjust: 100%; }
       body {
         margin: 0;
-        background: var(--bg);
-        color: var(--fg);
-        font: 16px/1.75 system-ui, -apple-system, "Apple SD Gothic Neo",
-              "Malgun Gothic", "Noto Sans KR", sans-serif;
+        background: var(--paper);
+        color: var(--ink);
+        font: 400 16px/1.6 "Pretendard Variable", Pretendard, system-ui, sans-serif;
         word-break: keep-all;
         overflow-wrap: break-word;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: var(--ink); text-decoration: none; }
+      input, button { font: inherit; color: inherit; }
+      [hidden] { display: none !important; }
+      :focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+
+      /* --- 모션. 컬러블록 컨셉이라 라운드 없음 / hard shadow만 --- */
+      @keyframes rise {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: none; }
+      }
+      .rise { animation: rise .32s cubic-bezier(.2,.7,.2,1) both; }
+      .press {
+        transition: transform .12s ease, box-shadow .16s ease, background .16s ease;
+      }
+      .hard { box-shadow: 4px 4px 0 var(--ink); }
+      .hard:hover { box-shadow: 6px 6px 0 var(--ink); transform: translate(-2px,-2px); }
+      .press:active { transform: translate(2px,2px); box-shadow: 0 0 0 rgba(0,0,0,0) !important; }
+      @media (prefers-reduced-motion: reduce) {
+        .rise { animation: none; }
+        .press, .hard, .row, .row .go { transition: none; }
       }
 
-      header.site, main, footer.site {
-        max-width: 46rem;
-        margin: 0 auto;
-        padding-inline: 1.15rem;
-      }
-
-      header.site {
+      /* --- 상단 바 --- */
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
         display: flex;
         align-items: center;
-        gap: .7rem;
-        padding-block: 1rem 1.4rem;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 14px var(--pad);
+        border-bottom: 2px solid var(--ink);
+        background: var(--paper);
       }
-      .brand {
-        display: inline-flex;
-        align-items: center;
-        gap: .5rem;
-        color: var(--fg);
-        text-decoration: none;
-        font-weight: 700;
-      }
-      .brand .mark {
-        display: grid;
-        place-items: center;
-        width: 1.85rem;
-        height: 1.85rem;
-        border-radius: 9px;
-        background: var(--brand);
-        color: #fff;
-        font-size: .95rem;
-        line-height: 1;
-      }
-      .brand .name { font-size: 1.05rem; letter-spacing: -.01em; }
-      header.site .tag {
-        color: var(--muted);
-        font-size: .82rem;
-        border-left: 1px solid var(--line);
-        padding-left: .7rem;
-      }
-      @media (max-width: 420px) { header.site .tag { display: none; } }
+      .topbar .logo { font-weight: 800; font-size: 18px; letter-spacing: -.03em; }
+      .topbar .topmeta { font-size: 12.5px; font-weight: 700; }
+      @media (max-width: 380px) { .topbar .topmeta { display: none; } }
 
-      footer.site {
-        margin-top: 4rem;
-        padding-block: 1.3rem 3rem;
-        border-top: 1px solid var(--line);
+      /* --- 스텝 헤더 --- */
+      .stephead {
+        padding: clamp(18px,3.4vw,34px) var(--pad) clamp(16px,3vw,26px);
+        border-bottom: 2px solid var(--ink);
+      }
+      .stepbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+      .stepno {
+        font-size: 12.5px;
+        font-weight: 800;
+        letter-spacing: .1em;
+        color: var(--faint);
+      }
+      .stepbar .grow { flex: 1; }
+      .back {
+        cursor: pointer;
+        background: transparent;
+        border: 2px solid var(--ink);
+        padding: 6px 14px;
+        font-size: 12.5px;
+        font-weight: 800;
+      }
+      .back:hover { background: var(--lime); }
+      .display {
+        margin: clamp(14px,2.4vw,22px) 0 0;
+        white-space: pre-line;
+        font-weight: 800;
+        font-size: clamp(34px,7.6vw,92px);
+        line-height: .94;
+        letter-spacing: -.05em;
+      }
+      .hint {
+        margin: 12px 0 0;
+        font-size: 15px;
+        font-weight: 600;
         color: var(--muted);
-        font-size: .84rem;
+        max-width: 56ch;
       }
-      footer.site .disclaimer { margin: 0 0 .4rem; }
-      footer.site .copy { margin: 0; opacity: .7; }
 
-      h1 {
-        font-size: clamp(1.55rem, 4.5vw, 2rem);
-        line-height: 1.3;
-        letter-spacing: -.02em;
-        margin: .2rem 0 1.1rem;
+      /* --- 판정 배지 --- */
+      .badge {
+        background: var(--bg, var(--card));
+        border: 1.5px solid var(--ink);
+        padding: 5px 12px;
+        font-size: 13px;
+        font-weight: 800;
+        white-space: nowrap;
       }
-      h2 {
-        font-size: 1.16rem;
-        letter-spacing: -.01em;
-        margin: 2.3rem 0 .6rem;
+
+      /* --- 섹션 제목(캡션형) --- */
+      .caption {
+        margin: 0 0 12px;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: .1em;
       }
-      a { color: var(--brand); }
     </style>
   </body>
 </html>

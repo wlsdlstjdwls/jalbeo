@@ -22,6 +22,22 @@ const items = defineCollection({
     })).min(1),
     related: z.array(z.string()).default([]),  // 헷갈리는 유사 품목 slug
     updated: z.string(),                       // 최종 확인일 YYYY-MM-DD
+
+    // STEP 2에서 물어볼 갈래. 없으면 주거 형태(아파트 / 단독·빌라)를 쓴다 (lib/flow.ts).
+    // 품목마다 진짜로 답이 갈리는 축이 다르므로 특수한 품목만 여기서 덮어쓴다.
+    options: z.array(z.object({
+      label: z.string(),
+      hint: z.string(),
+      tone: z.string(),      // 카드 배경색을 고르는 판정 키
+      head: z.string(),      // 결과 헤드라인
+      body: z.string(),      // 결과 본문
+    })).length(2).optional(),
+    optionsNote: z.string().optional(),        // 옵션 카드 아래 설명문
+    cta: z.object({                            // 결과 헤더 1차 버튼
+      label: z.string(),
+      href: z.string(),
+      body: z.string(),
+    }).optional(),
   }),
 });
 
