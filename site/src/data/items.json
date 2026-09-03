@@ -1,1 +1,16 @@
-[]
+[
+ {
+  "slug": "seonpunggi",
+  "name": "선풍기",
+  "aliases": [],
+  "verdict": "무상수거",
+  "verdict_line": "스탠드형은 폐가전 무상방문수거로 1대부터 무료. 탁상용 소형은 5개 이상부터.",
+  "category": "폐전기·전자제품",
+  "housing_split": true,
+  "region_varies": true,
+  "monthly_volume": 12120,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T07:23:50.06721+00:00"
+ }
+]
