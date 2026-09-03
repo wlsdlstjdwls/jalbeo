@@ -1,0 +1,72 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Verdict from '../components/Verdict.astro';
+import Sources from '../components/Sources.astro';
+
+export async function getStaticPaths() {
+  const items = await getCollection('items');
+  return items.map((item) => ({ params: { slug: item.id }, props: { item } }));
+}
+
+const { item } = Astro.props;
+const d = item.data;
+const { Content } = await render(item);
+
+const all = await getCollection('items');
+const related = d.related
+  .map((slug) => all.find((x) => x.id === slug))
+  .filter((x) => x !== undefined);
+
+// 어미가 '버리는법'과 '분리수거'로 갈려 있다 (docs/07). 페이지는 하나로 두고
+// 타이틀에 둘 다 태운다. 어미별로 URL을 나누면 중복 페이지가 된다.
+const title = `${d.name} 버리는법 · 분리수거 방법 | 잘버려`;
+const description = `${d.name}은(는) ${d.verdict}. ${d.verdictLine}`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: `${d.name} 버리는법`,
+  description,
+  inLanguage: 'ko',
+  dateModified: d.updated,
+  isAccessibleForFree: true,
+};
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <h1>{d.name} 버리는법</h1>
+
+  <Verdict verdict={d.verdict} line={d.verdictLine} category={d.category} />
+
+  <article class="body">
+    <Content />
+  </article>
+
+  {related.length > 0 && (
+    <section>
+      <h2>헷갈리는 품목</h2>
+      <ul>
+        {related.map((r) => (
+          <li><a href={`/${r.id}/`}>{r.data.name}</a> — {r.data.verdict}</li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <Sources sources={d.sources} updated={d.updated} />
+</Base>
+
+<style>
+  .body :global(h2) { font-size: 1.15rem; margin: 2.2rem 0 .7rem; }
+  .body :global(h3) { font-size: 1rem; margin: 1.5rem 0 .4rem; }
+  .body :global(table) { width: 100%; border-collapse: collapse; margin: .8rem 0; }
+  .body :global(th), .body :global(td) {
+    border: 1px solid var(--line); padding: .5rem .6rem; text-align: left; font-size: .93rem;
+  }
+  .body :global(th) { background: var(--soft); }
+  .body :global(blockquote) {
+    margin: 1rem 0; padding: .1rem 0 .1rem 1rem;
+    border-left: 3px solid var(--line); color: var(--muted);
+  }
+</style>

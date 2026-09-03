@@ -1,0 +1,28 @@
+---
+/** 근거 출처. CLAUDE.md 규칙 — 출처 URL과 기준일자를 반드시 함께 표시한다. */
+interface Props {
+  sources: { title: string; url: string; asOf: string }[];
+  updated: string;
+}
+const { sources, updated } = Astro.props;
+---
+
+<section class="sources">
+  <h2>근거</h2>
+  <ul>
+    {sources.map((s) => (
+      <li>
+        <a href={s.url} rel="nofollow noopener" target="_blank">{s.title}</a>
+        <span class="asof">기준일 {s.asOf}</span>
+      </li>
+    ))}
+  </ul>
+  <p class="updated">이 페이지 최종 확인 {updated}</p>
+</section>
+
+<style>
+  .sources ul { padding-left: 1.1rem; margin: .4rem 0; }
+  .sources li { margin: .3rem 0; }
+  .asof { color: var(--muted); font-size: .82rem; margin-left: .45rem; }
+  .updated { color: var(--muted); font-size: .82rem; margin-top: .6rem; }
+</style>

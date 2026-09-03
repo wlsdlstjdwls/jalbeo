@@ -1,0 +1,35 @@
+---
+/** 페이지 최상단 O·X 판정. 사용자가 원하는 답은 이것 하나다. */
+interface Props {
+  verdict: string;
+  line: string;
+  category?: string;
+}
+const { verdict, line, category } = Astro.props;
+const tone = verdict === '일반쓰레기' || verdict === '조건부' ? 'warn' : 'ok';
+---
+
+<div class={`verdict ${tone}`}>
+  <strong class="label">{verdict}</strong>
+  <p class="line">{line}</p>
+  {category && <p class="cat">분류: {category}</p>}
+</div>
+
+<style>
+  .verdict {
+    border: 2px solid var(--accent);
+    border-radius: 12px;
+    padding: 1.1rem 1.2rem;
+    background: var(--soft);
+  }
+  .verdict.warn { border-color: var(--warn); }
+  .label {
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--accent);
+  }
+  .warn .label { color: var(--warn); }
+  .line { margin: .5rem 0 0; font-size: 1.02rem; }
+  .cat { margin: .45rem 0 0; color: var(--muted); font-size: .88rem; }
+</style>
