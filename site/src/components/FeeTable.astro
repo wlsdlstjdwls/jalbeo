@@ -1,0 +1,162 @@
+---
+/**
+ * 대형폐기물 수수료. 지자체마다 몇 배씩 다르므로 단일 금액을 못 박지 않는다.
+ * 중앙값을 앞세우고 범위와 표본 지역 수를 함께 보여준다 (docs/12).
+ */
+import type { FeeStat } from '../lib/fees';
+
+interface Props {
+  name: string;
+  stat: FeeStat;
+}
+const { name, stat } = Astro.props;
+
+// CLAUDE.md 규칙 — 수수료 데이터는 출처 URL과 기준일자를 함께 표시한다.
+const SOURCE_URL =
+  'https://www.data.go.kr/tcs/dss/selectDataSetList.do?dType=FILE&keyword=%EB%8C%80%ED%98%95%ED%8F%90%EA%B8%B0%EB%AC%BC+%EC%88%98%EC%88%98%EB%A3%8C';
+
+const won = (n: number) => n.toLocaleString('ko-KR');
+// 표본이 얇으면 중앙값을 단정적으로 읽히게 두지 않는다.
+const thin = stat.regions < 10;
+const spread = stat.max >= stat.min * 2;
+
+// 막대 위치. 최저~최고 구간에서 중앙값이 어디쯤인지 눈으로 보이게 한다.
+const pos = (v: number) =>
+  stat.max === stat.min ? 50 : ((v - stat.min) / (stat.max - stat.min)) * 100;
+---
+
+<div class="fees" id="fees">
+  <p class="caption">수수료</p>
+
+  <div class="lead">
+    <span class="big">{won(stat.median)}원</span>
+    <span class="unit">전후</span>
+  </div>
+  <p class="sub">
+    {stat.regions}개 지자체 공개 요금의 중앙값입니다.
+    {thin && <strong>표본이 적어 참고용입니다.</strong>}
+  </p>
+
+  <div class="bar" aria-hidden="true">
+    <span class="fill" style={`left:${pos(stat.q1)}%;right:${100 - pos(stat.q3)}%`}></span>
+    <span class="tick" style={`left:${pos(stat.median)}%`}></span>
+  </div>
+  <div class="ends">
+    <span>{won(stat.min)}원<em>{stat.cheapest.region}</em></span>
+    <span class="r">{won(stat.max)}원<em>{stat.dearest.region}</em></span>
+  </div>
+
+  {spread && (
+    <p class="warn">
+      같은 {name}인데 지역에 따라 {Math.round(stat.max / stat.min)}배까지 차이 납니다.
+      배출 전에 거주지 기준을 확인하세요.
+    </p>
+  )}
+
+  <details class="more">
+    <summary>지역별 수수료 {stat.regions}곳 보기</summary>
+    <table>
+      <thead>
+        <tr><th>지역</th><th>수수료</th></tr>
+      </thead>
+      <tbody>
+        {Object.entries(stat.byRegion).map(([region, fee]) => (
+          <tr><td>{region}</td><td>{won(fee)}원</td></tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="note">
+      <a href={SOURCE_URL} rel="nofollow noopener" target="_blank">공공데이터포털</a>
+      공개분만 집계했습니다. 목록에 없는 지자체는 해당 시군구 홈페이지에서
+      확인하세요. 기준일 {stat.baseDate || '데이터셋별 상이'}.
+    </p>
+  </details>
+</div>
+
+<style>
+  .fees .caption { padding-top: 14px; border-top: 2px solid var(--ink); }
+
+  .lead { display: flex; align-items: baseline; gap: 8px; }
+  .big {
+    font-weight: 800;
+    font-size: clamp(34px, 5.6vw, 60px);
+    letter-spacing: -.05em;
+    line-height: 1;
+    background: var(--lime);
+    padding: 2px 10px;
+  }
+  .unit { font-size: 17px; font-weight: 800; }
+  .sub { margin: 12px 0 0; font-size: 14.5px; color: var(--muted); }
+  .sub strong { font-weight: 800; color: var(--ink); }
+
+  .bar {
+    position: relative;
+    height: 14px;
+    margin: 20px 0 0;
+    border: 2px solid var(--ink);
+    background: var(--card);
+  }
+  .fill { position: absolute; top: 0; bottom: 0; background: var(--lime); }
+  .tick { position: absolute; top: -5px; bottom: -5px; width: 4px; background: var(--ink); }
+
+  .ends {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .ends .r { text-align: right; }
+  .ends em {
+    display: block;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--faint);
+  }
+
+  .warn {
+    margin: 16px 0 0;
+    border-left: 6px solid var(--ink);
+    padding: 10px 0 10px 12px;
+    font-size: 14.5px;
+    line-height: 1.65;
+    font-weight: 600;
+  }
+
+  .more { margin: 18px 0 0; }
+  summary {
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid var(--ink);
+    background: var(--card);
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 800;
+  }
+  summary:hover { background: var(--lime); }
+  .more table {
+    width: 100%;
+    margin: 14px 0 0;
+    border: 2px solid var(--ink);
+    border-collapse: collapse;
+    background: var(--card);
+  }
+  .more th, .more td {
+    border-bottom: 1px solid var(--line);
+    padding: 10px 13px;
+    text-align: left;
+  }
+  .more th {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .06em;
+    color: var(--faint);
+    border-bottom: 2px solid var(--ink);
+  }
+  .more td { font-size: 14px; }
+  .more td:last-child { font-weight: 800; text-align: right; }
+  .more tr:last-child td { border-bottom: 0; }
+  .note { margin: 12px 0 0; font-size: 12.5px; line-height: 1.6; color: var(--faint); }
+  .note a { box-shadow: inset 0 -2px 0 var(--lime); font-weight: 700; }
+</style>

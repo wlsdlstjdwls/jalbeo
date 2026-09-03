@@ -2,8 +2,10 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Sources from '../components/Sources.astro';
+import FeeTable from '../components/FeeTable.astro';
 import { items as dbItems } from '../lib/items';
 import { bg } from '../lib/verdict';
+import { feeFor } from '../lib/fees';
 import { HOUSING_OPTIONS, HOUSING_NOTE, ctaFor } from '../lib/flow';
 
 export async function getStaticPaths() {
@@ -53,6 +55,9 @@ const hint3 = [
 const titleStep3 = `${row.name}\n버리는법`;
 // STEP 2 캡션. h1과 달리 한 줄이라 개행을 넣지 않는다.
 const askLine = `${row.name}, 어느 쪽인가요?`;
+
+// 수수료는 대형폐기물인 품목에만 있다.
+const fee = feeFor(row.slug);
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -126,6 +131,10 @@ const jsonLd = {
 
       <div class="blocks">
         <article class="body rise"><Content /></article>
+
+        {fee && (
+          <div class="rise"><FeeTable name={row.name} stat={fee} /></div>
+        )}
 
         {related.length > 0 && (
           <div class="related rise">
