@@ -10,8 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "pull-data": "node --env-file-if-exists=.env scripts/pull-data.mjs",
-    "prebuild": "node --env-file-if-exists=.env scripts/pull-data.mjs"
+    "pull-data": "node --env-file-if-exists=.env.public --env-file-if-exists=.env scripts/pull-data.mjs",
+    "prebuild": "node --env-file-if-exists=.env.public --env-file-if-exists=.env scripts/pull-data.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
