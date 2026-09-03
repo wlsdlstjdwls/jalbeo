@@ -96,5 +96,61 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-03T07:44:58.283647+00:00"
+ },
+ {
+  "slug": "bapsot",
+  "name": "밥솥",
+  "aliases": [],
+  "verdict": "무상수거",
+  "verdict_line": "대부분 5개 이상 조건. 다른 폐가전과 함께 신청하는 게 현실적.",
+  "category": "폐전기·전자제품",
+  "housing_split": true,
+  "region_varies": false,
+  "monthly_volume": 1320,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T07:49:13.191616+00:00"
+ },
+ {
+  "slug": "jajeongeo",
+  "name": "자전거",
+  "aliases": [],
+  "verdict": "조건부",
+  "verdict_line": "스티커부터 사지 마세요. 자치구 수거·재생자전거 기증·고물상이 먼저.",
+  "category": null,
+  "housing_split": true,
+  "region_varies": false,
+  "monthly_volume": 1230,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T07:49:13.191616+00:00"
+ },
+ {
+  "slug": "piano",
+  "name": "피아노",
+  "aliases": [],
+  "verdict": "대형폐기물",
+  "verdict_line": "신고 전에 구청 전화 확인. 품목에 피아노가 없는 지자체가 있습니다.",
+  "category": null,
+  "housing_split": true,
+  "region_varies": false,
+  "monthly_volume": 1160,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T07:49:13.191616+00:00"
+ },
+ {
+  "slug": "kasiteu",
+  "name": "카시트",
+  "aliases": [],
+  "verdict": "대형폐기물",
+  "verdict_line": "플라스틱으로 내놓으면 안 됩니다. 사고 이력 있으면 중고로 넘기지 마세요.",
+  "category": null,
+  "housing_split": true,
+  "region_varies": false,
+  "monthly_volume": 990,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-03T07:49:13.191616+00:00"
  }
 ]
