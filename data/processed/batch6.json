@@ -1,0 +1,103 @@
+[
+  {
+    "slug": "naengjanggo",
+    "name": "냉장고",
+    "monthly_volume": 1910,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 36,
+      "median": 7000,
+      "min": 5000,
+      "max": 20000,
+      "panel_rows": 0,
+      "top_specs": [
+        "500ℓ 이상",
+        "300ℓ 이상",
+        "300ℓ 미만",
+        "300ℓ미만",
+        "500ℓ이상"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "O",
+        "category": "전기·전자제품·",
+        "basis": "해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "heonot",
+    "name": "헌옷",
+    "monthly_volume": 1765,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "geoul",
+    "name": "거울",
+    "monthly_volume": 1690,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 26,
+      "median": 2000,
+      "min": 1000,
+      "max": 4500,
+      "panel_rows": 0,
+      "top_specs": [
+        "1㎡ 이상",
+        "1㎡이상",
+        "1㎡미만",
+        "모든규격",
+        "1m이상"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "chaeksang",
+    "name": "책상",
+    "monthly_volume": 1455,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 45,
+      "median": 5000,
+      "min": 4000,
+      "max": 8500,
+      "panel_rows": 0,
+      "top_specs": [
+        "양수(대형)",
+        "편수(소형)",
+        "양수, 대형",
+        "편수, 소형",
+        "컴퓨터책상"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "hwajangpum",
+    "name": "화장품",
+    "monthly_volume": 1310,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "hyangsu",
+    "name": "향수",
+    "monthly_volume": 1280,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  }
+]

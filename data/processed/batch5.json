@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "gabang",
+    "name": "가방",
+    "monthly_volume": 2460,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 26,
+      "median": 3000,
+      "min": 2000,
+      "max": 5000,
+      "panel_rows": 0,
+      "top_specs": [
+        "모든규격",
+        "골프가방",
+        "모든 규격",
+        "가로 50cm 이상",
+        "가로 50cm 미만"
+      ]
+    },
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "의류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      },
+      {
+        "verdict": "X",
+        "category": "의류",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "keompyuteo",
+    "name": "컴퓨터",
+    "monthly_volume": 2375,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 23,
+      "median": 2500,
+      "min": 2000,
+      "max": 4000,
+      "panel_rows": 0,
+      "top_specs": [
+        "본체",
+        "모니터",
+        "키보드",
+        "모든 규격",
+        "프린터"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "gireum",
+    "name": "기름",
+    "monthly_volume": 2230,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": []
+  },
+  {
+    "slug": "seutiropom",
+    "name": "스티로폼",
+    "monthly_volume": 2120,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": null,
+    "guideline": [
+      {
+        "verdict": "X",
+        "category": "발포합성수지·",
+        "basis": "비해당품목",
+        "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+        "as_of": "2026-01-01"
+      }
+    ]
+  },
+  {
+    "slug": "sopa",
+    "name": "소파",
+    "monthly_volume": 1985,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 23,
+      "median": 5000,
+      "min": 2500,
+      "max": 10000,
+      "panel_rows": 0,
+      "top_specs": [
+        "3인용",
+        "2인용",
+        "1인용",
+        "4인용",
+        "4인용 이상"
+      ]
+    },
+    "guideline": []
+  },
+  {
+    "slug": "jangnangam",
+    "name": "장난감",
+    "monthly_volume": 1965,
+    "region_varies": false,
+    "housing_split": false,
+    "fee": {
+      "regions": 10,
+      "median": 2750,
+      "min": 1000,
+      "max": 4000,
+      "panel_rows": 0,
+      "top_specs": [
+        "소형",
+        "모든규격",
+        "길이 50cm 미만",
+        "길이 50cm 이상",
+        "대형"
+      ]
+    },
+    "guideline": []
+  }
+]

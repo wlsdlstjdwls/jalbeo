@@ -89,6 +89,9 @@ const chips = [
       })}
     </div>
 
+    <div class="sentinel" id="sentinel" aria-hidden="true"></div>
+    <p class="more" id="more" hidden></p>
+
     <p class="empty" id="empty" hidden>찾는 품목이 아직 없습니다. 품목은 계속 추가됩니다.</p>
   </section>
 
@@ -100,27 +103,57 @@ const chips = [
       var count = document.getElementById('count');
       var head = document.getElementById('listhead');
       var empty = document.getElementById('empty');
+      var sentinel = document.getElementById('sentinel');
+      var more = document.getElementById('more');
       var total = list.children.length;
       var filter = '';
 
+      // 목록 전체는 서버에서 렌더한다. 페이징은 화면에 몇 개를 보일지만 정한다.
+      // 검색·필터 중에는 결과가 잘리면 안 되므로 페이징을 풀고 전부 보여준다.
+      var PAGE = 24;
+      var limit = PAGE;
+
       function apply() {
         var term = q.value.trim().toLowerCase();
-        var shown = 0;
+        var narrowed = !!(filter || term);
+        var shown = 0;      // 조건을 통과한 개수
+        var drawn = 0;      // 실제로 화면에 그린 개수
         for (var i = 0; i < list.children.length; i++) {
           var el = list.children[i];
           var hit = (!filter || el.dataset.v === filter) &&
                     (!term || el.dataset.key.toLowerCase().indexOf(term) !== -1);
-          el.hidden = !hit;
           if (hit) shown++;
+          var show = hit && (narrowed || shown <= limit);
+          el.hidden = !show;
+          if (show) drawn++;
         }
         count.textContent = shown + ' / ' + total;
         head.textContent = filter ? filter + ' ' + shown + '개'
           : term ? '검색 결과 ' + shown + '개'
           : '많이 찾는 품목';
         empty.hidden = shown !== 0;
+
+        var rest = shown - drawn;
+        more.hidden = rest <= 0;
+        if (rest > 0) more.textContent = rest + '개 더 있습니다. 아래로 내리세요.';
       }
 
-      q.addEventListener('input', apply);
+      function grow() {
+        if (more.hidden) return;
+        limit += PAGE;
+        apply();
+      }
+
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (es) {
+          if (es[0].isIntersecting) grow();
+        }, { rootMargin: '300px' }).observe(sentinel);
+      } else {
+        // 관찰자가 없으면 페이징을 걸지 않는다. 잘린 목록이 남는 것보다 낫다.
+        limit = total;
+      }
+
+      q.addEventListener('input', function () { limit = PAGE; apply(); });
       chips.addEventListener('click', function (e) {
         var btn = e.target.closest('.chip');
         if (!btn) return;
@@ -131,8 +164,11 @@ const chips = [
           c.classList.toggle('on', on);
           c.setAttribute('aria-pressed', on ? 'true' : 'false');
         }
+        limit = PAGE;
         apply();
       });
+
+      apply();
     })();
   </script>
 </Base>
@@ -192,6 +228,14 @@ const chips = [
 
   /* --- 품목 리스트 --- */
   .listwrap { padding: clamp(18px,3vw,30px) var(--pad) clamp(24px,4vw,44px); }
+  .sentinel { height: 1px; }
+  .more {
+    margin: 16px 0 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--faint);
+  }
   .rows { border-top: 2px solid var(--ink); }
 
   .row {
