@@ -2,7 +2,7 @@
 
 쓰레기 배출 안내 사이트. 프로그래매틱 SEO 기반.
 
-**현재 상태: 게이트 1 통과 (2026-09-03) / 파일럿 구축 전**
+**현재 상태: 파일럿 20페이지 집필 완료 / 배포 대기 (게이트 2)**
 
 ## 빠른 요약
 
@@ -26,9 +26,11 @@
 | [docs/07-keyword-seed.md](docs/07-keyword-seed.md) | 품목 시드 325개 수집 결과 · 수식어 분포 |
 | [docs/08-guideline-data.md](docs/08-guideline-data.md) | 환경부 분리배출 근거 데이터 · 커버리지 18% |
 | [docs/09-gate1-result.md](docs/09-gate1-result.md) | **게이트 1 실측 결과 — 통과 (219,310)** |
+| [docs/10-competitor-blisgo.md](docs/10-competitor-blisgo.md) | 경쟁 사이트 실측 — 215개, 빈틈 32개 |
+| [docs/11-pilot-content.md](docs/11-pilot-content.md) | 파일럿 20페이지 집필 완료 · 중복도 측정 |
 | [data/raw/](data/raw/) | 조사 원본 데이터 |
 
 ## 다음 작업
 
-`docs/06-action-plan.md`의 6·7번 — Astro 뼈대 구축 후 **파일럿 20페이지** 배포,
-Search Console 색인 확인(**게이트 2**). 색인 실패 시 확장 금지.
+배포. 도메인 연결 → Vercel 배포 → Search Console 등록 → 2~4주 후 색인 확인(**게이트 2**).
+색인 실패 시 확장 금지.
