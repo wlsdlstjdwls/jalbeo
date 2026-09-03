@@ -50,8 +50,9 @@ const hint3 = [
   `최종 확인 ${meta.updated}`,
 ].filter(Boolean).join(' · ');
 
-const titleStep2 = `${row.name},\n어느 쪽인가요?`;
 const titleStep3 = `${row.name}\n버리는법`;
+// STEP 2 캡션. h1과 달리 한 줄이라 개행을 넣지 않는다.
+const askLine = `${row.name}, 어느 쪽인가요?`;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -67,19 +68,14 @@ const jsonLd = {
 <Base title={title} description={description} jsonLd={jsonLd} itemCount={itemCount}>
   <div class="stephead">
     <div class="stepbar">
-      <span class="stepno" id="stepno">3 / 3 · 결과</span>
+      <span class="stepno">2 · 3 / 3 · 조건과 결과</span>
       <span class="grow"></span>
-      <a class="back press" id="back" href="/">← 이전</a>
+      <a class="back press" href="/">← 목록</a>
     </div>
 
-    <h1 class="display" id="title" data-t2={titleStep2} data-t3={titleStep3}>{titleStep3}</h1>
+    <h1 class="display">{titleStep3}</h1>
 
-    <p
-      class="hint"
-      id="hint"
-      data-h2="고른 조건에 맞는 답만 보여드립니다."
-      data-h3={hint3}
-    >{hint3}</p>
+    <p class="hint">{hint3}</p>
 
     {aliases.length > 0 && (
       <p class="aliases">{aliases.map((a) => `‘${a}’`).join(' · ')} 로도 불립니다</p>
@@ -92,6 +88,7 @@ const jsonLd = {
     ))}
 
     <section class="step2 rise" id="step2">
+      <p class="ask">{askLine}</p>
       <div class="opts">
         {options.map((o, i) => (
           <label class={`opt press hard op-${i}`} for={`opt-${i}`} style={`--bg:${bg(o.tone)}`}>
@@ -153,54 +150,31 @@ const jsonLd = {
 
   <script is:inline>
     (function () {
-      var step2 = document.getElementById('step2');
-      var step3 = document.getElementById('step3');
-      var stepno = document.getElementById('stepno');
-      var title = document.getElementById('title');
-      var hint = document.getElementById('hint');
-      var back = document.getElementById('back');
+      // STEP 3(본문·출처)은 절대 숨기지 않는다. 숨기면 렌더링 기반 색인에서
+      // 본문이 통째로 빠진다. JS는 답 전환과 ?opt= 동기화만 맡는다.
       var radios = document.querySelectorAll('.optin');
-      var step = 3;
+      var step3 = document.getElementById('step3');
 
-      function show(n, scroll) {
-        step = n;
-        // STEP 2로 돌아오면 고른 조건을 지운다. 아직 고르지 않은 상태로 보여야 한다.
-        if (n === 2) for (var j = 0; j < radios.length; j++) radios[j].checked = false;
-        step2.hidden = n !== 2;
-        step3.hidden = n !== 3;
-        stepno.textContent = n === 2 ? '2 / 3 · 조건 고르기' : '3 / 3 · 결과';
-        title.textContent = n === 2 ? title.dataset.t2 : title.dataset.t3;
-        hint.textContent = n === 2 ? hint.dataset.h2 : hint.dataset.h3;
-        if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+      function pushOpt(i) {
+        history.pushState({}, '', i === null ? location.pathname : '?opt=' + i);
       }
 
-      function sync(scroll) {
+      function applyFromUrl() {
         var opt = new URLSearchParams(location.search).get('opt');
         var i = Number(opt);
-        if (opt !== null && radios[i]) {
-          radios[i].checked = true;
-          show(3, scroll);
-        } else {
-          show(2, scroll);
-        }
+        if (opt !== null && radios[i]) radios[i].checked = true;
+        else if (radios[0]) radios[0].checked = true;
       }
 
       for (var i = 0; i < radios.length; i++) {
         radios[i].addEventListener('change', function (e) {
-          history.pushState({}, '', '?opt=' + e.target.id.slice(4));
-          show(3, true);
+          pushOpt(e.target.id.slice(4));
+          step3.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
       }
 
-      back.addEventListener('click', function (e) {
-        if (step !== 3) return;       // STEP 2에서는 목록으로 나간다
-        e.preventDefault();
-        history.pushState({}, '', location.pathname);
-        show(2, true);
-      });
-
-      window.addEventListener('popstate', function () { sync(true); });
-      sync(false);
+      window.addEventListener('popstate', applyFromUrl);
+      applyFromUrl();
     })();
   </script>
 </Base>
@@ -222,6 +196,12 @@ const jsonLd = {
 
   /* --- STEP 2 조건 고르기 --- */
   .step2 { padding: clamp(18px,3vw,30px) var(--pad) clamp(26px,4vw,46px); }
+  .ask {
+    margin: 0 0 16px;
+    font-weight: 800;
+    font-size: clamp(20px,2.8vw,28px);
+    letter-spacing: -.04em;
+  }
   .opts {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
