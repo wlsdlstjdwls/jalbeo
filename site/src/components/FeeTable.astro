@@ -29,7 +29,7 @@ const pos = (v: number) =>
 ---
 
 <div class="fees" id="fees">
-  <p class="caption">수수료</p>
+  <p class="caption divider">수수료</p>
 
   <div class="lead">
     <span class="big">{won(main.median)}원</span>
@@ -111,8 +111,6 @@ const pos = (v: number) =>
 </div>
 
 <style>
-  .fees .caption { padding-top: 14px; border-top: 2px solid var(--ink); }
-
   .lead { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
   .big {
     font-weight: 800;

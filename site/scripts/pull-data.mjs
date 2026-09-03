@@ -14,12 +14,17 @@ const OUT = join(dirname(fileURLToPath(import.meta.url)), '..', 'src', 'data');
 const URL_ = process.env.SUPABASE_URL;
 const KEY = process.env.SUPABASE_ANON_KEY;
 
-/** 테이블 -> PostgREST 질의. 발행된 품목과 그에 딸린 데이터만 가져온다. */
+/**
+ * 테이블 -> PostgREST 질의. 발행된 품목과 그에 딸린 데이터만 가져온다.
+ *
+ * bulky_fees는 여기 없다 — 원안 설계 잔재로, 실제 수수료는 별도 파이프라인
+ * (data/raw/fees -> normalize_fees.py -> build_fee_stats.py -> fees.json)이
+ * 만든다. DB 테이블 자체(db/migrations)는 남아 있지만 site는 더 이상 읽지 않는다.
+ */
 const TABLES = {
   items: 'items?select=*&published=eq.true&order=monthly_volume.desc.nullslast',
   regions: 'regions?select=*&order=sido,sigungu',
   item_region_rules: 'item_region_rules?select=*',
-  bulky_fees: 'bulky_fees?select=*',
   guideline_verdicts: 'guideline_verdicts?select=*',
 };
 

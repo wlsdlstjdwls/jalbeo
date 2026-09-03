@@ -1,17 +1,16 @@
 import type { APIRoute } from 'astro';
+import { isProductionHost } from '../lib/site';
 
 /**
  * 도메인 연결 전에는 색인을 막는다.
  *
  * jalbeo.vercel.app 이 먼저 색인되면 게이트 2(색인 테스트) 결과가 오염된다.
  * 나중에 도메인을 붙이고 301을 걸어도 색인 타이밍이 리셋되므로,
- * 정식 도메인에서만 크롤링을 허용한다.
+ * 정식 도메인에서만 크롤링을 허용한다. 판정 기준은 Base.astro와 공유 (lib/site.ts).
  */
-const PRODUCTION_HOST = 'jalbeo.com';
 
 export const GET: APIRoute = ({ site }) => {
-  const host = site?.host ?? '';
-  const isProduction = host === PRODUCTION_HOST || host.endsWith(`.${PRODUCTION_HOST}`);
+  const isProduction = isProductionHost(site?.host ?? '');
 
   const body = isProduction
     ? [

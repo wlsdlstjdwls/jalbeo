@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import { items as dbItems } from '../lib/items';
 import { bg, VERDICT_ORDER } from '../lib/verdict';
+import { HOME_PAGE_SIZE } from '../lib/constants';
 
 const bodies = new Set((await getCollection('items')).map((b) => b.id));
 const live = dbItems.filter((row) => bodies.has(row.slug));
@@ -95,7 +96,7 @@ const chips = [
     <p class="empty" id="empty" hidden>찾는 품목이 아직 없습니다. 품목은 계속 추가됩니다.</p>
   </section>
 
-  <script is:inline>
+  <script define:vars={{ PAGE: HOME_PAGE_SIZE }}>
     (function () {
       var q = document.getElementById('q');
       var list = document.getElementById('list');
@@ -110,7 +111,7 @@ const chips = [
 
       // 목록 전체는 서버에서 렌더한다. 페이징은 화면에 몇 개를 보일지만 정한다.
       // 검색·필터 중에는 결과가 잘리면 안 되므로 페이징을 풀고 전부 보여준다.
-      var PAGE = 24;
+      // PAGE 값의 출처는 lib/constants.ts (HOME_PAGE_SIZE) — define:vars로 주입.
       var limit = PAGE;
 
       function apply() {

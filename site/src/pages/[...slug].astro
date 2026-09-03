@@ -7,6 +7,7 @@ import { items as dbItems } from '../lib/items';
 import { bg } from '../lib/verdict';
 import { feeFor } from '../lib/fees';
 import { HOUSING_OPTIONS, HOUSING_NOTE, ctaFor } from '../lib/flow';
+import { RELATED_LIMIT } from '../lib/constants';
 
 export async function getStaticPaths() {
   const bodies = await getCollection('items');
@@ -37,7 +38,7 @@ const picked = meta.related
 const related = (picked.length > 0
   ? picked
   : dbItems.filter((x) => x.slug !== row.slug && x.verdict === row.verdict)
-).slice(0, 4);
+).slice(0, RELATED_LIMIT);
 
 // 어미가 '버리는법'과 '분리수거'로 갈려 있다 (docs/07). 페이지는 하나로 두고
 // 타이틀에 둘 다 태운다. 어미별로 URL을 나누면 중복 페이지가 된다.
@@ -138,7 +139,7 @@ const jsonLd = {
 
         {related.length > 0 && (
           <div class="related rise">
-            <p class="caption">헷갈리는 품목</p>
+            <p class="caption divider">헷갈리는 품목</p>
             <div class="rgrid">
               {related.map((r) => (
                 <a class="press hard rcard" href={`/${r.slug}/`}>
@@ -396,7 +397,6 @@ const jsonLd = {
   }
 
   /* --- 헷갈리는 품목 --- */
-  .related .caption { padding-top: 14px; border-top: 2px solid var(--ink); }
   .rgrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));

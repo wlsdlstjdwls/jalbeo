@@ -1,4 +1,6 @@
 ---
+import { isProductionHost } from '../lib/site';
+
 interface Props {
   title: string;
   description: string;
@@ -9,10 +11,8 @@ interface Props {
 const { title, description, jsonLd, itemCount } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 
-// 정식 도메인이 아니면 색인을 막는다. robots.txt와 같은 이유 (게이트 2 오염 방지).
-const PRODUCTION_HOST = 'jalbeo.com';
-const host = Astro.site?.host ?? '';
-const indexable = host === PRODUCTION_HOST || host.endsWith(`.${PRODUCTION_HOST}`);
+// 정식 도메인이 아니면 색인을 막는다. robots.txt와 같은 기준 (lib/site.ts, 게이트 2 오염 방지).
+const indexable = isProductionHost(Astro.site?.host ?? '');
 ---
 
 <!doctype html>
@@ -168,6 +168,11 @@ const indexable = host === PRODUCTION_HOST || host.endsWith(`.${PRODUCTION_HOST}
         font-size: 13px;
         font-weight: 800;
         letter-spacing: .1em;
+      }
+      /* 본문 중간에서 새 섹션을 여는 캡션(수수료/근거/관련품목 등)은 상단 구분선을 더한다 */
+      .caption.divider {
+        padding-top: 14px;
+        border-top: 2px solid var(--ink);
       }
     </style>
   </body>

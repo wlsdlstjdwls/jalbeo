@@ -8,7 +8,7 @@ const { sources, updated } = Astro.props;
 ---
 
 <div class="sources" id="sources">
-  <p class="caption">근거</p>
+  <p class="caption divider">근거</p>
   <ol>
     {sources.map((s, i) => (
       <li>
@@ -26,7 +26,6 @@ const { sources, updated } = Astro.props;
 </div>
 
 <style>
-  .sources .caption { padding-top: 14px; border-top: 2px solid var(--ink); }
   ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
   li {
     display: grid;
