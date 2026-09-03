@@ -1,3 +1,10 @@
 data/keywords/gate1/*.xlsx
 
 .vercel
+
+# 대형폐기물 수수료 원본 49MB. 대부분 트랜잭션 로그라 커밋하지 않는다.
+# scripts/fetch_fee_datasets.py 로 재수집되고, 출처는 manifest.json에 남는다.
+data/raw/fees/*.csv
+
+# 파이썬 캐시
+__pycache__/
