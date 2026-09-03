@@ -1,35 +1,55 @@
 ---
-/** 페이지 최상단 O·X 판정. 사용자가 원하는 답은 이것 하나다. */
+import { tone } from '../lib/verdict';
+
+/** 페이지 최상단 판정. 사용자가 원하는 답은 이것 하나다. */
 interface Props {
   verdict: string;
   line: string;
   category?: string;
 }
 const { verdict, line, category } = Astro.props;
-const tone = verdict === '일반쓰레기' || verdict === '조건부' ? 'warn' : 'ok';
+const t = tone(verdict);
 ---
 
-<div class={`verdict ${tone}`}>
-  <strong class="label">{verdict}</strong>
+<div class="verdict" data-tone={t}>
+  <div class="head">
+    <span class="label">{verdict}</span>
+    {category && <span class="cat">{category}</span>}
+  </div>
   <p class="line">{line}</p>
-  {category && <p class="cat">분류: {category}</p>}
 </div>
 
 <style>
   .verdict {
-    border: 2px solid var(--accent);
-    border-radius: 12px;
-    padding: 1.1rem 1.2rem;
-    background: var(--soft);
+    --tone: var(--slate);
+    --tone-bg: var(--slate-bg);
+    border: 1px solid color-mix(in srgb, var(--tone) 30%, transparent);
+    border-left: 5px solid var(--tone);
+    border-radius: var(--radius);
+    background: var(--tone-bg);
+    padding: 1.05rem 1.15rem 1.15rem;
   }
-  .verdict.warn { border-color: var(--warn); }
+  .verdict[data-tone="green"]  { --tone: var(--green);  --tone-bg: var(--green-bg); }
+  .verdict[data-tone="blue"]   { --tone: var(--blue);   --tone-bg: var(--blue-bg); }
+  .verdict[data-tone="violet"] { --tone: var(--violet); --tone-bg: var(--violet-bg); }
+  .verdict[data-tone="amber"]  { --tone: var(--amber);  --tone-bg: var(--amber-bg); }
+  .verdict[data-tone="red"]    { --tone: var(--red);    --tone-bg: var(--red-bg); }
+
+  .head { display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap; }
   .label {
-    display: inline-block;
     font-size: 1.5rem;
+    font-weight: 700;
     line-height: 1.2;
-    color: var(--accent);
+    letter-spacing: -.02em;
+    color: var(--tone);
   }
-  .warn .label { color: var(--warn); }
+  .cat {
+    font-size: .78rem;
+    color: var(--tone);
+    opacity: .85;
+    border: 1px solid color-mix(in srgb, var(--tone) 35%, transparent);
+    border-radius: 999px;
+    padding: .1rem .5rem;
+  }
   .line { margin: .5rem 0 0; font-size: 1.02rem; }
-  .cat { margin: .45rem 0 0; color: var(--muted); font-size: .88rem; }
 </style>

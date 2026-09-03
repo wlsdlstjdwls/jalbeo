@@ -9,20 +9,36 @@ const { sources, updated } = Astro.props;
 
 <section class="sources">
   <h2>근거</h2>
-  <ul>
+  <ol>
     {sources.map((s) => (
       <li>
         <a href={s.url} rel="nofollow noopener" target="_blank">{s.title}</a>
         <span class="asof">기준일 {s.asOf}</span>
       </li>
     ))}
-  </ul>
+  </ol>
   <p class="updated">이 페이지 최종 확인 {updated}</p>
 </section>
 
 <style>
-  .sources ul { padding-left: 1.1rem; margin: .4rem 0; }
-  .sources li { margin: .3rem 0; }
-  .asof { color: var(--muted); font-size: .82rem; margin-left: .45rem; }
-  .updated { color: var(--muted); font-size: .82rem; margin-top: .6rem; }
+  .sources { margin-top: 2.4rem; }
+  .sources h2 {
+    font-size: 1.16rem;
+    margin: 0 0 .6rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--line);
+  }
+  .sources ol {
+    padding-left: 1.15rem;
+    margin: .4rem 0;
+    font-size: .92rem;
+  }
+  .sources li { margin: .4rem 0; }
+  .asof {
+    display: inline-block;
+    color: var(--muted);
+    font-size: .78rem;
+    margin-left: .45rem;
+  }
+  .updated { color: var(--muted); font-size: .8rem; margin-top: .8rem; }
 </style>

@@ -4,13 +4,13 @@ import Base from '../layouts/Base.astro';
 import Verdict from '../components/Verdict.astro';
 import Sources from '../components/Sources.astro';
 import { items as dbItems } from '../lib/items';
+import { tone } from '../lib/verdict';
 
 export async function getStaticPaths() {
   const bodies = await getCollection('items');
   const byId = new Map(bodies.map((b) => [b.id, b]));
 
   // DB에 발행 표시가 있고 본문도 있는 품목만 페이지가 된다.
-  // 한쪽만 있으면 반쪽짜리 페이지가 나가므로 내보내지 않는다.
   return dbItems
     .filter((row) => byId.has(row.slug))
     .map((row) => ({
@@ -31,6 +31,7 @@ const related = meta.related
 // 타이틀에 둘 다 태운다. 어미별로 URL을 나누면 중복 페이지가 된다.
 const title = `${row.name} 버리는법 · 분리수거 방법 | 잘버려`;
 const description = `${row.name}은(는) ${row.verdict}. ${row.verdict_line}`;
+const aliases = row.aliases ?? [];
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -44,20 +45,28 @@ const jsonLd = {
 ---
 
 <Base title={title} description={description} jsonLd={jsonLd}>
+  <nav class="crumb"><a href="/">← 품목 목록</a></nav>
+
   <h1>{row.name} 버리는법</h1>
+  {aliases.length > 0 && (
+    <p class="aliases">{aliases.map((a) => `‘${a}’`).join(' · ')} 로도 불립니다</p>
+  )}
 
   <Verdict verdict={row.verdict} line={row.verdict_line} category={row.category ?? undefined} />
 
-  <article class="body">
-    <Content />
-  </article>
+  <article class="body"><Content /></article>
 
   {related.length > 0 && (
-    <section>
+    <section class="related">
       <h2>헷갈리는 품목</h2>
       <ul>
         {related.map((r) => (
-          <li><a href={`/${r.slug}/`}>{r.name}</a> — {r.verdict}</li>
+          <li data-tone={tone(r.verdict)}>
+            <a href={`/${r.slug}/`}>
+              <span class="name">{r.name}</span>
+              <span class="chip">{r.verdict}</span>
+            </a>
+          </li>
         ))}
       </ul>
     </section>
@@ -67,15 +76,69 @@ const jsonLd = {
 </Base>
 
 <style>
-  .body :global(h2) { font-size: 1.15rem; margin: 2.2rem 0 .7rem; }
-  .body :global(h3) { font-size: 1rem; margin: 1.5rem 0 .4rem; }
-  .body :global(table) { width: 100%; border-collapse: collapse; margin: .8rem 0; }
-  .body :global(th), .body :global(td) {
-    border: 1px solid var(--line); padding: .5rem .6rem; text-align: left; font-size: .93rem;
+  .crumb { margin: 0 0 .3rem; font-size: .85rem; }
+  .crumb a { color: var(--muted); text-decoration: none; }
+  .crumb a:hover { color: var(--brand); }
+  .aliases { color: var(--muted); font-size: .86rem; margin: -.7rem 0 1rem; }
+
+  .body { margin-top: .4rem; }
+  .body :global(p) { margin: .9rem 0; }
+  .body :global(h2) {
+    font-size: 1.16rem;
+    margin: 2.3rem 0 .6rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--line);
   }
-  .body :global(th) { background: var(--soft); }
-  .body :global(blockquote) {
-    margin: 1rem 0; padding: .1rem 0 .1rem 1rem;
-    border-left: 3px solid var(--line); color: var(--muted);
+  .body :global(h3) { font-size: 1rem; margin: 1.5rem 0 .4rem; }
+  .body :global(ul) { padding-left: 1.15rem; }
+  .body :global(li) { margin: .35rem 0; }
+  .body :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: .92rem;
+  }
+  .body :global(th), .body :global(td) {
+    border: 1px solid var(--line);
+    padding: .55rem .65rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .body :global(th) { background: var(--surface); font-weight: 700; }
+  .body :global(strong) { font-weight: 700; }
+
+  .related ul {
+    list-style: none;
+    padding: 0;
+    margin: .4rem 0 0;
+    display: grid;
+    gap: .5rem;
+  }
+  .related li { --tone: var(--slate); --tone-bg: var(--slate-bg); }
+  .related li[data-tone="green"]  { --tone: var(--green);  --tone-bg: var(--green-bg); }
+  .related li[data-tone="blue"]   { --tone: var(--blue);   --tone-bg: var(--blue-bg); }
+  .related li[data-tone="violet"] { --tone: var(--violet); --tone-bg: var(--violet-bg); }
+  .related li[data-tone="amber"]  { --tone: var(--amber);  --tone-bg: var(--amber-bg); }
+  .related li[data-tone="red"]    { --tone: var(--red);    --tone-bg: var(--red-bg); }
+  .related a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .6rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: .7rem .9rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .related a:hover { border-color: var(--tone); }
+  .related .name { font-weight: 600; }
+  .related .chip {
+    font-size: .74rem;
+    white-space: nowrap;
+    color: var(--tone);
+    background: var(--tone-bg);
+    border-radius: 999px;
+    padding: .12rem .5rem;
   }
 </style>

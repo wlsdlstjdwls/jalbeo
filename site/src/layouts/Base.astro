@@ -22,6 +22,7 @@ const indexable = host === PRODUCTION_HOST || host.endsWith(`.${PRODUCTION_HOST}
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     {!indexable && <meta name="robots" content="noindex, nofollow" />}
+    <meta name="theme-color" content="#0f7a4f" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="article" />
@@ -31,56 +32,137 @@ const indexable = host === PRODUCTION_HOST || host.endsWith(`.${PRODUCTION_HOST}
     )}
   </head>
   <body>
-    <header>
-      <a href="/" class="brand">잘버려</a>
+    <header class="site">
+      <a href="/" class="brand">
+        <span class="mark" aria-hidden="true">잘</span>
+        <span class="name">잘버려</span>
+      </a>
+      <span class="tag">이거 어디에 버려요?</span>
     </header>
-    <main>
-      <slot />
-    </main>
-    <footer>
-      <p>
+
+    <main><slot /></main>
+
+    <footer class="site">
+      <p class="disclaimer">
         배출 기준은 지자체 조례에 따라 다를 수 있습니다.
         각 페이지에 근거 출처와 확인 날짜를 표시합니다.
       </p>
+      <p class="copy">잘버려</p>
     </footer>
+
     <style is:global>
       :root {
-        --bg: #fff;
-        --fg: #1a1a1a;
-        --muted: #666;
-        --line: #e5e5e5;
-        --accent: #1b7f4b;
-        --warn: #b3261e;
-        --soft: #f6f7f6;
+        --bg: #ffffff;
+        --surface: #f7f8f7;
+        --fg: #16181a;
+        --muted: #5f6672;
+        --line: #e3e6e4;
+        --brand: #0f7a4f;
+        --brand-soft: #e8f4ee;
+
+        --green: #0f7a4f;   --green-bg: #e8f4ee;
+        --blue: #1857b8;    --blue-bg: #e7eefb;
+        --violet: #6b3fb5;  --violet-bg: #f0eafc;
+        --amber: #9a5b06;   --amber-bg: #fdf0dd;
+        --red: #b3261e;     --red-bg: #fceceb;
+        --slate: #475467;   --slate-bg: #eef1f5;
+
+        --radius: 14px;
         color-scheme: light dark;
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --bg: #16181a; --fg: #e9eaea; --muted: #9aa0a6;
-          --line: #2c2f33; --soft: #1e2124;
-          --accent: #4ec27f; --warn: #f28e88;
+          --bg: #101214;
+          --surface: #191c1f;
+          --fg: #e9ecec;
+          --muted: #9aa3ad;
+          --line: #2a2f34;
+          --brand: #4fc98a;
+          --brand-soft: #14301f;
+
+          --green: #4fc98a;   --green-bg: #14301f;
+          --blue: #7fb0ff;    --blue-bg: #14213a;
+          --violet: #b79bf0;  --violet-bg: #241a3a;
+          --amber: #e5a552;   --amber-bg: #33240f;
+          --red: #f28e88;     --red-bg: #35191a;
+          --slate: #a9b3c0;   --slate-bg: #21262c;
         }
       }
+
       * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
       body {
         margin: 0;
         background: var(--bg);
         color: var(--fg);
         font: 16px/1.75 system-ui, -apple-system, "Apple SD Gothic Neo",
-              "Malgun Gothic", sans-serif;
+              "Malgun Gothic", "Noto Sans KR", sans-serif;
         word-break: keep-all;
         overflow-wrap: break-word;
       }
-      header, main, footer { max-width: 44rem; margin: 0 auto; padding: 0 1.15rem; }
-      header { padding-top: 1.1rem; padding-bottom: 1.1rem; }
-      .brand { font-weight: 700; font-size: 1.05rem; color: var(--fg); text-decoration: none; }
-      footer {
-        margin-top: 3.5rem; padding-top: 1.2rem; padding-bottom: 3rem;
-        border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem;
+
+      header.site, main, footer.site {
+        max-width: 46rem;
+        margin: 0 auto;
+        padding-inline: 1.15rem;
       }
-      h1 { font-size: 1.6rem; line-height: 1.35; margin: .4rem 0 1.1rem; }
-      h2 { font-size: 1.15rem; margin: 2.2rem 0 .7rem; }
-      a { color: var(--accent); }
+
+      header.site {
+        display: flex;
+        align-items: center;
+        gap: .7rem;
+        padding-block: 1rem 1.4rem;
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        color: var(--fg);
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .brand .mark {
+        display: grid;
+        place-items: center;
+        width: 1.85rem;
+        height: 1.85rem;
+        border-radius: 9px;
+        background: var(--brand);
+        color: #fff;
+        font-size: .95rem;
+        line-height: 1;
+      }
+      .brand .name { font-size: 1.05rem; letter-spacing: -.01em; }
+      header.site .tag {
+        color: var(--muted);
+        font-size: .82rem;
+        border-left: 1px solid var(--line);
+        padding-left: .7rem;
+      }
+      @media (max-width: 420px) { header.site .tag { display: none; } }
+
+      footer.site {
+        margin-top: 4rem;
+        padding-block: 1.3rem 3rem;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: .84rem;
+      }
+      footer.site .disclaimer { margin: 0 0 .4rem; }
+      footer.site .copy { margin: 0; opacity: .7; }
+
+      h1 {
+        font-size: clamp(1.55rem, 4.5vw, 2rem);
+        line-height: 1.3;
+        letter-spacing: -.02em;
+        margin: .2rem 0 1.1rem;
+      }
+      h2 {
+        font-size: 1.16rem;
+        letter-spacing: -.01em;
+        margin: 2.3rem 0 .6rem;
+      }
+      a { color: var(--brand); }
     </style>
   </body>
 </html>

@@ -2,40 +2,187 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import { items as dbItems } from '../lib/items';
+import { tone } from '../lib/verdict';
 
 const bodies = new Set((await getCollection('items')).map((b) => b.id));
 const live = dbItems.filter((row) => bodies.has(row.slug));
+
+// 판정별로 몇 개인지 — 목록 위 요약 칩
+const counts = live.reduce<Record<string, number>>((acc, r) => {
+  acc[r.verdict] = (acc[r.verdict] ?? 0) + 1;
+  return acc;
+}, {});
 ---
 
 <Base
   title="잘버려 — 이거 어디에 버려요?"
-  description="품목별 분리배출 방법과 O·X 판정. 환경부 기준과 지자체 조례 근거를 출처·기준일자와 함께 표시합니다."
+  description="품목별 분리배출 방법과 판정. 환경부 기준과 지자체 조례 근거를 출처·기준일자와 함께 표시합니다."
 >
-  <h1>이거 어디에 버려요?</h1>
-  <p class="lead">품목별로 재활용인지 일반쓰레기인지, 근거와 함께 정리합니다.</p>
+  <section class="hero">
+    <h1>이거 어디에 버려요?</h1>
+    <p class="lead">
+      품목별로 재활용인지 일반쓰레기인지, <strong>왜 그런지</strong>까지 근거와 함께.
+    </p>
 
-  {live.length === 0 ? (
-    <p class="empty">아직 발행된 품목이 없습니다.</p>
-  ) : (
-    <ul class="items">
-      {live.map((row) => (
-        <li>
-          <a href={`/${row.slug}/`}>{row.name}</a>
-          <span class="v">{row.verdict}</span>
-        </li>
-      ))}
+    <div class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
+        <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" />
+      </svg>
+      <input
+        id="q"
+        type="search"
+        placeholder="품목 이름을 입력하세요 (예: 선풍기)"
+        autocomplete="off"
+        aria-label="품목 검색"
+      />
+    </div>
+
+    <ul class="counts">
+      {Object.entries(counts)
+        .sort((a, b) => b[1] - a[1])
+        .map(([verdict, n]) => (
+          <li data-tone={tone(verdict)}>{verdict} <b>{n}</b></li>
+        ))}
     </ul>
-  )}
+  </section>
+
+  <ul class="items" id="list">
+    {live.map((row) => (
+      <li
+        class="card"
+        data-tone={tone(row.verdict)}
+        data-key={`${row.name} ${(row.aliases ?? []).join(' ')} ${row.verdict}`}
+      >
+        <a href={`/${row.slug}/`}>
+          <span class="name">{row.name}</span>
+          <span class="chip">{row.verdict}</span>
+          <span class="line">{row.verdict_line}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  <p class="empty" id="empty" hidden>찾는 품목이 아직 없습니다.</p>
+
+  <script is:inline>
+    const q = document.getElementById('q');
+    const list = document.getElementById('list');
+    const empty = document.getElementById('empty');
+    q?.addEventListener('input', () => {
+      const term = q.value.trim().toLowerCase();
+      let shown = 0;
+      for (const li of list.children) {
+        const hit = !term || li.dataset.key.toLowerCase().includes(term);
+        li.hidden = !hit;
+        if (hit) shown++;
+      }
+      empty.hidden = shown !== 0;
+    });
+  </script>
 </Base>
 
 <style>
-  .lead { color: var(--muted); margin-top: -.4rem; }
-  .empty { color: var(--muted); }
-  .items { list-style: none; padding: 0; margin: 1.5rem 0 0; }
-  .items li {
-    display: flex; justify-content: space-between; gap: 1rem;
-    padding: .7rem 0; border-bottom: 1px solid var(--line);
+  .hero { margin-bottom: 1.6rem; }
+  .lead { color: var(--muted); margin: -.5rem 0 1.2rem; font-size: 1.02rem; }
+  .lead strong { color: var(--fg); }
+
+  .search {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    border-radius: 999px;
+    padding: .1rem .5rem .1rem .95rem;
   }
-  .items a { text-decoration: none; font-weight: 600; }
-  .v { color: var(--muted); font-size: .85rem; white-space: nowrap; }
+  .search:focus-within { border-color: var(--brand); }
+  .search .icon { width: 1.05rem; height: 1.05rem; color: var(--muted); flex: none; }
+  .search input {
+    flex: 1;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    padding: .7rem .3rem;
+    outline: none;
+    min-width: 0;
+  }
+
+  .counts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    list-style: none;
+    padding: 0;
+    margin: .9rem 0 0;
+    font-size: .8rem;
+  }
+  .counts li {
+    --tone: var(--slate); --tone-bg: var(--slate-bg);
+    color: var(--tone);
+    background: var(--tone-bg);
+    border-radius: 999px;
+    padding: .15rem .6rem;
+  }
+  .counts li b { font-weight: 700; }
+  .counts li[data-tone="green"]  { --tone: var(--green);  --tone-bg: var(--green-bg); }
+  .counts li[data-tone="blue"]   { --tone: var(--blue);   --tone-bg: var(--blue-bg); }
+  .counts li[data-tone="violet"] { --tone: var(--violet); --tone-bg: var(--violet-bg); }
+  .counts li[data-tone="amber"]  { --tone: var(--amber);  --tone-bg: var(--amber-bg); }
+  .counts li[data-tone="red"]    { --tone: var(--red);    --tone-bg: var(--red-bg); }
+
+  .items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: .55rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 620px) {
+    .items { grid-template-columns: 1fr 1fr; }
+  }
+
+  .card { --tone: var(--slate); --tone-bg: var(--slate-bg); }
+  .card[data-tone="green"]  { --tone: var(--green);  --tone-bg: var(--green-bg); }
+  .card[data-tone="blue"]   { --tone: var(--blue);   --tone-bg: var(--blue-bg); }
+  .card[data-tone="violet"] { --tone: var(--violet); --tone-bg: var(--violet-bg); }
+  .card[data-tone="amber"]  { --tone: var(--amber);  --tone-bg: var(--amber-bg); }
+  .card[data-tone="red"]    { --tone: var(--red);    --tone-bg: var(--red-bg); }
+
+  .card a {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .2rem .6rem;
+    height: 100%;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: .85rem .95rem;
+    text-decoration: none;
+    color: inherit;
+    background: var(--bg);
+    transition: border-color .12s, transform .12s;
+  }
+  .card a:hover { border-color: var(--tone); transform: translateY(-1px); }
+
+  .card .name { font-weight: 700; font-size: 1.02rem; letter-spacing: -.01em; }
+  .card .chip {
+    align-self: start;
+    font-size: .74rem;
+    white-space: nowrap;
+    color: var(--tone);
+    background: var(--tone-bg);
+    border-radius: 999px;
+    padding: .12rem .5rem;
+  }
+  .card .line {
+    grid-column: 1 / -1;
+    color: var(--muted);
+    font-size: .86rem;
+    line-height: 1.55;
+  }
+
+  .empty { color: var(--muted); margin-top: 1.2rem; }
 </style>
