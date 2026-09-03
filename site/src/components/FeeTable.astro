@@ -1,9 +1,10 @@
 ---
 /**
- * 대형폐기물 수수료. 지자체마다 몇 배씩 다르므로 단일 금액을 못 박지 않는다.
- * 중앙값을 앞세우고 범위와 표본 지역 수를 함께 보여준다 (docs/12).
+ * 대형폐기물 수수료. 두 가지를 숨기지 않는다 (docs/12).
+ * 1. 지자체마다 몇 배씩 다르다 → 중앙값 + 범위
+ * 2. 과금 단위가 갈린다 → 장롱은 다수가 '1쪽당'이라 통짜와 섞으면 3배 틀린다
  */
-import type { FeeStat } from '../lib/fees';
+import type { FeeStat, FeeUnit } from '../lib/fees';
 
 interface Props {
   name: string;
@@ -16,55 +17,91 @@ const SOURCE_URL =
   'https://www.data.go.kr/tcs/dss/selectDataSetList.do?dType=FILE&keyword=%EB%8C%80%ED%98%95%ED%8F%90%EA%B8%B0%EB%AC%BC+%EC%88%98%EC%88%98%EB%A3%8C';
 
 const won = (n: number) => n.toLocaleString('ko-KR');
-// 표본이 얇으면 중앙값을 단정적으로 읽히게 두지 않는다.
-const thin = stat.regions < 10;
-const spread = stat.max >= stat.min * 2;
 
-// 막대 위치. 최저~최고 구간에서 중앙값이 어디쯤인지 눈으로 보이게 한다.
+const main: FeeUnit = (stat.primary === 'panel' ? stat.panel : stat.whole)!;
+const other: FeeUnit | null = stat.primary === 'panel' ? stat.whole : stat.panel;
+const perPanel = stat.primary === 'panel';
+
+const thin = main.regions < 10;
+const spread = main.max >= main.min * 2;
 const pos = (v: number) =>
-  stat.max === stat.min ? 50 : ((v - stat.min) / (stat.max - stat.min)) * 100;
+  main.max === main.min ? 50 : ((v - main.min) / (main.max - main.min)) * 100;
 ---
 
 <div class="fees" id="fees">
   <p class="caption">수수료</p>
 
   <div class="lead">
-    <span class="big">{won(stat.median)}원</span>
-    <span class="unit">전후</span>
+    <span class="big">{won(main.median)}원</span>
+    <span class="unit">{perPanel ? '· 1쪽당' : '전후'}</span>
   </div>
-  <p class="sub">
-    {stat.regions}개 지자체 공개 요금의 중앙값입니다.
-    {thin && <strong>표본이 적어 참고용입니다.</strong>}
-  </p>
+
+  {perPanel ? (
+    <p class="sub unitwarn">
+      <strong>문짝 1쪽마다 부과됩니다.</strong>
+      3쪽짜리 {name}이라면 {won(main.median * 3)}원입니다.
+      요금을 공개한 {main.regions + (other?.regions ?? 0)}곳 중
+      {main.regions}곳이 이 방식입니다.
+    </p>
+  ) : (
+    <p class="sub">
+      {main.regions}개 지자체 공개 요금의 중앙값입니다.
+      {thin && <strong>표본이 적어 참고용입니다.</strong>}
+    </p>
+  )}
 
   <div class="bar" aria-hidden="true">
-    <span class="fill" style={`left:${pos(stat.q1)}%;right:${100 - pos(stat.q3)}%`}></span>
-    <span class="tick" style={`left:${pos(stat.median)}%`}></span>
+    <span class="fill" style={`left:${pos(main.q1)}%;right:${100 - pos(main.q3)}%`}></span>
+    <span class="tick" style={`left:${pos(main.median)}%`}></span>
   </div>
   <div class="ends">
-    <span>{won(stat.min)}원<em>{stat.cheapest.region}</em></span>
-    <span class="r">{won(stat.max)}원<em>{stat.dearest.region}</em></span>
+    <span>{won(main.min)}원<em>{main.cheapest.region}</em></span>
+    <span class="r">{won(main.max)}원<em>{main.dearest.region}</em></span>
   </div>
 
   {spread && (
     <p class="warn">
-      같은 {name}인데 지역에 따라 {Math.round(stat.max / stat.min)}배까지 차이 납니다.
+      같은 {name}인데 지역에 따라 {Math.round(main.max / main.min)}배까지 차이 납니다.
       배출 전에 거주지 기준을 확인하세요.
     </p>
   )}
 
+  {other && (
+    <p class="alt">
+      나머지 {other.regions}곳은 {perPanel ? '쪽수와 무관하게 한 번만' : '문짝 1쪽마다'}
+      부과하며 중앙값 {won(other.median)}원입니다.
+    </p>
+  )}
+
   <details class="more">
-    <summary>지역별 수수료 {stat.regions}곳 보기</summary>
+    <summary>지역별 수수료 보기</summary>
     <table>
       <thead>
-        <tr><th>지역</th><th>수수료</th></tr>
+        <tr>
+          <th>지역</th>
+          <th>{perPanel ? '1쪽당' : '수수료'}</th>
+        </tr>
       </thead>
       <tbody>
-        {Object.entries(stat.byRegion).map(([region, fee]) => (
+        {Object.entries(main.byRegion).map(([region, fee]) => (
           <tr><td>{region}</td><td>{won(fee)}원</td></tr>
         ))}
       </tbody>
     </table>
+
+    {other && (
+      <>
+        <p class="othercap">{perPanel ? '한 번만 부과하는 지역' : '1쪽당 부과하는 지역'}</p>
+        <table>
+          <tbody>
+            {Object.entries(other.byRegion).map(([region, fee]) => (
+              <tr><td>{region}</td><td>{won(fee)}원</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </>
+    )}
+
     <p class="note">
       <a href={SOURCE_URL} rel="nofollow noopener" target="_blank">공공데이터포털</a>
       공개분만 집계했습니다. 목록에 없는 지자체는 해당 시군구 홈페이지에서
@@ -76,7 +113,7 @@ const pos = (v: number) =>
 <style>
   .fees .caption { padding-top: 14px; border-top: 2px solid var(--ink); }
 
-  .lead { display: flex; align-items: baseline; gap: 8px; }
+  .lead { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
   .big {
     font-weight: 800;
     font-size: clamp(34px, 5.6vw, 60px);
@@ -86,8 +123,13 @@ const pos = (v: number) =>
     padding: 2px 10px;
   }
   .unit { font-size: 17px; font-weight: 800; }
-  .sub { margin: 12px 0 0; font-size: 14.5px; color: var(--muted); }
+  .sub { margin: 12px 0 0; font-size: 14.5px; line-height: 1.65; color: var(--muted); }
   .sub strong { font-weight: 800; color: var(--ink); }
+  .unitwarn {
+    border-left: 6px solid var(--ink);
+    padding: 10px 0 10px 12px;
+    color: var(--body);
+  }
 
   .bar {
     position: relative;
@@ -123,6 +165,7 @@ const pos = (v: number) =>
     line-height: 1.65;
     font-weight: 600;
   }
+  .alt { margin: 14px 0 0; font-size: 13.5px; line-height: 1.6; color: var(--faint); }
 
   .more { margin: 18px 0 0; }
   summary {
@@ -157,6 +200,7 @@ const pos = (v: number) =>
   .more td { font-size: 14px; }
   .more td:last-child { font-weight: 800; text-align: right; }
   .more tr:last-child td { border-bottom: 0; }
+  .othercap { margin: 22px 0 0; font-size: 13px; font-weight: 800; }
   .note { margin: 12px 0 0; font-size: 12.5px; line-height: 1.6; color: var(--faint); }
   .note a { box-shadow: inset 0 -2px 0 var(--lime); font-weight: 700; }
 </style>

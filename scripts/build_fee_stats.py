@@ -39,6 +39,15 @@ EXTRA_ALIAS = {
     "자토바이": None,   # 자전거 오탐 방지용 자리표시
 }
 
+# 과금 단위. 다수 지자체가 장롱을 '1쪽당'(문짝 하나당)으로 매긴다.
+# 3쪽 장롱이면 3배가 되므로 통짜 요금과 같은 중앙값에 섞으면 안 된다.
+UNIT_RE = re.compile(r"(1?\s*쪽\s*당|\(?1\s*쪽\)?|쪽당|1\s*짝|짝문|당\s*1쪽)")
+
+
+def unit_of(item, spec):
+    return "panel" if UNIT_RE.search(item + " " + spec) else "whole"
+
+
 SPLIT = re.compile(r"[,/·]|및|그리고")
 PAREN = re.compile(r"[()（）\[\]]")
 
@@ -81,52 +90,71 @@ def match(token, table, order):
     return None
 
 
+def summarize(per_region):
+    """지역별 대표값 목록에서 통계를 낸다. 표본이 3곳 미만이면 버린다."""
+    vals = sorted(per_region.values())
+    if len(vals) < 3:
+        return None
+    cheapest = min(per_region.items(), key=lambda kv: kv[1])
+    dearest = max(per_region.items(), key=lambda kv: kv[1])
+    return {
+        "median": int(statistics.median(vals)),
+        "min": vals[0],
+        "max": vals[-1],
+        "q1": vals[len(vals) // 4],
+        "q3": vals[(len(vals) * 3) // 4],
+        "regions": len(vals),
+        "cheapest": {"region": cheapest[0], "fee": cheapest[1]},
+        "dearest": {"region": dearest[0], "fee": dearest[1]},
+        "by_region": dict(sorted(per_region.items(), key=lambda kv: kv[1])),
+    }
+
+
 def main():
     items = json.load(io.open(ITEMS, encoding="utf-8"))
     rows = list(csv.DictReader(io.open(FEES, encoding="utf-8")))
     table, order = build_matcher(items)
 
-    # slug → 지역별 금액. 같은 지역에 여러 규격이 있으면 최빈 구간을 쓰려고 다 모은다.
-    buckets = defaultdict(lambda: defaultdict(list))
+    # slug → 과금단위 → 지역 → 금액들
+    buckets = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
+    base_dates = defaultdict(list)
     for r in rows:
         fee = int(r["fee"])
         if fee <= 0:
             continue
+        unit = unit_of(r["item"], r["spec"])
+        region = (r["sido"] + " " + r["sigungu"]).strip()
         seen = set()
         for tok in tokens(r["item"]):
             slug = match(tok, table, order)
             if slug and slug not in seen:
                 seen.add(slug)
-                region = (r["sido"] + " " + r["sigungu"]).strip()
-                buckets[slug][region].append((fee, r["spec"], r["base_date"], r["source_url"]))
+                buckets[slug][unit][region].append(fee)
+                if r["base_date"]:
+                    base_dates[slug].append(r["base_date"])
 
     out = {}
-    for slug, regions in buckets.items():
-        # 지역마다 대표값 하나(중앙값)를 뽑아 지역 간 비교가 되게 한다.
-        per_region = {}
-        for reg, vals in regions.items():
-            fees = sorted(v[0] for v in vals)
-            per_region[reg] = int(statistics.median(fees))
-        vals = sorted(per_region.values())
-        if len(vals) < 3:
+    for slug, by_unit in buckets.items():
+        stats = {}
+        for unit, regions in by_unit.items():
+            per_region = {k: int(statistics.median(sorted(v))) for k, v in regions.items()}
+            st = summarize(per_region)
+            if st:
+                stats[unit] = st
+        if not stats:
             continue
-        q1 = vals[len(vals) // 4]
-        q3 = vals[(len(vals) * 3) // 4]
-        cheapest = min(per_region.items(), key=lambda kv: kv[1])
-        dearest = max(per_region.items(), key=lambda kv: kv[1])
-        sample = next(iter(regions.values()))[0]
-        out[slug] = {
-            "median": int(statistics.median(vals)),
-            "min": vals[0],
-            "max": vals[-1],
-            "q1": q1,
-            "q3": q3,
-            "regions": len(vals),
-            "cheapest": {"region": cheapest[0], "fee": cheapest[1]},
-            "dearest": {"region": dearest[0], "fee": dearest[1]},
-            "base_date": sample[2],
-            "by_region": dict(sorted(per_region.items(), key=lambda kv: kv[1])),
+        # 어느 쪽이 다수인지. 쪽당이 다수면 화면에서 그걸 먼저 말해야 한다.
+        whole_n = stats.get("whole", {}).get("regions", 0)
+        panel_n = stats.get("panel", {}).get("regions", 0)
+        entry = {
+            "primary": "panel" if panel_n > whole_n else "whole",
+            "base_date": max(base_dates[slug]) if base_dates[slug] else "",
         }
+        if "whole" in stats:
+            entry["whole"] = stats["whole"]
+        if "panel" in stats:
+            entry["panel"] = stats["panel"]
+        out[slug] = entry
 
     io.open(OUT, "w", encoding="utf-8").write(
         json.dumps(out, ensure_ascii=False, indent=2) + "\n"
@@ -134,13 +162,18 @@ def main():
 
     print("품목 %d개 집계" % len(out))
     for it in items:
-        s = out.get(it["slug"])
-        if s:
-            print("  %-8s %2d지역  중앙 %6s원  %s~%s"
-                  % (it["name"], s["regions"], f"{s['median']:,}",
-                     f"{s['min']:,}", f"{s['max']:,}"))
-        else:
+        e = out.get(it["slug"])
+        if not e:
             print("  %-8s  —" % it["name"])
+            continue
+        parts = []
+        for unit, label in (("whole", "통짜"), ("panel", "쪽당")):
+            if unit in e:
+                st = e[unit]
+                parts.append("%s %s원(%d지역)"
+                             % (label, f"{st['median']:,}", st["regions"]))
+        star = " ←쪽당 우세" if e["primary"] == "panel" else ""
+        print("  %-8s %s%s" % (it["name"], " / ".join(parts), star))
 
 
 if __name__ == "__main__":
