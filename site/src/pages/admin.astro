@@ -38,6 +38,7 @@ for (const g of await getCollection('guides')) {
   <section class="stephead">
     <div class="stepbar">
       <span class="stepno">ADMIN</span>
+      <a class="linkbtn" href="/">홈으로</a>
       <span class="grow"></span>
       <button type="button" class="linkbtn" id="logout" hidden>로그아웃</button>
       <span class="stepno" id="updated">불러오는 중</span>
@@ -156,6 +157,7 @@ for (const g of await getCollection('guides')) {
       font-weight: 800;
       color: var(--faint);
       border-bottom: 2px solid var(--line);
+      text-decoration: none;
     }
     .linkbtn:hover { color: var(--ink); border-bottom-color: var(--ink); }
 
