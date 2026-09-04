@@ -103,9 +103,10 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
     .empty { margin: 0 0 14px; font-size: 14.5px; font-weight: 600; color: var(--muted); max-width: 60ch; }
     code { font-size: 13px; background: var(--hover); padding: 1px 5px; }
 
-    .tokenform { display: flex; gap: 10px; flex-wrap: wrap; }
+    /* 입력창을 화면 폭까지 늘리지 않는다. 오른쪽은 버튼 hard shadow 4px 자리를 비워 둔다. */
+    .tokenform { display: flex; gap: 10px; max-width: 440px; padding-right: 4px; }
     .tokenform input {
-      flex: 1 1 260px;
+      flex: 1 1 auto;
       min-width: 0;
       padding: 10px 12px;
       border: 2px solid var(--ink);
@@ -114,6 +115,7 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
     }
     .tokenform input::placeholder { color: var(--ph); }
     .tokenform button {
+      flex: 0 0 auto;
       cursor: pointer;
       padding: 10px 20px;
       border: 2px solid var(--ink);
