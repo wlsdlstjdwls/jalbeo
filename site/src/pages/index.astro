@@ -101,8 +101,7 @@ const chips = [
       })}
     </div>
 
-    <div class="sentinel" id="sentinel" aria-hidden="true"></div>
-    <p class="more" id="more" hidden></p>
+    <button type="button" class="press more" id="more" hidden></button>
 
     <p class="empty" id="empty" hidden>찾는 품목이 아직 없습니다. 품목은 계속 추가됩니다.</p>
   </section>
@@ -128,7 +127,6 @@ const chips = [
       var count = document.getElementById('count');
       var head = document.getElementById('listhead');
       var empty = document.getElementById('empty');
-      var sentinel = document.getElementById('sentinel');
       var more = document.getElementById('more');
       var total = list.children.length;
       var filter = '';
@@ -186,23 +184,13 @@ const chips = [
 
         var rest = shown - drawn;
         more.hidden = rest <= 0;
-        if (rest > 0) more.textContent = rest + '개 더 있습니다. 아래로 내리세요.';
+        if (rest > 0) more.textContent = (rest < PAGE ? rest : PAGE) + '개 더보기 (총 ' + rest + '개 남음)';
       }
 
-      function grow() {
-        if (more.hidden) return;
+      more.addEventListener('click', function () {
         limit += PAGE;
         apply();
-      }
-
-      if ('IntersectionObserver' in window) {
-        new IntersectionObserver(function (es) {
-          if (es[0].isIntersecting) grow();
-        }, { rootMargin: '300px' }).observe(sentinel);
-      } else {
-        // 관찰자가 없으면 페이징을 걸지 않는다. 잘린 목록이 남는 것보다 낫다.
-        limit = total;
-      }
+      });
 
       q.addEventListener('input', function () {
         limit = PAGE;
@@ -254,10 +242,12 @@ const chips = [
   .searchbar .count {
     display: grid;
     place-items: center;
-    padding: 0 clamp(14px, 2vw, 22px);
+    min-width: 9ch;
+    padding: 0 clamp(10px, 1.6vw, 18px);
     border-left: 2px solid var(--ink);
     font-size: 13px;
     font-weight: 800;
+    font-variant-numeric: tabular-nums;
     white-space: nowrap;
     background: var(--lime);
   }
@@ -297,14 +287,20 @@ const chips = [
 
   /* --- 품목 리스트 --- */
   .listwrap { padding: clamp(18px,3vw,30px) var(--pad) clamp(24px,4vw,44px); }
-  .sentinel { height: 1px; }
   .more {
+    display: block;
+    width: 100%;
     margin: 16px 0 0;
+    padding: 13px;
     text-align: center;
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--faint);
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--ink);
+    border: 2px solid var(--ink);
+    background: var(--card);
+    cursor: pointer;
   }
+  .more:hover { background: var(--lime); }
   .rows { border-top: 2px solid var(--ink); }
 
   .row {
