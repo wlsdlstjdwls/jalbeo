@@ -97,7 +97,7 @@ const trackable = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
     <footer class="foot">
       <nav class="footnav">
         <a href="/terms/">이용약관</a>
-        <a href="/privacy/">개인정보처리방침</a>
+        <a href="/privacy/" class="strong">개인정보처리방침</a>
       </nav>
       <p class="copy">&copy; {new Date().getFullYear()} jalbeo. All rights reserved.</p>
     </footer>
@@ -229,10 +229,12 @@ const trackable = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
       .footnav { display: flex; gap: 18px; }
       .footnav a {
         font-size: 13.5px;
-        font-weight: 800;
+        font-weight: 700;
         border-bottom: 2px solid transparent;
       }
       .footnav a:hover { border-bottom-color: var(--ink); }
+      /* 개인정보처리방침만 굵게. 법정 고지라 눈에 먼저 걸려야 한다. */
+      .footnav a.strong { font-weight: 800; }
       .foot .copy { margin: 0; font-size: 12.5px; font-weight: 600; color: var(--faint); }
 
       /* --- 섹션 제목(캡션형) --- */
