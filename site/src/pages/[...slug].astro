@@ -18,11 +18,11 @@ export async function getStaticPaths() {
 
   return live.map((row) => ({
     params: { slug: row.slug },
-    props: { row, entry: byId.get(row.slug)!, itemCount: live.length },
+    props: { row, entry: byId.get(row.slug)! },
   }));
 }
 
-const { row, entry, itemCount } = Astro.props;
+const { row, entry } = Astro.props;
 const meta = entry.data;
 const { Content } = await render(entry);
 
@@ -42,7 +42,7 @@ const related = (picked.length > 0
 
 // 어미가 '버리는법'과 '분리수거'로 갈려 있다 (docs/07). 페이지는 하나로 두고
 // 타이틀에 둘 다 태운다. 어미별로 URL을 나누면 중복 페이지가 된다.
-const title = `${row.name} 버리는법 · 분리수거 방법 | 잘버려`;
+const title = `${row.name} 버리는법, 분리수거 방법 | 잘버려`;
 const description = `${row.name}은(는) ${row.verdict}. ${row.verdict_line}`;
 const aliases = row.aliases ?? [];
 
@@ -51,7 +51,7 @@ const hint3 = [
   '분리수거 방법',
   vol ? `월 검색량 ${vol.toLocaleString('ko-KR')}` : null,
   `최종 확인 ${meta.updated}`,
-].filter(Boolean).join(' · ');
+].filter(Boolean).join(' / ');
 
 const titleStep3 = `${row.name}\n버리는법`;
 // STEP 2 캡션. h1과 달리 한 줄이라 개행을 넣지 않는다.
@@ -71,10 +71,10 @@ const jsonLd = {
 };
 ---
 
-<Base title={title} description={description} jsonLd={jsonLd} itemCount={itemCount}>
+<Base title={title} description={description} jsonLd={jsonLd}>
   <div class="stephead">
     <div class="stepbar">
-      <span class="stepno">2 · 3 / 3 · 조건과 결과</span>
+      <span class="stepno">2-3단계 조건과 결과</span>
       <span class="grow"></span>
       <a class="back press" href="/">← 목록</a>
     </div>
@@ -84,7 +84,7 @@ const jsonLd = {
     <p class="hint">{hint3}</p>
 
     {aliases.length > 0 && (
-      <p class="aliases">{aliases.map((a) => `‘${a}’`).join(' · ')} 로도 불립니다</p>
+      <p class="aliases">{aliases.map((a) => `‘${a}’`).join(', ')} 로도 불립니다</p>
     )}
   </div>
 
@@ -97,7 +97,7 @@ const jsonLd = {
       <p class="ask">{askLine}</p>
       <div class="opts">
         {options.map((o, i) => (
-          <label class={`opt press hard op-${i}`} for={`opt-${i}`} style={`--bg:${bg(o.tone)}`}>
+          <label class={`opt press hard op-${i}`} for={`opt-${i}`}>
             <span class="lb">{o.label}</span>
             <span class="hn">{o.hint}</span>
           </label>
@@ -160,7 +160,7 @@ const jsonLd = {
 
   <script is:inline>
     (function () {
-      // STEP 3(본문·출처)은 절대 숨기지 않는다. 숨기면 렌더링 기반 색인에서
+      // STEP 3(본문과 출처)은 절대 숨기지 않는다. 숨기면 렌더링 기반 색인에서
       // 본문이 통째로 빠진다. JS는 답 전환과 ?opt= 동기화만 맡는다.
       var radios = document.querySelectorAll('.optin');
       var step3 = document.getElementById('step3');
@@ -201,8 +201,16 @@ const jsonLd = {
   #opt-1:checked ~ .step3 .pk-1 { display: inline; }
   #opt-0:checked ~ .step2 .op-0 .lb::after,
   #opt-1:checked ~ .step2 .op-1 .lb::after { content: ' ✓'; }
+  /* 선택된 쪽은 형광 라임으로 못 알아볼 수 없게 칠한다. 판정색은
+     결과 블록이 이미 쓰고 있어서, 여기서는 선택 여부만 보이면 된다. */
   #opt-0:checked ~ .step2 .op-0,
-  #opt-1:checked ~ .step2 .op-1 { background: var(--bg); }
+  #opt-1:checked ~ .step2 .op-1 {
+    background: var(--lime);
+    box-shadow: 7px 7px 0 var(--ink);
+    transform: translate(-3px,-3px);
+  }
+  #opt-0:checked ~ .step2 .op-0 .hn,
+  #opt-1:checked ~ .step2 .op-1 .hn { color: var(--ink); }
   #opt-0:focus-visible ~ .step2 .op-0,
   #opt-1:focus-visible ~ .step2 .op-1 { outline: 3px solid var(--ink); outline-offset: 4px; }
 
@@ -268,7 +276,7 @@ const jsonLd = {
     letter-spacing: .08em;
   }
   .pick { font-size: 13px; font-weight: 700; }
-  .region::before { content: ' · '; }
+  .region::before { content: ' / '; }
   .ah {
     margin: 14px 0 0;
     font-weight: 800;

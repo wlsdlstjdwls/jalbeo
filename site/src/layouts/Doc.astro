@@ -1,0 +1,42 @@
+---
+/** 약관·방침처럼 본문만 있는 문서 페이지 껍데기. */
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  heading: string;
+  updated: string;
+}
+const { title, description, heading, updated } = Astro.props;
+---
+
+<Base title={title} description={description}>
+  <div class="stephead">
+    <h1 class="display">{heading}</h1>
+    <p class="hint">시행일 {updated}</p>
+  </div>
+
+  <article class="doc">
+    <slot />
+  </article>
+</Base>
+
+<style>
+  .doc {
+    padding: clamp(20px,3.4vw,38px) var(--pad) clamp(30px,5vw,60px);
+    max-width: 74ch;
+  }
+  .doc :global(h2) {
+    margin: 32px 0 10px;
+    font-size: clamp(19px,2.2vw,24px);
+    letter-spacing: -.03em;
+  }
+  .doc :global(h2:first-child) { margin-top: 0; }
+  .doc :global(p),
+  .doc :global(li) { font-size: 15.5px; line-height: 1.75; color: var(--body); }
+  .doc :global(p) { margin: 0 0 12px; }
+  .doc :global(ul) { margin: 0 0 12px; padding-left: 20px; }
+  .doc :global(li) { margin: 0 0 6px; }
+  .doc :global(a) { border-bottom: 2px solid var(--ink); font-weight: 700; }
+</style>

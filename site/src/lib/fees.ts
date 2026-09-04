@@ -53,7 +53,7 @@ function toUnit(r: RawUnit | undefined): FeeUnit | null {
   return { ...rest, byRegion: by_region };
 }
 
-/** 수수료가 없는 품목이 있다. 음식물·재활용품은 애초에 대형폐기물이 아니다. */
+/** 수수료가 없는 품목이 있다. 음식물이나 재활용품은 애초에 대형폐기물이 아니다. */
 export function feeFor(slug: string): FeeStat | null {
   const r = raw[slug];
   if (!r) return null;

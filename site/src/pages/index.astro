@@ -13,7 +13,8 @@ const counts = live.reduce<Record<string, number>>((acc, r) => {
   return acc;
 }, {});
 
-// 첫 칩은 '전체', 나머지는 판정 순서대로. 비활성 배경 = 판정 색.
+// 첫 칩은 '전체', 나머지는 판정 순서대로. 배경은 선택 표시에만 쓰고(형광 라임),
+// 판정 색은 칩 앞의 작은 사각형으로 남긴다.
 const chips = [
   { v: '', label: '전체', n: live.length, color: '#fff' },
   ...VERDICT_ORDER.filter((v) => counts[v]).map((v) => ({
@@ -24,12 +25,11 @@ const chips = [
 
 <Base
   title="잘버려 — 이거 어디에 버려요?"
-  description="품목별 분리배출 방법과 판정. 환경부 기준과 지자체 조례 근거를 출처·기준일자와 함께 표시합니다."
-  itemCount={live.length}
+  description="품목별 분리배출 방법과 판정. 환경부 기준과 지자체 조례 근거를 출처와 기준일자를 함께 표시합니다."
 >
   <div class="stephead">
     <div class="stepbar">
-      <span class="stepno">1 / 3 · 품목 고르기</span>
+      <span class="stepno">1단계 품목 고르기</span>
       <span class="grow"></span>
       <span class="back" style="visibility:hidden" aria-hidden="true">← 이전</span>
     </div>
@@ -52,11 +52,11 @@ const chips = [
       {chips.map((c) => (
         <button
           type="button"
-          class="press chip"
+          class={`press chip${c.v === '' ? ' on' : ''}`}
           data-v={c.v}
           aria-pressed={c.v === '' ? 'true' : 'false'}
           style={`--chip:${c.color}`}
-        >{c.label} <span class="n">{c.n}</span></button>
+        >{c.v !== '' && <i class="sw" aria-hidden="true"></i>}{c.label} <span class="n">{c.n}</span></button>
       ))}
     </div>
   </div>
@@ -77,7 +77,7 @@ const chips = [
             <span class="nm">
               <span class="n">{row.name}</span>
               {aliases.length > 0 && (
-                <span class="al">{`‘${aliases.join('’ · ‘')}’`}</span>
+                <span class="al">{`‘${aliases.join('’, ‘')}’`}</span>
               )}
             </span>
             <span class="ln">{row.verdict_line}</span>
@@ -110,7 +110,7 @@ const chips = [
       var filter = '';
 
       // 목록 전체는 서버에서 렌더한다. 페이징은 화면에 몇 개를 보일지만 정한다.
-      // 검색·필터 중에는 결과가 잘리면 안 되므로 페이징을 풀고 전부 보여준다.
+      // 검색과 필터 중에는 결과가 잘리면 안 되므로 페이징을 풀고 전부 보여준다.
       // PAGE 값의 출처는 lib/constants.ts (HOME_PAGE_SIZE) — define:vars로 주입.
       var limit = PAGE;
 
@@ -218,14 +218,25 @@ const chips = [
   .chip {
     flex: none;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
     border: 2px solid var(--ink);
     padding: 8px 15px;
     font-size: 13.5px;
     font-weight: 800;
+    background: var(--card);
+  }
+  .chip .sw {
+    width: 10px;
+    height: 10px;
+    flex: none;
+    border: 1.5px solid var(--ink);
     background: var(--chip);
   }
   .chip .n { opacity: .55; }
-  .chip.on { background: var(--ink); color: #fff; }
+  /* 선택 표시는 상세 STEP2 조건 카드와 같은 형광 라임으로 통일한다. */
+  .chip.on { background: var(--lime); box-shadow: 3px 3px 0 var(--ink); }
 
   /* --- 품목 리스트 --- */
   .listwrap { padding: clamp(18px,3vw,30px) var(--pad) clamp(24px,4vw,44px); }

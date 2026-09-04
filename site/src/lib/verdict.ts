@@ -12,7 +12,7 @@ export const VERDICT_BG: Record<string, string> = {
   '일반쓰레기': '#ff9f8f',
 };
 
-/** 칩·목록 정렬 순서 */
+/** 칩과 목록 정렬 순서 */
 export const VERDICT_ORDER = [
   '재활용', '무상수거', '전용수거함', '대형폐기물', '음식물', '조건부', '일반쓰레기',
 ];

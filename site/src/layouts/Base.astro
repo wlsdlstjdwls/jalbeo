@@ -5,10 +5,8 @@ interface Props {
   title: string;
   description: string;
   jsonLd?: unknown;
-  /** 상단 바에 노출하는 발행 품목 수 */
-  itemCount: number;
 }
-const { title, description, jsonLd, itemCount } = Astro.props;
+const { title, description, jsonLd } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 
 // 정식 도메인이 아니면 색인을 막는다. robots.txt와 같은 기준 (lib/site.ts, 게이트 2 오염 방지).
@@ -41,10 +39,17 @@ const indexable = isProductionHost(Astro.site?.host ?? '');
   <body>
     <div class="topbar">
       <a href="/" class="logo">잘버려</a>
-      <span class="topmeta">환경부 기준 · {itemCount}개 품목 · 출처 표기</span>
     </div>
 
     <main><slot /></main>
+
+    <footer class="foot">
+      <nav class="footnav">
+        <a href="/terms/">이용약관</a>
+        <a href="/privacy/">개인정보처리방침</a>
+      </nav>
+      <p class="copy">&copy; {new Date().getFullYear()} jalbeo. All rights reserved.</p>
+    </footer>
 
     <style is:global>
       :root {
@@ -111,8 +116,6 @@ const indexable = isProductionHost(Astro.site?.host ?? '');
         background: var(--paper);
       }
       .topbar .logo { font-weight: 800; font-size: 18px; letter-spacing: -.03em; }
-      .topbar .topmeta { font-size: 12.5px; font-weight: 700; }
-      @media (max-width: 380px) { .topbar .topmeta { display: none; } }
 
       /* --- 스텝 헤더 --- */
       .stephead {
@@ -161,6 +164,25 @@ const indexable = isProductionHost(Astro.site?.host ?? '');
         font-weight: 800;
         white-space: nowrap;
       }
+
+      /* --- 푸터 --- */
+      .foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px 24px;
+        flex-wrap: wrap;
+        padding: 22px var(--pad) 30px;
+        border-top: 2px solid var(--ink);
+      }
+      .footnav { display: flex; gap: 18px; }
+      .footnav a {
+        font-size: 13.5px;
+        font-weight: 700;
+        border-bottom: 2px solid transparent;
+      }
+      .footnav a:hover { border-bottom-color: var(--ink); }
+      .foot .copy { margin: 0; font-size: 12.5px; font-weight: 600; color: var(--faint); }
 
       /* --- 섹션 제목(캡션형) --- */
       .caption {
