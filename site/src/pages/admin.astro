@@ -104,6 +104,9 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
   </section>
 
   <style>
+    /* 동시접속 표시등. 사이트 팔레트에 없는 색이라 이 화면에서만 정의한다. */
+    #board { --live: #2fa84f; }
+
     .pad { padding: clamp(18px, 3vw, 30px) var(--pad) clamp(28px, 5vw, 56px); }
     .empty { margin: 0 0 14px; font-size: 14.5px; font-weight: 600; color: var(--muted); max-width: 60ch; }
     code { font-size: 13px; background: var(--hover); padding: 1px 5px; }
@@ -166,15 +169,28 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
       line-height: 1;
     }
     .tsub { margin: 6px 0 0; font-size: 11.5px; font-weight: 600; color: var(--faint-2); }
+    /* 살아 있는 숫자라는 신호다. 종이색 위에서 라임은 너무 옅어 한 단계 진한
+       초록을 쓴다. 링은 심장박동처럼 퍼지고 점은 그대로 켜져 있다. */
     .dot {
+      position: relative;
       width: 8px;
       height: 8px;
-      background: var(--ink);
+      background: var(--live);
       border-radius: 50%;
-      animation: blink 1.6s ease-in-out infinite;
     }
-    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
-    @media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
+    .dot::after {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: 50%;
+      background: var(--live);
+      animation: ping 1.8s cubic-bezier(0, 0, .2, 1) infinite;
+    }
+    @keyframes ping {
+      0% { transform: scale(.6); opacity: .55; }
+      100% { transform: scale(2.1); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { .dot::after { animation: none; opacity: .3; } }
 
     .chart {
       display: flex;
