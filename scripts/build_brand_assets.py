@@ -33,6 +33,18 @@ INK = (17, 17, 17)
 LIME = (201, 242, 77)
 FAINT = (107, 104, 98)
 
+# 사이트의 판정 색과 순서를 그대로 쓴다 (site/src/lib/verdict.ts).
+# 카드에서만 다른 색을 쓰면 들어와서 처음 보는 화면과 어긋난다.
+VERDICTS = [
+    ("재활용", (201, 242, 77)),
+    ("무상수거", (169, 199, 255)),
+    ("전용수거함", (213, 194, 255)),
+    ("대형폐기물", (247, 198, 90)),
+    ("음식물", (143, 217, 168)),
+    ("조건부", (228, 224, 214)),
+    ("일반쓰레기", (255, 159, 143)),
+]
+
 FONT_BOLD = r"C:\Windows\Fonts\malgunbd.ttf"
 FONT_REG = r"C:\Windows\Fonts\malgun.ttf"
 
@@ -75,12 +87,12 @@ def build_icons():
     return made
 
 
-def chip(d, x, y, text, f):
-    """라임 알약. 사이트의 배지와 같은 문법이다 - 라운드 없음, 굵은 테두리."""
+def chip(d, x, y, text, f, fill):
+    """판정 배지. 사이트의 배지와 같은 문법이다 - 라운드 없음, 굵은 테두리."""
     box = d.textbbox((0, 0), text, font=f)
     w = box[2] - box[0]
-    pad_x, h = 22, 58
-    d.rectangle([x, y, x + w + pad_x * 2, y + h], fill=LIME, outline=INK, width=4)
+    pad_x, h = 20, 54
+    d.rectangle([x, y, x + w + pad_x * 2, y + h], fill=fill, outline=INK, width=4)
     d.text((x + pad_x - box[0], y + h / 2 - (box[3] + box[1]) / 2), text, font=f, fill=INK)
     return x + w + pad_x * 2
 
@@ -88,8 +100,9 @@ def chip(d, x, y, text, f):
 def build_og():
     """공유 카드. 링크를 받은 사람이 3초 안에 '나한테 쓸모 있나'를 판단하게 한다.
 
-    그래서 브랜드 이름이 아니라 사용자의 질문을 제일 크게 놓고, 무엇을
-    알려주는지를 알약 세 개로 못 박는다.
+    그래서 브랜드 이름이 아니라 사용자의 질문을 제일 크게 놓고, 어떤 답이
+    나오는지를 판정 배지로 늘어놓는다. 색과 순서는 사이트와 같아서, 눌러 들어온
+    사람이 처음 보는 화면과 카드가 이어진다.
     """
     W, H = 1200, 630
     img = Image.new("RGB", (W, H), PAPER)
@@ -102,15 +115,18 @@ def build_og():
     draw_mark(img, 84, 66, 58)
     d.text((156, 74), "잘버려", font=font(FONT_BOLD, 40), fill=INK)
 
-    d.text((80, 168), "이거 어디에", font=font(FONT_BOLD, 92), fill=INK)
-    d.text((80, 262), "버려요?", font=font(FONT_BOLD, 92), fill=INK)
+    d.text((80, 156), "이거 어디에", font=font(FONT_BOLD, 92), fill=INK)
+    d.text((80, 248), "버려요?", font=font(FONT_BOLD, 92), fill=INK)
 
-    f = font(FONT_BOLD, 27)
-    x = 86
-    for text in ("분리배출 판정", "대형폐기물 수수료", "무료수거 안내"):
-        x = chip(d, x, 408, text, f) + 14
+    # 판정 배지 두 줄. 첫 줄에 자주 나오는 것부터 놓는다
+    f = font(FONT_BOLD, 26)
+    rows = (VERDICTS[:4], VERDICTS[4:])
+    for i, row in enumerate(rows):
+        x = 86
+        for text, fill in row:
+            x = chip(d, x, 396 + i * 66, text, f, fill) + 12
 
-    draw_mark(img, 890, 190, 210)
+    draw_mark(img, 960, 160, 150)
 
     # 하단 라임 띠. 미리보기가 잘려도 브랜드 색과 주소는 남는다
     d.rectangle([18, H - 88, W - 19, H - 19], fill=LIME)
