@@ -88,16 +88,16 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
       </div>
     </div>
 
-    <p class="caption divider">최근 14일</p>
+    <p class="caption gap">최근 14일</p>
     <div class="chart" id="chart"></div>
 
     <div class="cols">
       <div>
-        <p class="caption divider">인기 경로 (7일)</p>
+        <p class="caption gap">인기 경로 (7일)</p>
         <table class="rank"><tbody id="paths"></tbody></table>
       </div>
       <div>
-        <p class="caption divider">유입 경로 (7일)</p>
+        <p class="caption gap">유입 경로 (7일)</p>
         <table class="rank"><tbody id="refs"></tbody></table>
       </div>
     </div>
@@ -108,6 +108,10 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
     #board { --live: #2fa84f; }
 
     .pad { padding: clamp(18px, 3vw, 30px) var(--pad) clamp(28px, 5vw, 56px); }
+    /* 품목 페이지의 .caption.divider는 전체 폭 윗줄을 긋는다. 여기서는 타일과
+       차트가 이미 테두리를 갖고 있어, 그 줄이 타일 밑변을 잇는 것처럼 보이고
+       좌우 2단에서는 가운데가 끊긴 선으로 보였다. 줄 대신 여백으로 나눈다. */
+    .caption.gap { margin-top: 26px; }
     .empty { margin: 0 0 14px; font-size: 14.5px; font-weight: 600; color: var(--muted); max-width: 60ch; }
     code { font-size: 13px; background: var(--hover); padding: 1px 5px; }
 

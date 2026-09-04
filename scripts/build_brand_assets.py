@@ -1,21 +1,30 @@
 # -*- coding: utf-8 -*-
 """브랜드 아이콘과 SNS 공유 이미지를 만든다.
 
-site/public/favicon.svg 가 원본 도형이다. 이 스크립트는 같은 도형을 래스터로
-다시 그린다 (SVG를 못 읽는 곳 - 파비콘 폴백, iOS 홈 화면, 오픈그래프).
+마크는 검정 판에 라임색 "잘" 한 글자다. 20px로 줄여도 뭔지 읽히는 게
+도형 시안들보다 나았다.
 
-  favicon.ico          16/32/48    브라우저 탭 폴백
+favicon.svg도 여기서 만든다. 글자를 텍스트로 두면 보는 사람 기기에 그 글꼴이
+없을 때 모양이 달라지므로, 맑은 고딕 볼드에서 윤곽을 떠 패스로 박는다.
+
+  favicon.svg          벡터        브라우저 탭
+  favicon.ico          16/32/48    구형 폴백
   icon-192.png         192         안드로이드 홈 화면
   icon-512.png         512         PWA / 큰 타일
   apple-touch-icon.png 180         iOS 홈 화면
   og.png               1200x630    카카오톡, 트위터, 페이스북 공유 카드
 
-글꼴은 윈도우 기본 맑은 고딕이다. 사이트 본문은 Pretendard지만 공유 이미지는
-빌드 환경에 웹폰트를 깔지 않으려고 시스템 폰트로 굽는다.
+글꼴은 윈도우 기본 맑은 고딕이다. 사이트 본문은 Pretendard지만 굽는 이미지는
+빌드 환경에 웹폰트를 깔지 않으려고 시스템 글꼴을 쓴다.
 """
 import os
 import sys
 
+from fontTools.misc.transform import Transform
+from fontTools.pens.boundsPen import BoundsPen
+from fontTools.pens.svgPathPen import SVGPathPen
+from fontTools.pens.transformPen import TransformPen
+from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -32,37 +41,72 @@ FAINT = (107, 104, 98)
 FONT_BOLD = r"C:\Windows\Fonts\malgunbd.ttf"
 FONT_REG = r"C:\Windows\Fonts\malgun.ttf"
 
+MARK_CHAR = "잘"
+
 
 def font(path, size):
     return ImageFont.truetype(path, size)
 
 
 def draw_mark(img, x, y, size):
-    """favicon.svg 와 같은 도형. 64 단위 좌표를 size 로 환산한다."""
+    """마크 1개. 검정 판 위에 라임 '잘'."""
     d = ImageDraw.Draw(img)
-    u = size / 64.0
-    px = lambda v: x + v * u
-    py = lambda v: y + v * u
+    d.rectangle([x, y, x + size, y + size], fill=INK)
+    f = font(FONT_BOLD, int(size * 0.66))
+    box = d.textbbox((0, 0), MARK_CHAR, font=f)
+    w, h = box[2] - box[0], box[3] - box[1]
+    d.text((x + size / 2 - w / 2 - box[0], y + size / 2 - h / 2 - box[1]),
+           MARK_CHAR, font=f, fill=LIME)
 
-    d.rectangle([px(0), py(0), px(64), py(64)], fill=LIME)
-    # 테두리는 stroke-width 6 을 중앙 정렬한 것과 같게 3 안쪽에서 6 두께로 채운다
-    d.rectangle([px(0), py(0), px(64), py(64)], outline=INK, width=int(round(6 * u)))
-    d.rectangle([px(29), py(10), px(35), py(21)], fill=INK)
-    d.polygon([(px(22), py(19)), (px(42), py(19)), (px(32), py(31))], fill=INK)
-    d.rectangle([px(15), py(34), px(49), py(39)], fill=INK)
-    d.polygon([(px(19), py(42)), (px(45), py(42)), (px(42), py(55)), (px(22), py(55))], fill=INK)
+
+def glyph_svg_path(char, box=64.0, ratio=0.60):
+    """글리프 윤곽을 viewBox 좌표계의 SVG 패스로 옮긴다.
+
+    폰트는 y축이 위로 자라고 SVG는 아래로 자란다. 뒤집고, 정한 비율로 키운 뒤
+    실제 잉크 영역 기준으로 가운데 놓는다.
+    """
+    tt = TTFont(FONT_BOLD)
+    name = tt.getBestCmap()[ord(char)]
+    glyphs = tt.getGlyphSet()
+
+    bounds = BoundsPen(glyphs)
+    glyphs[name].draw(bounds)
+    x0, y0, x1, y1 = bounds.bounds
+    scale = box * ratio / max(x1 - x0, y1 - y0)
+    tx = box / 2 - (x0 + x1) / 2 * scale
+    ty = box / 2 + (y0 + y1) / 2 * scale   # y를 뒤집으므로 부호가 반대다
+
+    pen = SVGPathPen(glyphs)
+    glyphs[name].draw(TransformPen(pen, Transform(scale, 0, 0, -scale, tx, ty)))
+    tt.close()
+    return pen.getCommands()
+
+
+def build_favicon_svg():
+    lines = [
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="잘버려">',
+        '  <!-- scripts/build_brand_assets.py 가 만든다. 직접 고치지 않는다.',
+        '       글자를 패스로 떠서 박았다 - 보는 기기에 글꼴이 없어도 같은 모양이 나온다. -->',
+        '  <rect width="64" height="64" fill="#111"/>',
+        '  <path d="%s" fill="#c9f24d"/>' % glyph_svg_path(MARK_CHAR),
+        '</svg>',
+        '',
+    ]
+    path = os.path.join(OUT, "favicon.svg")
+    open(path, "w", encoding="utf-8", newline="\n").write("\n".join(lines))
+    return "favicon.svg"
 
 
 def icon(size):
-    img = Image.new("RGB", (size, size), PAPER)
+    img = Image.new("RGB", (size, size), INK)
     draw_mark(img, 0, 0, size)
     return img
 
 
 def build_icons():
     made = []
-    ico = icon(256)
-    ico.save(os.path.join(OUT, "favicon.ico"), sizes=[(16, 16), (32, 32), (48, 48)])
+    icon(256).save(os.path.join(OUT, "favicon.ico"),
+                   sizes=[(16, 16), (32, 32), (48, 48)])
     made.append("favicon.ico")
     for name, size in (("icon-192.png", 192), ("icon-512.png", 512),
                        ("apple-touch-icon.png", 180)):
@@ -91,13 +135,13 @@ def build_og():
     d.rectangle([18, H - 88, W - 19, H - 19], outline=INK, width=8)
     d.text((90, H - 74), "jalbeo.com", font=font(FONT_BOLD, 34), fill=INK)
 
-    path = os.path.join(OUT, "og.png")
-    img.save(path, optimize=True)
+    img.save(os.path.join(OUT, "og.png"), optimize=True)
     return "og.png"
 
 
 def main():
-    made = build_icons()
+    made = [build_favicon_svg()]
+    made += build_icons()
     made.append(build_og())
     for name in made:
         size = os.path.getsize(os.path.join(OUT, name))
