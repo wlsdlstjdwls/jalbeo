@@ -1,0 +1,98 @@
+name: 데이터 최신성 체크
+
+# 대형폐기물 수수료(공공데이터포털)와 분리배출 훈령(국가법령정보센터)을
+# 매주 다시 받아서 기존에 커밋된 값과 다르면 이슈로 알린다.
+# 두 API 모두 키 없이 접근 가능하다 (docs/12, docs/08). 자동으로 커밋/푸시는
+# 하지 않는다 — 라이브 페이지에 반영되는 데이터라 사람이 diff를 보고 판단한다.
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"  # 매주 월요일 09:00 KST
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 의존성 설치
+        run: pip install pymupdf
+
+      - name: 수수료 데이터 재수집
+        run: |
+          python scripts/fetch_fee_datasets.py
+          python scripts/normalize_fees.py
+
+      - name: 분리배출 훈령 재수집
+        run: |
+          python scripts/fetch_env_guidelines.py
+          python scripts/parse_disposal_guideline.py
+
+      - name: 변경분 확인
+        id: diff
+        run: |
+          TARGETS="data/processed/fees.csv data/processed/fees_report.json data/raw/fees/manifest.json data/raw/guidelines data/guidelines"
+          if git diff --quiet -- $TARGETS; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "body<<EOF"
+              echo "매주 자동 재수집에서 이전 커밋과 다른 값이 나왔다."
+              echo ""
+              echo "## 바뀐 파일"
+              echo '```'
+              git diff --stat -- $TARGETS
+              echo '```'
+              echo ""
+              echo "## 상세 diff (최대 400줄)"
+              echo '```diff'
+              git diff -- $TARGETS | head -400
+              echo '```'
+              echo ""
+              echo "확인 방법: 로컬에서 \`python scripts/fetch_fee_datasets.py && python scripts/normalize_fees.py\`,"
+              echo "\`python scripts/fetch_env_guidelines.py && python scripts/parse_disposal_guideline.py\` 재실행 후"
+              echo "\`git diff\`로 직접 보고, 맞으면 커밋한다. 이 워크플로는 감지만 하고 자동 커밋하지 않는다."
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 라벨 준비
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create data-freshness --color FBCA04 \
+            --description "자동 데이터 최신성 체크" --force
+
+      - name: 기존 미해결 이슈 확인
+        if: steps.diff.outputs.changed == 'true'
+        id: existing
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          NUM=$(gh issue list --label data-freshness --state open --json number -q '.[0].number // empty')
+          echo "number=$NUM" >> "$GITHUB_OUTPUT"
+
+      - name: 이슈 갱신 또는 생성
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "${{ steps.existing.outputs.number }}" ]; then
+            gh issue comment "${{ steps.existing.outputs.number }}" --body "${{ steps.diff.outputs.body }}"
+          else
+            gh issue create \
+              --title "수수료/훈령 데이터 변경 감지 $(date +%Y-%m-%d)" \
+              --label data-freshness \
+              --body "${{ steps.diff.outputs.body }}"
+          fi
