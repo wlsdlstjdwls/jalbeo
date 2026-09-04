@@ -9,6 +9,10 @@
     { "source": "/syopa", "destination": "/sopa", "permanent": true },
     { "source": "/syopa/", "destination": "/sopa/", "permanent": true },
     { "source": "/jangnong", "destination": "/jangrong", "permanent": true },
-    { "source": "/jangnong/", "destination": "/jangrong/", "permanent": true }
+    { "source": "/jangnong/", "destination": "/jangrong/", "permanent": true },
+    { "source": "/yeongyangje", "destination": "/yak", "permanent": true },
+    { "source": "/yeongyangje/", "destination": "/yak/", "permanent": true },
+    { "source": "/hoil", "destination": "/eunbakji", "permanent": true },
+    { "source": "/hoil/", "destination": "/eunbakji/", "permanent": true }
   ]
 }

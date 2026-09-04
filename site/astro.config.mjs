@@ -10,7 +10,6 @@ export default defineConfig({
   // 관리자 화면은 색인 대상이 아니다 (robots.txt / meta 와 같은 기준).
   integrations: [sitemap({ filter: (page) => !new URL(page).pathname.startsWith('/admin') })],
   build: { format: 'directory' },
-  // 개명한 페이지의 옛 경로를 흘려보낸다.
+  // 개명한 페이지의 옛 경로 리다이렉트는 vercel.json에 301로 있다.
   //   영양제 -> 약 (2026-09-04), 호일 -> 은박지 (2026-09-04)
-  redirects: { '/yeongyangje': '/yak', '/hoil': '/eunbakji' },
 });
