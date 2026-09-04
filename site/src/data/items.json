@@ -314,6 +314,26 @@
   "updated_at": "2026-09-04T03:27:42.830979+00:00"
  },
  {
+  "slug": "yak",
+  "name": "약",
+  "aliases": [
+   "영양제",
+   "폐의약품",
+   "조제약",
+   "알약",
+   "약봉지"
+  ],
+  "verdict": "전용수거함",
+  "verdict_line": "종량제봉투와 변기에 버리면 안 됩니다. 약국이나 주민센터의 폐의약품 수거함으로 갑니다.",
+  "category": "유해폐기물",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 4265,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-04T05:00:10.269592+00:00"
+ },
+ {
   "slug": "subakkkeopjil",
   "name": "수박껍질",
   "aliases": [],
@@ -471,6 +491,25 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-04T03:27:42.830979+00:00"
+ },
+ {
+  "slug": "gawi",
+  "name": "가위",
+  "aliases": [
+   "칼",
+   "부엌가위",
+   "문구용 가위",
+   "커터"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "금속이지만 고철로 안 받습니다. 종이에 싸서 종량제봉투로 갑니다.",
+  "category": "금속류",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 2680,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-04T05:00:10.269592+00:00"
  },
  {
   "slug": "cheongsogi",
@@ -709,6 +748,26 @@
   "updated_at": "2026-09-03T12:13:46.179753+00:00"
  },
  {
+  "slug": "jeonseon",
+  "name": "전선",
+  "aliases": [
+   "케이블",
+   "전기선",
+   "랜선",
+   "연장선",
+   "전선줄"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "한두 가닥은 종량제봉투, 한 뭉치면 고철입니다. 피복은 벗기지 않습니다.",
+  "category": "고철류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 1380,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-04T05:00:10.269592+00:00"
+ },
+ {
   "slug": "bapsot",
   "name": "밥솥",
   "aliases": [
@@ -818,6 +877,25 @@
   "updated_at": "2026-09-03T07:49:13.191616+00:00"
  },
  {
+  "slug": "namujeotgarak",
+  "name": "나무젓가락",
+  "aliases": [
+   "일회용 젓가락",
+   "대나무젓가락",
+   "이쑤시개",
+   "나무 꼬치"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "음식물이 아닙니다. 양념이 묻어 있어도 종량제봉투로 갑니다.",
+  "category": "생활용품",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 985,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-04T05:00:10.269592+00:00"
+ },
+ {
   "slug": "chikinppyeo",
   "name": "치킨뼈",
   "aliases": [
@@ -896,6 +974,41 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-03T12:13:46.179753+00:00"
+ },
+ {
+  "slug": "kikbodeu",
+  "name": "킥보드",
+  "aliases": [
+   "전동킥보드",
+   "어린이 킥보드",
+   "씽씽이"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "전동이면 배터리부터 분리합니다. 본체는 대형폐기물 신고 대상입니다.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 580,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-04T05:00:10.269592+00:00"
+ },
+ {
+  "slug": "gonggicheongjeonggi",
+  "name": "공기청정기",
+  "aliases": [
+   "공청기",
+   "가정용 공기청정기"
+  ],
+  "verdict": "무상수거",
+  "verdict_line": "1대만 있어도 무료로 가져갑니다. 필터는 따로 종량제봉투입니다.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 460,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-04T05:00:10.269592+00:00"
  },
  {
   "slug": "otjang",
@@ -983,6 +1096,24 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-04T03:27:42.830979+00:00"
+ },
+ {
+  "slug": "jeongsugi",
+  "name": "정수기",
+  "aliases": [
+   "냉온수기",
+   "렌탈 정수기",
+   "얼음정수기"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "렌탈이면 버리는 게 아니라 반납입니다. 내 것이고 전기를 쓰면 무상수거 대상입니다.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 370,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-04T05:00:10.269592+00:00"
  },
  {
   "slug": "setakgi",
@@ -2092,24 +2223,6 @@
   "category": "유해폐기물",
   "housing_split": false,
   "region_varies": false,
-  "monthly_volume": null,
-  "competitor_has": false,
-  "published": true,
-  "updated_at": "2026-09-04T03:27:42.830979+00:00"
- },
- {
-  "slug": "yeongyangje",
-  "name": "영양제",
-  "aliases": [
-   "폐의약품",
-   "약",
-   "조제약"
-  ],
-  "verdict": "전용수거함",
-  "verdict_line": "종량제봉투와 변기 둘 다 안 됩니다. 약국이나 주민센터로 갑니다.",
-  "category": "유해폐기물",
-  "housing_split": false,
-  "region_varies": true,
   "monthly_volume": null,
   "competitor_has": false,
   "published": true,

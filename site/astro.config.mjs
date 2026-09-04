@@ -9,4 +9,6 @@ export default defineConfig({
   site: SITE,
   integrations: [sitemap()],
   build: { format: 'directory' },
+  // 영양제 -> 약 개명(2026-09-04). 옛 경로로 들어온 요청을 흘려보낸다.
+  redirects: { '/yeongyangje': '/yak' },
 });

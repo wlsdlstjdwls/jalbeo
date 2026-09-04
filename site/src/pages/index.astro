@@ -7,6 +7,8 @@ import { HOME_PAGE_SIZE } from '../lib/constants';
 import { searchKey } from '../lib/search';
 
 const bodies = new Set((await getCollection('items')).map((b) => b.id));
+// 절차를 묻는 검색어(폐가전무료수거, 대형폐기물스티커)는 품목 페이지가 못 받는다.
+const guides = await getCollection('guides');
 const live = dbItems.filter((row) => bodies.has(row.slug));
 
 const counts = live.reduce<Record<string, number>>((acc, r) => {
@@ -95,6 +97,19 @@ const chips = [
     <p class="more" id="more" hidden></p>
 
     <p class="empty" id="empty" hidden>찾는 품목이 아직 없습니다. 품목은 계속 추가됩니다.</p>
+  </section>
+
+  <section class="rise guidewrap">
+    <p class="caption">물건이 아니라 절차가 궁금하면</p>
+    <div class="gcards">
+      {guides.map((g) => (
+        <a class="press hard gcard" href={`/guides/${g.id}/`}>
+          <span class="gt">{g.data.title}</span>
+          <span class="gl">{g.data.lede}</span>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+      ))}
+    </div>
   </section>
 
   <script define:vars={{ PAGE: HOME_PAGE_SIZE }}>
@@ -300,4 +315,32 @@ const chips = [
   }
 
   .empty { margin: 16px 0 0; font-size: 15px; font-weight: 600; color: var(--muted); }
+
+  /* --- 절차 가이드. 품목 목록과 성격이 달라 카드로 떼어 놓는다 --- */
+  .guidewrap { padding: 0 var(--pad) clamp(30px,5vw,56px); }
+  .gcards {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  .gcard {
+    border: 2px solid var(--ink);
+    background: var(--card);
+    padding: 20px 20px 22px;
+    display: grid;
+    gap: 8px;
+    align-content: start;
+    transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+  }
+  .gcard:hover { background: var(--lime); }
+  .gt { font-weight: 800; font-size: 20px; letter-spacing: -.035em; }
+  .gl {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+  .gcard:hover .gl { color: var(--ink); }
+  .gcard .go { font-weight: 800; }
 </style>

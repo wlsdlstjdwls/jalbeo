@@ -1,0 +1,226 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Sources from '../../components/Sources.astro';
+import { items as dbItems } from '../../lib/items';
+import { bg } from '../../lib/verdict';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const meta = entry.data;
+const { Content } = await render(entry);
+
+const guides = await getCollection('guides');
+const others = meta.relatedGuides
+  .map((id) => guides.find((g) => g.id === id))
+  .filter((g) => g !== undefined);
+
+const picked = meta.related
+  .map((slug) => dbItems.find((x) => x.slug === slug))
+  .filter((x) => x !== undefined);
+
+const title = `${meta.seoTitle ?? meta.title} | 잘버려`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: meta.title,
+  description: meta.description,
+  inLanguage: 'ko',
+  dateModified: meta.updated,
+  isAccessibleForFree: true,
+};
+---
+
+<Base title={title} description={meta.description} jsonLd={jsonLd}>
+  <div class="stephead">
+    <div class="stepbar">
+      <span class="stepno">가이드</span>
+      <span class="grow"></span>
+      <a class="back press" href="/">← 목록</a>
+    </div>
+
+    <h1 class="display">{meta.title}</h1>
+    <p class="lede">{meta.lede}</p>
+    <p class="hint">최종 확인 {meta.updated}</p>
+  </div>
+
+  <div class="blocks">
+    <article class="body rise"><Content /></article>
+
+    {picked.length > 0 && (
+      <div class="related rise">
+        <p class="caption divider">이 품목도 같이 봅니다</p>
+        <div class="rgrid">
+          {picked.map((r) => (
+            <a class="press hard rcard" href={`/${r.slug}/`}>
+              <span class="rn">{r.name}</span>
+              <span class="badge sm" style={`--bg:${bg(r.verdict)}`}>{r.verdict}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {others.length > 0 && (
+      <div class="related rise">
+        <p class="caption divider">다른 가이드</p>
+        <div class="rgrid">
+          {others.map((g) => (
+            <a class="press hard rcard" href={`/guides/${g.id}/`}>
+              <span class="rn">{g.data.title}</span>
+              <span class="go" aria-hidden="true">→</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <div class="rise"><Sources sources={meta.sources} updated={meta.updated} /></div>
+
+    <a class="press reset" href="/">물건별로 확인하기</a>
+  </div>
+</Base>
+
+<style>
+  .lede {
+    margin: 16px 0 0;
+    font-size: clamp(17px, 2.2vw, 21px);
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: -.02em;
+    max-width: 46ch;
+  }
+  .lede :global(strong) { background: var(--lime); padding: 2px 6px; }
+
+  .blocks {
+    padding: clamp(18px,3vw,32px) var(--pad) 0;
+    display: grid;
+    gap: clamp(18px,3vw,30px);
+  }
+
+  .body :global(h2) {
+    margin: clamp(18px,3vw,30px) 0 6px;
+    padding-top: 14px;
+    border-top: 2px solid var(--ink);
+    font-weight: 800;
+    font-size: clamp(23px,3.2vw,34px);
+    letter-spacing: -.04em;
+  }
+  .body :global(h2:first-child) { margin-top: 0; }
+  .body :global(h3) {
+    margin: 22px 0 4px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: -.03em;
+  }
+  .body :global(p) {
+    margin: 12px 0 0;
+    font-size: 16px;
+    line-height: 1.78;
+    color: var(--body);
+    max-width: 70ch;
+  }
+  .body :global(strong) { font-weight: 800; }
+  .body :global(a) { box-shadow: inset 0 -2px 0 var(--lime); }
+
+  .body :global(ul) {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0 0;
+    display: grid;
+    gap: 10px;
+    max-width: 70ch;
+  }
+  .body :global(ul > li) {
+    position: relative;
+    padding-left: 21px;
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--body);
+  }
+  .body :global(ul > li)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 9px;
+    height: 9px;
+    background: var(--ink);
+  }
+  .body :global(ol) {
+    margin: 14px 0 0;
+    padding-left: 1.3em;
+    max-width: 70ch;
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--body);
+  }
+
+  .body :global(table) {
+    width: 100%;
+    margin: 16px 0 0;
+    border: 2px solid var(--ink);
+    border-collapse: collapse;
+    background: var(--card);
+  }
+  .body :global(th), .body :global(td) {
+    border-bottom: 1px solid var(--line);
+    padding: 13px 15px;
+    text-align: left;
+    vertical-align: baseline;
+    overflow-wrap: anywhere;
+  }
+  .body :global(th) {
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: .06em;
+    color: var(--faint);
+    border-bottom: 2px solid var(--ink);
+  }
+  .body :global(td) { font-size: 14.5px; line-height: 1.55; color: var(--muted); }
+  .body :global(td:first-child) { font-weight: 800; font-size: 15px; color: var(--ink); }
+  .body :global(td:last-child strong) {
+    background: var(--lime);
+    padding: 2px 8px;
+    color: var(--ink);
+  }
+  .body :global(tr:last-child td) { border-bottom: 0; }
+  @media (max-width: 480px) {
+    .body :global(th), .body :global(td) { padding: 10px 11px; font-size: 13.5px; }
+  }
+
+  .rgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 10px;
+  }
+  .rcard {
+    border: 2px solid var(--ink);
+    background: var(--card);
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    transition: transform .16s ease, box-shadow .16s ease;
+  }
+  .rn { font-weight: 800; font-size: 18px; letter-spacing: -.03em; }
+  .badge.sm { padding: 3px 9px; font-size: 12px; }
+  .go { font-weight: 800; }
+
+  .reset {
+    margin-bottom: 44px;
+    display: block;
+    text-align: center;
+    border: 2px dashed var(--ink);
+    padding: 18px;
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .reset:hover { background: var(--lime); }
+</style>

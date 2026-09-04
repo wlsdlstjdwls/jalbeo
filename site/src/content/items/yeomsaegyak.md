@@ -6,7 +6,7 @@ sources:
   - title: "생활계 유해폐기물의 종류 (기후에너지환경부 고시 제2025-165호)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000266748&type=JSON"
     asOf: "2025-10-01"
-related: ["maenikyueo", "hwajangpum", "yeongyangje"]
+related: ["maenikyueo", "hwajangpum", "yak"]
 updated: "2026-09-04"
 ---
 
