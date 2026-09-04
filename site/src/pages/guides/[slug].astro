@@ -173,7 +173,7 @@ const jsonLd = {
     padding: 13px 15px;
     text-align: left;
     vertical-align: baseline;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
   }
   .body :global(th) {
     font-size: 12.5px;
@@ -181,6 +181,8 @@ const jsonLd = {
     letter-spacing: .06em;
     color: var(--faint);
     border-bottom: 2px solid var(--ink);
+    text-align: center;
+    white-space: nowrap;
   }
   .body :global(td) { font-size: 14.5px; line-height: 1.55; color: var(--muted); }
   .body :global(td:first-child) { font-weight: 800; font-size: 15px; color: var(--ink); }
