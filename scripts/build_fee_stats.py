@@ -37,6 +37,11 @@ EXTRA_ALIAS = {
     "서랍": "seorapjang", "수납장": "seorapjang",
     "건조대": "ppalraegeonjodae", "빨래걸이": "ppalraegeonjodae",
     "자토바이": None,   # 자전거 오탐 방지용 자리표시
+    # 대형폐기물 품목표의 '조명', '형광등'은 램프가 아니라 등기구다. 램프는
+    # 형광등 수거함으로 가는 물건이라 애초에 대형폐기물 신고 대상이 아니다.
+    # 그래서 형광등 페이지가 아니라 LED등(등기구) 페이지로 보낸다.
+    "조명기구": "leddeung", "조명": "leddeung", "전등": "leddeung",
+    "형광등": "leddeung", "led등": "leddeung", "전등틀": "leddeung",
 }
 
 # 과금 단위. 다수 지자체가 장롱을 '1쪽당'(문짝 하나당)으로 매긴다.

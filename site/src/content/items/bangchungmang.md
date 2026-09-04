@@ -3,7 +3,7 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
-related: ["haenggeo", "keoteun", "byeokji", "yuri"]
+related: ["mogijang", "haenggeo", "keoteun", "byeokji"]
 updated: "2026-09-04"
 ---
 
@@ -56,11 +56,9 @@ updated: "2026-09-04"
 
 ## 모기장은 다른 물건입니다
 
-침대에 치는 모기장, 캠핑용 모기장은 **섬유 제품**입니다.
-
-- 폴대(금속)를 빼면 고철
-- 망 부분은 종량제봉투. 의류수거함 대상이 아닙니다
-- 부피가 크면 대형폐기물 신고
+침대에 치는 모기장, 캠핑용 모기장은 알루미늄 틀이 없는 **섬유 제품**이라 답이
+다릅니다. 폴대를 빼면 대부분 종량제봉투로 끝납니다.
+[모기장](/mogijang)을 보세요.
 
 ## 망만 갈아 끼울 수 있습니다
 

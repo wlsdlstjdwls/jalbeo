@@ -3,7 +3,7 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
-related: ["seorapjang"]
+related: ["bapsang", "uija", "seorapjang"]
 updated: "2026-09-03"
 ---
 
@@ -43,6 +43,11 @@ updated: "2026-09-03"
 
 다리를 빼면 부피가 크게 줄어 수수료 구간이 내려가는 지자체가 있습니다.
 신고 전에 분해하고 실측값을 넣으세요.
+
+## 좌식 밥상은 다른 품목입니다
+
+교자상, 다과상, 좌탁은 품목표에서 식탁과 다른 칸에 있고 값이 절반쯤입니다.
+식탁으로 신고하면 더 냅니다. [밥상](/bapsang)을 보세요.
 
 ## 의자는 따로 셉니다
 

@@ -3,7 +3,7 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
-related: ["hyeonggwangdeung", "chungjeongi", "meoltitaep"]
+related: ["leddeung", "hyeonggwangdeung", "chungjeongi", "meoltitaep"]
 updated: "2026-09-04"
 ---
 
@@ -44,8 +44,8 @@ LED는 수은이 없으니 그냥 종량제봉투에 버리면 된다 — 오래
 
 - **LED 전구(벌브)** — 백열등 자리에 끼우는 나사식. 수거함 대상입니다
 - **LED 직관등** — 형광등 자리에 그대로 꽂는 막대형. 대상입니다
-- **LED 평판등, 방등 모듈** — 천장에 붙는 넓은 판. 크기가 커서 수거함에 안 들어가는
-  경우가 많습니다. 이때는 지자체에 문의하거나 소형 전기전자제품 경로를 씁니다
+- **LED 평판등, 방등, 거실등** — 천장에 붙는 등기구입니다. 수거함에 안 들어가고
+  대형폐기물로 갑니다. [LED등](/leddeung)에서 따로 다룹니다
 - **LED 스탠드, 무드등** — 이건 조명제품이 아니라 **소형 전기전자제품**입니다.
   훈령은 스탠드에 대해 <strong>"스탠드와 같이 형광등이 포함된 경우 형광등은
   분리하고 배출"</strong>하도록 합니다. 등만 빼서 수거함, 몸체는 소형가전 수거함입니다

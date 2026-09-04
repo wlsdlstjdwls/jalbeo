@@ -946,6 +946,26 @@
   "updated_at": "2026-09-04T07:52:55.358612+00:00"
  },
  {
+  "slug": "eunbakji",
+  "name": "은박지",
+  "aliases": [
+   "호일",
+   "쿠킹호일",
+   "알루미늄 호일",
+   "은박 접시",
+   "종이호일"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "알루미늄인데 캔이 아닙니다. 훈령이 종량제봉투로 지정합니다.",
+  "category": "금속류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 1395,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-04T08:17:27.095298+00:00"
+ },
+ {
   "slug": "hyangsu",
   "name": "향수",
   "aliases": [
@@ -1333,6 +1353,28 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "leddeung",
+  "name": "LED등",
+  "aliases": [
+   "엘이디등",
+   "방등",
+   "거실등",
+   "평판등",
+   "천장등",
+   "등기구",
+   "LED 조명"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "전구만 빼면 수거함, 등기구째면 대형폐기물입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 880,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-04T08:17:27.095298+00:00"
  },
  {
   "slug": "hyeonggwangdeung",
@@ -1744,6 +1786,26 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "mogijang",
+  "name": "모기장",
+  "aliases": [
+   "침대 모기장",
+   "원터치 모기장",
+   "캠핑 모기장",
+   "유아 모기장",
+   "방충 텐트"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "의류수거함에 넣으면 안 됩니다. 폴대를 빼면 대부분 종량제봉투입니다.",
+  "category": "섬유류",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 505,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-04T08:17:27.095298+00:00"
+ },
+ {
   "slug": "sohwagi",
   "name": "소화기",
   "aliases": [],
@@ -2029,6 +2091,27 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "bapsang",
+  "name": "밥상",
+  "aliases": [
+   "교자상",
+   "다과상",
+   "좌탁",
+   "차탁자",
+   "소반",
+   "좌식 테이블"
+  ],
+  "verdict": "대형폐기물",
+  "verdict_line": "다리를 접어도 수수료 구간은 안 내려갑니다. 상판 크기로 잽니다.",
+  "category": "가구류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 265,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-04T08:17:27.095298+00:00"
+ },
+ {
   "slug": "jangrong",
   "name": "장롱",
   "aliases": [
@@ -2058,24 +2141,6 @@
   "region_varies": false,
   "monthly_volume": 255,
   "competitor_has": true,
-  "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
- },
- {
-  "slug": "hoil",
-  "name": "호일",
-  "aliases": [
-   "은박지",
-   "알루미늄 호일",
-   "쿠킹호일"
-  ],
-  "verdict": "일반쓰레기",
-  "verdict_line": "알루미늄인데 캔이 아닙니다. 훈령이 종량제봉투로 지정합니다.",
-  "category": "금속류",
-  "housing_split": false,
-  "region_varies": false,
-  "monthly_volume": 255,
-  "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
@@ -2349,8 +2414,9 @@
   "name": "LED 전구",
   "aliases": [
    "led",
-   "led등",
-   "엘이디 전구"
+   "엘이디 전구",
+   "LED 벌브",
+   "LED 직관등"
   ],
   "verdict": "전용수거함",
   "verdict_line": "2026년 훈령부터 형광등 수거함 대상입니다. 일반쓰레기가 아닙니다.",
@@ -2360,7 +2426,7 @@
   "monthly_volume": 115,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-04T08:17:27.095298+00:00"
  },
  {
   "slug": "saengseonppyeo",
@@ -2383,8 +2449,9 @@
   "slug": "bangchungmang",
   "name": "방충망",
   "aliases": [
-   "모기장",
-   "방충망 틀"
+   "방충망 틀",
+   "창문 방충망",
+   "현관 방충망"
   ],
   "verdict": "조건부",
   "verdict_line": "망과 알루미늄 틀을 분리하면 절반이 고철로 빠집니다.",
@@ -2394,7 +2461,7 @@
   "monthly_volume": 105,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-04T08:17:27.095298+00:00"
  },
  {
   "slug": "beompeochimdae",
@@ -2537,9 +2604,10 @@
   "slug": "siktak",
   "name": "식탁",
   "aliases": [
-   "교자상",
    "대리석 식탁",
-   "밥상"
+   "4인용 식탁",
+   "6인용 식탁",
+   "주방 테이블"
   ],
   "verdict": "대형폐기물",
   "verdict_line": "유리 상판은 별도 배출. 의자는 개수만큼 따로 셉니다.",
@@ -2549,7 +2617,7 @@
   "monthly_volume": 80,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-04T08:17:27.095298+00:00"
  },
  {
   "slug": "doenjang",
