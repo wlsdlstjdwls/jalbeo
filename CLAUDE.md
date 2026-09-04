@@ -21,9 +21,9 @@
 - `db/` — Supabase 마이그레이션과 발행 SQL. **items 테이블이 저작 원본**이다.
   `site/src/data/items.json`을 직접 고쳐도 빌드 때 덮어써진다
 - `scripts/` — 데이터 파이프라인 (수수료 정규화, 수수료 통계, 품목 발행, 확장)
-- `site/src/pages/admin.astro` — 관리자 대시보드. 로그인이 없어 URL 토큰이 열쇠다
-  (`/admin/?k=<토큰>`). 토큰은 DB `admin_tokens`에만 있고 저장소에는 없다.
-  발급은 `python scripts/admin_token.py issue` (`docs/17`)
+- `site/src/pages/admin.astro` — 관리자 대시보드 `/admin/`. Supabase Auth 로그인.
+  계정이 있어도 `admins` 명단에 없으면 못 본다.
+  명단 관리는 `python scripts/admin_admins.py` (`docs/17`)
 - `site/public/` — 브랜드 자산. 원본 도형은 `favicon.svg`, 래스터(ico/png/og)는
   `scripts/build_brand_assets.py`가 같은 좌표로 다시 그린다
 

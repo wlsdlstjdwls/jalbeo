@@ -1,6 +1,6 @@
 # 관리자 대시보드 — 접속 현황
 
-> 2026-09-04 신설. 경로 `/admin/`. 로그인은 없고 URL의 토큰이 열쇠다.
+> 2026-09-04 신설. 경로 `/admin/`. Supabase Auth 이메일 로그인.
 
 ## 왜 필요한가
 
@@ -30,7 +30,8 @@
 
 | 파일 | 역할 |
 |---|---|
-| `db/migrations/0004_page_views.sql` | 테이블 2개 + RPC 4개 |
+| `db/migrations/0004_page_views.sql` | page_views 테이블 + 집계 RPC |
+| `db/migrations/0005_admin_auth.sql` | URL 토큰을 Supabase Auth 로그인으로 교체 |
 | `site/src/layouts/Base.astro` | 페이지뷰 1건 기록하는 인라인 스크립트 |
 | `site/src/pages/admin.astro` | 대시보드 화면 |
 | `site/src/lib/supabase-public.ts` | 빌드 때 anon 키를 읽어 페이지에 박는다 |
@@ -43,34 +44,38 @@
 
 ## 접근 통제
 
-로그인이 없으므로 auth로 막을 수가 없다. 대신 토큰이다.
+Supabase Auth 로그인이다 (`db/migrations/0005`). 처음에는 URL 토큰이었는데
+(`0004`), 외우기 쉬운 키를 쓰려는 순간 무너지는 구조였다. 통계 RPC가 공개라
+무차별 대입을 막는 게 아무 것도 없었다.
 
-- 통계 RPC는 전부 `p_token`을 받고 `admin_tokens`에 그 값이 있어야만 답한다.
-  없으면 `not authorized`로 끊는다
-- 토큰은 **DB에만 있고 저장소에는 없다.** 주소는 `/admin/?k=<토큰>` 꼴이다
-- 한 번 열면 브라우저가 localStorage에 기억한다. 그 뒤로는 `/admin`만 쳐도
-  열린다. 긴 주소를 들고 다니지 않게 하려는 것이다. 상단 '키 지우기'로 지운다
-- `page_views`, `admin_tokens` 둘 다 RLS를 켜고 정책을 하나도 안 열었다.
-  anon 키로 테이블에 직접 붙으면 빈 배열이 온다. 읽기/쓰기는 SECURITY DEFINER
-  함수로만 된다
+- 비밀번호는 `auth.users`에 해시로만 있다. 시도 제한, 세션 만료, 메일 재설정은
+  전부 Supabase Auth가 한다
+- 통계 RPC는 인자를 안 받는다. 요청에 실린 JWT의 이메일이 `admins` 명단에
+  있는지 `is_admin()`이 본다. 없으면 `not authorized`
+- **계정이 있는 것과 관리자인 것은 다르다.** 가입은 누구나 할 수 있어도
+  `admins`에 없으면 숫자를 못 본다
+- 세션은 localStorage에 둔다. access_token은 한 시간이면 만료되고
+  refresh_token으로 조용히 갱신한다. 상단 '로그아웃'으로 끊는다
+- `page_views`, `admins` 둘 다 RLS를 켜고 정책을 하나도 안 열었다.
+  테이블에 직접 붙으면 빈 배열이 온다. 읽기/쓰기는 SECURITY DEFINER 함수로만
 
-토큰 발급과 교체는 `scripts/admin_token.py`가 한다.
+계정 만들기 (한 번만):
 
 ```
-python scripts/admin_token.py issue                      무작위 32자
-python scripts/admin_token.py issue --key <내가 정한 키>  외우기 쉬운 키
-python scripts/admin_token.py issue --label phone        라벨 따로
-python scripts/admin_token.py list                       라벨과 앞 6자만
-python scripts/admin_token.py revoke <라벨>              폐기
+Supabase 대시보드 > Authentication > Users > Add user
+이메일과 비밀번호를 넣고 'Auto Confirm User'를 켠다
 ```
 
-`issue`는 같은 라벨의 기존 키를 지우고 새로 넣는다. 무작위 키는 그 출력에서만
-볼 수 있다. 직접 정한 키는 12자 미만이면 거절한다 - 통계 RPC가 공개라 짧은
-키는 찍힌다.
+관리자 명단은 `scripts/admin_admins.py`가 관리한다.
 
-한계는 분명하다. 토큰이 든 URL을 흘리면 그 사람이 통계를 본다. 대신 통계 조회
-말고는 아무 것도 못 한다 — 쓰기 함수는 `track_page_view` 하나뿐이고 그건 원래
-누구나 부르는 것이다.
+```
+python scripts/admin_admins.py list                명단 + 계정 유무
+python scripts/admin_admins.py add <이메일> [라벨]  명단에 넣기
+python scripts/admin_admins.py remove <이메일>      명단에서 빼기
+```
+
+명단에 넣는 것과 계정을 만드는 것은 순서 상관없다. 비밀번호는 이 스크립트를
+지나가지 않는다.
 
 ## 색인
 

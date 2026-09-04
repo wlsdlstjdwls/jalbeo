@@ -3,14 +3,14 @@ import Base from '../layouts/Base.astro';
 import { SUPABASE_URL, SUPABASE_ANON_KEY } from '../lib/supabase-public';
 
 /**
- * 관리자 대시보드. 접속정보만 본다.
+ * 관리자 대시보드. 접속 현황만 본다.
  *
- * 이 사이트에는 로그인이 없다. URL의 `?k=<토큰>`이 곧 열쇠다.
- * 토큰은 DB의 admin_tokens에만 있고 저장소에는 없다 (db/migrations/0004).
- * 토큰이 틀리면 RPC가 not authorized로 끊으므로 이 페이지가 공개돼도 숫자는 안 나온다.
- * 유출되면 그 행을 지우고 새 토큰을 넣으면 된다.
+ * 로그인은 Supabase Auth가 한다. 비밀번호는 auth.users에 해시로만 있고,
+ * 시도 제한과 세션 만료도 Supabase가 맡는다. 이 페이지는 받은 JWT를 실어
+ * 통계 RPC를 부를 뿐이고, 관리자인지 아닌지는 DB가 판정한다
+ * (`is_admin()`, `db/migrations/0005`).
  *
- * 페이지 자체는 정적이다. 숫자는 브라우저가 Supabase RPC로 직접 가져온다.
+ * 페이지 자체는 정적이다. 숫자는 브라우저가 Supabase에 직접 물어 온다.
  */
 const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
 ---
@@ -20,7 +20,7 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
     <div class="stepbar">
       <span class="stepno">ADMIN</span>
       <span class="grow"></span>
-      <button type="button" class="linkbtn" id="forget" hidden>키 지우기</button>
+      <button type="button" class="linkbtn" id="logout" hidden>로그아웃</button>
       <span class="stepno" id="updated">불러오는 중</span>
     </div>
     <h1 class="display">대시보드</h1>
@@ -38,13 +38,18 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
   )}
 
   <section class="pad" id="gate" hidden>
-    <p class="caption">관리자 키</p>
-    <p class="empty">
-      키를 넣으면 이 브라우저에만 저장됩니다.
-    </p>
-    <form class="tokenform" id="tokenform">
-      <input type="password" id="tokeninput" placeholder="관리자 키" autocomplete="off" />
-      <button type="submit" class="press hard">열기</button>
+    <p class="caption">로그인</p>
+    <form class="loginform" id="loginform">
+      <label class="field">
+        <span>이메일</span>
+        <input type="email" id="email" autocomplete="username" required />
+      </label>
+      <label class="field">
+        <span>비밀번호</span>
+        <input type="password" id="password" autocomplete="current-password" required />
+      </label>
+      <button type="submit" class="press hard" id="submit">로그인</button>
+      <p class="formmsg" id="formmsg" hidden></p>
     </form>
   </section>
 
@@ -103,17 +108,6 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
     .empty { margin: 0 0 14px; font-size: 14.5px; font-weight: 600; color: var(--muted); max-width: 60ch; }
     code { font-size: 13px; background: var(--hover); padding: 1px 5px; }
 
-    /* 입력창을 화면 폭까지 늘리지 않는다. 오른쪽은 버튼 hard shadow 4px 자리를 비워 둔다. */
-    .tokenform { display: flex; gap: 10px; max-width: 440px; padding-right: 4px; }
-    .tokenform input {
-      flex: 1 1 auto;
-      min-width: 0;
-      padding: 10px 12px;
-      border: 2px solid var(--ink);
-      background: var(--card);
-      font-weight: 600;
-    }
-    .tokenform input::placeholder { color: var(--ph); }
     .linkbtn {
       cursor: pointer;
       background: transparent;
@@ -126,14 +120,27 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
     }
     .linkbtn:hover { color: var(--ink); border-bottom-color: var(--ink); }
 
-    .tokenform button {
-      flex: 0 0 auto;
+    .loginform { display: grid; gap: 12px; max-width: 340px; padding-right: 4px; }
+    .field { display: grid; gap: 5px; }
+    .field span { font-size: 12px; font-weight: 800; color: var(--faint); }
+    .field input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 2px solid var(--ink);
+      background: var(--card);
+      font-weight: 600;
+    }
+    .loginform button {
+      justify-self: start;
       cursor: pointer;
-      padding: 10px 20px;
+      margin-top: 2px;
+      padding: 10px 24px;
       border: 2px solid var(--ink);
       background: var(--lime);
       font-weight: 800;
     }
+    .loginform button[disabled] { cursor: default; background: var(--hover); }
+    .formmsg { margin: 2px 0 0; font-size: 13px; font-weight: 700; }
 
     .tiles {
       display: grid;
@@ -201,42 +208,88 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
   </style>
 
   {ready && (
-    <script is:inline define:vars={{ base: `${SUPABASE_URL}/rest/v1/rpc`, key: SUPABASE_ANON_KEY }}>
+    <script is:inline define:vars={{ origin: SUPABASE_URL, key: SUPABASE_ANON_KEY }}>
       (function () {
         var REFRESH_MS = 60000;
-        var STORE = 'jalbeo_admin_key';
+        var STORE = 'jalbeo_admin_session';
         var $ = function (id) { return document.getElementById(id); };
         var num = function (n) { return Number(n || 0).toLocaleString('ko-KR'); };
+        var timer = null;
 
-        // 주소의 ?k= 가 우선. 한 번 받으면 이 브라우저가 계속 기억한다.
-        // 매번 긴 주소를 들고 다니지 않게 하려는 것이다 - /admin 만 쳐도 열린다.
-        // 공용 PC라면 상단 '키 지우기'로 지운다.
-        function token() {
-          var q = new URLSearchParams(location.search).get('k');
-          if (q) {
-            remember(q);
-            return q;
-          }
-          try { return localStorage.getItem(STORE) || ''; } catch (e) { return ''; }
+        // --- 세션 --------------------------------------------------------
+        // access_token은 한 시간이면 만료된다. refresh_token으로 조용히 갱신하고
+        // 그것마저 거절되면 로그인 화면으로 돌린다.
+        function saveSession(s) {
+          try {
+            localStorage.setItem(STORE, JSON.stringify({
+              access_token: s.access_token,
+              refresh_token: s.refresh_token,
+              expires_at: s.expires_at,
+            }));
+          } catch (e) {}
         }
 
-        function remember(v) {
-          try { localStorage.setItem(STORE, v); } catch (e) {}
+        function loadSession() {
+          try { return JSON.parse(localStorage.getItem(STORE) || 'null'); } catch (e) { return null; }
         }
 
-        function rpc(name, body) {
-          return fetch(base + '/' + name, {
+        function clearSession() {
+          try { localStorage.removeItem(STORE); } catch (e) {}
+        }
+
+        function auth(path, body) {
+          return fetch(origin + '/auth/v1/' + path, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', apikey: key },
+            body: JSON.stringify(body),
+          }).then(function (res) {
+            return res.json().then(function (data) {
+              if (!res.ok) throw new Error(data.error_description || data.msg || String(res.status));
+              return data;
+            });
+          });
+        }
+
+        // 만료 60초 전부터 미리 갱신한다. 화면이 1분마다 도니 그 사이에 안 끊긴다.
+        function validSession() {
+          var s = loadSession();
+          if (!s || !s.refresh_token) return Promise.reject(new Error('no-session'));
+          var now = Math.floor(Date.now() / 1000);
+          if (s.expires_at && s.expires_at - 60 > now) return Promise.resolve(s);
+          return auth('token?grant_type=refresh_token', { refresh_token: s.refresh_token })
+            .then(function (fresh) { saveSession(fresh); return fresh; });
+        }
+
+        function rpc(session, name, body) {
+          return fetch(origin + '/rest/v1/rpc/' + name, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
               apikey: key,
-              Authorization: 'Bearer ' + key,
+              Authorization: 'Bearer ' + session.access_token,
             },
-            body: JSON.stringify(body),
+            body: JSON.stringify(body || {}),
           }).then(function (res) {
-            if (!res.ok) throw new Error(String(res.status));
+            if (!res.ok) throw new Error('rpc-' + res.status);
             return res.json();
           });
+        }
+
+        // --- 화면 --------------------------------------------------------
+        function note(text, bad) {
+          var el = $('formmsg');
+          el.textContent = text || '';
+          el.style.color = bad ? '#b3261e' : 'var(--faint)';
+          el.hidden = !text;
+        }
+
+        function showGate(message) {
+          $('board').hidden = true;
+          $('gate').hidden = false;
+          $('logout').hidden = true;
+          $('updated').textContent = '';
+          $('lede').textContent = '관리자 계정으로 로그인해 주세요.';
+          note(message, Boolean(message));
         }
 
         function drawChart(rows) {
@@ -261,73 +314,102 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
           }).join('');
         }
 
-        // 키가 아예 없는 것과 틀린 것은 다른 상황이다. 문구도 다르게 준다.
-        function fail(wrong) {
-          $('board').hidden = true;
-          $('gate').hidden = false;
-          $('forget').hidden = true;
-          $('updated').textContent = '';
-          $('lede').textContent = wrong
-            ? '키가 맞지 않습니다. 다시 확인해 주세요.'
-            : '관리자 키를 넣으면 열립니다.';
+        function render(out) {
+          var s = (out[0] || [])[0] || {};
+          var daily = out[1] || [];
+          var mix = out[2] || [];
+
+          $('gate').hidden = true;
+          $('board').hidden = false;
+          $('logout').hidden = false;
+          $('v-live').textContent = num(s.concurrent_visitors);
+          $('v-today').textContent = num(s.today_visitors);
+          $('v-todayviews').textContent = num(s.today_views);
+          $('v-total').textContent = num(s.total_visitors);
+          $('v-totalviews').textContent = num(s.total_views);
+          $('v-per').textContent = s.total_visitors
+            ? (s.total_views / s.total_visitors).toFixed(1)
+            : '-';
+          $('v-since').textContent = s.first_view_at
+            ? '수집 시작 ' + s.first_view_at.slice(0, 10)
+            : '아직 기록 없음';
+
+          drawChart(daily);
+          drawRank($('paths'), mix.filter(function (r) { return r.kind === 'path'; }).slice(0, 12), '아직 기록 없음');
+          drawRank($('refs'), mix.filter(function (r) { return r.kind === 'referrer'; }).slice(0, 12), '아직 기록 없음');
+
+          $('updated').textContent =
+            new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }) + ' 기준';
+          $('lede').textContent = '방문자 현황을 1분마다 새로 불러옵니다.';
+        }
+
+        function stopTimer() {
+          if (timer) { clearInterval(timer); timer = null; }
         }
 
         function load() {
-          var k = token();
-          if (!k) return fail(false);
-
-          Promise.all([
-            rpc('admin_visitor_stats', { p_token: k }),
-            rpc('admin_visitor_daily', { p_token: k, p_days: 14 }),
-            rpc('admin_visitor_breakdown', { p_token: k, p_since_days: 7 }),
-          ]).then(function (out) {
-            var s = (out[0] || [])[0] || {};
-            var daily = out[1] || [];
-            var mix = out[2] || [];
-
-            $('gate').hidden = true;
-            $('board').hidden = false;
-            $('forget').hidden = false;
-            $('v-live').textContent = num(s.concurrent_visitors);
-            $('v-today').textContent = num(s.today_visitors);
-            $('v-todayviews').textContent = num(s.today_views);
-            $('v-total').textContent = num(s.total_visitors);
-            $('v-totalviews').textContent = num(s.total_views);
-            $('v-per').textContent = s.total_visitors
-              ? (s.total_views / s.total_visitors).toFixed(1)
-              : '-';
-            $('v-since').textContent = s.first_view_at
-              ? '수집 시작 ' + s.first_view_at.slice(0, 10)
-              : '아직 기록 없음';
-
-            drawChart(daily);
-            drawRank($('paths'), mix.filter(function (r) { return r.kind === 'path'; }).slice(0, 12), '아직 기록 없음');
-            drawRank($('refs'), mix.filter(function (r) { return r.kind === 'referrer'; }).slice(0, 12), '아직 기록 없음');
-
-            $('updated').textContent =
-              new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }) + ' 기준';
-            $('lede').textContent = '방문자 현황을 1분마다 새로 불러옵니다.';
-          }).catch(function () { fail(true); });
+          return validSession().then(function (session) {
+            return Promise.all([
+              rpc(session, 'admin_visitor_stats'),
+              rpc(session, 'admin_visitor_daily', { p_days: 14 }),
+              rpc(session, 'admin_visitor_breakdown', { p_since_days: 7 }),
+            ]).then(render);
+          }).catch(function (err) {
+            stopTimer();
+            // 로그인은 됐는데 명단에 없는 계정이면 RPC 쪽에서 끊긴다.
+            // 세션 문제와 권한 문제는 안내가 달라야 한다.
+            if (String(err.message).indexOf('rpc-') === 0) {
+              showGate('이 계정은 관리자로 등록돼 있지 않습니다.');
+            } else {
+              clearSession();
+              showGate('');
+            }
+          });
         }
 
-        $('tokenform').addEventListener('submit', function (e) {
+        function start() {
+          if (!timer) timer = setInterval(load, REFRESH_MS);
+        }
+
+        $('loginform').addEventListener('submit', function (e) {
           e.preventDefault();
-          var v = $('tokeninput').value.trim();
-          if (!v) return;
-          remember(v);
-          $('tokeninput').value = '';
-          load();
+          var email = $('email').value.trim();
+          var password = $('password').value;
+          if (!email || !password) return;
+
+          $('submit').disabled = true;
+          note('로그인 중...', false);
+          auth('token?grant_type=password', { email: email, password: password })
+            .then(function (session) {
+              saveSession(session);
+              $('password').value = '';
+              note('', false);
+              return load().then(start);
+            })
+            .catch(function () {
+              note('이메일 또는 비밀번호가 맞지 않습니다.', true);
+            })
+            .then(function () { $('submit').disabled = false; });
         });
 
-        $('forget').addEventListener('click', function () {
-          try { localStorage.removeItem(STORE); } catch (e) {}
-          // 주소에 키가 남아 있으면 새로고침하자마자 다시 저장된다. 먼저 턴다.
-          history.replaceState(null, '', location.pathname);
-          fail(false);
+        $('logout').addEventListener('click', function () {
+          var s = loadSession();
+          if (s) {
+            fetch(origin + '/auth/v1/logout', {
+              method: 'POST',
+              headers: { apikey: key, Authorization: 'Bearer ' + s.access_token },
+            }).catch(function () {});
+          }
+          clearSession();
+          stopTimer();
+          showGate('');
         });
 
-        load();
-        setInterval(load, REFRESH_MS);
+        if (loadSession()) {
+          load().then(start);
+        } else {
+          showGate('');
+        }
       })();
     </script>
   )}
