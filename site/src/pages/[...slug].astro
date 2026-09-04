@@ -164,9 +164,16 @@ const jsonLd = {
       // 본문이 통째로 빠진다. JS는 답 전환과 ?opt= 동기화만 맡는다.
       var radios = document.querySelectorAll('.optin');
       var step3 = document.getElementById('step3');
+      var topbar = document.querySelector('.topbar');
 
       function pushOpt(i) {
         history.pushState({}, '', i === null ? location.pathname : '?opt=' + i);
+      }
+
+      function scrollToStep3() {
+        var offset = topbar ? topbar.getBoundingClientRect().height : 0;
+        var y = step3.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
       }
 
       function applyFromUrl() {
@@ -179,7 +186,7 @@ const jsonLd = {
       for (var i = 0; i < radios.length; i++) {
         radios[i].addEventListener('change', function (e) {
           pushOpt(e.target.id.slice(4));
-          step3.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          scrollToStep3();
         });
       }
 
