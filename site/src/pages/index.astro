@@ -179,7 +179,7 @@ const chips = [
         lastShown = shown;
         head.textContent = filter ? filter + ' ' + shown + '개'
           : term ? '검색 결과 ' + shown + '개'
-          : '많이 찾는 품목';
+          : '전체 품목 (많이 찾는 순)';
         empty.hidden = shown !== 0;
 
         var rest = shown - drawn;
@@ -243,7 +243,7 @@ const chips = [
     display: grid;
     place-items: center;
     flex: none;
-    width: clamp(80px, 22vw, 96px);
+    width: clamp(88px, 24vw, 104px);
     padding: 0 8px;
     border-left: 2px solid var(--ink);
     font-size: 13px;
