@@ -38,7 +38,7 @@ for (const g of await getCollection('guides')) {
   <section class="stephead">
     <div class="stepbar">
       <span class="stepno">ADMIN</span>
-      <a class="linkbtn" href="/">홈으로</a>
+      <a class="back" href="/">홈으로</a>
       <span class="grow"></span>
       <button type="button" class="linkbtn" id="logout" hidden>로그아웃</button>
       <span class="stepno" id="updated">불러오는 중</span>
@@ -139,6 +139,7 @@ for (const g of await getCollection('guides')) {
   <style>
     /* 동시접속 표시등. 사이트 팔레트에 없는 색이라 이 화면에서만 정의한다. */
     #board { --live: #2fa84f; }
+    .stepbar a.back { text-decoration: none; display: inline-flex; align-items: center; }
 
     .pad { padding: clamp(18px, 3vw, 30px) var(--pad) clamp(28px, 5vw, 56px); }
     /* 품목 페이지의 .caption.divider는 전체 폭 윗줄을 긋는다. 여기서는 타일과
