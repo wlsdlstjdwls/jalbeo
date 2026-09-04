@@ -53,12 +53,16 @@
   anon 키로 테이블에 직접 붙으면 빈 배열이 온다. 읽기/쓰기는 SECURITY DEFINER
   함수로만 된다
 
-토큰 교체:
+토큰 발급과 교체는 `scripts/admin_token.py`가 한다.
 
-```sql
-delete from admin_tokens where label = 'owner';
-insert into admin_tokens (token, label) values ('<새 토큰>', 'owner');
 ```
+python scripts/admin_token.py issue [라벨]   새로 발급하고 접속 주소를 출력
+python scripts/admin_token.py list           라벨과 앞 6자만 조회
+python scripts/admin_token.py revoke <라벨>  폐기
+```
+
+`issue`는 같은 라벨의 기존 토큰을 지우고 새로 넣는다. 발급값은 그 출력에서만
+볼 수 있다. 어디에도 안 적어 두므로 잃어버리면 다시 발급한다.
 
 한계는 분명하다. 토큰이 든 URL을 흘리면 그 사람이 통계를 본다. 대신 통계 조회
 말고는 아무 것도 못 한다 — 쓰기 함수는 `track_page_view` 하나뿐이고 그건 원래

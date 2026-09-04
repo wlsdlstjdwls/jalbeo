@@ -98,8 +98,7 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
   </section>
 
   <style>
-    .pad { padding: clamp(18px, 3vw, 30px) var(--pad) 0; }
-    .pad:last-of-type { padding-bottom: clamp(28px, 5vw, 56px); }
+    .pad { padding: clamp(18px, 3vw, 30px) var(--pad) clamp(28px, 5vw, 56px); }
     .empty { margin: 0 0 14px; font-size: 14.5px; font-weight: 600; color: var(--muted); max-width: 60ch; }
     code { font-size: 13px; background: var(--hover); padding: 1px 5px; }
 
