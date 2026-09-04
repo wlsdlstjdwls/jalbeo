@@ -60,7 +60,17 @@ const trackable = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
   </head>
   <body>
     <div class="topbar">
-      <a href="/" class="logo">잘버려</a>
+      <a href="/" class="logo">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" fill="#c9f24d"/>
+          <rect x="3" y="3" width="58" height="58" fill="none" stroke="#111" stroke-width="6"/>
+          <rect x="29" y="10" width="6" height="11" fill="#111"/>
+          <polygon points="22,19 42,19 32,31" fill="#111"/>
+          <rect x="15" y="34" width="34" height="5" fill="#111"/>
+          <polygon points="19,42 45,42 42,55 22,55" fill="#111"/>
+        </svg>
+        <span>잘버려</span>
+      </a>
     </div>
 
     <main><slot /></main>
@@ -166,7 +176,21 @@ const trackable = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
         border-bottom: 2px solid var(--ink);
         background: var(--paper);
       }
-      .topbar .logo { font-weight: 800; font-size: 18px; letter-spacing: -.03em; }
+      .topbar .logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        font-weight: 800;
+        font-size: 18px;
+        letter-spacing: -.03em;
+      }
+      /* 파비콘과 같은 도형. 래스터를 부르지 않고 인라인으로 둔다 (요청 0건) */
+      .topbar .logo .mark {
+        display: block;
+        width: 24px;
+        height: 24px;
+        flex: none;
+      }
 
       /* --- 스텝 헤더 --- */
       .stephead {
