@@ -45,8 +45,18 @@ jobs:
       - name: 변경분 확인
         id: diff
         run: |
-          TARGETS="data/processed/fees.csv data/processed/fees_report.json data/raw/fees/manifest.json data/raw/guidelines data/guidelines"
-          if git diff --quiet -- $TARGETS; then
+          # 수집일자(collected_at)가 박힌 manifest.json/fees_report.json은 뺀다.
+          # 재수집할 때마다 그 필드만 바뀌어서 실제 값이 그대로여도 diff가 난다.
+          # 발령일자(issued)가 진짜 신호이고, 그건 아래 두 파일이 담고 있다.
+          TARGETS="data/processed/fees.csv data/guidelines/item-verdicts.csv data/guidelines/disposal-rules.json"
+          # manifest.json의 collected_at(수집 시각)은 재수집할 때마다 항상 바뀐다.
+          # 그 줄만 있는 diff는 "변경 없음"으로 친다 — 안 그러면 매번 오탐한다.
+          # grep '^[+-][^+-]' 로 --- / +++ 파일 헤더 줄은 빼고 실제 내용 줄만 본다.
+          # 이 스크립트들은 csv 모듈로 CRLF를 쓰는데 커밋된 원본은 LF다.
+          # 로컬 Windows에서는 git이 자동으로 맞춰 보여서 안 드러나지만
+          # 우분투 러너에서는 매 줄이 다르다고 나온다. --ignore-cr-at-eol로 무시한다.
+          MEANINGFUL=$(git diff --ignore-cr-at-eol -- $TARGETS | grep -v '"collected_at"' | grep -E '^[+-][^+-]' || true)
+          if [ -z "$MEANINGFUL" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi

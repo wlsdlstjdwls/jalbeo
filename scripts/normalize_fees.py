@@ -228,6 +228,11 @@ def main():
                        "mapped": sorted(cmap.keys())})
         print("  %-58s %5d행" % (fname[:58], kept))
 
+    # 원본 파일 순서나 다운로드 시점이 흔들려도 출력은 고정되게 정렬한다.
+    # 안 하면 내용은 그대로인데 매번 diff가 나서 최신성 체크가 오탐한다.
+    rows.sort(key=lambda r: (r["sido"], r["sigungu"], r["category"], r["item"],
+                              r["spec"], r["fee"], r["dataset_id"]))
+
     cols = ["sido", "sigungu", "category", "item", "spec", "fee", "base_date",
             "dataset_id", "source_url"]
     with io.open(os.path.join(OUT, "fees.csv"), "w", encoding="utf-8", newline="") as f:

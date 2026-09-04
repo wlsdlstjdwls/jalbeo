@@ -180,6 +180,11 @@ def main():
         for name in r["excludes"]:
             rows.append({"item": name, "verdict": "X", "category": r["category"],
                          "subitem": r["subitem"], "basis": "비해당품목"})
+
+    # PDF 재추출 시 좌표가 미세하게 흔들리면 행 순서가 바뀔 수 있다. 내용이
+    # 같아도 매번 diff가 나서 최신성 체크가 오탐하므로 출력 직전 정렬로 고정한다.
+    rows.sort(key=lambda r: (r["category"], r["subitem"], r["verdict"], r["item"]))
+
     with open(os.path.join(OUTDIR, "item-verdicts.csv"), "w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["item", "verdict", "category", "subitem", "basis"])
         w.writeheader()
