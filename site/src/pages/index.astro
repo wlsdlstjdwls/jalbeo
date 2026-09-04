@@ -348,6 +348,9 @@ const chips = [
     .row .nm { grid-area: 1 / 1; }
     .row .rt { grid-area: 1 / 2; }
     .row .ln { grid-area: 2 / 1 / 3 / 3; }
+    /* 터치 환경엔 호버가 없어 화살표가 항상 숨은 채 자리만 차지한다.
+       그 폭 때문에 뱃지 오른쪽 여백이 이름 왼쪽 여백보다 커 보였다. */
+    .row .go { display: none; }
   }
 
   .empty { margin: 16px 0 0; font-size: 15px; font-weight: 600; color: var(--muted); }
