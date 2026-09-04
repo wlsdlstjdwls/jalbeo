@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-09-03",
+  "collected_at": "2026-09-05",
   "keyword": "대형폐기물 수수료",
   "search_url": "https://www.data.go.kr/tcs/dss/selectDataSetList.do?dType=FILE&keyword=%EB%8C%80%ED%98%95%ED%8F%90%EA%B8%B0%EB%AC%BC%20%EC%88%98%EC%88%98%EB%A3%8C",
   "total": 78,
@@ -73,17 +73,6 @@
       "bytes": 3604
     },
     {
-      "dataset_id": "15040943",
-      "title": "경기도 부천시_대형폐기물 처리수수료 현황_20250709",
-      "source_url": "https://www.data.go.kr/data/15040943/fileData.do",
-      "provider": null,
-      "updated": null,
-      "base_date": null,
-      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003183962&fileDetailSn=1&insertDataPrcus=N",
-      "saved_as": "경기도_부천시_대형폐기물 처리수수료 현황_20250709.csv",
-      "bytes": 8379
-    },
-    {
       "dataset_id": "15069011",
       "title": "경기도 안양시_대형폐기물인터넷배출신고 품목별 처리수수료_20251223",
       "source_url": "https://www.data.go.kr/data/15069011/fileData.do",
@@ -93,6 +82,17 @@
       "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003570008&fileDetailSn=1&insertDataPrcus=N",
       "saved_as": "경기도 안양시_대형폐기물인터넷배출신고 품목별 처리수수료_20251223.csv",
       "bytes": 6300
+    },
+    {
+      "dataset_id": "15040943",
+      "title": "경기도 부천시_대형폐기물 처리수수료 현황_20250709",
+      "source_url": "https://www.data.go.kr/data/15040943/fileData.do",
+      "provider": null,
+      "updated": null,
+      "base_date": null,
+      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003183962&fileDetailSn=1&insertDataPrcus=N",
+      "saved_as": "경기도_부천시_대형폐기물 처리수수료 현황_20250709.csv",
+      "bytes": 8379
     },
     {
       "dataset_id": "15094076",
