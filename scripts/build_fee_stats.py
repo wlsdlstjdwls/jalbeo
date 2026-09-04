@@ -30,7 +30,7 @@ EXTRA_ALIAS = {
     "전기밥솥": "bapsot", "압력밥솥": "bapsot",
     "전기레인지": "gaseureinji", "가스렌지": "gaseureinji",
     "디지털피아노": "jeonjapiano", "전자올겐": "jeonjapiano",
-    "옷장": "jangrong", "장농": "jangrong",
+    "장농": "jangrong",
     "진공청소기": "cheongsogi",
     "봉제인형": "inhyeong",
     "화장다이": "hwajangdae", "경대": "hwajangdae",

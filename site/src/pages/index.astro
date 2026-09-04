@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 import { items as dbItems } from '../lib/items';
 import { bg, VERDICT_ORDER } from '../lib/verdict';
 import { HOME_PAGE_SIZE } from '../lib/constants';
+import { searchKey } from '../lib/search';
 
 const bodies = new Set((await getCollection('items')).map((b) => b.id));
 const live = dbItems.filter((row) => bodies.has(row.slug));
@@ -72,7 +73,7 @@ const chips = [
             class="row"
             href={`/${row.slug}/`}
             data-v={row.verdict}
-            data-key={`${row.name} ${aliases.join(' ')} ${row.verdict}`}
+            data-key={searchKey(row)}
           >
             <span class="nm">
               <span class="n">{row.name}</span>
@@ -114,8 +115,10 @@ const chips = [
       // PAGE 값의 출처는 lib/constants.ts (HOME_PAGE_SIZE) — define:vars로 주입.
       var limit = PAGE;
 
+      // 질의도 키와 같은 규칙으로 눌러 준다 (lib/search.ts의 normalize).
+      // '보조 배터리' -> '보조배터리', 'SOPA' -> 'sopa'.
       function apply() {
-        var term = q.value.trim().toLowerCase();
+        var term = q.value.replace(/\s+/g, '').toLowerCase();
         var narrowed = !!(filter || term);
         var shown = 0;      // 조건을 통과한 개수
         var drawn = 0;      // 실제로 화면에 그린 개수

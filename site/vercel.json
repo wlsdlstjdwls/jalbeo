@@ -4,5 +4,11 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm ci",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/syopa", "destination": "/sopa", "permanent": true },
+    { "source": "/syopa/", "destination": "/sopa/", "permanent": true },
+    { "source": "/jangnong", "destination": "/jangrong", "permanent": true },
+    { "source": "/jangnong/", "destination": "/jangrong/", "permanent": true }
+  ]
 }

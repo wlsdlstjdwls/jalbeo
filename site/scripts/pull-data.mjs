@@ -22,7 +22,9 @@ const KEY = process.env.SUPABASE_ANON_KEY;
  * 만든다. DB 테이블 자체(db/migrations)는 남아 있지만 site는 더 이상 읽지 않는다.
  */
 const TABLES = {
-  items: 'items?select=*&published=eq.true&order=monthly_volume.desc.nullslast',
+  // 미측정 품목(monthly_volume null)이 뒤로 가되, 그 안에서는 이름순으로 고정한다.
+  // 2차 정렬이 없으면 빌드마다 목록 꼬리 순서가 바뀌어 diff가 지저분해진다.
+  items: 'items?select=*&published=eq.true&order=monthly_volume.desc.nullslast,name.asc',
   regions: 'regions?select=*&order=sido,sigungu',
   item_region_rules: 'item_region_rules?select=*',
   guideline_verdicts: 'guideline_verdicts?select=*',
