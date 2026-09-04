@@ -16,6 +16,8 @@ export const GET: APIRoute = ({ site }) => {
     ? [
         'User-agent: *',
         'Allow: /',
+        '# 관리자 화면. 색인 대상이 아니다 (src/pages/admin.astro)',
+        'Disallow: /admin',
         '',
         `Sitemap: ${new URL('sitemap-index.xml', site).href}`,
         '',

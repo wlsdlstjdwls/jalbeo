@@ -1,16 +1,22 @@
 ---
 import { isProductionHost } from '../lib/site';
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from '../lib/supabase-public';
 
 interface Props {
   title: string;
   description: string;
   jsonLd?: unknown;
+  /** 정식 도메인에서도 색인을 막을 페이지 (관리자 화면 등). */
+  noindex?: boolean;
 }
-const { title, description, jsonLd } = Astro.props;
+const { title, description, jsonLd, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 
 // 정식 도메인이 아니면 색인을 막는다. robots.txt와 같은 기준 (lib/site.ts, 게이트 2 오염 방지).
-const indexable = isProductionHost(Astro.site?.host ?? '');
+const indexable = !noindex && isProductionHost(Astro.site?.host ?? '');
+
+// 방문자 집계. 키가 없으면 스크립트 자체를 안 내보낸다 (로컬 클론에서도 빌드가 돈다).
+const trackable = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
 ---
 
 <!doctype html>
@@ -42,6 +48,35 @@ const indexable = isProductionHost(Astro.site?.host ?? '');
     </div>
 
     <main><slot /></main>
+
+    {trackable && (
+      <script is:inline define:vars={{ endpoint: `${SUPABASE_URL}/rest/v1/rpc/track_page_view`, key: SUPABASE_ANON_KEY }}>
+        // 페이지뷰 1건 기록. 저장하는 건 브라우저별 무작위 UUID, 경로, 유입 호스트뿐이다.
+        (function () {
+          try {
+            if (location.pathname.indexOf('/admin') === 0) return;
+            var id = localStorage.getItem('jalbeo_vid');
+            if (!id) {
+              id = crypto.randomUUID();
+              localStorage.setItem('jalbeo_vid', id);
+            }
+            var ref = '';
+            if (document.referrer) {
+              var host = new URL(document.referrer).host;
+              if (host && host !== location.host) ref = host;
+            }
+            fetch(endpoint, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', apikey: key, Authorization: 'Bearer ' + key },
+              body: JSON.stringify({ p_visitor_id: id, p_path: location.pathname, p_referrer_host: ref }),
+              keepalive: true,
+            }).catch(function () {});
+          } catch (e) {
+            /* 집계 실패가 페이지를 막지 않는다 */
+          }
+        })();
+      </script>
+    )}
 
     <footer class="foot">
       <nav class="footnav">

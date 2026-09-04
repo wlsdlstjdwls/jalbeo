@@ -1,0 +1,302 @@
+---
+import Base from '../layouts/Base.astro';
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from '../lib/supabase-public';
+
+/**
+ * 관리자 대시보드. 접속정보만 본다.
+ *
+ * 이 사이트에는 로그인이 없다. URL의 `?k=<토큰>`이 곧 열쇠다.
+ * 토큰은 DB의 admin_tokens에만 있고 저장소에는 없다 (db/migrations/0004).
+ * 토큰이 틀리면 RPC가 not authorized로 끊으므로 이 페이지가 공개돼도 숫자는 안 나온다.
+ * 유출되면 그 행을 지우고 새 토큰을 넣으면 된다.
+ *
+ * 페이지 자체는 정적이다. 숫자는 브라우저가 Supabase RPC로 직접 가져온다.
+ */
+const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
+---
+
+<Base title="대시보드 — 잘버려" description="관리자 전용 접속 현황." noindex>
+  <section class="stephead">
+    <div class="stepbar">
+      <span class="stepno">ADMIN</span>
+      <span class="grow"></span>
+      <span class="stepno" id="updated">불러오는 중</span>
+    </div>
+    <h1 class="display">대시보드</h1>
+    <p class="hint" id="lede">접속 현황만 본다. 1분마다 다시 잰다.</p>
+  </section>
+
+  {!ready && (
+    <section class="pad">
+      <p class="empty">
+        Supabase 공개 설정이 없어 숫자를 못 가져온다.
+        <code>site/.env.public</code>의 <code>SUPABASE_URL</code>,
+        <code>SUPABASE_ANON_KEY</code>를 채우고 다시 빌드한다.
+      </p>
+    </section>
+  )}
+
+  <section class="pad" id="gate" hidden>
+    <p class="caption">토큰</p>
+    <p class="empty">
+      주소에 <code>?k=토큰</code>이 없거나 틀렸다. 아래에 넣으면 이 브라우저에만 기억한다.
+    </p>
+    <form class="tokenform" id="tokenform">
+      <input type="password" id="tokeninput" placeholder="관리자 토큰" autocomplete="off" />
+      <button type="submit" class="press hard">열기</button>
+    </form>
+  </section>
+
+  <section class="pad" id="board" hidden>
+    <p class="caption">방문자</p>
+    <div class="tiles">
+      <div class="tile">
+        <p class="tlabel"><span class="dot"></span>동시접속</p>
+        <p class="tval" id="v-live">-</p>
+        <p class="tsub">최근 5분</p>
+      </div>
+      <div class="tile">
+        <p class="tlabel">오늘 방문자</p>
+        <p class="tval" id="v-today">-</p>
+        <p class="tsub">KST 자정 기준</p>
+      </div>
+      <div class="tile">
+        <p class="tlabel">오늘 조회수</p>
+        <p class="tval" id="v-todayviews">-</p>
+        <p class="tsub">페이지뷰</p>
+      </div>
+      <div class="tile">
+        <p class="tlabel">누적 방문자</p>
+        <p class="tval" id="v-total">-</p>
+        <p class="tsub" id="v-since">수집 시작 미상</p>
+      </div>
+      <div class="tile">
+        <p class="tlabel">누적 조회수</p>
+        <p class="tval" id="v-totalviews">-</p>
+        <p class="tsub">페이지뷰</p>
+      </div>
+      <div class="tile">
+        <p class="tlabel">방문당 조회</p>
+        <p class="tval" id="v-per">-</p>
+        <p class="tsub">누적 조회 / 누적 방문자</p>
+      </div>
+    </div>
+
+    <p class="caption divider">최근 14일</p>
+    <div class="chart" id="chart"></div>
+
+    <div class="cols">
+      <div>
+        <p class="caption divider">인기 경로 (7일)</p>
+        <table class="rank"><tbody id="paths"></tbody></table>
+      </div>
+      <div>
+        <p class="caption divider">유입 경로 (7일)</p>
+        <table class="rank"><tbody id="refs"></tbody></table>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .pad { padding: clamp(18px, 3vw, 30px) var(--pad) 0; }
+    .pad:last-of-type { padding-bottom: clamp(28px, 5vw, 56px); }
+    .empty { margin: 0 0 14px; font-size: 14.5px; font-weight: 600; color: var(--muted); max-width: 60ch; }
+    code { font-size: 13px; background: var(--hover); padding: 1px 5px; }
+
+    .tokenform { display: flex; gap: 10px; flex-wrap: wrap; }
+    .tokenform input {
+      flex: 1 1 260px;
+      min-width: 0;
+      padding: 10px 12px;
+      border: 2px solid var(--ink);
+      background: var(--card);
+      font-weight: 600;
+    }
+    .tokenform input::placeholder { color: var(--ph); }
+    .tokenform button {
+      cursor: pointer;
+      padding: 10px 20px;
+      border: 2px solid var(--ink);
+      background: var(--lime);
+      font-weight: 800;
+    }
+
+    .tiles {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .tile { border: 2px solid var(--ink); background: var(--card); padding: 14px 16px 16px; }
+    .tlabel {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      color: var(--faint);
+    }
+    .tval {
+      margin: 6px 0 0;
+      font-size: clamp(26px, 4.4vw, 38px);
+      font-weight: 800;
+      letter-spacing: -.04em;
+      line-height: 1;
+    }
+    .tsub { margin: 6px 0 0; font-size: 11.5px; font-weight: 600; color: var(--faint-2); }
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--ink);
+      border-radius: 50%;
+      animation: blink 1.6s ease-in-out infinite;
+    }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+    @media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
+
+    .chart {
+      display: flex;
+      align-items: flex-end;
+      gap: 4px;
+      height: 140px;
+      border: 2px solid var(--ink);
+      background: var(--card);
+      padding: 10px;
+    }
+    /* 차트 막대와 순위 행은 런타임에 innerHTML로 꽂는다. Astro의 scoped 속성이
+       안 붙으므로 :global로 열어 둔다. 바깥 선택자가 이 페이지에 묶여 있어 새지 않는다. */
+    .chart :global(.bar) { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; }
+    .chart :global(.bar i) { display: block; background: var(--lime); border: 1.5px solid var(--ink); min-height: 2px; }
+    .chart :global(.bar b) {
+      display: block;
+      margin-top: 4px;
+      font-size: 9.5px;
+      font-weight: 700;
+      color: var(--faint-2);
+      text-align: center;
+    }
+
+    .cols { display: grid; gap: 0 28px; grid-template-columns: 1fr; }
+    @media (min-width: 720px) { .cols { grid-template-columns: 1fr 1fr; } }
+    .rank { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+    .rank :global(td) { padding: 7px 0; border-bottom: 1px solid var(--line); }
+    .rank :global(td:first-child) { font-weight: 600; word-break: break-all; }
+    .rank :global(td:last-child) { text-align: right; font-weight: 800; white-space: nowrap; padding-left: 12px; }
+    .rank :global(.none) { color: var(--faint-2); font-weight: 600; border-bottom: 0; }
+  </style>
+
+  {ready && (
+    <script is:inline define:vars={{ base: `${SUPABASE_URL}/rest/v1/rpc`, key: SUPABASE_ANON_KEY }}>
+      (function () {
+        var REFRESH_MS = 60000;
+        var STORE = 'jalbeo_admin_token';
+        var $ = function (id) { return document.getElementById(id); };
+        var num = function (n) { return Number(n || 0).toLocaleString('ko-KR'); };
+
+        // 주소의 ?k= 가 우선. 한 번 받으면 이 탭에만 기억해 새로고침에도 살아남는다.
+        function token() {
+          var q = new URLSearchParams(location.search).get('k');
+          if (q) {
+            try { sessionStorage.setItem(STORE, q); } catch (e) {}
+            return q;
+          }
+          try { return sessionStorage.getItem(STORE) || ''; } catch (e) { return ''; }
+        }
+
+        function rpc(name, body) {
+          return fetch(base + '/' + name, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              apikey: key,
+              Authorization: 'Bearer ' + key,
+            },
+            body: JSON.stringify(body),
+          }).then(function (res) {
+            if (!res.ok) throw new Error(String(res.status));
+            return res.json();
+          });
+        }
+
+        function drawChart(rows) {
+          var max = 1;
+          rows.forEach(function (r) { if (r.views > max) max = r.views; });
+          $('chart').innerHTML = rows.map(function (r) {
+            var h = Math.round((r.views / max) * 100);
+            var d = r.day.slice(5).replace('-', '/');
+            return '<span class="bar" title="' + d + ' 방문 ' + num(r.visitors) +
+              ' / 조회 ' + num(r.views) + '"><i style="height:' + h + '%"></i><b>' +
+              d.slice(3) + '</b></span>';
+          }).join('');
+        }
+
+        function drawRank(el, rows, empty) {
+          if (!rows.length) {
+            el.innerHTML = '<tr><td class="none" colspan="2">' + empty + '</td></tr>';
+            return;
+          }
+          el.innerHTML = rows.map(function (r) {
+            return '<tr><td>' + r.label.replace(/</g, '&lt;') + '</td><td>' + num(r.views) + '</td></tr>';
+          }).join('');
+        }
+
+        function fail() {
+          $('board').hidden = true;
+          $('gate').hidden = false;
+          $('updated').textContent = '잠김';
+          $('lede').textContent = '토큰이 없거나 틀렸다.';
+        }
+
+        function load() {
+          var k = token();
+          if (!k) return fail();
+
+          Promise.all([
+            rpc('admin_visitor_stats', { p_token: k }),
+            rpc('admin_visitor_daily', { p_token: k, p_days: 14 }),
+            rpc('admin_visitor_breakdown', { p_token: k, p_since_days: 7 }),
+          ]).then(function (out) {
+            var s = (out[0] || [])[0] || {};
+            var daily = out[1] || [];
+            var mix = out[2] || [];
+
+            $('gate').hidden = true;
+            $('board').hidden = false;
+            $('v-live').textContent = num(s.concurrent_visitors);
+            $('v-today').textContent = num(s.today_visitors);
+            $('v-todayviews').textContent = num(s.today_views);
+            $('v-total').textContent = num(s.total_visitors);
+            $('v-totalviews').textContent = num(s.total_views);
+            $('v-per').textContent = s.total_visitors
+              ? (s.total_views / s.total_visitors).toFixed(1)
+              : '-';
+            $('v-since').textContent = s.first_view_at
+              ? '수집 시작 ' + s.first_view_at.slice(0, 10)
+              : '아직 기록 없음';
+
+            drawChart(daily);
+            drawRank($('paths'), mix.filter(function (r) { return r.kind === 'path'; }).slice(0, 12), '아직 기록 없음');
+            drawRank($('refs'), mix.filter(function (r) { return r.kind === 'referrer'; }).slice(0, 12), '아직 기록 없음');
+
+            $('updated').textContent =
+              new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }) + ' 기준';
+            $('lede').textContent = '접속 현황만 본다. 1분마다 다시 잰다.';
+          }).catch(fail);
+        }
+
+        $('tokenform').addEventListener('submit', function (e) {
+          e.preventDefault();
+          var v = $('tokeninput').value.trim();
+          if (!v) return;
+          try { sessionStorage.setItem(STORE, v); } catch (err) {}
+          $('tokeninput').value = '';
+          load();
+        });
+
+        load();
+        setInterval(load, REFRESH_MS);
+      })();
+    </script>
+  )}
+</Base>
