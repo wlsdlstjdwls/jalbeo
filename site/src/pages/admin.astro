@@ -20,6 +20,7 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
     <div class="stepbar">
       <span class="stepno">ADMIN</span>
       <span class="grow"></span>
+      <button type="button" class="linkbtn" id="forget" hidden>키 지우기</button>
       <span class="stepno" id="updated">불러오는 중</span>
     </div>
     <h1 class="display">대시보드</h1>
@@ -113,6 +114,18 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
       font-weight: 600;
     }
     .tokenform input::placeholder { color: var(--ph); }
+    .linkbtn {
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      padding: 0;
+      font-size: 12.5px;
+      font-weight: 800;
+      color: var(--faint);
+      border-bottom: 2px solid var(--line);
+    }
+    .linkbtn:hover { color: var(--ink); border-bottom-color: var(--ink); }
+
     .tokenform button {
       flex: 0 0 auto;
       cursor: pointer;
@@ -191,18 +204,24 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
     <script is:inline define:vars={{ base: `${SUPABASE_URL}/rest/v1/rpc`, key: SUPABASE_ANON_KEY }}>
       (function () {
         var REFRESH_MS = 60000;
-        var STORE = 'jalbeo_admin_token';
+        var STORE = 'jalbeo_admin_key';
         var $ = function (id) { return document.getElementById(id); };
         var num = function (n) { return Number(n || 0).toLocaleString('ko-KR'); };
 
-        // 주소의 ?k= 가 우선. 한 번 받으면 이 탭에만 기억해 새로고침에도 살아남는다.
+        // 주소의 ?k= 가 우선. 한 번 받으면 이 브라우저가 계속 기억한다.
+        // 매번 긴 주소를 들고 다니지 않게 하려는 것이다 - /admin 만 쳐도 열린다.
+        // 공용 PC라면 상단 '키 지우기'로 지운다.
         function token() {
           var q = new URLSearchParams(location.search).get('k');
           if (q) {
-            try { sessionStorage.setItem(STORE, q); } catch (e) {}
+            remember(q);
             return q;
           }
-          try { return sessionStorage.getItem(STORE) || ''; } catch (e) { return ''; }
+          try { return localStorage.getItem(STORE) || ''; } catch (e) { return ''; }
+        }
+
+        function remember(v) {
+          try { localStorage.setItem(STORE, v); } catch (e) {}
         }
 
         function rpc(name, body) {
@@ -246,6 +265,7 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
         function fail(wrong) {
           $('board').hidden = true;
           $('gate').hidden = false;
+          $('forget').hidden = true;
           $('updated').textContent = '';
           $('lede').textContent = wrong
             ? '키가 맞지 않습니다. 다시 확인해 주세요.'
@@ -267,6 +287,7 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
 
             $('gate').hidden = true;
             $('board').hidden = false;
+            $('forget').hidden = false;
             $('v-live').textContent = num(s.concurrent_visitors);
             $('v-today').textContent = num(s.today_visitors);
             $('v-todayviews').textContent = num(s.today_views);
@@ -293,9 +314,16 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
           e.preventDefault();
           var v = $('tokeninput').value.trim();
           if (!v) return;
-          try { sessionStorage.setItem(STORE, v); } catch (err) {}
+          remember(v);
           $('tokeninput').value = '';
           load();
+        });
+
+        $('forget').addEventListener('click', function () {
+          try { localStorage.removeItem(STORE); } catch (e) {}
+          // 주소에 키가 남아 있으면 새로고침하자마자 다시 저장된다. 먼저 턴다.
+          history.replaceState(null, '', location.pathname);
+          fail(false);
         });
 
         load();

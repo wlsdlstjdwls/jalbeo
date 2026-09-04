@@ -48,7 +48,8 @@
 - 통계 RPC는 전부 `p_token`을 받고 `admin_tokens`에 그 값이 있어야만 답한다.
   없으면 `not authorized`로 끊는다
 - 토큰은 **DB에만 있고 저장소에는 없다.** 주소는 `/admin/?k=<토큰>` 꼴이다
-- 한 번 열면 그 탭의 sessionStorage에 남는다. 주소 없이 들어오면 입력창이 뜬다
+- 한 번 열면 브라우저가 localStorage에 기억한다. 그 뒤로는 `/admin`만 쳐도
+  열린다. 긴 주소를 들고 다니지 않게 하려는 것이다. 상단 '키 지우기'로 지운다
 - `page_views`, `admin_tokens` 둘 다 RLS를 켜고 정책을 하나도 안 열었다.
   anon 키로 테이블에 직접 붙으면 빈 배열이 온다. 읽기/쓰기는 SECURITY DEFINER
   함수로만 된다
@@ -56,13 +57,16 @@
 토큰 발급과 교체는 `scripts/admin_token.py`가 한다.
 
 ```
-python scripts/admin_token.py issue [라벨]   새로 발급하고 접속 주소를 출력
-python scripts/admin_token.py list           라벨과 앞 6자만 조회
-python scripts/admin_token.py revoke <라벨>  폐기
+python scripts/admin_token.py issue                      무작위 32자
+python scripts/admin_token.py issue --key <내가 정한 키>  외우기 쉬운 키
+python scripts/admin_token.py issue --label phone        라벨 따로
+python scripts/admin_token.py list                       라벨과 앞 6자만
+python scripts/admin_token.py revoke <라벨>              폐기
 ```
 
-`issue`는 같은 라벨의 기존 토큰을 지우고 새로 넣는다. 발급값은 그 출력에서만
-볼 수 있다. 어디에도 안 적어 두므로 잃어버리면 다시 발급한다.
+`issue`는 같은 라벨의 기존 키를 지우고 새로 넣는다. 무작위 키는 그 출력에서만
+볼 수 있다. 직접 정한 키는 12자 미만이면 거절한다 - 통계 RPC가 공개라 짧은
+키는 찍힌다.
 
 한계는 분명하다. 토큰이 든 URL을 흘리면 그 사람이 통계를 본다. 대신 통계 조회
 말고는 아무 것도 못 한다 — 쓰기 함수는 `track_page_view` 하나뿐이고 그건 원래

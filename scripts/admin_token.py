@@ -4,12 +4,17 @@
 이 사이트에는 로그인이 없다. 토큰이 곧 열쇠다 (`docs/17`).
 토큰은 DB의 admin_tokens에만 있고 저장소에는 남기지 않는다.
 
-    python scripts/admin_token.py issue [라벨]   새 토큰 발급 후 접속 주소 출력
-    python scripts/admin_token.py list           발급된 토큰 목록 (앞 6자만)
-    python scripts/admin_token.py revoke <라벨>  해당 라벨의 토큰 폐기
+    python scripts/admin_token.py issue                   무작위 32자로 발급
+    python scripts/admin_token.py issue --key <내가 정한 키>  외우기 쉬운 키로 발급
+    python scripts/admin_token.py issue --label phone        라벨 따로 두기
+    python scripts/admin_token.py list                   발급 목록 (앞 6자만)
+    python scripts/admin_token.py revoke <라벨>          해당 라벨 폐기
 
-발급된 값은 이 출력에서만 볼 수 있다. 어디에도 안 적어 두므로 잃어버리면
-revoke 하고 다시 issue 한다.
+무작위 키는 이 출력에서만 볼 수 있다. 잃어버리면 다시 issue 한다.
+직접 정한 키는 짧으면 찍힌다. 12자 이상만 받는다.
+
+한 번 열면 브라우저가 키를 기억하므로(localStorage) 그 다음부터는 /admin 만
+쳐도 열린다. 지우려면 화면 상단의 '키 지우기'를 누른다.
 """
 import os
 import secrets
@@ -34,8 +39,16 @@ def connect():
         connect_timeout=20, sslmode="require")
 
 
-def issue(label):
-    token = secrets.token_urlsafe(24)
+MIN_LEN = 12
+
+
+def issue(label, key=None):
+    if key is None:
+        token = secrets.token_urlsafe(24)
+    else:
+        if len(key) < MIN_LEN:
+            sys.exit("키가 짧다. %d자 이상으로 정한다 (지금 %d자)." % (MIN_LEN, len(key)))
+        token = key
     conn = connect()
     with conn, conn.cursor() as cur:
         cur.execute("delete from admin_tokens where label = %s", (label,))
@@ -78,7 +91,16 @@ def main():
     args = sys.argv[1:]
     cmd = args[0] if args else ""
     if cmd == "issue":
-        issue(args[1] if len(args) > 1 else "owner")
+        label, key = "owner", None
+        rest = args[1:]
+        while rest:
+            if rest[0] == "--key" and len(rest) > 1:
+                key, rest = rest[1], rest[2:]
+            elif rest[0] == "--label" and len(rest) > 1:
+                label, rest = rest[1], rest[2:]
+            else:  # 옛 사용법: issue <라벨>
+                label, rest = rest[0], rest[1:]
+        issue(label, key)
     elif cmd == "list":
         listing()
     elif cmd == "revoke":
