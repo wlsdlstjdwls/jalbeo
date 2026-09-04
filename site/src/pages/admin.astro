@@ -23,26 +23,26 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
       <span class="stepno" id="updated">불러오는 중</span>
     </div>
     <h1 class="display">대시보드</h1>
-    <p class="hint" id="lede">접속 현황만 본다. 1분마다 다시 잰다.</p>
+    <p class="hint" id="lede">방문자 현황을 1분마다 새로 불러옵니다.</p>
   </section>
 
   {!ready && (
     <section class="pad">
       <p class="empty">
-        Supabase 공개 설정이 없어 숫자를 못 가져온다.
+        Supabase 공개 설정이 없어 숫자를 가져오지 못합니다.
         <code>site/.env.public</code>의 <code>SUPABASE_URL</code>,
-        <code>SUPABASE_ANON_KEY</code>를 채우고 다시 빌드한다.
+        <code>SUPABASE_ANON_KEY</code>를 채우고 다시 빌드해 주세요.
       </p>
     </section>
   )}
 
   <section class="pad" id="gate" hidden>
-    <p class="caption">토큰</p>
+    <p class="caption">관리자 키</p>
     <p class="empty">
-      주소에 <code>?k=토큰</code>이 없거나 틀렸다. 아래에 넣으면 이 브라우저에만 기억한다.
+      키를 넣으면 이 브라우저에만 저장됩니다. 주소 끝에 <code>?k=키</code>를 붙여도 됩니다.
     </p>
     <form class="tokenform" id="tokenform">
-      <input type="password" id="tokeninput" placeholder="관리자 토큰" autocomplete="off" />
+      <input type="password" id="tokeninput" placeholder="관리자 키" autocomplete="off" />
       <button type="submit" class="press hard">열기</button>
     </form>
   </section>
@@ -242,16 +242,19 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
           }).join('');
         }
 
-        function fail() {
+        // 키가 아예 없는 것과 틀린 것은 다른 상황이다. 문구도 다르게 준다.
+        function fail(wrong) {
           $('board').hidden = true;
           $('gate').hidden = false;
-          $('updated').textContent = '잠김';
-          $('lede').textContent = '토큰이 없거나 틀렸다.';
+          $('updated').textContent = '';
+          $('lede').textContent = wrong
+            ? '키가 맞지 않습니다. 다시 확인해 주세요.'
+            : '관리자 키를 넣으면 열립니다.';
         }
 
         function load() {
           var k = token();
-          if (!k) return fail();
+          if (!k) return fail(false);
 
           Promise.all([
             rpc('admin_visitor_stats', { p_token: k }),
@@ -282,8 +285,8 @@ const ready = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
 
             $('updated').textContent =
               new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' }) + ' 기준';
-            $('lede').textContent = '접속 현황만 본다. 1분마다 다시 잰다.';
-          }).catch(fail);
+            $('lede').textContent = '방문자 현황을 1분마다 새로 불러옵니다.';
+          }).catch(function () { fail(true); });
         }
 
         $('tokenform').addEventListener('submit', function (e) {
