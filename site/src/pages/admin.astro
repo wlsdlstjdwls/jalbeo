@@ -139,7 +139,12 @@ for (const g of await getCollection('guides')) {
   <style>
     /* 동시접속 표시등. 사이트 팔레트에 없는 색이라 이 화면에서만 정의한다. */
     #board { --live: #2fa84f; }
-    .stepbar a.back { text-decoration: none; display: inline-flex; align-items: center; }
+    .stepbar a.back {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      background: var(--lime);
+    }
 
     .pad { padding: clamp(18px, 3vw, 30px) var(--pad) clamp(28px, 5vw, 56px); }
     /* 품목 페이지의 .caption.divider는 전체 폭 윗줄을 긋는다. 여기서는 타일과
@@ -255,6 +260,9 @@ for (const g of await getCollection('guides')) {
 
     .cols { display: grid; gap: 0 28px; grid-template-columns: 1fr; }
     @media (min-width: 720px) { .cols { grid-template-columns: 1fr 1fr; } }
+    /* grid item 기본 min-width:auto 때문에 안의 flex 행이 줄 폭만큼 커져
+       트랙보다 넓어지고 넘쳤다(grid blowout). 0으로 눌러야 안의 overflow:hidden이 먹는다. */
+    .cols > div { min-width: 0; }
     /* 순위 한 줄. 이름과 경로를 한 줄에 붙이고 밑에 가는 막대로 비율을 깐다.
        두 줄로 쌓으면 5줄짜리 카드가 10줄이 되어 훑기가 어렵다. */
     .rank { list-style: none; margin: 0; padding: 0; font-size: 13.5px; }
