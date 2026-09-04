@@ -37,6 +37,10 @@ OUT = os.path.join(KW, "gate1-batches-4.md")
 PER_BATCH = 5   # 네이버 키워드도구가 한 번에 받는 씨앗 수
 SUFFIXES = ("버리는법", "분리수거")
 
+# 2차 8/12 묶음이 통째로 안 돌아가 `분리수거`만 남은 품목들. `버리는법`만 채우면 된다.
+# 영양제는 3차에서 `약`으로 개명하며 두 어미를 다 쟀으므로 뺀다.
+MISSING_A = ["염색약", "옥수수대", "유리병", "유모차"]
+
 HEAD = """# 검색량 실측 4차 — 1차 품목 두 어미 재측정
 
 > 대상: 1차 실측 품목 %d개 (키워드 %d개, %d묶음)
@@ -79,6 +83,8 @@ HEAD = """# 검색량 실측 4차 — 1차 품목 두 어미 재측정
 한 품목의 두 어미는 붙여서 넣었다. 묶음 경계에서만 갈라진다. 2차 때
 8/12 묶음이 통째로 안 돌아가 5개 품목이 한 어미만 남은 적이 있으니,
 **빠진 묶음 번호를 적어두고 다시 돌린다.**
+그때 반쪽으로 남은 4개(염색약, 옥수수대, 유리병, 유모차)는 마지막 묶음에 몰아
+넣었다. 이 품목들은 `버리는법`만 채우면 두 어미가 맞춰진다.
 
 ## 대상에서 뺀 것
 
@@ -131,7 +137,10 @@ def main():
     keywords = []
     for name in targets:
         keywords += ["%s %s" % (name, suf) for suf in SUFFIXES]
+    # 반쪽으로 남은 4개는 마지막 묶음에 몰아 넣는다. 품목 경계와 겹치지 않게 따로 끊는다.
     batches = [keywords[i:i + PER_BATCH] for i in range(0, len(keywords), PER_BATCH)]
+    batches.append(["%s 버리는법" % n for n in MISSING_A])
+    keywords += batches[-1]
 
     body = [HEAD % (len(targets), len(keywords), len(batches),
                     skipped_v2, skipped_v3, len(both), ", ".join(sorted(both)))]
