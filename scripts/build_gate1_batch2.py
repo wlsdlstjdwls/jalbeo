@@ -35,6 +35,24 @@ HEAD = """# 검색량 실측 2차 — 네이버 키워드도구 복붙용
 
 `월간검색수 PC` + `월간검색수 모바일`을 더한 값이 그 키워드의 검색량이다.
 
+## 어미는 `버리는법` 하나만 돌린다
+
+1차 실측(`gate1-volumes.csv`)이 A안 씨앗만 넣고 나온 결과인데, 거기서
+어미가 전부 나왔다. 키워드도구가 씨앗 하나당 연관어를 수백 개 뱉기 때문이다.
+
+| 어미 | 검색량 | 비중 |
+|---|---:|---:|
+| 버리는법 | 166,165 | 71.5%% |
+| (기타) | 27,200 | 11.7%% |
+| 버리기 | 19,380 | 8.3%% |
+| 폐기 | 18,905 | 8.1%% |
+| 분리수거 | 730 | 0.3%% |
+| 배출 | 135 | 0.1%% |
+
+`분리수거` 어미로 잡힌 키워드는 265개 중 3개뿐이다(유리분리수거 640,
+컴퓨터분리수거 65, 소파분리수거 25). **어미를 나눠 두 번 돌릴 이유가 없다.**
+`gate1-batches.md`의 B안은 실측 전에 세운 교차 확인 장치였고, 지금은 근거가 없다.
+
 ## 숫자가 나오면 무엇이 달라지나
 
 - 홈 목록 정렬이 바로잡힌다. 지금은 미측정분이 이름순으로 꼬리에 붙어 있다
@@ -53,24 +71,15 @@ def main():
 
     batches = [targets[i:i + PER_BATCH] for i in range(0, len(targets), PER_BATCH)]
     out = [HEAD % len(targets)]
-    out.append("## A안 — `{품목} 버리는법` (%d묶음)\n" % len(batches))
+    out.append("## 복붙 묶음 — `{품목} 버리는법` (%d묶음)\n" % len(batches))
     for n, group in enumerate(batches, 1):
         out.append("**%d/%d**\n" % (n, len(batches)))
         out.append("```")
         out += ["%s 버리는법" % name for name in group]
         out.append("```\n")
 
-    out.append("---\n")
-    out.append("## B안 — `{품목} 분리수거` (교차 확인용, %d묶음)\n" % len(batches))
-    for n, group in enumerate(batches, 1):
-        out.append("**%d/%d**\n" % (n, len(batches)))
-        out.append("```")
-        out += ["%s 분리수거" % name for name in group]
-        out.append("```\n")
-
     io.open(OUT, "w", encoding="utf-8").write("\n".join(out))
-    print("미측정 %d개 -> %d묶음 (A안 B안 각각) -> %s"
-          % (len(targets), len(batches), OUT))
+    print("미측정 %d개 -> %d묶음 -> %s" % (len(targets), len(batches), OUT))
 
 
 if __name__ == "__main__":
