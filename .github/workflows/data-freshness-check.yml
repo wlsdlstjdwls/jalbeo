@@ -17,6 +17,7 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -33,6 +34,10 @@ jobs:
           python scripts/normalize_fees.py
 
       - name: 분리배출 훈령 재수집
+        # 국가법령정보센터가 해외(깃헙 액션) IP에 느리거나 응답을 안 줄 수 있다.
+        # 재시도 구조상 최악 15분 가까이 걸릴 수 있어 여기서 끊는다.
+        timeout-minutes: 8
+        continue-on-error: true
         run: |
           python scripts/fetch_env_guidelines.py
           python scripts/parse_disposal_guideline.py
