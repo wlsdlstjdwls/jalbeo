@@ -5,6 +5,13 @@ import { items as dbItems } from '../lib/items';
 import { bg, VERDICT_ORDER } from '../lib/verdict';
 import { HOME_PAGE_SIZE } from '../lib/constants';
 import { searchKey } from '../lib/search';
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from '../lib/supabase-public';
+
+// 검색어 로그용 엔드포인트. 키가 없으면 빈 문자열이 나가고, 클라이언트가
+// 빈 값이면 fetch를 안 쏜다 (Base.astro의 trackable과 같은 방어).
+const searchEndpoint = SUPABASE_URL && SUPABASE_ANON_KEY
+  ? `${SUPABASE_URL}/rest/v1/rpc/track_search_query`
+  : '';
 
 const bodies = new Set((await getCollection('items')).map((b) => b.id));
 // 절차를 묻는 검색어(폐가전무료수거, 대형폐기물스티커)는 품목 페이지가 못 받는다.
@@ -113,7 +120,7 @@ const chips = [
     </div>
   </section>
 
-  <script define:vars={{ PAGE: HOME_PAGE_SIZE }}>
+  <script define:vars={{ PAGE: HOME_PAGE_SIZE, SEARCH_ENDPOINT: searchEndpoint, SEARCH_KEY: SUPABASE_ANON_KEY }}>
     (function () {
       var q = document.getElementById('q');
       var list = document.getElementById('list');
@@ -125,11 +132,34 @@ const chips = [
       var more = document.getElementById('more');
       var total = list.children.length;
       var filter = '';
+      var lastShown = total; // apply()가 갱신 — 디바운스된 검색 로그가 참조
+      var searchTimer = null;
 
       // 목록 전체는 서버에서 렌더한다. 페이징은 화면에 몇 개를 보일지만 정한다.
       // 검색과 필터 중에는 결과가 잘리면 안 되므로 페이징을 풀고 전부 보여준다.
       // PAGE 값의 출처는 lib/constants.ts (HOME_PAGE_SIZE) — define:vars로 주입.
       var limit = PAGE;
+
+      // 검색어 1건 기록. hit=0(못 찾음)이 품목 확장 후보의 핵심 신호다 (docs/20).
+      // 입력이 멈춘 뒤에만 쏜다 — 매 키 입력마다 보내면 소음만 쌓인다.
+      function trackSearch(term, hitCount) {
+        if (!SEARCH_ENDPOINT) return;
+        try {
+          var id = localStorage.getItem('jalbeo_vid');
+          if (!id) {
+            id = crypto.randomUUID();
+            localStorage.setItem('jalbeo_vid', id);
+          }
+          fetch(SEARCH_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', apikey: SEARCH_KEY, Authorization: 'Bearer ' + SEARCH_KEY },
+            body: JSON.stringify({ p_term: term, p_hit_count: hitCount, p_visitor_id: id }),
+            keepalive: true,
+          }).catch(function () {});
+        } catch (e) {
+          /* 집계 실패가 검색을 막지 않는다 */
+        }
+      }
 
       // 질의도 키와 같은 규칙으로 눌러 준다 (lib/search.ts의 normalize).
       // '보조 배터리' -> '보조배터리', 'SOPA' -> 'sopa'.
@@ -148,6 +178,7 @@ const chips = [
           if (show) drawn++;
         }
         count.textContent = shown + ' / ' + total;
+        lastShown = shown;
         head.textContent = filter ? filter + ' ' + shown + '개'
           : term ? '검색 결과 ' + shown + '개'
           : '많이 찾는 품목';
@@ -173,7 +204,14 @@ const chips = [
         limit = total;
       }
 
-      q.addEventListener('input', function () { limit = PAGE; apply(); });
+      q.addEventListener('input', function () {
+        limit = PAGE;
+        apply();
+        clearTimeout(searchTimer);
+        var term = q.value.trim();
+        if (term.length < 2) return;
+        searchTimer = setTimeout(function () { trackSearch(term, lastShown); }, 800);
+      });
       chips.addEventListener('click', function (e) {
         var btn = e.target.closest('.chip');
         if (!btn) return;
