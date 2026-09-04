@@ -66,12 +66,12 @@ jobs:
             echo ""
             echo "## 바뀐 파일"
             echo '```'
-            git diff --stat -- $TARGETS
+            git diff --ignore-cr-at-eol --stat -- $TARGETS
             echo '```'
             echo ""
             echo "## 상세 diff (최대 400줄)"
             echo '```diff'
-            git diff -- $TARGETS | head -400
+            git diff --ignore-cr-at-eol -- $TARGETS | head -400
             echo '```'
             echo ""
             echo "확인 방법: 로컬에서 \`python scripts/fetch_fee_datasets.py && python scripts/normalize_fees.py\`,"
