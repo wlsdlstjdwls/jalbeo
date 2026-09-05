@@ -2807,5 +2807,45 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "dongmulsache",
+  "name": "동물사체",
+  "aliases": [
+   "반려동물 사체",
+   "강아지 사체",
+   "고양이 사체",
+   "애완동물 사체",
+   "동물 시체"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "병원에서 죽었으면 병원이 처리합니다. 집에서 죽었으면 종량제봉투나 장묘업체, 매장은 과태료 100만원 이하입니다.",
+  "category": "생활폐기물",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": null,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-05T02:39:06.454529+00:00"
+ },
+ {
+  "slug": "pyemokjae",
+  "name": "폐목재",
+  "aliases": [
+   "목재 쓰레기",
+   "나무 폐기물",
+   "각목",
+   "합판 조각",
+   "나무 팔레트"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "손바닥 크기 자투리는 종량제, 못 박힌 원목 조각이나 큰 판자는 대형폐기물 신고입니다.",
+  "category": "건축폐자재",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": null,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-05T02:39:06.454529+00:00"
  }
 ]
