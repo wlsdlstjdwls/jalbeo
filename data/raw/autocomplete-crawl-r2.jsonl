@@ -104,6 +104,10 @@
 {"query": "매트리스 분리수거", "suggestions": ["매트리스 분리수거", "매트리스 분리수거 스티커", "매트리스 분리수거 가격", "매트리스 분리수거 비용", "매트리스 분리수거 방법"]}
 {"query": "매트리스 음식물", "suggestions": []}
 {"query": "매트리스 무상수거", "suggestions": ["매트리스 무상수거방법"]}
+{"query": "요가매트 버리는", "suggestions": ["요가매트 버리는법", "요가매트 버리는 방법", "요가매트 버리는법 아파트", "요가매트 버리는 비용"]}
+{"query": "요가매트 분리수거", "suggestions": ["요가매트 분리수거", "요가매트 분리수거 방법"]}
+{"query": "요가매트 음식물", "suggestions": []}
+{"query": "요가매트 무상수거", "suggestions": []}
 {"query": "식용유 버리는", "suggestions": ["식용유 버리는법", "남은 식용유 버리는법", "식용유 버리는 방법", "식용유 버리는법 유통기한", "식용유 버리는법 밀가루", "식용유 버리는법 종량제", "식용유 버리는법 페트병", "식용유 버리는 곳", "식용유 버리는법 음식물", "식용유 버리는법 다이소"]}
 {"query": "식용유 분리수거", "suggestions": ["식용유 분리수거 방법"]}
 {"query": "식용유 음식물", "suggestions": ["식용유 음식물쓰레기"]}
@@ -156,6 +160,10 @@
 {"query": "기름 분리수거", "suggestions": ["기름 분리수거"]}
 {"query": "기름 음식물", "suggestions": ["기름 음식물 쓰레기"]}
 {"query": "기름 무상수거", "suggestions": []}
+{"query": "에어컨 버리는", "suggestions": ["에어컨 버리는 법", "에어컨 버리는 비용"]}
+{"query": "에어컨 분리수거", "suggestions": ["에어컨 분리수거"]}
+{"query": "에어컨 음식물", "suggestions": []}
+{"query": "에어컨 무상수거", "suggestions": ["에어컨 무상수거", "에어컨 무상 수거 서비스", "에어컨 무상 수거 하는법"]}
 {"query": "노트북 버리는", "suggestions": ["노트북 버리는법", "노트북 버리는 방법", "노트북 버리는법 아파트", "노트북 버리는법 개인정보", "노트북 버리는법 주민센터", "노트북 버리는 곳", "노트북 버리는 방법 아파트", "노트북 버리는법 하드"]}
 {"query": "노트북 분리수거", "suggestions": ["노트북 분리수거", "노트북 분리수거 방법"]}
 {"query": "노트북 음식물", "suggestions": []}
@@ -200,6 +208,10 @@
 {"query": "전자레인지 분리수거", "suggestions": ["전자레인지 분리수거", "전자레인지 분리수거 방법"]}
 {"query": "전자레인지 음식물", "suggestions": []}
 {"query": "전자레인지 무상수거", "suggestions": ["전자레인지 무상수거"]}
+{"query": "실리콘 버리는", "suggestions": ["실리콘 버리는법", "실리콘 버리는 방법"]}
+{"query": "실리콘 분리수거", "suggestions": ["실리콘 분리수거", "실리콘 분리수거 방법"]}
+{"query": "실리콘 음식물", "suggestions": []}
+{"query": "실리콘 무상수거", "suggestions": []}
 {"query": "아이스팩 버리는", "suggestions": ["아이스팩 버리는법", "젤아이스팩 버리는법", "곡물 아이스팩 버리는법", "pcm 아이스팩 버리는법", "아이스팩 버리는 방법", "아이스팩 버리는 곳"]}
 {"query": "아이스팩 분리수거", "suggestions": ["아이스팩 분리수거", "아이스팩 분리수거 방법"]}
 {"query": "아이스팩 음식물", "suggestions": []}
@@ -216,6 +228,10 @@
 {"query": "비닐 분리수거", "suggestions": ["비닐 분리수거", "쿠팡 비닐 분리수거", "뽁뽁이 비닐 분리수거", "비닐 분리수거 방법", "비닐 분리수거 딱지", "은박비닐 분리수거", "비닐 분리수거 투명", "비닐 분리수거 기준", "비닐 분리수거 과태료", "비닐 분리수거 하는법"]}
 {"query": "비닐 음식물", "suggestions": ["비닐 음식물"]}
 {"query": "비닐 무상수거", "suggestions": []}
+{"query": "은박지 버리는", "suggestions": ["은박지 버리는법", "은박지 버리는 방법"]}
+{"query": "은박지 분리수거", "suggestions": ["은박지 분리수거", "은박지 분리수거 방법"]}
+{"query": "은박지 음식물", "suggestions": []}
+{"query": "은박지 무상수거", "suggestions": []}
 {"query": "향수 버리는", "suggestions": ["향수 버리는법", "향수 버리는 방법", "향수 버리는법 변기", "향수 버리는법 뚜껑", "향수 버리는 꿈"]}
 {"query": "향수 분리수거", "suggestions": ["향수 분리수거", "향수 분리수거 방법"]}
 {"query": "향수 음식물", "suggestions": []}
@@ -276,6 +292,10 @@
 {"query": "카시트 분리수거", "suggestions": ["카시트 분리수거", "카시트 분리수거 스티커", "카시트 분리수거 방법", "카시트 분리수거 비용"]}
 {"query": "카시트 음식물", "suggestions": []}
 {"query": "카시트 무상수거", "suggestions": ["카시트 무상수거"]}
+{"query": "고무 버리는", "suggestions": ["고무 버리는법", "고무 버리는 곳", "고무 버리는 방법"]}
+{"query": "고무 분리수거", "suggestions": ["고무 분리수거", "고무 분리수거 방법", "고무 분리수거통"]}
+{"query": "고무 음식물", "suggestions": []}
+{"query": "고무 무상수거", "suggestions": []}
 {"query": "자전거 버리는", "suggestions": ["자전거 버리는법", "실내자전거 버리는법", "자전거 버리는 방법", "자전거 버리는 비용"]}
 {"query": "자전거 분리수거", "suggestions": ["자전거 분리수거"]}
 {"query": "자전거 음식물", "suggestions": []}
@@ -284,6 +304,10 @@
 {"query": "나무젓가락 분리수거", "suggestions": ["나무젓가락 분리수거", "나무젓가락 분리수거 종이"]}
 {"query": "나무젓가락 음식물", "suggestions": []}
 {"query": "나무젓가락 무상수거", "suggestions": []}
+{"query": "규조토 발매트 버리는", "suggestions": ["규조토 발매트 버리는법", "규조토 발매트 버리는 방법"]}
+{"query": "규조토 발매트 분리수거", "suggestions": ["규조토 발매트 분리수거"]}
+{"query": "규조토 발매트 음식물", "suggestions": []}
+{"query": "규조토 발매트 무상수거", "suggestions": []}
 {"query": "냉장고 버리는", "suggestions": ["냉장고 버리는법", "김치냉장고 버리는법", "냉장고 버리는 비용", "냉장고 버리는법 가격", "냉장고 버리는 방법", "냉장고 버리는 꿈", "냉장고 버리는 가격", "냉장고 버리는 곳"]}
 {"query": "냉장고 분리수거", "suggestions": ["냉장고 분리수거"]}
 {"query": "냉장고 음식물", "suggestions": ["냉장고 음식물 폐기 방법", "냉장고 음식물 버리기", "냉장고 음식물 처리 방법", "냉장고 음식물 버리는법", "냉장고 음식 물생김"]}
@@ -300,6 +324,10 @@
 {"query": "책상 분리수거", "suggestions": ["책상 분리수거", "책상 분리수거 비용"]}
 {"query": "책상 음식물", "suggestions": []}
 {"query": "책상 무상수거", "suggestions": []}
+{"query": "LED등 버리는", "suggestions": ["led등 버리는법", "led등 버리는 방법", "led등 버리는법 아파트"]}
+{"query": "LED등 분리수거", "suggestions": ["led등 분리수거", "led등 분리수거 배출방법"]}
+{"query": "LED등 음식물", "suggestions": []}
+{"query": "LED등 무상수거", "suggestions": []}
 {"query": "형광등 버리는", "suggestions": ["형광등 버리는법", "형광등 버리는 방법", "형광등 버리는 곳"]}
 {"query": "형광등 분리수거", "suggestions": ["형광등 분리수거", "형광등 분리수거 방법", "형광등 분리수거함", "형광등 분리수거함 위치"]}
 {"query": "형광등 음식물", "suggestions": []}
@@ -308,6 +336,10 @@
 {"query": "과일껍질 분리수거", "suggestions": ["과일껍질 분리수거", "과일 껍질 분리수거 방법"]}
 {"query": "과일껍질 음식물", "suggestions": ["과일껍질 음식물", "과일껍질 음식물처리기", "과일 껍질 음식물 쓰레기"]}
 {"query": "과일껍질 무상수거", "suggestions": []}
+{"query": "퍼즐매트 버리는", "suggestions": ["퍼즐매트 버리는법", "퍼즐매트 버리는 비용", "퍼즐매트버리는방법"]}
+{"query": "퍼즐매트 분리수거", "suggestions": ["퍼즐매트 분리수거"]}
+{"query": "퍼즐매트 음식물", "suggestions": []}
+{"query": "퍼즐매트 무상수거", "suggestions": []}
 {"query": "장판 버리는", "suggestions": ["장판 버리는법", "전기장판 버리는법", "전기장판 버리는 방법", "장판 버리는 방법", "장판 버리는 비용"]}
 {"query": "장판 분리수거", "suggestions": ["장판 분리수거", "전기장판 분리수거", "장판 분리수거 방법", "장판 분리수거되나"]}
 {"query": "장판 음식물", "suggestions": []}
@@ -396,6 +428,10 @@
 {"query": "치약 분리수거", "suggestions": ["치약 분리수거", "다 쓴 치약 분리수거", "치약 분리수거 방법"]}
 {"query": "치약 음식물", "suggestions": []}
 {"query": "치약 무상수거", "suggestions": []}
+{"query": "모기장 버리는", "suggestions": ["모기장 버리는법", "모기장 버리는 방법"]}
+{"query": "모기장 분리수거", "suggestions": ["모기장 분리수거"]}
+{"query": "모기장 음식물", "suggestions": []}
+{"query": "모기장 무상수거", "suggestions": []}
 {"query": "소화기 버리는", "suggestions": ["소화기 버리는 방법", "소화기 버리는법", "소화기 버리는 곳", "소화기 버리는 방법 아파트", "소화기 버리는 비용"]}
 {"query": "소화기 분리수거", "suggestions": ["소화기 분리수거"]}
 {"query": "소화기 음식물", "suggestions": []}
@@ -412,6 +448,10 @@
 {"query": "매니큐어 분리수거", "suggestions": ["매니큐어 분리수거"]}
 {"query": "매니큐어 음식물", "suggestions": []}
 {"query": "매니큐어 무상수거", "suggestions": []}
+{"query": "아기욕조 버리는", "suggestions": ["아기욕조 버리는법"]}
+{"query": "아기욕조 분리수거", "suggestions": ["아기욕조 분리수거"]}
+{"query": "아기욕조 음식물", "suggestions": []}
+{"query": "아기욕조 무상수거", "suggestions": []}
 {"query": "타일 버리는", "suggestions": ["타일 버리는법", "데코타일 버리는법", "타일 버리는 방법", "타일 버리는 봉투"]}
 {"query": "타일 분리수거", "suggestions": ["타일 분리수거", "타일 분리수거 방법"]}
 {"query": "타일 음식물", "suggestions": []}
@@ -460,6 +500,10 @@
 {"query": "면도기 분리수거", "suggestions": ["면도기 분리수거", "일회용 면도기 분리수거", "면도기 분리수거 방법"]}
 {"query": "면도기 음식물", "suggestions": []}
 {"query": "면도기 무상수거", "suggestions": []}
+{"query": "밥상 버리는", "suggestions": ["밥상 버리는법", "밥상 버리는 방법", "밥상 버리는 비용"]}
+{"query": "밥상 분리수거", "suggestions": ["밥상 분리수거"]}
+{"query": "밥상 음식물", "suggestions": []}
+{"query": "밥상 무상수거", "suggestions": []}
 {"query": "장롱 버리는", "suggestions": ["장롱 버리는법", "장롱 버리는 업체", "장롱 버리는 방법", "장롱 버리는 비용", "장롱 버리는 가격", "장롱 버리는 꿈"]}
 {"query": "장롱 분리수거", "suggestions": ["장롱분리수거비용"]}
 {"query": "장롱 음식물", "suggestions": []}
@@ -468,10 +512,6 @@
 {"query": "변기 분리수거", "suggestions": ["변기 분리수거방법"]}
 {"query": "변기 음식물", "suggestions": ["변기 음식물", "변기 음식물 막힘", "변기 음식물 버리기", "변기 음식물 쓰레기", "변기 음식물 막혔을때", "변기 음식물 냄새", "변기 음식물 뚫는법"]}
 {"query": "변기 무상수거", "suggestions": []}
-{"query": "호일 버리는", "suggestions": ["호일 버리는 방법", "호일 버리는 법"]}
-{"query": "호일 분리수거", "suggestions": ["호일 분리수거", "쿠킹호일 분리수거", "호일 분리수거 방법"]}
-{"query": "호일 음식물", "suggestions": []}
-{"query": "호일 무상수거", "suggestions": []}
 {"query": "김치냉장고 버리는", "suggestions": ["김치냉장고 버리는법", "김치냉장고 버리는 방법", "김치냉장고 버리는 비용"]}
 {"query": "김치냉장고 분리수거", "suggestions": ["김치냉장고 분리수거방법"]}
 {"query": "김치냉장고 음식물", "suggestions": []}
@@ -952,6 +992,22 @@
 {"query": "침대 매트리스 분리수거", "suggestions": ["침대 매트리스 분리수거", "침대매트리스 분리수거 방법"]}
 {"query": "침대 매트리스 음식물", "suggestions": []}
 {"query": "침대 매트리스 무상수거", "suggestions": []}
+{"query": "홈트매트 버리는", "suggestions": []}
+{"query": "홈트매트 분리수거", "suggestions": []}
+{"query": "홈트매트 음식물", "suggestions": []}
+{"query": "홈트매트 무상수거", "suggestions": []}
+{"query": "운동매트 버리는", "suggestions": ["운동 매트 버리는 방법", "운동 매트 버리는법"]}
+{"query": "운동매트 분리수거", "suggestions": ["운동매트 분리수거"]}
+{"query": "운동매트 음식물", "suggestions": []}
+{"query": "운동매트 무상수거", "suggestions": []}
+{"query": "필라테스매트 버리는", "suggestions": []}
+{"query": "필라테스매트 분리수거", "suggestions": []}
+{"query": "필라테스매트 음식물", "suggestions": []}
+{"query": "필라테스매트 무상수거", "suggestions": []}
+{"query": "트레이닝매트 버리는", "suggestions": []}
+{"query": "트레이닝매트 분리수거", "suggestions": []}
+{"query": "트레이닝매트 음식물", "suggestions": []}
+{"query": "트레이닝매트 무상수거", "suggestions": []}
 {"query": "남은 식용유 버리는", "suggestions": ["남은 식용유 버리는법", "남은 식용유 버리는 방법"]}
 {"query": "남은 식용유 분리수거", "suggestions": []}
 {"query": "남은 식용유 음식물", "suggestions": []}
@@ -1092,6 +1148,26 @@
 {"query": "폐유 분리수거", "suggestions": []}
 {"query": "폐유 음식물", "suggestions": []}
 {"query": "폐유 무상수거", "suggestions": []}
+{"query": "벽걸이에어컨 버리는", "suggestions": ["벽걸이에어컨 버리는법", "벽걸이 에어컨 버리는방법"]}
+{"query": "벽걸이에어컨 분리수거", "suggestions": []}
+{"query": "벽걸이에어컨 음식물", "suggestions": []}
+{"query": "벽걸이에어컨 무상수거", "suggestions": ["벽걸이에어컨무상수거"]}
+{"query": "스탠드에어컨 버리는", "suggestions": []}
+{"query": "스탠드에어컨 분리수거", "suggestions": []}
+{"query": "스탠드에어컨 음식물", "suggestions": []}
+{"query": "스탠드에어컨 무상수거", "suggestions": []}
+{"query": "실외기 버리는", "suggestions": ["실외기 버리는 법"]}
+{"query": "실외기 분리수거", "suggestions": []}
+{"query": "실외기 음식물", "suggestions": []}
+{"query": "실외기 무상수거", "suggestions": []}
+{"query": "창문형에어컨 버리는", "suggestions": ["창문형에어컨 버리는 방법", "창문형에어컨버리는법"]}
+{"query": "창문형에어컨 분리수거", "suggestions": ["창문형 에어컨 분리수거 방법"]}
+{"query": "창문형에어컨 음식물", "suggestions": []}
+{"query": "창문형에어컨 무상수거", "suggestions": []}
+{"query": "이동식에어컨 버리는", "suggestions": ["이동식에어컨 버리는 방법"]}
+{"query": "이동식에어컨 분리수거", "suggestions": []}
+{"query": "이동식에어컨 음식물", "suggestions": []}
+{"query": "이동식에어컨 무상수거", "suggestions": []}
 {"query": "에어캡 버리는", "suggestions": ["에어캡 버리는법", "에어캡 버리는방법"]}
 {"query": "에어캡 분리수거", "suggestions": ["에어캡 분리수거", "에어캡 분리수거 비닐"]}
 {"query": "에어캡 음식물", "suggestions": []}
@@ -1204,14 +1280,30 @@
 {"query": "카펫 분리수거", "suggestions": []}
 {"query": "카펫 음식물", "suggestions": ["카펫 음식물 청소방법"]}
 {"query": "카펫 무상수거", "suggestions": []}
-{"query": "매트 버리는", "suggestions": ["매트 버리는법", "발매트 버리는법", "요가매트 버리는법", "퍼즐매트 버리는법", "코일매트 버리는법", "롤매트 버리는법", "전기매트 버리는법", "온수매트 버리는 방법", "놀이매트 버리는법", "온수매트 버리는법"]}
-{"query": "매트 분리수거", "suggestions": ["매트 분리수거", "요가매트 분리수거", "발매트 분리수거", "코일매트 분리수거", "차량 매트 분리수거", "퍼즐매트 분리수거", "매트 분리수거 방법", "매트 분리수거 가격", "매트 분리수거 스티커"]}
-{"query": "매트 음식물", "suggestions": []}
-{"query": "매트 무상수거", "suggestions": []}
-{"query": "발매트 버리는", "suggestions": ["발매트 버리는법", "규조토 발매트 버리는법", "주방 발매트 버리는법", "차량 발매트 버리는 방법", "발매트 버리는 방법"]}
-{"query": "발매트 분리수거", "suggestions": ["발매트 분리수거", "발매트 분리수거 방법"]}
-{"query": "발매트 음식물", "suggestions": []}
-{"query": "발매트 무상수거", "suggestions": []}
+{"query": "타일카페트 버리는", "suggestions": ["타일카페트 버리는법", "타일 카페트 버리는 방법"]}
+{"query": "타일카페트 분리수거", "suggestions": []}
+{"query": "타일카페트 음식물", "suggestions": []}
+{"query": "타일카페트 무상수거", "suggestions": []}
+{"query": "실리콘식기 버리는", "suggestions": ["실리콘식기 버리는법"]}
+{"query": "실리콘식기 분리수거", "suggestions": []}
+{"query": "실리콘식기 음식물", "suggestions": []}
+{"query": "실리콘식기 무상수거", "suggestions": []}
+{"query": "실리콘주방용품 버리는", "suggestions": ["실리콘 주방용품 버리는법"]}
+{"query": "실리콘주방용품 분리수거", "suggestions": []}
+{"query": "실리콘주방용품 음식물", "suggestions": []}
+{"query": "실리콘주방용품 무상수거", "suggestions": []}
+{"query": "실리콘뚜껑 버리는", "suggestions": ["실리콘뚜껑 버리는법"]}
+{"query": "실리콘뚜껑 분리수거", "suggestions": ["실리콘 뚜껑 분리수거"]}
+{"query": "실리콘뚜껑 음식물", "suggestions": []}
+{"query": "실리콘뚜껑 무상수거", "suggestions": []}
+{"query": "실리콘케이스 버리는", "suggestions": ["실리콘케이스 버리는 방법", "실리콘케이스버리는법"]}
+{"query": "실리콘케이스 분리수거", "suggestions": ["실리콘 케이스 분리수거"]}
+{"query": "실리콘케이스 음식물", "suggestions": []}
+{"query": "실리콘케이스 무상수거", "suggestions": []}
+{"query": "실리콘몰드 버리는", "suggestions": ["실리콘몰드버리는방법"]}
+{"query": "실리콘몰드 분리수거", "suggestions": []}
+{"query": "실리콘몰드 음식물", "suggestions": []}
+{"query": "실리콘몰드 무상수거", "suggestions": []}
 {"query": "젤 아이스팩 버리는", "suggestions": ["젤 아이스팩 버리는 방법", "젤 아이스팩 버리는 법"]}
 {"query": "젤 아이스팩 분리수거", "suggestions": ["젤 아이스팩 분리수거"]}
 {"query": "젤 아이스팩 음식물", "suggestions": []}
@@ -1268,6 +1360,30 @@
 {"query": "비닐봉투 분리수거", "suggestions": ["비닐봉투 분리수거", "비닐봉투 분리수거 비닐봉지", "비닐봉투 분리수거 방법"]}
 {"query": "비닐봉투 음식물", "suggestions": []}
 {"query": "비닐봉투 무상수거", "suggestions": []}
+{"query": "은박비닐 버리는", "suggestions": ["은박비닐 버리는법", "은박비닐 버리는 방법"]}
+{"query": "은박비닐 분리수거", "suggestions": ["은박비닐 분리수거"]}
+{"query": "은박비닐 음식물", "suggestions": []}
+{"query": "은박비닐 무상수거", "suggestions": []}
+{"query": "호일 버리는", "suggestions": ["호일 버리는 방법", "호일 버리는 법"]}
+{"query": "호일 분리수거", "suggestions": ["호일 분리수거", "쿠킹호일 분리수거", "호일 분리수거 방법"]}
+{"query": "호일 음식물", "suggestions": []}
+{"query": "호일 무상수거", "suggestions": []}
+{"query": "쿠킹호일 버리는", "suggestions": ["쿠킹호일 버리는법"]}
+{"query": "쿠킹호일 분리수거", "suggestions": ["쿠킹호일 분리수거", "쿠킹호일 분리수거 방법"]}
+{"query": "쿠킹호일 음식물", "suggestions": []}
+{"query": "쿠킹호일 무상수거", "suggestions": []}
+{"query": "알루미늄 호일 버리는", "suggestions": ["알루미늄호일 버리는법"]}
+{"query": "알루미늄 호일 분리수거", "suggestions": ["알루미늄 호일 분리수거", "알루미늄 호일 분리수거 방법"]}
+{"query": "알루미늄 호일 음식물", "suggestions": []}
+{"query": "알루미늄 호일 무상수거", "suggestions": []}
+{"query": "은박 접시 버리는", "suggestions": []}
+{"query": "은박 접시 분리수거", "suggestions": ["은박접시 분리수거"]}
+{"query": "은박 접시 음식물", "suggestions": []}
+{"query": "은박 접시 무상수거", "suggestions": []}
+{"query": "종이호일 버리는", "suggestions": ["종이호일 버리는법"]}
+{"query": "종이호일 분리수거", "suggestions": ["종이호일 분리수거"]}
+{"query": "종이호일 음식물", "suggestions": []}
+{"query": "종이호일 무상수거", "suggestions": []}
 {"query": "향수병 버리는", "suggestions": ["향수병 버리는 법"]}
 {"query": "향수병 분리수거", "suggestions": ["향수병 분리수거"]}
 {"query": "향수병 음식물", "suggestions": []}
@@ -1396,6 +1512,34 @@
 {"query": "핸드폰 분리수거", "suggestions": ["핸드폰 분리수거", "핸드폰 분리수거 방법"]}
 {"query": "핸드폰 음식물", "suggestions": []}
 {"query": "핸드폰 무상수거", "suggestions": []}
+{"query": "고무장갑 버리는", "suggestions": ["고무장갑 버리는법", "고무장갑 버리는", "고무장갑 버리는 방법"]}
+{"query": "고무장갑 분리수거", "suggestions": ["고무장갑 분리수거", "고무장갑 분리수거 방법", "고무장갑 분리수거 서울", "고무장갑 분리수거 인천", "고무장갑 분리수거 부산", "고무장갑 분리수거 안양", "고무장갑 분리수거 용인", "고무장갑 분리수거 강남구", "고무장갑 분리수거 비닐"]}
+{"query": "고무장갑 음식물", "suggestions": []}
+{"query": "고무장갑 무상수거", "suggestions": []}
+{"query": "고무패킹 버리는", "suggestions": ["고무패킹 버리는 방법"]}
+{"query": "고무패킹 분리수거", "suggestions": ["고무패킹 분리수거"]}
+{"query": "고무패킹 음식물", "suggestions": []}
+{"query": "고무패킹 무상수거", "suggestions": []}
+{"query": "고무호스 버리는", "suggestions": ["고무호스 버리는법", "고무호스 버리는 방법"]}
+{"query": "고무호스 분리수거", "suggestions": ["고무호스 분리수거"]}
+{"query": "고무호스 음식물", "suggestions": []}
+{"query": "고무호스 무상수거", "suggestions": []}
+{"query": "고무줄 버리는", "suggestions": ["고무줄 버리는법"]}
+{"query": "고무줄 분리수거", "suggestions": ["고무줄 분리수거"]}
+{"query": "고무줄 음식물", "suggestions": []}
+{"query": "고무줄 무상수거", "suggestions": []}
+{"query": "라텍스장갑 버리는", "suggestions": ["라텍스장갑버리는법"]}
+{"query": "라텍스장갑 분리수거", "suggestions": ["라텍스장갑 분리수거"]}
+{"query": "라텍스장갑 음식물", "suggestions": []}
+{"query": "라텍스장갑 무상수거", "suggestions": []}
+{"query": "니트릴장갑 버리는", "suggestions": ["니트릴장갑 버리는 법"]}
+{"query": "니트릴장갑 분리수거", "suggestions": ["니트릴 장갑 분리수거"]}
+{"query": "니트릴장갑 음식물", "suggestions": []}
+{"query": "니트릴장갑 무상수거", "suggestions": []}
+{"query": "차량매트 버리는", "suggestions": ["차량 매트 버리는법"]}
+{"query": "차량매트 분리수거", "suggestions": ["차량 매트 분리수거"]}
+{"query": "차량매트 음식물", "suggestions": []}
+{"query": "차량매트 무상수거", "suggestions": []}
 {"query": "일회용 젓가락 버리는", "suggestions": []}
 {"query": "일회용 젓가락 분리수거", "suggestions": ["일회용 젓가락 분리수거"]}
 {"query": "일회용 젓가락 음식물", "suggestions": []}
@@ -1412,6 +1556,22 @@
 {"query": "나무 꼬치 분리수거", "suggestions": ["나무꼬치 분리수거"]}
 {"query": "나무 꼬치 음식물", "suggestions": []}
 {"query": "나무 꼬치 무상수거", "suggestions": []}
+{"query": "규조토매트 버리는", "suggestions": ["규조토 매트 버리는법"]}
+{"query": "규조토매트 분리수거", "suggestions": ["규조토 매트 분리수거"]}
+{"query": "규조토매트 음식물", "suggestions": []}
+{"query": "규조토매트 무상수거", "suggestions": []}
+{"query": "규조토 버리는", "suggestions": ["규조토 버리는법", "규조토 버리는 방법"]}
+{"query": "규조토 분리수거", "suggestions": ["규조토 분리수거"]}
+{"query": "규조토 음식물", "suggestions": []}
+{"query": "규조토 무상수거", "suggestions": []}
+{"query": "주방 발매트 버리는", "suggestions": ["주방 발매트 버리는법"]}
+{"query": "주방 발매트 분리수거", "suggestions": ["주방 발매트 분리수거 방법"]}
+{"query": "주방 발매트 음식물", "suggestions": []}
+{"query": "주방 발매트 무상수거", "suggestions": []}
+{"query": "발매트 버리는", "suggestions": ["발매트 버리는법", "규조토 발매트 버리는법", "주방 발매트 버리는법", "차량 발매트 버리는 방법", "발매트 버리는 방법"]}
+{"query": "발매트 분리수거", "suggestions": ["발매트 분리수거", "발매트 분리수거 방법"]}
+{"query": "발매트 음식물", "suggestions": []}
+{"query": "발매트 무상수거", "suggestions": []}
 {"query": "소주병 버리는", "suggestions": ["소주병 버리는법", "소주병 버리는 방법"]}
 {"query": "소주병 분리수거", "suggestions": ["소주병 분리수거", "소주병 분리수거 방법"]}
 {"query": "소주병 음식물", "suggestions": []}
@@ -1424,6 +1584,34 @@
 {"query": "잼병 분리수거", "suggestions": []}
 {"query": "잼병 음식물", "suggestions": []}
 {"query": "잼병 무상수거", "suggestions": []}
+{"query": "엘이디등 버리는", "suggestions": ["엘이디등 버리는법"]}
+{"query": "엘이디등 분리수거", "suggestions": []}
+{"query": "엘이디등 음식물", "suggestions": []}
+{"query": "엘이디등 무상수거", "suggestions": []}
+{"query": "방등 버리는", "suggestions": ["방등 버리는방법"]}
+{"query": "방등 분리수거", "suggestions": ["방등 분리수거", "방등 분리수거 방법"]}
+{"query": "방등 음식물", "suggestions": []}
+{"query": "방등 무상수거", "suggestions": []}
+{"query": "거실등 버리는", "suggestions": ["거실등 버리는법", "거실등 버리는방법"]}
+{"query": "거실등 분리수거", "suggestions": ["거실등 분리수거", "거실등 분리수거방법"]}
+{"query": "거실등 음식물", "suggestions": []}
+{"query": "거실등 무상수거", "suggestions": []}
+{"query": "평판등 버리는", "suggestions": ["평판등 버리는법"]}
+{"query": "평판등 분리수거", "suggestions": []}
+{"query": "평판등 음식물", "suggestions": []}
+{"query": "평판등 무상수거", "suggestions": []}
+{"query": "천장등 버리는", "suggestions": ["천장등 버리는 방법"]}
+{"query": "천장등 분리수거", "suggestions": []}
+{"query": "천장등 음식물", "suggestions": []}
+{"query": "천장등 무상수거", "suggestions": []}
+{"query": "등기구 버리는", "suggestions": ["등기구 버리는법"]}
+{"query": "등기구 분리수거", "suggestions": ["등기구 분리수거 방법"]}
+{"query": "등기구 음식물", "suggestions": []}
+{"query": "등기구 무상수거", "suggestions": []}
+{"query": "LED 조명 버리는", "suggestions": ["led 조명 버리는법"]}
+{"query": "LED 조명 분리수거", "suggestions": ["led 조명 분리수거"]}
+{"query": "LED 조명 음식물", "suggestions": []}
+{"query": "LED 조명 무상수거", "suggestions": []}
 {"query": "사과껍질 버리는", "suggestions": ["사과 껍질 버리는법"]}
 {"query": "사과껍질 분리수거", "suggestions": []}
 {"query": "사과껍질 음식물", "suggestions": []}
@@ -1436,6 +1624,30 @@
 {"query": "과일 껍질 분리수거", "suggestions": ["과일 껍질 분리수거 방법", "과일껍질 분리수거"]}
 {"query": "과일 껍질 음식물", "suggestions": ["과일 껍질 음식물 쓰레기", "과일 껍질 음식물", "과일껍질 음식물처리기"]}
 {"query": "과일 껍질 무상수거", "suggestions": []}
+{"query": "놀이매트 버리는", "suggestions": ["놀이매트 버리는법", "놀이매트 버리는 방법", "놀이매트 버리는 비용"]}
+{"query": "놀이매트 분리수거", "suggestions": ["놀이매트 분리수거"]}
+{"query": "놀이매트 음식물", "suggestions": []}
+{"query": "놀이매트 무상수거", "suggestions": []}
+{"query": "놀이방매트 버리는", "suggestions": ["놀이방매트 버리는법", "놀이방 매트 버리는 비용", "놀이방 매트 버리는 방법"]}
+{"query": "놀이방매트 분리수거", "suggestions": ["놀이방매트 분리수거", "놀이방 매트 분리수거 방법"]}
+{"query": "놀이방매트 음식물", "suggestions": []}
+{"query": "놀이방매트 무상수거", "suggestions": []}
+{"query": "층간소음매트 버리는", "suggestions": ["층간소음 매트 버리는법", "층간소음 매트 버리는 방법", "층간소음 매트 버리는 가격"]}
+{"query": "층간소음매트 분리수거", "suggestions": []}
+{"query": "층간소음매트 음식물", "suggestions": []}
+{"query": "층간소음매트 무상수거", "suggestions": []}
+{"query": "폼매트 버리는", "suggestions": ["폼매트 버리는 방법"]}
+{"query": "폼매트 분리수거", "suggestions": []}
+{"query": "폼매트 음식물", "suggestions": []}
+{"query": "폼매트 무상수거", "suggestions": []}
+{"query": "롤매트 버리는", "suggestions": ["롤매트 버리는법", "롤매트 버리는법 가격", "롤매트 버리는 방법"]}
+{"query": "롤매트 분리수거", "suggestions": ["롤매트 분리수거"]}
+{"query": "롤매트 음식물", "suggestions": []}
+{"query": "롤매트 무상수거", "suggestions": []}
+{"query": "코일매트 버리는", "suggestions": ["코일매트 버리는법", "자동차 코일매트 버리는 방법", "코일매트 버리는 방법"]}
+{"query": "코일매트 분리수거", "suggestions": ["코일매트 분리수거", "코일매트 분리수거 방법"]}
+{"query": "코일매트 음식물", "suggestions": []}
+{"query": "코일매트 무상수거", "suggestions": []}
 {"query": "바닥재 버리는", "suggestions": ["바닥재 버리는 법"]}
 {"query": "바닥재 분리수거", "suggestions": []}
 {"query": "바닥재 음식물", "suggestions": []}
@@ -1568,6 +1780,26 @@
 {"query": "치약 튜브 분리수거", "suggestions": ["치약 튜브 분리수거"]}
 {"query": "치약 튜브 음식물", "suggestions": []}
 {"query": "치약 튜브 무상수거", "suggestions": []}
+{"query": "침대 모기장 버리는", "suggestions": ["침대 모기장 버리는법"]}
+{"query": "침대 모기장 분리수거", "suggestions": []}
+{"query": "침대 모기장 음식물", "suggestions": []}
+{"query": "침대 모기장 무상수거", "suggestions": []}
+{"query": "원터치 모기장 버리는", "suggestions": ["원터치 모기장 버리는 법", "원터치 모기장 버리는 방법"]}
+{"query": "원터치 모기장 분리수거", "suggestions": ["원터치 모기장 분리수거"]}
+{"query": "원터치 모기장 음식물", "suggestions": []}
+{"query": "원터치 모기장 무상수거", "suggestions": []}
+{"query": "캠핑 모기장 버리는", "suggestions": []}
+{"query": "캠핑 모기장 분리수거", "suggestions": []}
+{"query": "캠핑 모기장 음식물", "suggestions": []}
+{"query": "캠핑 모기장 무상수거", "suggestions": []}
+{"query": "유아 모기장 버리는", "suggestions": []}
+{"query": "유아 모기장 분리수거", "suggestions": []}
+{"query": "유아 모기장 음식물", "suggestions": []}
+{"query": "유아 모기장 무상수거", "suggestions": []}
+{"query": "방충 텐트 버리는", "suggestions": []}
+{"query": "방충 텐트 분리수거", "suggestions": []}
+{"query": "방충 텐트 음식물", "suggestions": []}
+{"query": "방충 텐트 무상수거", "suggestions": []}
 {"query": "텀블러 버리는", "suggestions": ["텀블러 버리는법"]}
 {"query": "텀블러 분리수거", "suggestions": ["텀블러 분리수거"]}
 {"query": "텀블러 음식물", "suggestions": []}
@@ -1592,6 +1824,22 @@
 {"query": "리무버 분리수거", "suggestions": []}
 {"query": "리무버 음식물", "suggestions": []}
 {"query": "리무버 무상수거", "suggestions": []}
+{"query": "유아욕조 버리는", "suggestions": []}
+{"query": "유아욕조 분리수거", "suggestions": []}
+{"query": "유아욕조 음식물", "suggestions": []}
+{"query": "유아욕조 무상수거", "suggestions": []}
+{"query": "아기 욕조 버리는", "suggestions": ["아기욕조 버리는법"]}
+{"query": "아기 욕조 분리수거", "suggestions": ["아기욕조 분리수거"]}
+{"query": "아기 욕조 음식물", "suggestions": []}
+{"query": "아기 욕조 무상수거", "suggestions": []}
+{"query": "신생아욕조 버리는", "suggestions": ["신생아욕조 버리는법"]}
+{"query": "신생아욕조 분리수거", "suggestions": []}
+{"query": "신생아욕조 음식물", "suggestions": []}
+{"query": "신생아욕조 무상수거", "suggestions": []}
+{"query": "욕조 버리는", "suggestions": ["아기욕조 버리는법", "욕조 버리는 법", "욕조버리는방법"]}
+{"query": "욕조 분리수거", "suggestions": ["아기욕조 분리수거", "욕조 분리수거"]}
+{"query": "욕조 음식물", "suggestions": []}
+{"query": "욕조 무상수거", "suggestions": []}
 {"query": "바닥타일 버리는", "suggestions": ["바닥타일 버리는법", "바닥타일버리는방법"]}
 {"query": "바닥타일 분리수거", "suggestions": []}
 {"query": "바닥타일 음식물", "suggestions": []}
@@ -1688,6 +1936,30 @@
 {"query": "일회용 면도기 분리수거", "suggestions": ["일회용 면도기 분리수거"]}
 {"query": "일회용 면도기 음식물", "suggestions": []}
 {"query": "일회용 면도기 무상수거", "suggestions": []}
+{"query": "교자상 버리는", "suggestions": ["교자상 버리는법"]}
+{"query": "교자상 분리수거", "suggestions": ["교자상 분리수거", "교자상 분리수거비용"]}
+{"query": "교자상 음식물", "suggestions": []}
+{"query": "교자상 무상수거", "suggestions": []}
+{"query": "다과상 버리는", "suggestions": ["다과상 버리는법"]}
+{"query": "다과상 분리수거", "suggestions": []}
+{"query": "다과상 음식물", "suggestions": []}
+{"query": "다과상 무상수거", "suggestions": []}
+{"query": "좌탁 버리는", "suggestions": []}
+{"query": "좌탁 분리수거", "suggestions": []}
+{"query": "좌탁 음식물", "suggestions": []}
+{"query": "좌탁 무상수거", "suggestions": []}
+{"query": "차탁자 버리는", "suggestions": []}
+{"query": "차탁자 분리수거", "suggestions": []}
+{"query": "차탁자 음식물", "suggestions": []}
+{"query": "차탁자 무상수거", "suggestions": []}
+{"query": "소반 버리는", "suggestions": ["소반 버리는법"]}
+{"query": "소반 분리수거", "suggestions": []}
+{"query": "소반 음식물", "suggestions": []}
+{"query": "소반 무상수거", "suggestions": []}
+{"query": "좌식 테이블 버리는", "suggestions": ["좌식 테이블 버리는 방법", "좌식 테이블 버리는법"]}
+{"query": "좌식 테이블 분리수거", "suggestions": ["좌식테이블 분리수거 방법"]}
+{"query": "좌식 테이블 음식물", "suggestions": []}
+{"query": "좌식 테이블 무상수거", "suggestions": []}
 {"query": "장농 버리는", "suggestions": ["장농버리는법", "장농버리는방법", "장농버리는꿈", "장농버리는가격", "장농버리는꿈해몽"]}
 {"query": "장농 분리수거", "suggestions": []}
 {"query": "장농 음식물", "suggestions": []}
@@ -1700,18 +1972,6 @@
 {"query": "양변기 분리수거", "suggestions": []}
 {"query": "양변기 음식물", "suggestions": []}
 {"query": "양변기 무상수거", "suggestions": []}
-{"query": "은박지 버리는", "suggestions": ["은박지 버리는법", "은박지 버리는 방법"]}
-{"query": "은박지 분리수거", "suggestions": ["은박지 분리수거", "은박지 분리수거 방법"]}
-{"query": "은박지 음식물", "suggestions": []}
-{"query": "은박지 무상수거", "suggestions": []}
-{"query": "알루미늄 호일 버리는", "suggestions": ["알루미늄호일 버리는법"]}
-{"query": "알루미늄 호일 분리수거", "suggestions": ["알루미늄 호일 분리수거", "알루미늄 호일 분리수거 방법"]}
-{"query": "알루미늄 호일 음식물", "suggestions": []}
-{"query": "알루미늄 호일 무상수거", "suggestions": []}
-{"query": "쿠킹호일 버리는", "suggestions": ["쿠킹호일 버리는법"]}
-{"query": "쿠킹호일 분리수거", "suggestions": ["쿠킹호일 분리수거", "쿠킹호일 분리수거 방법"]}
-{"query": "쿠킹호일 음식물", "suggestions": []}
-{"query": "쿠킹호일 무상수거", "suggestions": []}
 {"query": "돌침대 버리는", "suggestions": ["돌침대 버리는법", "돌침대 버리는 방법", "돌침대 버리는 가격", "돌침대 버리는 업체", "돌침대 버리는 비용"]}
 {"query": "돌침대 분리수거", "suggestions": ["돌침대 분리수거"]}
 {"query": "돌침대 음식물", "suggestions": []}
@@ -1808,6 +2068,10 @@
 {"query": "전기히터 분리수거", "suggestions": ["전기히터 분리수거"]}
 {"query": "전기히터 음식물", "suggestions": []}
 {"query": "전기히터 무상수거", "suggestions": []}
+{"query": "전기매트 버리는", "suggestions": ["전기매트 버리는법", "전기매트 버리는 방법", "전기매트 버리는 비용", "전기매트 버리는법 아파트"]}
+{"query": "전기매트 분리수거", "suggestions": ["전기매트 분리수거", "전기매트 분리수거 방법"]}
+{"query": "전기매트 음식물", "suggestions": []}
+{"query": "전기매트 무상수거", "suggestions": []}
 {"query": "인조화 버리는", "suggestions": []}
 {"query": "인조화 분리수거", "suggestions": []}
 {"query": "인조화 음식물", "suggestions": []}
@@ -1816,18 +2080,26 @@
 {"query": "조화 화분 분리수거", "suggestions": []}
 {"query": "조화 화분 음식물", "suggestions": []}
 {"query": "조화 화분 무상수거", "suggestions": []}
+{"query": "화환 버리는", "suggestions": ["화환 버리는법", "화환 버리는 방법"]}
+{"query": "화환 분리수거", "suggestions": ["화환 분리수거", "화환 분리수거 방법"]}
+{"query": "화환 음식물", "suggestions": []}
+{"query": "화환 무상수거", "suggestions": []}
 {"query": "led 버리는", "suggestions": ["led 버리는법"]}
 {"query": "led 분리수거", "suggestions": ["led 분리수거", "led 분리수거 방법"]}
 {"query": "led 음식물", "suggestions": []}
 {"query": "led 무상수거", "suggestions": []}
-{"query": "led등 버리는", "suggestions": ["led등 버리는법", "led등 버리는 방법", "led등 버리는법 아파트"]}
-{"query": "led등 분리수거", "suggestions": ["led등 분리수거", "led등 분리수거 배출방법"]}
-{"query": "led등 음식물", "suggestions": []}
-{"query": "led등 무상수거", "suggestions": []}
 {"query": "엘이디 전구 버리는", "suggestions": []}
 {"query": "엘이디 전구 분리수거", "suggestions": []}
 {"query": "엘이디 전구 음식물", "suggestions": []}
 {"query": "엘이디 전구 무상수거", "suggestions": []}
+{"query": "LED 벌브 버리는", "suggestions": []}
+{"query": "LED 벌브 분리수거", "suggestions": []}
+{"query": "LED 벌브 음식물", "suggestions": []}
+{"query": "LED 벌브 무상수거", "suggestions": []}
+{"query": "LED 직관등 버리는", "suggestions": []}
+{"query": "LED 직관등 분리수거", "suggestions": []}
+{"query": "LED 직관등 음식물", "suggestions": []}
+{"query": "LED 직관등 무상수거", "suggestions": []}
 {"query": "생선가시 버리는", "suggestions": ["생선가시 버리는 법", "생선가시 버리는 방법"]}
 {"query": "생선가시 분리수거", "suggestions": ["생선가시 분리수거"]}
 {"query": "생선가시 음식물", "suggestions": ["생선가시 음식물", "생선가시 음식물 일반", "생선가시 음식물 쓰레기인가", "생선가시 음식물처리기"]}
@@ -1836,22 +2108,18 @@
 {"query": "생선내장 분리수거", "suggestions": []}
 {"query": "생선내장 음식물", "suggestions": []}
 {"query": "생선내장 무상수거", "suggestions": []}
-{"query": "모기장 버리는", "suggestions": ["모기장 버리는법", "모기장 버리는 방법"]}
-{"query": "모기장 분리수거", "suggestions": ["모기장 분리수거"]}
-{"query": "모기장 음식물", "suggestions": []}
-{"query": "모기장 무상수거", "suggestions": []}
 {"query": "방충망 틀 버리는", "suggestions": ["방충망틀 버리는법"]}
 {"query": "방충망 틀 분리수거", "suggestions": []}
 {"query": "방충망 틀 음식물", "suggestions": []}
 {"query": "방충망 틀 무상수거", "suggestions": []}
-{"query": "범퍼매트 버리는", "suggestions": ["범퍼매트 버리는법"]}
-{"query": "범퍼매트 분리수거", "suggestions": []}
-{"query": "범퍼매트 음식물", "suggestions": []}
-{"query": "범퍼매트 무상수거", "suggestions": []}
-{"query": "놀이방매트 버리는", "suggestions": ["놀이방매트 버리는법", "놀이방 매트 버리는 비용", "놀이방 매트 버리는 방법"]}
-{"query": "놀이방매트 분리수거", "suggestions": ["놀이방매트 분리수거", "놀이방 매트 분리수거 방법"]}
-{"query": "놀이방매트 음식물", "suggestions": []}
-{"query": "놀이방매트 무상수거", "suggestions": []}
+{"query": "창문 방충망 버리는", "suggestions": []}
+{"query": "창문 방충망 분리수거", "suggestions": []}
+{"query": "창문 방충망 음식물", "suggestions": []}
+{"query": "창문 방충망 무상수거", "suggestions": []}
+{"query": "현관 방충망 버리는", "suggestions": []}
+{"query": "현관 방충망 분리수거", "suggestions": []}
+{"query": "현관 방충망 음식물", "suggestions": []}
+{"query": "현관 방충망 무상수거", "suggestions": []}
 {"query": "아기물티슈 버리는", "suggestions": []}
 {"query": "아기물티슈 분리수거", "suggestions": []}
 {"query": "아기물티슈 음식물", "suggestions": []}
@@ -1876,18 +2144,22 @@
 {"query": "생리대 분리수거", "suggestions": ["생리대 분리수거"]}
 {"query": "생리대 음식물", "suggestions": []}
 {"query": "생리대 무상수거", "suggestions": []}
-{"query": "교자상 버리는", "suggestions": ["교자상 버리는법"]}
-{"query": "교자상 분리수거", "suggestions": ["교자상 분리수거", "교자상 분리수거비용"]}
-{"query": "교자상 음식물", "suggestions": []}
-{"query": "교자상 무상수거", "suggestions": []}
 {"query": "대리석 식탁 버리는", "suggestions": ["대리석 식탁 버리는법"]}
 {"query": "대리석 식탁 분리수거", "suggestions": []}
 {"query": "대리석 식탁 음식물", "suggestions": []}
 {"query": "대리석 식탁 무상수거", "suggestions": []}
-{"query": "밥상 버리는", "suggestions": ["밥상 버리는법", "밥상 버리는 방법", "밥상 버리는 비용"]}
-{"query": "밥상 분리수거", "suggestions": ["밥상 분리수거"]}
-{"query": "밥상 음식물", "suggestions": []}
-{"query": "밥상 무상수거", "suggestions": []}
+{"query": "4인용 식탁 버리는", "suggestions": ["4인용 식탁 버리는 방법"]}
+{"query": "4인용 식탁 분리수거", "suggestions": []}
+{"query": "4인용 식탁 음식물", "suggestions": []}
+{"query": "4인용 식탁 무상수거", "suggestions": []}
+{"query": "6인용 식탁 버리는", "suggestions": []}
+{"query": "6인용 식탁 분리수거", "suggestions": []}
+{"query": "6인용 식탁 음식물", "suggestions": []}
+{"query": "6인용 식탁 무상수거", "suggestions": []}
+{"query": "주방 테이블 버리는", "suggestions": []}
+{"query": "주방 테이블 분리수거", "suggestions": []}
+{"query": "주방 테이블 음식물", "suggestions": []}
+{"query": "주방 테이블 무상수거", "suggestions": []}
 {"query": "고추장 버리는", "suggestions": ["고추장 버리는법", "초고추장 버리는법", "고추장 버리는", "고추장 버리는 방법"]}
 {"query": "고추장 분리수거", "suggestions": ["고추장 분리수거 방법", "고추장분리수거"]}
 {"query": "고추장 음식물", "suggestions": ["고추장 음식물쓰레기", "고추장 음식물 처리"]}
@@ -1960,14 +2232,10 @@
 {"query": "갈비뼈 음식물 분리수거", "suggestions": []}
 {"query": "경동택배 버리는법", "suggestions": []}
 {"query": "경동택배 분리수거", "suggestions": []}
-{"query": "고무 버리는법", "suggestions": ["고무 버리는법"]}
-{"query": "고무 분리수거", "suggestions": ["고무 분리수거", "고무 분리수거 방법", "고무 분리수거통"]}
 {"query": "고장난 냉장고 버리는법", "suggestions": ["고장난 냉장고 버리는 법"]}
 {"query": "고장난 냉장고 분리수거", "suggestions": []}
 {"query": "관악구 버리는법", "suggestions": []}
 {"query": "관악구 분리수거", "suggestions": ["관악구 분리수거", "관악구 분리수거 날짜", "관악구 분리수거 방법", "관악구 분리수거 배출방법"]}
-{"query": "규조토 발매트 버리는법", "suggestions": ["규조토 발매트 버리는법"]}
-{"query": "규조토 발매트 분리수거", "suggestions": ["규조토 발매트 분리수거"]}
 {"query": "김치 음식물 버리는법", "suggestions": []}
 {"query": "김치 음식물 분리수거", "suggestions": []}
 {"query": "나무의자 버리는법", "suggestions": ["나무의자 버리는법"]}
@@ -1976,8 +2244,6 @@
 {"query": "냉장고 무상 분리수거", "suggestions": []}
 {"query": "냉장고 음식물 버리는법", "suggestions": ["냉장고 음식물 버리는법"]}
 {"query": "냉장고 음식물 분리수거", "suggestions": []}
-{"query": "놀이매트 버리는법", "suggestions": ["놀이매트 버리는법"]}
-{"query": "놀이매트 분리수거", "suggestions": ["놀이매트 분리수거"]}
 {"query": "대구 헌옷 버리는법", "suggestions": []}
 {"query": "대구 헌옷 분리수거", "suggestions": []}
 {"query": "대형 폐기물 버리는법", "suggestions": ["대형 폐기물 버리는법", "대형폐기물 버리는법 아파트"]}
@@ -1990,8 +2256,6 @@
 {"query": "대형화분 분리수거", "suggestions": []}
 {"query": "동물 사체 버리는법", "suggestions": ["동물사체 버리는법"]}
 {"query": "동물 사체 분리수거", "suggestions": []}
-{"query": "롤매트 버리는법", "suggestions": ["롤매트 버리는법", "롤매트 버리는법 가격"]}
-{"query": "롤매트 분리수거", "suggestions": ["롤매트 분리수거"]}
 {"query": "마루 버리는법", "suggestions": ["마루 버리는법"]}
 {"query": "마루 분리수거", "suggestions": []}
 {"query": "밧드야 버리는법", "suggestions": []}
@@ -2020,30 +2284,18 @@
 {"query": "쇼파 무상 분리수거", "suggestions": []}
 {"query": "시골집 버리는법", "suggestions": []}
 {"query": "시골집 분리수거", "suggestions": []}
-{"query": "실리콘 버리는법", "suggestions": ["실리콘 버리는법"]}
-{"query": "실리콘 분리수거", "suggestions": ["실리콘 분리수거", "실리콘 분리수거 방법"]}
-{"query": "실리콘식기 버리는법", "suggestions": ["실리콘식기 버리는법"]}
-{"query": "실리콘식기 분리수거", "suggestions": []}
 {"query": "아기 장난감 버리는법", "suggestions": ["아기 장난감 버리는 법"]}
 {"query": "아기 장난감 분리수거", "suggestions": ["아기 장난감 분리수거"]}
 {"query": "아이스겔 버리는법", "suggestions": []}
 {"query": "아이스겔 분리수거", "suggestions": ["아이스겔 분리수거"]}
-{"query": "요가매트 버리는법", "suggestions": ["요가매트 버리는법", "요가매트 버리는법 아파트"]}
-{"query": "요가매트 분리수거", "suggestions": ["요가매트 분리수거", "요가매트 분리수거 방법"]}
 {"query": "욕실슬리퍼 버리는법", "suggestions": []}
 {"query": "욕실슬리퍼 분리수거", "suggestions": ["욕실슬리퍼 분리수거", "욕실 슬리퍼 분리수거 방법"]}
-{"query": "욕조 버리는법", "suggestions": ["아기욕조 버리는법", "욕조 버리는 법"]}
-{"query": "욕조 분리수거", "suggestions": ["아기욕조 분리수거", "욕조 분리수거"]}
 {"query": "우체국 버리는법", "suggestions": []}
 {"query": "우체국 분리수거", "suggestions": []}
 {"query": "우체국 방문 버리는법", "suggestions": []}
 {"query": "우체국 방문 분리수거", "suggestions": []}
 {"query": "은박 보냉팩 버리는법", "suggestions": []}
 {"query": "은박 보냉팩 분리수거", "suggestions": ["은박 보냉팩 분리수거"]}
-{"query": "은박비닐 버리는법", "suggestions": ["은박비닐 버리는법"]}
-{"query": "은박비닐 분리수거", "suggestions": ["은박비닐 분리수거"]}
-{"query": "은박접시 버리는법", "suggestions": []}
-{"query": "은박접시 분리수거", "suggestions": ["은박접시 분리수거"]}
 {"query": "은평구 버리는법", "suggestions": []}
 {"query": "은평구 분리수거", "suggestions": ["은평구 분리수거", "은평구 분리수거 기준", "은평구 분리수거 방법"]}
 {"query": "음식물쓰레기 버리는법", "suggestions": ["음식물쓰레기 버리는법", "음식물쓰레기 버리는법 원룸", "음식물쓰레기 버리는법 아파트", "음식물쓰레기 버리는법 봉투", "음식물 쓰레기 버리는법 스티커", "음식물쓰레기 버리는법 대구"]}
@@ -2058,24 +2310,20 @@
 {"query": "인천 이불 분리수거", "suggestions": []}
 {"query": "인형 분리수거 버리는법", "suggestions": ["인형 분리수거 버리는법"]}
 {"query": "인형 분리수거 분리수거", "suggestions": []}
+{"query": "자동차 코일매트 버리는법", "suggestions": ["자동차 코일매트 버리는법"]}
+{"query": "자동차 코일매트 분리수거", "suggestions": ["자동차 코일매트 분리수거"]}
 {"query": "재사용 버리는법", "suggestions": []}
 {"query": "재사용 분리수거", "suggestions": []}
-{"query": "전기매트 버리는법", "suggestions": ["전기매트 버리는법", "전기매트 버리는법 아파트"]}
-{"query": "전기매트 분리수거", "suggestions": ["전기매트 분리수거", "전기매트 분리수거 방법"]}
 {"query": "전자제품 버리는법", "suggestions": ["소형 전자제품 버리는법", "전자제품 버리는법"]}
 {"query": "전자제품 분리수거", "suggestions": ["전자제품 분리수거", "전자제품 분리수거 방법"]}
 {"query": "종량제봉투 버리는법", "suggestions": ["종량제봉투 버리는법"]}
 {"query": "종량제봉투 분리수거", "suggestions": []}
-{"query": "주방 발매트 버리는법", "suggestions": ["주방 발매트 버리는법"]}
-{"query": "주방 발매트 분리수거", "suggestions": ["주방 발매트 분리수거 방법"]}
 {"query": "주방가위 버리는법", "suggestions": ["주방가위 버리는법"]}
 {"query": "주방가위 분리수거", "suggestions": ["주방가위 분리수거"]}
 {"query": "주방용 칼 버리는법", "suggestions": ["주방용 칼 버리는법"]}
 {"query": "주방용 칼 분리수거", "suggestions": []}
 {"query": "직원 퇴사 버리는법", "suggestions": []}
 {"query": "직원 퇴사 분리수거", "suggestions": []}
-{"query": "차량 매트 버리는법", "suggestions": ["차량 매트 버리는법"]}
-{"query": "차량 매트 분리수거", "suggestions": ["차량 매트 분리수거"]}
 {"query": "차량 발매트 버리는법", "suggestions": []}
 {"query": "차량 발매트 분리수거", "suggestions": ["차량 발매트 분리수거"]}
 {"query": "청소기 배터리 버리는법", "suggestions": ["청소기 배터리 버리는 법"]}
@@ -2088,16 +2336,10 @@
 {"query": "칼 가위 분리수거", "suggestions": ["칼 가위 분리수거"]}
 {"query": "칼 분리수거 버리는법", "suggestions": ["칼 분리수거 버리는법"]}
 {"query": "칼 분리수거 분리수거", "suggestions": []}
-{"query": "코일매트 버리는법", "suggestions": ["코일매트 버리는법"]}
-{"query": "코일매트 분리수거", "suggestions": ["코일매트 분리수거", "코일매트 분리수거 방법"]}
-{"query": "타일카페트 버리는법", "suggestions": ["타일카페트 버리는법"]}
-{"query": "타일카페트 분리수거", "suggestions": []}
 {"query": "택배 버리는법", "suggestions": []}
 {"query": "택배 분리수거", "suggestions": []}
 {"query": "티백음식물 버리는법", "suggestions": []}
 {"query": "티백음식물 분리수거", "suggestions": []}
-{"query": "퍼즐매트 버리는법", "suggestions": ["퍼즐매트 버리는법"]}
-{"query": "퍼즐매트 분리수거", "suggestions": ["퍼즐매트 분리수거"]}
 {"query": "페가전 버리는법", "suggestions": []}
 {"query": "페가전 분리수거", "suggestions": []}
 {"query": "페기물 버리는법", "suggestions": []}
@@ -2122,7 +2364,5 @@
 {"query": "헌책 분리수거", "suggestions": ["헌책 분리수거", "헌책 분리수거 방법"]}
 {"query": "화장실 슬리퍼 버리는법", "suggestions": ["화장실 슬리퍼 버리는 법"]}
 {"query": "화장실 슬리퍼 분리수거", "suggestions": ["화장실 슬리퍼 분리수거"]}
-{"query": "화환 버리는법", "suggestions": ["화환 버리는법"]}
-{"query": "화환 분리수거", "suggestions": ["화환 분리수거", "화환 분리수거 방법"]}
 {"query": "회사 산재 버리는법", "suggestions": []}
 {"query": "회사 산재 분리수거", "suggestions": []}
