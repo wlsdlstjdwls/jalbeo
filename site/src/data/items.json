@@ -2829,6 +2829,22 @@
   "updated_at": "2026-09-05T02:39:06.454529+00:00"
  },
  {
+  "slug": "kaettawo",
+  "name": "캣타워",
+  "aliases": [
+   "캣폴"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "소형이고 분해되면 재질별로 종량제, 안 되면 대형폐기물 신고입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": null,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-05T03:09:13.767341+00:00"
+ },
+ {
   "slug": "pyemokjae",
   "name": "폐목재",
   "aliases": [
