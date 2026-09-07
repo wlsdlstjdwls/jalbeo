@@ -943,7 +943,9 @@
    "브래지어",
    "브라",
    "내복",
-   "런닝셔츠"
+   "런닝셔츠",
+   "양말",
+   "스타킹"
   ],
   "verdict": "조건부",
   "verdict_line": "입던 것은 종량제봉투입니다. 안 뜯은 새것만 의류수거함입니다.",
@@ -953,7 +955,7 @@
   "monthly_volume": 1550,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-07T05:16:33.853225+00:00"
+  "updated_at": "2026-09-07T06:22:36.943603+00:00"
  },
  {
   "slug": "jeonjareinji",
@@ -1312,6 +1314,46 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "tenteu",
+  "name": "텐트",
+  "aliases": [
+   "캠핑텐트",
+   "원터치텐트",
+   "그늘막",
+   "타프",
+   "천막"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "폴대는 고철, 천은 종량제봉투입니다. 원터치는 대형폐기물입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 1140,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T06:22:36.943603+00:00"
+ },
+ {
+  "slug": "beullaindeu",
+  "name": "블라인드",
+  "aliases": [
+   "버티컬",
+   "버티칼",
+   "롤스크린",
+   "우드블라인드",
+   "콤비블라인드"
+  ],
+  "verdict": "대형폐기물",
+  "verdict_line": "쪽당으로 받는 곳이 있습니다. 알루미늄이면 뜯어서 고철로 냅니다.",
+  "category": "생활용품",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 1110,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T06:22:36.943603+00:00"
+ },
+ {
   "slug": "angyeong",
   "name": "안경",
   "aliases": [
@@ -1416,6 +1458,26 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "sseuregitong",
+  "name": "쓰레기통",
+  "aliases": [
+   "휴지통",
+   "분리수거함",
+   "페달휴지통",
+   "음식물쓰레기통",
+   "플라스틱통"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "플라스틱인데 재활용은 안 됩니다. 봉투에 들어가면 봉투입니다.",
+  "category": "플라스틱류",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 980,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T06:22:36.943603+00:00"
+ },
+ {
   "slug": "gyujotobalmaeteu",
   "name": "규조토 발매트",
   "aliases": [
@@ -1481,6 +1543,26 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "dotjari",
+  "name": "돗자리",
+  "aliases": [
+   "대자리",
+   "대나무돗자리",
+   "은박돗자리",
+   "왕골돗자리",
+   "피크닉매트"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "재질과 상관없이 재활용은 없습니다. 대나무는 실을 끊으면 봉투에 들어갑니다.",
+  "category": "생활용품",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 885,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T06:22:36.943603+00:00"
+ },
+ {
   "slug": "chaeksang",
   "name": "책상",
   "aliases": [],
@@ -1529,6 +1611,26 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "byeoksigye",
+  "name": "벽시계",
+  "aliases": [
+   "시계",
+   "탁상시계",
+   "알람시계",
+   "뻐꾸기시계",
+   "추시계"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "건전지를 빼고 나면 가전이 아닙니다. 몸통은 종량제봉투입니다.",
+  "category": "생활용품",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 860,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T06:22:36.943603+00:00"
  },
  {
   "slug": "gwailkkeopjil",
@@ -1818,6 +1920,26 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "mikseogi",
+  "name": "믹서기",
+  "aliases": [
+   "녹즙기",
+   "블렌더",
+   "분쇄기",
+   "핸드블렌더",
+   "원액기"
+  ],
+  "verdict": "무상수거",
+  "verdict_line": "소형가전이라 값을 안 내는 곳이 있습니다. 유리 용기와 칼날은 따로 냅니다.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 585,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T06:22:36.943603+00:00"
+ },
+ {
   "slug": "heonot",
   "name": "헌옷",
   "aliases": [
@@ -1894,6 +2016,26 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "hangari",
+  "name": "항아리",
+  "aliases": [
+   "장독",
+   "옹기",
+   "김칫독",
+   "단지",
+   "질그릇"
+  ],
+  "verdict": "대형폐기물",
+  "verdict_line": "도자기라 재활용은 없습니다. 크면 마대가 아니라 신고입니다.",
+  "category": "도자기류",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 555,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T06:22:36.943603+00:00"
+ },
+ {
   "slug": "eohang",
   "name": "어항",
   "aliases": [
@@ -1958,6 +2100,25 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "gyeranpan",
+  "name": "계란판",
+  "aliases": [
+   "달걀판",
+   "계란포장",
+   "에그트레이",
+   "계란트레이"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "종이면 종이류, 아니면 플라스틱류입니다. 투명해도 페트병 통은 아닙니다.",
+  "category": "종이류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 495,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T06:22:36.943603+00:00"
  },
  {
   "slug": "boonbyeong",
