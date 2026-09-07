@@ -1,42 +1,56 @@
 name: IndexNow 제출
 
-# 품목/가이드 페이지가 새로 배포되면 IndexNow로 URL을 재통지한다
-# (빙, 얀덱스, 네이버, 세즈남, 옙 일괄 통지). 구글은 IndexNow 미참여라
-# 별도(scripts/indexing_queue.py, 사람이 손으로 하루 할당량만큼).
-# 이미 낸 URL은 data/indexing/indexnow_log.json으로 걸러 신규만 보낸다 — 안 바뀐 URL
-# 반복 제출은 스팸 취급이라 매번 통째로 쏘면 안 된다(2026-09-07 정정).
+# 운영 배포가 끝나면 IndexNow 제출 스크립트를 한 번 돌린다 — 이것이 유일한 자동 트리거
+# (smokespot의 indexnow.yml 과 같은 규격, 2026-09-07). 주간 cron·push 경로 필터는 두지 않는다.
+# 스크립트가 data/indexing/indexnow_log.json 과 대조해 신규 URL만 보내므로 매 배포마다
+# 돌려도 무해하다 — 안 바뀐 URL 반복 제출은 스팸 취급이라 통째로 쏘면 안 된다.
+# 빙, 얀덱스, 네이버, 세즈남, 옙이 IndexNow를 공유. 구글은 미참여라 별도
+# (scripts/indexing_queue.py, 사람이 손으로 하루 할당량만큼).
+# Vercel Git 연동이 GitHub Deployment(environment=Production)를 만들고 성공 상태를 올릴 때 트리거.
+# workflow_dispatch 는 수동 실행용(배포 대기 생략, 바로 제출).
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "site/src/content/items/**"
-      - "site/src/content/guides/**"
-      - "site/src/data/items.json"
-  schedule:
-    - cron: "0 0 * * 1"  # 매주 월요일 09:00 KST, 놓친 경우의 안전망
+  deployment_status:
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
+# 제출 기록을 main에 커밋하므로 두 런이 겹치면 push가 충돌한다. 순서대로 돌린다.
+concurrency:
+  group: indexnow-submit
+  cancel-in-progress: false
+
 jobs:
   submit:
+    if: github.event_name == 'workflow_dispatch' || (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production')
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      DEPLOY_INFO: https://jalbeo.com/deploy.json
+      SHA: ${{ github.event.deployment.sha }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # deployment_status 이벤트의 기본 ref는 배포 커밋(detached)이라 push가 안 된다.
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: 배포 반영 대기
-        # 푸시 직후라 Vercel 빌드가 아직 안 끝났을 수 있다. 사이트맵이
-        # 이전 배포 것이면 새 URL이 빠진 채로 나간다. 매주 cron은 이미
-        # 안정된 상태를 읽는 것이라 기다릴 필요 없다.
-        if: github.event_name == 'push'
-        run: sleep 180
+      - name: 운영 도메인이 이 배포를 서빙할 때까지 대기
+        # 성공 이벤트 직후엔 도메인 alias·CDN이 아직 이전 배포를 가리킬 수 있다. 그 상태로
+        # 제출하면 이전 배포의 사이트맵을 읽거나 키 파일을 못 찾아 403이 난다.
+        # /deploy.json(site/src/pages/deploy.json.ts)의 commit이 이 배포 SHA와 같아질 때까지 기다린다.
+        if: github.event_name == 'deployment_status'
+        run: |
+          for i in $(seq 1 24); do
+            got=$(curl -s "$DEPLOY_INFO?t=$i" | sed -n 's/.*"commit":"\([0-9a-f]*\)".*/\1/p')
+            if [ "$got" = "$SHA" ]; then echo "ready after $i"; exit 0; fi
+            echo "serving ${got:-?}, waiting for $SHA"; sleep 5
+          done
+          echo "production did not switch to $SHA"; exit 1
 
       - name: IndexNow 제출
         run: python scripts/indexnow_submit.py
@@ -48,4 +62,5 @@ jobs:
           git add data/indexing/indexnow_log.json
           git diff --cached --quiet && exit 0
           git commit -m "chore: IndexNow 제출 기록 (자동, $GITHUB_EVENT_NAME)"
+          git pull --rebase origin main
           git push
