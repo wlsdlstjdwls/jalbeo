@@ -1,18 +1,21 @@
 # -*- coding: utf-8 -*-
-"""IndexNow로 URL을 한 번에 통지한다 (빙, 얀덱스, 네이버, 세즈남, 옙이 공유).
+"""IndexNow로 URL을 통지한다 (빙, 얀덱스, 네이버, 세즈남, 옙이 공유).
 
 구글은 IndexNow에 참여하지 않는다 - 구글은 scripts/indexing_queue.py로 계속
 하루 할당량만큼 손으로 넣는다. 이 스크립트는 그 나머지 엔진 전용이다.
 
-    python scripts/indexnow_submit.py            # 사이트맵 전체 제출
+    python scripts/indexnow_submit.py            # 신규 URL만 제출
     python scripts/indexnow_submit.py --dry       # 보기만, 전송 안 함
+    python scripts/indexnow_submit.py --force     # 이미 낸 것도 전부 재제출
+
+**안 바뀐 URL을 반복 제출하면 안 된다.** IndexNow는 그런 호스트를 스팸으로
+보고 순위를 낮추고, 짧은 시간에 몰아 쏘면 429(rate limit)가 뜬다. 그래서
+이 스크립트는 사이트맵 전체가 아니라 data/indexing/indexnow_log.json에
+아직 없는 URL만 골라 보낸다 - --force는 키 교체 등 정말 전부 다시 알려야
+할 때만 쓴다.
 
 키 파일은 site/public/<키>.txt에 있고 배포돼 있어야 한다 - IndexNow가
-keyLocation을 가져와 소유를 확인하기 때문이다. 이 스크립트를 처음 돌리기
-전에 반드시 한 번 배포(git push)부터 한다.
-
-기록은 data/indexing/indexnow_log.json. 하루 할당량은 없지만 - 새 페이지가
-없는데 반복 제출하면 낭비이므로 마지막 제출 시각과 건수를 남긴다.
+keyLocation을 가져와 소유를 확인하기 때문이다.
 """
 import argparse
 import datetime
@@ -55,8 +58,11 @@ def load_urls():
 
 def load_state():
     if os.path.exists(STATE):
-        return json.load(io.open(STATE, encoding="utf-8"))
-    return {"runs": []}
+        state = json.load(io.open(STATE, encoding="utf-8"))
+        state.setdefault("submitted", {})
+        state.setdefault("runs", [])
+        return state
+    return {"submitted": {}, "runs": []}
 
 
 def save_state(state):
@@ -86,31 +92,45 @@ def submit(urls):
             with urllib.request.urlopen(req, timeout=30) as r:
                 results.append((len(chunk), r.status))
         except urllib.error.HTTPError as e:
-            # IndexNow는 200/202가 정상, 나머지는 본문에 이유가 있다
+            # IndexNow는 200/202가 정상, 429는 과다 제출이니 바로 멈춰야 한다
             results.append((len(chunk), e.code))
     return results
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dry", action="store_true", help="전송하지 않고 URL 수만 본다")
+    ap.add_argument("--dry", action="store_true", help="전송하지 않고 신규 URL 수만 본다")
+    ap.add_argument("--force", action="store_true",
+                    help="이미 제출 기록이 있는 URL도 전부 다시 보낸다 (키 교체 등 예외 상황용)")
     args = ap.parse_args()
 
     urls = load_urls()
-    print("사이트맵 URL %d개" % len(urls))
+    state = load_state()
+
+    targets = urls if args.force else [u for u in urls if u not in state["submitted"]]
+    print("사이트맵 URL %d개, 그 중 대상 %d개%s"
+          % (len(urls), len(targets), " (--force)" if args.force else ""))
     print("키 위치: %s" % KEY_LOCATION)
+
+    if not targets:
+        print("신규 URL 없음 - 전송 안 함 (반복 제출은 스팸으로 처리될 수 있다)")
+        return
 
     if args.dry:
         print("(--dry 라 전송 안 했다)")
         return
 
-    results = submit(urls)
-    state = load_state()
+    results = submit(targets)
     stamp = datetime.datetime.now().isoformat(timespec="seconds")
     ok = all(200 <= code < 300 for _, code in results)
+
+    if ok:
+        for u in targets:
+            state["submitted"][u] = stamp
+
     state["runs"].append({
         "at": stamp,
-        "url_count": len(urls),
+        "url_count": len(targets),
         "results": [{"count": c, "status": s} for c, s in results],
         "ok": ok,
     })
@@ -120,7 +140,7 @@ def main():
         print("%d개 전송 -> HTTP %d" % (count, status))
     print("기록함 -> %s" % os.path.relpath(STATE, ROOT))
     if not ok:
-        sys.exit("일부 배치가 실패했다. 상태코드를 확인해라 (403은 키 파일 미배포 가능성).")
+        sys.exit("일부 배치가 실패했다. 상태코드를 확인해라 (403은 키 파일 미배포, 429는 과다 제출 가능성).")
 
 
 if __name__ == "__main__":
