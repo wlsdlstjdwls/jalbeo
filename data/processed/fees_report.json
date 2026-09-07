@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-05",
-  "total_rows": 8649,
+  "generated_at": "2026-09-07",
+  "total_rows": 8597,
   "files_ok": 52,
   "files_skipped": 21,
   "regions": 47,
-  "distinct_items": 1658,
+  "distinct_items": 1655,
   "files": [
     {
       "file": "(양식) 대형폐기물 처리 수수료 정보.csv",
@@ -131,13 +131,13 @@
       ]
     },
     {
-      "file": "경기도 양주시_대형폐기물 수수료 현황_20250916.csv",
+      "file": "경기도 양주시_대형폐기물 수수료 현황.csv",
       "status": "ok",
-      "rows": 208,
+      "rows": 156,
       "mapped": [
-        "category",
         "fee",
-        "item"
+        "item",
+        "spec"
       ]
     },
     {
@@ -694,7 +694,7 @@
       ]
     },
     {
-      "file": "서울특별시_광진구_대형폐기물수집운반수수료 (2).csv",
+      "file": "서울특별시_광진구_대형폐기물수집운반수수료 (2) (1).csv",
       "status": "ok",
       "rows": 378,
       "mapped": [

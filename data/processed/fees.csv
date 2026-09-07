@@ -1403,214 +1403,162 @@ sido,sigungu,category,item,spec,fee,base_date,dataset_id,source_url
 경기도,안양시,주방용품,응접셋트,7인 미만,5000,2025-12-23,15069011,https://www.data.go.kr/data/15069011/fileData.do
 경기도,안양시,주방용품,응접셋트,7인 이상,8000,2025-12-23,15069011,https://www.data.go.kr/data/15069011/fileData.do
 경기도,안양시,주방용품,커피메이트,모든규격,2000,2025-12-23,15069011,https://www.data.go.kr/data/15069011/fileData.do
-경기도,양주시,가구류,거실용 탁자,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,거실용 탁자,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,거울,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,거울,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,교자상(밥상),,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,교자상(밥상),,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,기타 등 소형악기,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,다리미판,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,"라텍스 매트,  메모리폼 매트",,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,"라텍스 매트,  메모리폼 매트",,8000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,문갑,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,문짝,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,문짝,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,비키니옷장,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,서랍장,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,서랍장,,7000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,소파,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,소파,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,소파,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,소파,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,소파용 스툴,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,시계,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,시계,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,식탁,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,식탁,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,식탁,,10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,식탁,,15000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,신발장,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,신발장,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,싱크대,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,싱크대,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,싱크대,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,쌀통,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,쌀통,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,액자,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,액자,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,의자,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,의자,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,의자,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,의자,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,장롱,,7000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,장롱,,10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,장롱,,15000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,장식장,,7000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,장식장,,10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,전자레인지 선반,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,접이식 라텍스 매트,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,책꽂이,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,책꽂이,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,책상,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,책상,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,책상,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,책상,,6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,책상,,6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,책장,,7000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,책장,,10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,7000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,7000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,8000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,15000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,15000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,20000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,침대,,30000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,캐비닛,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,캐비닛,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,탁자(회의용),,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,탁자(회의용),,9000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,피아노,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,피아노,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,피아노,,10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,피아노,,15000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,가구류,화장대,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,가방류,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,간판,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,간판,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,간판,,8000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,고무통,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,고무통,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,고무통,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,골프가방,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,금고,,7000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,금고,,12000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,다리미판,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,돗자리,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,마네킹,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,마네킹,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,방충망,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,방충망,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,변기,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,변기,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,변기,,10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,변기,,10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,"병풍(블라인드,커튼)",,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,보온덮개,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,보일러,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,보일러,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,보일러,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,비데,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,빨래건조대,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,사무용칸막이,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,샌드위치패널,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,샌드위치패널,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,세면대,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,수족관(어항),,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,수족관(어항),,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,쓰레기통,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,아이스박스,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,옷걸이(행거),,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,욕조,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,운동기구,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,운동기구,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,운동기구,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,유리,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,유모차(보행기),,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,유아용 카시트,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,유아용 폴더매트,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,이동식화장실,,30000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,자동차범퍼,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,자동차시트,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,자전거,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,자전거,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,장난감,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,장난감,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,장난감 자동차,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,장판류,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,재봉틀,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,침구류(이불),,1000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,침구류(이불),,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,카펫,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,카펫,,6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,타자기,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,텐트,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,텐트,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,파라솔,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,"파레트(나무, 플라스틱, 기타)",,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,파티션,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,파티션,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,페타이어,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,폐소화기,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,항아리류(화분),,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,항아리류(화분),,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,호스,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,호스,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,화환,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,화환,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,기타 품목,휠체어,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),가스(전자)렌지,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),가습기,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),게임기,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),게임기,,8000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),공기청정기,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),공기청정기,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),냉난방기기 *실외기별도,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),냉난방기기 *실외기별도,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),냉난방기기 *실외기별도,,8000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),냉온수기(정수기),,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),냉온수기(정수기),,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),냉장고(냉동고),,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),냉장고(냉동고),,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),냉장고(냉동고),,6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),냉장고(냉동고),,6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),냉장고(냉동고),,8000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),냉장고(냉동고),,12000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),녹즙기(믹서기),,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),다리미,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),복사기,,6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),비디오,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),선풍기,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),선풍기,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),세탁기,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),세탁기,,6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),식기세척(건조)기,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),식기세척(건조)기,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),안마의자,,10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),에어프라이어,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),오디오(전축),,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),오디오(전축),,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),오디오(전축),,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),오디오(전축),,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),오븐렌지,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),자동판매기,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),자동판매기,,15000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),전기(압력)밥솥,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),전기스토브(커피메이트),,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),전기장판(담요),,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),전기장판(담요),,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),전화기,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),조명기구(스탠드),,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),청소기,,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),카세트,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),컴퓨터,,1000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),컴퓨터,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),컴퓨터,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),컴퓨터,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),컴퓨터,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),컴퓨터,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),컴퓨터,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),탈수기,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),텔레비전,,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),텔레비전,,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),팩스,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
-경기도,양주시,전기(전자제품),헤어드라이어,,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,가스(전자)렌지,모든규격,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,가습기,모든규격,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,거실용 탁자,120cm 이상(대),4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,거실용 탁자,120cm 이하(소),2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,거울,1㎡ 이하,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,거울,1㎡ 초과,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,게임기,대형(높이 1m 초과),8000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,게임기,중소형(높이 1m 이하),4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,골프가방,모든규격,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,공기청정기,99㎡ 이하,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,공기청정기,99㎡ 초과,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,교자상(밥상),1㎡ 이하,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,교자상(밥상),1㎡ 초과,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,기름통,모든규격,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,기타 소형악기,모든규격,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,김치냉장고,160ℓ 이하,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,김치냉장고,160ℓ 초과,6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,냉난방기기,264㎡ 초과 (*실외기 별도),8000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,냉난방기기,66㎡ 이하 (*실외기 별도),3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,냉난방기기,66㎡ 초과~264㎡ 이하 (*실외기 별도),5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,냉온수기(정수기),대형(높이 1m 초과),4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,냉온수기(정수기),중소형(높이 1m 이하),3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,냉장고(냉동고),300ℓ이하,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,냉장고(냉동고),300ℓ초과~500ℓ 이하,6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,다리미,모든규격,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,라텍스 매트/메모리폼 매트,1인용,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,라텍스 매트/메모리폼 매트,2인용,8000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,문갑(TV다이),모든규격,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,문짝,대(현관문),5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,문짝,소(창문),3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,믹서기(녹즙기),모든규격,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,보일러,높이 1m 이하,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,보일러,높이 1m 초과,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,복사기,모든규격,6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,비데,모든규격,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,비디오,모든규격,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,비키니옷장,모든규격,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,사무용칸막이,1㎡당,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,샌드위치패널,2m×2m 이하,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,샌드위치패널,2m×2m 초과,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,서랍장,가로 90cm(3자) 5단 이하,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,서랍장,가로 90cm(3자) 5단 초과,7000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,선풍기,대형(최소높이 1m 초과),4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,선풍기,중소형(최소높이 1m 이하),3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,세면대,모든규격,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,세탁기,중소형(9kg 이하),4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,세탁기,중소형(9kg 초과),6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,소파,1인용,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,소파,2인용,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,소파,3인용,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,소파,4인용 이상,8000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,소파용 스툴,2~4인용,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,수족관(어항),1㎡ 이하,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,수족관(어항),1㎡ 초과,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,시계,벽걸이형,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,시계,스텐드형,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,식기세척(건조)기,4인용 이하,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,식기세척(건조)기,4인용 초과,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,식탁,대리석식탁 4인용 이하,10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,식탁,대리석식탁 4인용 초과,15000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,식탁,일반식탁 4인용 이하,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,식탁,일반식탁 4인용 초과,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,신발장,1㎡ 이하,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,신발장,1㎡ 초과,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,싱크대,가스렌지 받침(개당),2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,싱크대,가스렌지 후드/배기후드(개당),2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,싱크대,개수대·찬장(개당),4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,쌀통,다용도,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,쌀통,일반,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,안마의자,모든규격,10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,액자,1㎡ 이하,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,액자,1㎡ 초과,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,에어프라이어,개당,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,오디오(전축),본체,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,오디오(전축),소형오디오세트(모든규격),3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,오디오(전축),스피커(모든규격)/개당,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,오디오(전축),장식장(모든규격),4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,욕조,모든규격,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,유리,1㎡당,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,응접탁자,모든규격,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,의자,1인용,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,의자,2인용 이상,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,의자,바퀴 달린 의자(대형),5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,의자,바퀴 달린 의자(일반),3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,이동식화장실,1인용,30000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,자동차범퍼,개당,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,자동차시트,소파1인용 준용,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,자동판매기,대형(높이 1m 초과),15000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,자동판매기,중소형(높이 1m 이하),5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,장롱,가로120cm(4자) 이하(개당),10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,장롱,가로120cm(4자) 초과(개당),15000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,장롱,가로90cm(3자) 이하(개당),7000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,장식장,가로 90cm(3자) 이하(개당),7000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,장식장,가로 90cm(3자) 초과(개당),10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,장판류,1㎡당,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,전기(압력)밥솥,모든규격,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,전기스토브(커피메이커),모든규격,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,전기장판(담요),옥매트/자석요/온수매트(모든규격),4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,전기장판(담요),일반장판/담요(모든규격),2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,전자레인지 선반,개당,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,전화기,모든규격,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,접이식 라텍스 매트,모든규격,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,조명기구(스탠드),모든규격,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,책꽂이,1㎡ 이하,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,책꽂이,1㎡ 초과,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,책상,독서실 책상,6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,책상,서랍없음 *유리별도,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,책상,세트(편수책상+책꽂이),6000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,책상,양수(양쪽서랍) *유리별도,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,책상,편수(한쪽서랍) *유리별도,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,책장,가로90cm(3자) 이하(개당),7000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,책장,가로90cm(3자) 초과(개당),10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,청소기,모든규격,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,침대,1인용 돌침대 세트,20000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,침대,1인용침대 매트리스,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,침대,1인용침대 세트(매트리스+침대틀),10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,침대,1인용침대 침대틀,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,침대,2인용 돌침대 세트,30000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,침대,2인용침대 매트리스,8000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,침대,2인용침대 세트(매트리스+침대틀),15000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,침대,2인용침대 침대틀,7000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,침대,2층 침대,15000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,침대,아기침대 매트리스,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,침대,아기침대 세트,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,침대,아기침대 틀,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,카세트,모든규격,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,캐비닛,대형(가로90cm×세로120cm)초과,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,캐비닛,중소형(가로90cm×세로120cm)이하,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,컴퓨터,노트북,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,컴퓨터,모니터,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,컴퓨터,본체,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,컴퓨터,스피커(개당),1000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,컴퓨터,키보드,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,컴퓨터,프린터(복합기),2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,탁자(회의용),10인용 미만,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,탁자(회의용),10인용 이상,9000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,탈수기,모든규격,2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,텐트,4인용 이하,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,텐트,5인용 이상,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,텔레비전,42인치 미만,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,텔레비전,42인치 이상,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,파티션,폭 100cm 미만,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,파티션,폭 100cm 초과,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,폐소화기,모든규격,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,폐타이어,모든규격,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,피아노,그랜드,15000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,피아노,디지털,4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,피아노,업라이트,10000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,피아노,오르간,5000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,항아리류(화분),대형(높이 50cm 초과),3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,항아리류(화분),중소형(높이 50cm 이하),2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,호스,10m당(지름 30mm 이하),2000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,호스,10m당(지름 30mm 초과),4000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,화장대,모든규격 *거울별도,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,화환,개당,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
+경기도,양주시,,화환,모든규격,3000,,15148661,https://www.data.go.kr/data/15148661/fileData.do
 경기도,양평군,가구류,"가스레인지,인덕션",모든 규격,0,2024-11-18,15061191,https://www.data.go.kr/data/15061191/fileData.do
 경기도,양평군,가구류,가스오븐레인지,높이 1m 미만,0,2024-11-18,15061191,https://www.data.go.kr/data/15061191/fileData.do
 경기도,양평군,가구류,가스오븐레인지,높이 1m 이상,0,2024-11-18,15061191,https://www.data.go.kr/data/15061191/fileData.do
@@ -5200,132 +5148,132 @@ sido,sigungu,category,item,spec,fee,base_date,dataset_id,source_url
 대전광역시,서구,,피아노,어프라이드,10000,,15089837,https://www.data.go.kr/data/15089837/fileData.do
 대전광역시,서구,,항아리,모든규격,3000,,15089837,https://www.data.go.kr/data/15089837/fileData.do
 대전광역시,서구,,화장대,모든규격,5000,,15089837,https://www.data.go.kr/data/15089837/fileData.do
-부산광역시,동구,가구류,(돌옥흙),1인용,15000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,(매트리스 포함),1인용,10000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,TV 장식장,모든규격,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,거 울,1m이상,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,매트리스,1인용,6000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,매트리스,2인용,9000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,문 갑,1짝당,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,방 찬 장,모든규격,5000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,병 풍,모든규격,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,복 사 기,모든규격,10000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,서 랍 장,5단미만,7000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,서 랍 장,5단이상,10000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,쇼 파,1인용,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,쇼 파,2인용,5000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,쇼 파,3인용,7000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,쇼 파,5인용이상,10000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,쇼 파,보조의자,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,신 발 장,높이1m미만,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,신 발 장,높이1m이상,5000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,액 자,1m미만,1000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,옷 걸 이,모든규격,1500,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,의 자,목 재,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,의 자,철 재,1500,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,의 자,회전의자,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,장 롱,120cm 1칸,15000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,장 롱,90cm 1칸,10000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,책 꽂 이,목 재,1500,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,책 꽂 이,철 재,1000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,책 상,양수.대형,7000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,책 상,편수.소형,5000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,책장 장식장,문유리포함,7000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,책장 장식장,전면개방형,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,침 대,2인용,15000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,침 대,2인용,20000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,캐 비 넷,높이1m미만,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,캐 비 넷,높이1m이상,7000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,탁 자,1m미만,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,탁 자,1m이상,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가구류,화 장 대,모든규격,5000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,T.V,14인치 미만,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,T.V,42인치 미만,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,T.V,42인치 이상,5000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,T.V,~ 14인치 이상,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,공기청정기,높이1m이상,7000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,냉 장 고,300ℓ미만,10000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,냉 장 고,500ℓ미만,15000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,냉 장 고,500ℓ이상,20000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,냉 장 고,~ 300ℓ이상,15000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,선 풍 기,1m이상,1000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,세 탁 기,용량8Kg미만,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,세 탁 기,용량8Kg이상,5000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,에 어 컨,264㎡형이상,12000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,에 어 컨,66㎡형미만,6000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,에 어 컨,66㎡형이상,8000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,온 풍 기,1m이상,8000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,재 봉 틀,모든규격,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,전 기 요,폭70㎝미만,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,전 기 요,폭70㎝이상,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,전 축,모든규격,5000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,가전제품,전 축,스 피 커,1500,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,(FRP),10인용미만,20000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,(내부석고등),1㎡당,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,(옥황토전기),1인용,5000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,가 방 류,모든규격,1000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,간 판,2m미만,7000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,간 판,2m이상,8000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,개 집,모든규격,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,기름탱크,400ℓ미만,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,기름탱크,400ℓ이상,6000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,나 무 류,100ℓ마대 1개당,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,나 무 류,1톤 트럭 1대,40000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,나 무 류,2.5톤 트럭 1대,180000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,난 로,석 유,5000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,난 로,전 기,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,드 럼 통,모든규격,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,매 트 류,2인용이상,7000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,문 짝,모든규격,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,물 탱 크,1000ℓ미만,15000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,물 탱 크,1000ℓ이상,20000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,벽 시 계,모든규격,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,변 기,모든규격,12000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,보 일 러,모든규격,7000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,보 행 기,모든규격,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,세 면 기,모든규격,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,수 족 관,~ 가로 1m 이상,7000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,수 족 관,가로 2m 미만,7000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,수 족 관,가로1m미만,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,수 족 관,가로2m이상,10000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,스티로폼,100ℓ마대 1개당,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,욕 조,모든규격,20000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,우 산,모든규격,1000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,유 모 차,모든규격,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,유리창문,모든규격,2500,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,이 불,1채당,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,자 전 거,모든규격,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,장 독,20ℓ미만,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,장 독,20ℓ이상,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,장 판,3.3㎡당,1000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,정 화 조,10인용이상,30000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,창 틀,모든규격,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,천 막,3.3㎡당,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,카 페 트,3.3㎡당,8000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,칸막이,1㎡당,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,파이프(PVC),1m당,500,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,평 상,2m×2m미만,5000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,평 상,2m×2m이상,7000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,폐합성수지,톤당,200000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,포 장 재,100ℓ마대 1개당,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,피 아 노,그 랜 드,20000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,피 아 노,업라이트,15000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,항 아 리,20ℓ미만,1000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,항 아 리,20ℓ이상,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,형광등류,일반용,1000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,기타,형광등류,장식용,5000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,주방용품,가스오븐렌지,높이1m이상,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,주방용품,밥상 교자상,4인용미만,1000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,주방용품,밥상 교자상,6인 미만,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,주방용품,밥상 교자상,6인용이상,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,주방용품,밥상 교자상,~ 4인용이상,2000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,주방용품,식 탁,4인미만,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,주방용품,식 탁,4인이상,6000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,주방용품,싱 크 대,가로 1m 미만,8000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,주방용품,싱 크 대,가로 1m 이상,10000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,주방용품,싱크찬장,1칸,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,주방용품,싱크찬장,2칸,4000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
-부산광역시,동구,주방용품,쌀 통,모든규격,3000,2025-08-26,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,(돌옥흙),1인용,15000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,(매트리스 포함),1인용,10000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,TV 장식장,모든규격,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,거 울,1m이상,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,매트리스,1인용,6000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,매트리스,2인용,9000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,문 갑,1짝당,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,방 찬 장,모든규격,5000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,병 풍,모든규격,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,복 사 기,모든규격,10000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,서 랍 장,5단미만,7000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,서 랍 장,5단이상,10000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,쇼 파,1인용,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,쇼 파,2인용,5000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,쇼 파,3인용,7000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,쇼 파,5인용이상,10000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,쇼 파,보조의자,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,신 발 장,높이1m미만,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,신 발 장,높이1m이상,5000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,액 자,1m미만,1000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,옷 걸 이,모든규격,1500,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,의 자,목 재,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,의 자,철 재,1500,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,의 자,회전의자,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,장 롱,120cm 1칸,15000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,장 롱,90cm 1칸,10000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,책 꽂 이,목 재,1500,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,책 꽂 이,철 재,1000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,책 상,양수.대형,7000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,책 상,편수.소형,5000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,책장 장식장,문유리포함,7000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,책장 장식장,전면개방형,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,침 대,2인용,15000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,침 대,2인용,20000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,캐 비 넷,높이1m미만,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,캐 비 넷,높이1m이상,7000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,탁 자,1m미만,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,탁 자,1m이상,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가구류,화 장 대,모든규격,5000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,T.V,14인치 미만,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,T.V,42인치 미만,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,T.V,42인치 이상,5000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,T.V,~ 14인치 이상,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,공기청정기,높이1m이상,7000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,냉 장 고,300ℓ미만,10000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,냉 장 고,500ℓ미만,15000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,냉 장 고,500ℓ이상,20000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,냉 장 고,~ 300ℓ이상,15000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,선 풍 기,1m이상,1000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,세 탁 기,용량8Kg미만,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,세 탁 기,용량8Kg이상,5000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,에 어 컨,264㎡형이상,12000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,에 어 컨,66㎡형미만,6000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,에 어 컨,66㎡형이상,8000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,온 풍 기,1m이상,8000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,재 봉 틀,모든규격,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,전 기 요,폭70㎝미만,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,전 기 요,폭70㎝이상,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,전 축,모든규격,5000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,가전제품,전 축,스 피 커,1500,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,(FRP),10인용미만,20000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,(내부석고등),1㎡당,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,(옥황토전기),1인용,5000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,가 방 류,모든규격,1000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,간 판,2m미만,7000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,간 판,2m이상,8000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,개 집,모든규격,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,기름탱크,400ℓ미만,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,기름탱크,400ℓ이상,6000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,나 무 류,100ℓ마대 1개당,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,나 무 류,1톤 트럭 1대,40000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,나 무 류,2.5톤 트럭 1대,180000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,난 로,석 유,5000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,난 로,전 기,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,드 럼 통,모든규격,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,매 트 류,2인용이상,7000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,문 짝,모든규격,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,물 탱 크,1000ℓ미만,15000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,물 탱 크,1000ℓ이상,20000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,벽 시 계,모든규격,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,변 기,모든규격,12000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,보 일 러,모든규격,7000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,보 행 기,모든규격,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,세 면 기,모든규격,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,수 족 관,~ 가로 1m 이상,7000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,수 족 관,가로 2m 미만,7000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,수 족 관,가로1m미만,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,수 족 관,가로2m이상,10000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,스티로폼,100ℓ마대 1개당,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,욕 조,모든규격,20000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,우 산,모든규격,1000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,유 모 차,모든규격,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,유리창문,모든규격,2500,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,이 불,1채당,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,자 전 거,모든규격,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,장 독,20ℓ미만,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,장 독,20ℓ이상,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,장 판,3.3㎡당,1000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,정 화 조,10인용이상,30000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,창 틀,모든규격,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,천 막,3.3㎡당,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,카 페 트,3.3㎡당,8000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,칸막이,1㎡당,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,파이프(PVC),1m당,500,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,평 상,2m×2m미만,5000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,평 상,2m×2m이상,7000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,폐합성수지,톤당,200000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,포 장 재,100ℓ마대 1개당,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,피 아 노,그 랜 드,20000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,피 아 노,업라이트,15000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,항 아 리,20ℓ미만,1000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,항 아 리,20ℓ이상,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,형광등류,일반용,1000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,기타,형광등류,장식용,5000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,주방용품,가스오븐렌지,높이1m이상,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,주방용품,밥상 교자상,4인용미만,1000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,주방용품,밥상 교자상,6인 미만,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,주방용품,밥상 교자상,6인용이상,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,주방용품,밥상 교자상,~ 4인용이상,2000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,주방용품,식 탁,4인미만,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,주방용품,식 탁,4인이상,6000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,주방용품,싱 크 대,가로 1m 미만,8000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,주방용품,싱 크 대,가로 1m 이상,10000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,주방용품,싱크찬장,1칸,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,주방용품,싱크찬장,2칸,4000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
+부산광역시,동구,주방용품,쌀 통,모든규격,3000,2026-08-18,15116293,https://www.data.go.kr/data/15116293/fileData.do
 부산광역시,영도구,가구류,상,2인용,1000,,3038622,https://www.data.go.kr/data/3038622/fileData.do
 부산광역시,영도구,가구류,상,4인용,2000,,3038622,https://www.data.go.kr/data/3038622/fileData.do
 부산광역시,영도구,가구류,상,6인용이상,3000,,3038622,https://www.data.go.kr/data/3038622/fileData.do

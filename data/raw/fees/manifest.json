@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-09-05",
+  "collected_at": "2026-09-07",
   "keyword": "대형폐기물 수수료",
   "search_url": "https://www.data.go.kr/tcs/dss/selectDataSetList.do?dType=FILE&keyword=%EB%8C%80%ED%98%95%ED%8F%90%EA%B8%B0%EB%AC%BC%20%EC%88%98%EC%88%98%EB%A3%8C",
   "total": 78,
@@ -84,17 +84,6 @@
       "bytes": 6300
     },
     {
-      "dataset_id": "15040943",
-      "title": "경기도 부천시_대형폐기물 처리수수료 현황_20250709",
-      "source_url": "https://www.data.go.kr/data/15040943/fileData.do",
-      "provider": null,
-      "updated": null,
-      "base_date": null,
-      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003183962&fileDetailSn=1&insertDataPrcus=N",
-      "saved_as": "경기도_부천시_대형폐기물 처리수수료 현황_20250709.csv",
-      "bytes": 8379
-    },
-    {
       "dataset_id": "15094076",
       "title": "경기도 광명시_대형폐기물 처리 수수료 정보_20251208",
       "source_url": "https://www.data.go.kr/data/15094076/fileData.do",
@@ -104,6 +93,17 @@
       "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003557203&fileDetailSn=1&insertDataPrcus=N",
       "saved_as": "20251208_경기도 광명시_대형폐기물 처리 수수료 정보.csv",
       "bytes": 10693
+    },
+    {
+      "dataset_id": "15040943",
+      "title": "경기도 부천시_대형폐기물 처리수수료 현황_20250709",
+      "source_url": "https://www.data.go.kr/data/15040943/fileData.do",
+      "provider": null,
+      "updated": null,
+      "base_date": null,
+      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003183962&fileDetailSn=1&insertDataPrcus=N",
+      "saved_as": "경기도_부천시_대형폐기물 처리수수료 현황_20250709.csv",
+      "bytes": 8379
     },
     {
       "dataset_id": "15100222",
@@ -326,13 +326,13 @@
     },
     {
       "dataset_id": "15036341",
-      "title": "서울특별시 광진구_대형폐기물수집운반수수료_20250723",
+      "title": "서울특별시 광진구_대형폐기물수집운반수수료_20260820",
       "source_url": "https://www.data.go.kr/data/15036341/fileData.do",
       "provider": null,
       "updated": null,
       "base_date": null,
-      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003194336&fileDetailSn=1&insertDataPrcus=N",
-      "saved_as": "서울특별시_광진구_대형폐기물수집운반수수료 (2).csv",
+      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000007622106&fileDetailSn=1&insertDataPrcus=N",
+      "saved_as": "서울특별시_광진구_대형폐기물수집운반수수료 (2) (1).csv",
       "bytes": 13019
     },
     {
@@ -369,17 +369,6 @@
       "bytes": 14106
     },
     {
-      "dataset_id": "15093329",
-      "title": "경상남도 밀양시_대형폐기물 처리수수료 정보_10/20/2021",
-      "source_url": "https://www.data.go.kr/data/15093329/fileData.do",
-      "provider": null,
-      "updated": null,
-      "base_date": null,
-      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000002467053&fileDetailSn=1&insertDataPrcus=N",
-      "saved_as": "대형폐기물 처리 수수료 정보 20211020.csv",
-      "bytes": 6082
-    },
-    {
       "dataset_id": "15093911",
       "title": "경상북도 성주군_대형폐기물 처리 수수료 정보_10/29/2021",
       "source_url": "https://www.data.go.kr/data/15093911/fileData.do",
@@ -389,6 +378,17 @@
       "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000002474364&fileDetailSn=1&insertDataPrcus=N",
       "saved_as": "(양식) 대형폐기물 처리 수수료 정보.csv",
       "bytes": 3943
+    },
+    {
+      "dataset_id": "15093329",
+      "title": "경상남도 밀양시_대형폐기물 처리수수료 정보_10/20/2021",
+      "source_url": "https://www.data.go.kr/data/15093329/fileData.do",
+      "provider": null,
+      "updated": null,
+      "base_date": null,
+      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000002467053&fileDetailSn=1&insertDataPrcus=N",
+      "saved_as": "대형폐기물 처리 수수료 정보 20211020.csv",
+      "bytes": 6082
     },
     {
       "dataset_id": "15060955",
@@ -446,17 +446,6 @@
       "bytes": 12418
     },
     {
-      "dataset_id": "15014580",
-      "title": "경상남도 창녕군_대형생활폐기물_배출정보_20260513",
-      "source_url": "https://www.data.go.kr/data/15014580/fileData.do",
-      "provider": null,
-      "updated": null,
-      "base_date": null,
-      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003640025&fileDetailSn=1&insertDataPrcus=N",
-      "saved_as": "경상남도_창녕군_대형생활폐기물_배출정보_20260513.csv",
-      "bytes": 17047
-    },
-    {
       "dataset_id": "15094090",
       "title": "경상북도 봉화군_대형폐기물처리수수료_20251117",
       "source_url": "https://www.data.go.kr/data/15094090/fileData.do",
@@ -466,6 +455,17 @@
       "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003527260&fileDetailSn=1&insertDataPrcus=N",
       "saved_as": "경상북도_봉화군_대형폐기물처리수수료_20251117.csv",
       "bytes": 2104
+    },
+    {
+      "dataset_id": "15014580",
+      "title": "경상남도 창녕군_대형생활폐기물_배출정보_20260513",
+      "source_url": "https://www.data.go.kr/data/15014580/fileData.do",
+      "provider": null,
+      "updated": null,
+      "base_date": null,
+      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003640025&fileDetailSn=1&insertDataPrcus=N",
+      "saved_as": "경상남도_창녕군_대형생활폐기물_배출정보_20260513.csv",
+      "bytes": 17047
     },
     {
       "dataset_id": "15094036",
@@ -568,14 +568,14 @@
     },
     {
       "dataset_id": "15148661",
-      "title": "경기도 양주시_대형폐기물 수수료 현황_20250916",
+      "title": "경기도 양주시_대형폐기물 수수료 현황_20260804",
       "source_url": "https://www.data.go.kr/data/15148661/fileData.do",
       "provider": null,
       "updated": null,
       "base_date": null,
-      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003249683&fileDetailSn=1&insertDataPrcus=N",
-      "saved_as": "경기도 양주시_대형폐기물 수수료 현황_20250916.csv",
-      "bytes": 9094
+      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003703790&fileDetailSn=1&insertDataPrcus=N",
+      "saved_as": "경기도 양주시_대형폐기물 수수료 현황.csv",
+      "bytes": 8822
     },
     {
       "dataset_id": "15127968",
@@ -590,12 +590,12 @@
     },
     {
       "dataset_id": "15116293",
-      "title": "부산광역시 동구_대형폐기물수거수수료정보_20250826",
+      "title": "부산광역시 동구_대형폐기물수거수수료정보_20260818",
       "source_url": "https://www.data.go.kr/data/15116293/fileData.do",
       "provider": null,
       "updated": null,
       "base_date": null,
-      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003226257&fileDetailSn=1&insertDataPrcus=N",
+      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003808424&fileDetailSn=1&insertDataPrcus=N",
       "saved_as": "대형폐기물수거수수료정보 현황(동구).csv",
       "bytes": 9967
     },
