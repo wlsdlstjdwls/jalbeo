@@ -6,7 +6,7 @@ sources:
   - title: "대한민국 정책브리핑 — 대형 가전 버리는 법? 공짜로 수거해 갑니다"
     url: "https://www.korea.kr/news/policyNewsView.do?newsId=148958832"
     asOf: "2026-09-03"
-related: []
+related: ["naengjanggo", "gimchi", "setakgi"]
 updated: "2026-09-03"
 ---
 

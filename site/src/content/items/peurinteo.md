@@ -3,7 +3,7 @@ sources:
   - title: "E-순환거버넌스 — 폐가전 무상방문수거 신청"
     url: "https://15990903.or.kr/portal/reserve/reserve.do"
     asOf: "2026-09-03"
-related: []
+related: ["keompyuteo", "moniteo", "noteubuk"]
 updated: "2026-09-03"
 ---
 

@@ -3,7 +3,7 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
-related: []
+related: ["yogamaeteu", "peojeulmaeteu", "jangpan", "keoteun"]
 updated: "2026-09-03"
 ---
 

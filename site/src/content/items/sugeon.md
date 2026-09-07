@@ -9,7 +9,7 @@ sources:
   - title: "관악구 — 재활용 의류 배출"
     url: "https://www.gwanak.go.kr/site/gwanak/08/10803010800002021012201.jsp"
     asOf: "2026-09-03"
-related: []
+related: ["heonot", "ibul", "sinbal", "multisyu"]
 updated: "2026-09-03"
 ---
 

@@ -6,7 +6,7 @@ sources:
   - title: "보안뉴스 — [보.알.남] 내 사생활이 인터넷에? 하드디스크와 휴대폰, 안전한 폐기 방법"
     url: "http://www.boannews.com/news/articleView.html?idxno=104220"
     asOf: "2022-01-21"
-related: []
+related: ["keompyuteo", "moniteo", "hyudaepon", "bojobaeteori"]
 updated: "2026-09-03"
 ---
 

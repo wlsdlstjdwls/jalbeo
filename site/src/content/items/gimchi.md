@@ -9,7 +9,7 @@ sources:
   - title: "세종특별자치시 — 음식물쓰레기 배출방법"
     url: "https://www.sejong.go.kr/recycle/sub03_02_01.do"
     asOf: "2026-09-03"
-related: []
+related: ["doenjang", "subakkkeopjil", "yangpakkeopjil"]
 updated: "2026-09-03"
 ---
 

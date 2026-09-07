@@ -6,7 +6,7 @@ sources:
   - title: "E-순환거버넌스 폐가전 무상방문수거 — 수거품목 및 수거기준"
     url: "https://www.15990903.or.kr/portal/cnts/userGuide.do"
     asOf: "2026-09-03"
-related: []
+related: ["onsumaeteu", "jangpan", "heukchimdae", "reogeu"]
 updated: "2026-09-03"
 ---
 

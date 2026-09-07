@@ -6,7 +6,7 @@ sources:
   - title: "대한민국 정책브리핑 — 폐식용유, 이제는 분리수거함으로 직행!"
     url: "https://www.korea.kr/news/reporterView.do?newsId=148952182"
     asOf: "2026-09-03"
-related: []
+related: ["gireum", "gimchi", "doenjang"]
 updated: "2026-09-03"
 ---
 

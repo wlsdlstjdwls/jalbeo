@@ -12,7 +12,7 @@ sources:
   - title: "부산 부산진구 — 대형폐기물처리 수수료 안내"
     url: "https://www.busanjin.go.kr/index.busanjin?menuCd=DOM_000000105006002005"
     asOf: "2026-09-03"
-related: []
+related: ["jeongijangpan", "onsumaeteu", "reogeu", "yogamaeteu"]
 updated: "2026-09-03"
 ---
 

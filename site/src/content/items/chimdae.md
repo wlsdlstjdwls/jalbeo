@@ -6,7 +6,7 @@ sources:
   - title: "강동구청 — 쓰레기배출안내 (대형폐기물, 특수규격마대)"
     url: "https://www.gangdong.go.kr/web/newportal/contents/gdp_005_004_010_001"
     asOf: "2026-09-03"
-related: []
+related: ["maeteuriseu", "heukchimdae", "beompeochimdae", "sopa"]
 updated: "2026-09-03"
 ---
 

@@ -3,7 +3,7 @@ sources:
   - title: "강동구청 — 재활용품 품목별 배출안내 (유리병 비해당 품목)"
     url: "https://www.gangdong.go.kr/web/newportal/contents/gdp_005_004_010_004_001"
     asOf: "2026-09-03"
-related: []
+related: ["geoul", "yuri", "sajin", "aelbeom"]
 updated: "2026-09-03"
 ---
 

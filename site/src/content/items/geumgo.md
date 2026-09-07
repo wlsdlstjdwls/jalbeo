@@ -6,7 +6,7 @@ sources:
   - title: "구로구청 — 대형폐기물 배출"
     url: "https://www.guro.go.kr/www/infoExhaust.do?key=2649"
     asOf: "2026-09-03"
-related: []
+related: ["sohwagi", "haenggeo", "jeonseon"]
 updated: "2026-09-03"
 ---
 

@@ -3,7 +3,7 @@ sources:
   - title: "관악구청 — 대형폐기물 배출방법"
     url: "https://www.gwanak.go.kr/site/gwanak/09/10903020400002023110105.jsp"
     asOf: "2026-09-03"
-related: []
+related: ["chaekjang", "seorapjang", "haenggeo", "munjjak"]
 updated: "2026-09-03"
 ---
 

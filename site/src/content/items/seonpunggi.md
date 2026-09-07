@@ -6,7 +6,7 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
-related: []
+related: ["sonseonpunggi", "gonggicheongjeonggi", "jeseupgi", "eeokeon"]
 updated: "2026-09-03"
 optionsNote: "무상방문수거 기준은 세 변의 합 150cm 또는 12kg입니다. 둘 중 하나만 넘으면 되고, 스탠드형은 대부분 넘습니다."
 options:

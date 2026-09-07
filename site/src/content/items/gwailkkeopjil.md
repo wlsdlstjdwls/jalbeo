@@ -3,7 +3,7 @@ sources:
   - title: "뉴스톱 — [팩트체크] 양파껍질, 음식물쓰레기로 버리면 안 된다?"
     url: "https://www.newstopkorea.com/news/articleView.html?idxno=12460"
     asOf: "2026-09-03"
-related: []
+related: ["subakkkeopjil", "bananakkeopjil", "yangpakkeopjil", "jogaekkeopjil"]
 updated: "2026-09-03"
 ---
 

@@ -6,7 +6,7 @@ sources:
   - title: "서울특별시 중구청 — 공사장생활폐기물(5톤 미만)"
     url: "https://www.junggu.seoul.kr/content.do?cmsid=15349"
     asOf: "2026-09-03"
-related: []
+related: ["byeokji", "munjjak", "pyemokjae", "byeongi"]
 updated: "2026-09-03"
 ---
 

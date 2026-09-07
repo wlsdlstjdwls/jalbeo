@@ -9,7 +9,7 @@ sources:
   - title: "광진구청 — 폐의류 분리배출방법"
     url: "https://www.gwangjin.go.kr/portal/main/contents.do?menuNo=201332"
     asOf: "2026-09-03"
-related: []
+related: ["somibul", "ibul", "maeteuriseu", "heonot"]
 updated: "2026-09-03"
 ---
 

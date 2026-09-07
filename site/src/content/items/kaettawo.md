@@ -3,7 +3,7 @@ sources:
   - title: "캣타워 분리배출/대형폐기물 배출 안내 종합 (RE.CYCLE 외)"
     url: "https://www.re-cycle.kr/%EC%BA%A3%ED%83%80%EC%9B%8C-%EB%B2%84%EB%A6%AC%EB%8A%94-%EB%B2%95"
     asOf: "2026-09-05"
-related: []
+related: ["sopa", "chimdae", "jangnangam", "reogeu"]
 updated: "2026-09-05"
 ---
 

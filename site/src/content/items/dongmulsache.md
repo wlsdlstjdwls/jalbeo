@@ -3,7 +3,7 @@ sources:
   - title: "반려동물 사체처리 방법 (찾기쉬운 생활법령정보, 국가법령정보센터)"
     url: "https://www.easylaw.go.kr/CSP/OnhunqueansInfoRetrieve.laf?onhunqnaAstSeq=87&onhunqueSeq=6157"
     asOf: "2026-09-05"
-related: []
+related: ["galbippyeo", "saengseonppyeo", "gijeogwi"]
 updated: "2026-09-05"
 ---
 

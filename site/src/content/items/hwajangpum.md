@@ -9,7 +9,7 @@ sources:
   - title: "서울특별시 — 헷갈리는 분리배출 기준, 서울시가 알려드립니다!"
     url: "https://news.seoul.go.kr/env/archives/564022"
     asOf: "2025-08-06"
-related: []
+related: ["hyangsu", "maenikyueo", "yeomsaegyak", "yak"]
 updated: "2026-09-03"
 ---
 

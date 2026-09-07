@@ -6,7 +6,7 @@ sources:
   - title: "서울특별시 — 소화기에도 유효기간이 있다? 폐소화기 버리는 방법"
     url: "https://news.seoul.go.kr/env/archives/565249"
     asOf: "2025-11-10"
-related: []
+related: ["geumgo", "geonjeonji", "baeteori"]
 updated: "2026-09-03"
 ---
 

@@ -6,7 +6,7 @@ sources:
   - title: "군포시 — 대형폐기물 품목별 수수료"
     url: "https://www.gunpo.go.kr/waste/selectWstePrdWebList.do?key=4893"
     asOf: "2026-09-03"
-related: []
+related: ["golpeuchae", "gabang", "kaerieo"]
 updated: "2026-09-03"
 ---
 

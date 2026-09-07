@@ -3,7 +3,7 @@ sources:
   - title: "서울특별시 중구청 — 쓰레기 배출안내"
     url: "https://www.junggu.seoul.kr/content.do?cmsid=14187"
     asOf: "2026-09-03"
-related: []
+related: ["namutgaji", "topbap", "hwabun", "gwailkkeopjil"]
 updated: "2026-09-03"
 ---
 

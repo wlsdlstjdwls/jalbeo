@@ -3,7 +3,7 @@ sources:
   - title: "데일리환경 — 음식물쓰레기, 잘 버리면 득 잘못 버리면 독"
     url: "https://www.dailyt.co.kr/newsView/dlt202208220001"
     asOf: "2026-09-03"
-related: []
+related: ["chikinppyeo", "saengseonppyeo", "jogaekkeopjil"]
 updated: "2026-09-03"
 ---
 

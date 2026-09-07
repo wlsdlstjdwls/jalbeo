@@ -9,7 +9,7 @@ sources:
   - title: "강서구 — 음식물쓰레기 분리배출 요령"
     url: "https://www.gangseo.seoul.kr/env/env010201"
     asOf: "2026-09-03"
-related: []
+related: ["galbippyeo", "saengseonppyeo", "jogaekkeopjil"]
 updated: "2026-09-03"
 ---
 

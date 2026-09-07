@@ -12,7 +12,7 @@ sources:
   - title: "성동구청 — 대형생활폐기물 수집 및 운반 수수료 품목별 부과 기준"
     url: "https://www.sd.go.kr/site/reserve/popup/cts2182_popup.html"
     asOf: "2026-09-03"
-related: []
+related: ["yuribyeong", "geoul", "hwabyeong", "geureut"]
 updated: "2026-09-03"
 ---
 

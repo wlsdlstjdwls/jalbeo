@@ -6,7 +6,7 @@ sources:
   - title: "영등포구 — 대형폐기물 배출신청 품목 및 수수료 리스트"
     url: "https://www.ydp.go.kr/reserve/selectWstePrdWebPopList.do?key=5495"
     asOf: "2026-09-03"
-related: []
+related: ["yuri", "hwabyeong", "yuribyeong", "hwabun"]
 updated: "2026-09-03"
 ---
 

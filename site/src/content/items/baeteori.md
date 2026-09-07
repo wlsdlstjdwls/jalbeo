@@ -9,7 +9,7 @@ sources:
   - title: "성동구청 — 재활용품 / 재활용 불가품목"
     url: "https://www.sd.go.kr/main/contents.do?key=1676"
     asOf: "2026-09-03"
-related: []
+related: ["geonjeonji", "bojobaeteori", "hyudaepon", "sonseonpunggi"]
 updated: "2026-09-03"
 ---
 

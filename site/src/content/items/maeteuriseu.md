@@ -6,7 +6,7 @@ sources:
   - title: "수원시 대형폐기물 인터넷신고 — 품목별 수수료"
     url: "https://waste.suwon.go.kr/lmth/01_intro/intro_0201.asp"
     asOf: "2026-09-03"
-related: []
+related: ["chimdae", "heukchimdae", "sopa", "begae"]
 updated: "2026-09-03"
 ---
 
