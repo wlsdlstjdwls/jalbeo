@@ -7,7 +7,7 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
 related: ["gimchinaengjanggo", "setakgi", "eeokeon", "jeongsugi"]
-updated: "2026-09-03"
+updated: "2026-09-07"
 ---
 
 냉장고는 **스티커를 살 필요가 없는 품목**입니다. 대형가전이라 무상방문수거
@@ -62,7 +62,7 @@ updated: "2026-09-03"
 
 무상수거 예약이 밀렸거나 수거 불가 판정을 받은 경우입니다.
 
-수수료를 확인한 36개 시군구 기준으로 냉장고는 **5,000원에서 20,000원**
+수수료를 확인한 38개 시군구 기준으로 냉장고는 **5,000원에서 20,000원**
 사이이고, 가운데값은 **7,000원**입니다. 폭이 큰 이유는 **용량으로 구간을
 나누기 때문**입니다.
 

@@ -161,8 +161,10 @@ def main():
             entry["panel"] = stats["panel"]
         out[slug] = entry
 
+    # 키 순서는 CSV를 훑은 순서라 품목이 하나만 늘어도 전체가 밀린다.
+    # 값이 그대로인데 파일 전체가 diff로 잡히면 뭐가 바뀌었는지 안 보인다.
     io.open(OUT, "w", encoding="utf-8").write(
-        json.dumps(out, ensure_ascii=False, indent=2) + "\n"
+        json.dumps(dict(sorted(out.items())), ensure_ascii=False, indent=2) + "\n"
     )
 
     print("품목 %d개 집계" % len(out))
