@@ -6,7 +6,7 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
-related: ["sillikon", "sinbal", "jajeongeo"]
+related: ["sillikon", "sinbal", "jajeongeo", "taieo"]
 relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-04"
 optionsNote: "고무는 크기로만 갈립니다. 재질이 천연이든 합성이든 재활용은 안 됩니다."
@@ -57,6 +57,7 @@ options:
 ## 타이어는 여기가 아닙니다
 
 **자동차 타이어는 생활폐기물이 아닙니다.** 판매점이나 정비소가 회수합니다.
+[타이어](/taieo/) 페이지에 역회수와 대형폐기물 수수료를 정리했습니다.
 새 타이어로 교체할 때 폐타이어를 그 자리에 두고 오면 됩니다. 따로 버려야 하면
 타이어 판매점에 처리를 문의하세요. 구청은 받지 않습니다.
 

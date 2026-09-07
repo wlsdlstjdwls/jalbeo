@@ -62,7 +62,7 @@
   "monthly_volume": 11720,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
  },
  {
   "slug": "bojobaeteori",
@@ -1691,7 +1691,10 @@
  {
   "slug": "peteubyeong",
   "name": "페트병",
-  "aliases": [],
+  "aliases": [
+   "페트병 뚜껑",
+   "페트병 고리"
+  ],
   "verdict": "재활용",
   "verdict_line": "무색 투명 페트병만 별도 수거함입니다. 라벨을 떼고 압착해야 합니다.",
   "category": "플라스틱류",
@@ -1700,7 +1703,7 @@
   "monthly_volume": 830,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
  },
  {
   "slug": "gaseureinji",
@@ -1943,7 +1946,8 @@
   "slug": "heonot",
   "name": "헌옷",
   "aliases": [
-   "헌 옷"
+   "헌 옷",
+   "한복"
   ],
   "verdict": "재활용",
   "verdict_line": "의류수거함으로 갑니다. 다만 아무 섬유나 받지는 않습니다.",
@@ -1953,7 +1957,7 @@
   "monthly_volume": 585,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
  },
  {
   "slug": "kikbodeu",
@@ -2818,6 +2822,27 @@
   "updated_at": "2026-09-04T07:52:55.358612+00:00"
  },
  {
+  "slug": "jeonhwagi",
+  "name": "전화기",
+  "aliases": [
+   "유선전화기",
+   "무선전화기",
+   "집전화",
+   "팩스",
+   "팩시밀리",
+   "인터폰"
+  ],
+  "verdict": "전용수거함",
+  "verdict_line": "소형가전 수거함입니다. 무선전화기는 배터리를 뺍니다.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 120,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
+ },
+ {
   "slug": "johwa",
   "name": "조화",
   "aliases": [
@@ -2872,6 +2897,27 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "hwanpunggi",
+  "name": "환풍기",
+  "aliases": [
+   "렌지후드",
+   "레인지후드",
+   "배기후드",
+   "후드",
+   "욕실환풍기",
+   "배기팬"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "떼어 낸 환풍기는 소형가전입니다. 후드는 크기에 따라 대형폐기물입니다.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 110,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
+ },
+ {
   "slug": "bangchungmang",
   "name": "방충망",
   "aliases": [
@@ -2904,6 +2950,26 @@
   "updated_at": "2026-09-04T07:52:55.358612+00:00"
  },
  {
+  "slug": "taieo",
+  "name": "타이어",
+  "aliases": [
+   "폐타이어",
+   "자동차타이어",
+   "자전거타이어",
+   "휠",
+   "알루미늄휠"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "타이어 가게가 받습니다. 못 돌려주면 대형폐기물입니다.",
+  "category": "고무류",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 105,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
+ },
+ {
   "slug": "multisyu",
   "name": "물티슈",
   "aliases": [
@@ -2922,7 +2988,9 @@
  {
   "slug": "chaekjang",
   "name": "책장",
-  "aliases": [],
+  "aliases": [
+   "책꽂이"
+  ],
   "verdict": "대형폐기물",
   "verdict_line": "칸 수, 재질과 상관없이 가구류라 대형폐기물 신고 대상입니다.",
   "category": "가구류",
@@ -2931,7 +2999,7 @@
   "monthly_volume": 100,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
  },
  {
   "slug": "geonjogi",
@@ -3046,6 +3114,66 @@
   "updated_at": "2026-09-04T08:17:27.095298+00:00"
  },
  {
+  "slug": "parasol",
+  "name": "파라솔",
+  "aliases": [
+   "야외파라솔",
+   "캠핑파라솔",
+   "비치파라솔",
+   "그늘막파라솔",
+   "파라솔받침대"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "살대는 고철, 천은 종량제봉투입니다. 통째로면 대형폐기물입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 75,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
+ },
+ {
+  "slug": "sikgigeonjogi",
+  "name": "식기건조기",
+  "aliases": [
+   "식기세척기",
+   "식기살균기",
+   "살균건조기",
+   "식기살균건조기",
+   "식기세척건조기"
+  ],
+  "verdict": "무상수거",
+  "verdict_line": "훈령이 대형가전으로 이름을 적어 둔 품목입니다. 무상방문수거입니다.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 70,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
+ },
+ {
+  "slug": "hatpaek",
+  "name": "핫팩",
+  "aliases": [
+   "손난로",
+   "일회용핫팩",
+   "전기손난로",
+   "충전식손난로",
+   "발열팩"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "일회용은 종량제봉투, 충전식은 소형가전입니다. 뜯지 마세요.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 70,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
+ },
+ {
   "slug": "doenjang",
   "name": "된장 고추장",
   "aliases": [
@@ -3110,6 +3238,66 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "jeukseokbapyonggi",
+  "name": "즉석밥 용기",
+  "aliases": [
+   "햇반용기",
+   "햇반그릇",
+   "즉석밥그릇",
+   "컵밥용기",
+   "오뚜기밥용기"
+  ],
+  "verdict": "재활용",
+  "verdict_line": "플라스틱 수거함입니다. 다만 선별장에서 걸러지는 일이 많습니다.",
+  "category": "플라스틱류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 55,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
+ },
+ {
+  "slug": "heeodeuraieo",
+  "name": "헤어드라이어",
+  "aliases": [
+   "드라이기",
+   "헤어드라이기",
+   "고데기",
+   "매직기",
+   "에어랩"
+  ],
+  "verdict": "전용수거함",
+  "verdict_line": "훈령이 소형가전으로 이름을 적어 둔 품목입니다. 종량제봉투가 아닙니다.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 55,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
+ },
+ {
+  "slug": "hwilcheeo",
+  "name": "휠체어",
+  "aliases": [
+   "전동휠체어",
+   "수동휠체어",
+   "보행기",
+   "보행보조기",
+   "전동스쿠터"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "쓸 수 있으면 보조기기센터가 받습니다. 못 쓰면 대형폐기물입니다.",
+  "category": "생활용품",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 55,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T07:44:01.345867+00:00"
  },
  {
   "slug": "munjjak",

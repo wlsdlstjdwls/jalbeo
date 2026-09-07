@@ -9,7 +9,7 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
-related: ["bangchungmang", "mogijang", "otgeoli"]
+related: ["bangchungmang", "mogijang", "otgeoli", "parasol"]
 updated: "2026-09-07"
 ---
 
@@ -66,6 +66,9 @@ updated: "2026-09-07"
 
 **골프우산, 장우산** — 살대가 길고 개수가 많습니다. 봉투에 안 들어가면 대형폐기물 쪽이
 현실적입니다.
+
+**파라솔은 우산이 아닙니다.** 구조는 같은데 수수료가 세 배라 품목표가
+따로 잡습니다. [파라솔](/parasol/) 페이지를 보세요.
 
 ## 아파트와 단독주택
 
