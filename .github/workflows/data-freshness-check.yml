@@ -29,13 +29,36 @@ jobs:
         run: pip install pymupdf
 
       - name: 수수료 데이터 재수집
+        # fetch가 0건이면 manifest를 안 쓰고 exit 1, normalize가 0행이면 fees.csv를
+        # 안 쓰고 exit 1이다. 둘 다 여기서 잡을 실패이지 "데이터 변경"이 아니다.
+        # 실패하면 잡 전체가 실패로 남고 이슈는 열리지 않는다.
         run: |
           python scripts/fetch_fee_datasets.py
           python scripts/normalize_fees.py
 
+      - name: 수수료 수집 완전성 검사
+        # 2026-09-07 오탐: data.go.kr 타임아웃으로 0건을 받았는데 잡이 성공으로 흘러가
+        # fees.csv가 헤더만 남았고, 그 diff(8,649행 삭제)가 이슈로 올라갔다.
+        # 0건은 위 단계가 막는다. 여기서는 일부만 받아온 경우를 막는다 - 커밋된
+        # manifest보다 다운로드 수가 뚜렷이 줄었으면 접속 문제로 보고 실패시킨다.
+        # 데이터셋이 진짜로 내려간 거면 로컬에서 재수집해 manifest를 커밋한다.
+        run: |
+          python - <<'PY'
+          import json, subprocess, sys
+          new = json.load(open("data/raw/fees/manifest.json", encoding="utf-8"))
+          old = json.loads(subprocess.check_output(
+              ["git", "show", "HEAD:data/raw/fees/manifest.json"]).decode("utf-8"))
+          n, o = new["downloaded"], old["downloaded"]
+          print("다운로드 %d건 (커밋본 %d건)" % (n, o))
+          if n < o * 0.9:
+              sys.exit("수집 불완전: %d/%d. 접속 문제로 보고 중단한다" % (n, o))
+          PY
+
       - name: 분리배출 훈령 재수집
         # 국가법령정보센터가 해외(깃헙 액션) IP에 느리거나 응답을 안 줄 수 있다.
         # 재시도 구조상 최악 15분 가까이 걸릴 수 있어 여기서 끊는다.
+        # 실패하면 아래 diff에서 훈령 파일을 뺀다 - 못 받은 것과 바뀐 것은 다르다.
+        id: guide
         timeout-minutes: 8
         continue-on-error: true
         run: |
@@ -44,11 +67,18 @@ jobs:
 
       - name: 변경분 확인
         id: diff
+        env:
+          GUIDE_OK: ${{ steps.guide.outcome == 'success' }}
         run: |
           # 수집일자(collected_at)가 박힌 manifest.json/fees_report.json은 뺀다.
           # 재수집할 때마다 그 필드만 바뀌어서 실제 값이 그대로여도 diff가 난다.
           # 발령일자(issued)가 진짜 신호이고, 그건 아래 두 파일이 담고 있다.
-          TARGETS="data/processed/fees.csv data/guidelines/item-verdicts.csv data/guidelines/disposal-rules.json"
+          TARGETS="data/processed/fees.csv"
+          if [ "$GUIDE_OK" = "true" ]; then
+            TARGETS="$TARGETS data/guidelines/item-verdicts.csv data/guidelines/disposal-rules.json"
+          else
+            echo "::warning::훈령 재수집 실패 - 훈령 파일은 이번 diff에서 뺀다"
+          fi
           # manifest.json의 collected_at(수집 시각)은 재수집할 때마다 항상 바뀐다.
           # 그 줄만 있는 diff는 "변경 없음"으로 친다 — 안 그러면 매번 오탐한다.
           # grep '^[+-][^+-]' 로 --- / +++ 파일 헤더 줄은 빼고 실제 내용 줄만 본다.

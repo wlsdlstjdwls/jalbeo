@@ -228,6 +228,13 @@ def main():
                        "mapped": sorted(cmap.keys())})
         print("  %-58s %5d행" % (fname[:58], kept))
 
+    if not rows:
+        # 원본 CSV가 하나도 없거나 전부 못 읽었다. 여기서 fees.csv를 쓰면
+        # 헤더만 남은 파일이 정상 산출물을 덮어쓴다(2026-09-07 러너 오탐).
+        # 기존 산출물을 보존하고 실패로 끝낸다.
+        raise SystemExit("정규화 실패: 유효 행 0건 (파일 %d개 검사). fees.csv를 덮어쓰지 않는다"
+                         % len(report))
+
     # 원본 파일 순서나 다운로드 시점이 흔들려도 출력은 고정되게 정렬한다.
     # 안 하면 내용은 그대로인데 매번 diff가 나서 최신성 체크가 오탐한다.
     rows.sort(key=lambda r: (r["sido"], r["sigungu"], r["category"], r["item"],

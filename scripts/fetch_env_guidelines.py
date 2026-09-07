@@ -153,6 +153,11 @@ def main():
         print("%-38s %s  %d자" % (hit["행정규칙명"][:36], hit["발령일자"], len(text)))
         time.sleep(0.5)
 
+    if len(manifest) < len(TARGETS):
+        # 일부라도 못 받았으면 manifest를 줄여서 쓰지 않는다. 훈령이 없어진 게
+        # 아니라 law.go.kr이 응답을 안 준 경우가 대부분이다.
+        raise SystemExit("수집 실패: %d/%d건. manifest.json은 건드리지 않는다"
+                         % (len(manifest), len(TARGETS)))
     with open(os.path.join(OUTDIR, "manifest.json"), "w", encoding="utf-8") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
     print("\n-> %s" % OUTDIR)

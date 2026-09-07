@@ -121,6 +121,13 @@ def main():
     print("[1/3] 데이터셋 목록 수집")
     ids = list_datasets()
     print("  총 %d건" % len(ids))
+    if not ids:
+        # 목록이 비면 데이터가 사라진 게 아니라 접속이 안 된 것이다(해외 IP에서
+        # data.go.kr이 타임아웃 나는 일이 있다). manifest를 빈 목록으로 덮어쓰면
+        # normalize_fees.py가 0행을 정상 산출물로 쓰고, 최신성 체크가 그걸
+        # "전부 삭제됨"으로 읽어 오탐 이슈를 낸다. 기존 manifest를 그대로 두고
+        # 실패로 끝낸다.
+        raise SystemExit("수집 실패: 데이터셋 목록 0건. manifest.json은 건드리지 않는다")
 
     print("[2/3] 메타 + 파일 수집")
     manifest, ok, fail = [], 0, 0
@@ -157,6 +164,9 @@ def main():
         ok += 1
         print("  [%d/%d] %s (%d bytes)" % (n, len(ids), fname[:58], len(raw)))
         time.sleep(0.6)
+
+    if ok == 0:
+        raise SystemExit("수집 실패: 다운로드 0건 (실패 %d). manifest.json은 건드리지 않는다" % fail)
 
     print("[3/3] manifest 기록")
     with open(os.path.join(OUTDIR, "manifest.json"), "w", encoding="utf-8") as f:
