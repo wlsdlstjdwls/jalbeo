@@ -99,6 +99,23 @@ def split_rules(blob):
 
 
 VERBISH = re.compile(r"(배출|반납|제거|사용|해야|하여|되지|않는|경우|따라|한후|이외|부착)")
+ROUTES = ("종량제봉투", "특수규격마대", "대형폐기물", "대형페기물", "불연성마대", "지자체조례")
+TAILS = (
+    re.compile(r"^(.{2,12}?)등(?:은|는)?(?:%s)" % "|".join(ROUTES)),  # 배출 경로로 끝남
+    re.compile(r"^(.{2,10}?)등(?=.*해당하지)"),                        # 포괄 정의로 끝남
+)
+
+
+def is_route(text):
+    return any(r in text for r in ROUTES)
+
+
+def tail_item(text):
+    for pat in TAILS:
+        m = pat.match(text)
+        if m:
+            return m.group(1)
+    return None
 
 
 def split_items(blob):
@@ -110,7 +127,16 @@ def split_items(blob):
     for p in parts:
         p = re.sub(r"^(및|또는)\s*", "", p).strip().rstrip("등").strip()
         p = re.sub(r"\s+", "", p)
-        if 1 < len(p) <= 20 and not VERBISH.search(p):
+        # 목록의 마지막 품목에는 꼬리말이 붙어서 온다. "사기·도자기류 등은
+        # 특수규격마대…"처럼 배출 경로로 끝나거나, "멀티탭등대형전기·전자
+        # 제품에해당하지않는…"처럼 포괄 정의로 끝난다. 통째로는 서술문이라
+        # 걸러지므로 '등' 앞의 명사만 떼어 살린다.
+        tail = tail_item(p)
+        if tail and not VERBISH.search(tail) and not is_route(tail):
+            out.append(tail)
+        elif is_route(p):
+            continue  # 배출 경로 문구는 품목이 아니다
+        elif 1 < len(p) <= 20 and not VERBISH.search(p):
             out.append(p)
     return out
 
@@ -149,22 +175,39 @@ def parse():
             cell = grid[row]
             subitem = cell.get(1, "").lstrip("·").strip()
             if not subitem:
+                # 세부품목 칸이 빈 채 배출요령만 있는 행은 앞 페이지 마지막
+                # 셀의 이어짐이다. 대형 전기·전자제품 해당품목 예시가 4쪽
+                # 끝에서 잘려 5쪽 첫 행으로 넘어간다 — 버리면 러닝머신부터
+                # 데스크탑PC세트까지 12개가 통째로 사라진다.
+                tail = cell.get(2, "").strip()
+                if tail and records and not cell.get(0, "").strip():
+                    fill(records[-1], records[-1]["_raw"] + " " + tail)
                 continue
-            rules, notes = split_rules(cell.get(2, ""))
             cat = cat_of.get(row, "") or (records[-1]["category"] if records else "")
             rec = {"section": PAGES[pno], "page": pno + 1,
                    "category": cat,
                    "subitem": re.sub(r"\s+", " ", subitem),
-                   "rules": rules, "includes": [], "excludes": [], "notes": []}
-            for n in notes:
-                m = re.match(r"(비해당품목|해당품목예시|해당품목)\s*[::]\s*(.+)", n.replace(" ", ""))
-                if m:
-                    key = "excludes" if m.group(1).startswith("비") else "includes"
-                    rec[key].extend(split_items(m.group(2)))
-                else:
-                    rec["notes"].append(n)
+                   "rules": [], "includes": [], "excludes": [], "notes": []}
+            fill(rec, cell.get(2, ""))
             records.append(rec)
+    for rec in records:
+        rec.pop("_raw", None)
     return records
+
+
+def fill(rec, raw):
+    """배출요령 셀 원문 -> rules/includes/excludes/notes. 이어짐이 붙으면 다시 부른다."""
+    rec["_raw"] = raw
+    rules, notes = split_rules(raw)
+    rec["rules"] = rules
+    rec["includes"], rec["excludes"], rec["notes"] = [], [], []
+    for n in notes:
+        m = re.match(r"(비해당품목|해당품목예시|해당품목)\s*[::]\s*(.+)", n.replace(" ", ""))
+        if m:
+            key = "excludes" if m.group(1).startswith("비") else "includes"
+            rec[key].extend(split_items(m.group(2)))
+        else:
+            rec["notes"].append(n)
 
 
 def main():

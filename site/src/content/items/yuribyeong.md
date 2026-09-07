@@ -4,7 +4,7 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
 related: ["yuri", "hwabyeong", "geureut", "chamchikaen"]
-updated: "2026-09-04"
+updated: "2026-09-07"
 ---
 
 유리병은 **유리 중에서 거의 유일하게 재활용되는 형태**입니다. 그리고 소주병과
@@ -39,7 +39,10 @@ updated: "2026-09-04"
 훈령이 유리병 항목에서 명시적으로 뺀 것들입니다.
 
 <strong>깨진 유리제품, 코팅 및 다양한 색상이 들어간 유리제품, 내열유리제품,
-크리스탈유리제품, 판유리, 조명기구용 유리류</strong>
+크리스탈유리제품, 판유리, 조명기구용 유리류, 사기, 도자기류(화분, 그릇 등)</strong>
+
+훈령은 이 목록 뒤에 배출 경로도 붙여 뒀습니다. <strong>"특수규격마대 또는
+대형폐기물 처리 등 지자체 조례에 따라 배출"</strong>입니다.
 
 정리하면 이렇게 갈립니다.
 

@@ -1,74 +1,89 @@
 item_name,verdict,category,subitem,basis,source_url,as_of
+방수가공포스터,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+사진용지,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+색지,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+알루미늄등금속이박힌복합소재종이,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+영수증감열지,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+종이호일,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+택배전표,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+양면이코팅된종이컵,X,골판지 외 종이류,종이컵,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 택배용보냉상자류등내부에알루미늄박,X,골판지류,골판지상자등,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-우유팩,O,골판지류,"종이팩 (살균팩, 멸균팩)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 두유팩,O,골판지류,"종이팩 (살균팩, 멸균팩)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 소주팩,O,골판지류,"종이팩 (살균팩, 멸균팩)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+우유팩,O,골판지류,"종이팩 (살균팩, 멸균팩)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 쥬스팩,O,골판지류,"종이팩 (살균팩, 멸균팩)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-양면이코팅된종이컵,X,골판지 외 종이류,종이컵,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-알루미늄등금속이박힌복합소재종이,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-택배전표,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-영수증감열지,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-사진용지,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-종이호일,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-색지,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-방수가공포스터,X,골판지 외 종이류,기타종이류,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+농ㆍ수ㆍ축산물포장용발포스티렌상자,O,발포합성수지·,스티로폼완충재,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+건축용내·외장재스티로폼,X,발포합성수지·,스티로폼완충재,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+타재질과코팅또는접착된발포스티렌,X,발포합성수지·,스티로폼완충재,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+맥주캔,O,유리병,"음료·주류캔, 식료품캔",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+음료수캔,O,유리병,"음료·주류캔, 식료품캔",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+통조림캔,O,유리병,"음료·주류캔, 식료품캔",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 깨진유리제품,X,유리병,"음료수병, 기타병류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-코팅및다양한색상이들어간유리제품,X,유리병,"음료수병, 기타병류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 내열유리제품,X,유리병,"음료수병, 기타병류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+사기·도자기류,X,유리병,"음료수병, 기타병류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+조명기구용유리류,X,유리병,"음료수병, 기타병류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+코팅및다양한색상이들어간유리제품,X,유리병,"음료수병, 기타병류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 크리스탈유리제품,X,유리병,"음료수병, 기타병류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 판유리,X,유리병,"음료수병, 기타병류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-조명기구용유리류,X,유리병,"음료수병, 기타병류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-음료수캔,O,유리병,"음료·주류캔, 식료품캔",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-맥주캔,O,유리병,"음료·주류캔, 식료품캔",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-통조림캔,O,유리병,"음료·주류캔, 식료품캔",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-음료용기,O,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-식품용기,O,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-세정용기,O,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-옷걸이,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-칫솔,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-파일철,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-낚싯대,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-유모차·보행기,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-CD·DVD,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-여행용트렁크,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-파티완구,X,합성수지용기· 트레이류,완구류(전지나전기를 사용하여충전·작동하는 전기ㆍ전자완구제외),비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-봉제인형,X,합성수지용기· 트레이류,완구류(전지나전기를 사용하여충전·작동하는 전기ㆍ전자완구제외),비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-1회용봉투등각종비닐류,O,합성수지 비닐류,"비닐포장재, 1회용비 닐봉투",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-식탁보,X,합성수지 비닐류,"비닐포장재, 1회용비 닐봉투",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-고무장갑,X,합성수지 비닐류,"비닐포장재, 1회용비 닐봉투",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-장판,X,합성수지 비닐류,"비닐포장재, 1회용비 닐봉투",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-돗자리,X,합성수지 비닐류,"비닐포장재, 1회용비 닐봉투",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-섬유류등은종량제봉투,X,합성수지 비닐류,"비닐포장재, 1회용비 닐봉투",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-농ㆍ수ㆍ축산물포장용발포스티렌상자,O,발포합성수지·,스티로폼완충재,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-타재질과코팅또는접착된발포스티렌,X,발포합성수지·,스티로폼완충재,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-건축용내·외장재스티로폼,X,발포합성수지·,스티로폼완충재,비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-이불,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-베개,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-방석,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-인형,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-골프가방,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-매트류,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 가죽부츠,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+골프가방,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 롱부츠,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+매트류,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 바퀴달린가방,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+방석,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+베개,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+이불,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 인라인스케이트,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+인형,X,의류,"의류, 잡화",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 TV,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-냉장고,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-세탁기,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 건조기,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+공기청정기,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+냉장고,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+데스크탑PC세트,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+러닝머신,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+복사기,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+세탁기,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+식기건조기,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+식기세척기,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 에어컨,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-태양광패널,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-전기오븐,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+오디오세트,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 자동판매기,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+전기오븐,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+전기자전거,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+전기정수기,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+전동킥보드,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+전자레인지,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+제습기,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+태양광패널,O,전기·전자제품·,대형전기·전자제품,해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 가습기,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+멀티탭,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+블루투스이어폰,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 비디오플레이어,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 스캐너,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 전기밥솥,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-청소기,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-전기주전자,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-토스트기,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-제빵기,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-헤어드라이어,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-전자담배,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
-블루투스이어폰,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
 전기손난로,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+전기주전자,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+전자담배,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+제빵기,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+청소기,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+토스트기,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+헤어드라이어,O,전기·전자제품·,"소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+1회용봉투등각종비닐류,O,합성수지 비닐류,"비닐포장재, 1회용비 닐봉투",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+고무장갑,X,합성수지 비닐류,"비닐포장재, 1회용비 닐봉투",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+돗자리,X,합성수지 비닐류,"비닐포장재, 1회용비 닐봉투",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+섬유류,X,합성수지 비닐류,"비닐포장재, 1회용비 닐봉투",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+식탁보,X,합성수지 비닐류,"비닐포장재, 1회용비 닐봉투",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+장판,X,합성수지 비닐류,"비닐포장재, 1회용비 닐봉투",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+세정용기,O,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+식품용기,O,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+음료용기,O,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+CD·DVD,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+골프가방,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+낚싯대,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+여행용트렁크,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+옷걸이,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+유모차·보행기,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+칫솔,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+파일철,X,합성수지용기· 트레이류,"무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+봉제인형,X,합성수지용기· 트레이류,완구류(전지나전기를 사용하여충전·작동하는 전기ㆍ전자완구제외),비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01
+파티완구,X,합성수지용기· 트레이류,완구류(전지나전기를 사용하여충전·작동하는 전기ㆍ전자완구제외),비해당품목,https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON,2026-01-01

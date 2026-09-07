@@ -390,16 +390,6 @@
   "as_of": "2026-01-01"
  },
  {
-  "id": "e7be7204-7946-45f7-9608-152574ba5a47",
-  "item_name": "섬유류등은종량제봉투",
-  "verdict": "X",
-  "category": "합성수지 비닐류",
-  "subitem": "비닐포장재, 1회용비 닐봉투",
-  "basis": "비해당품목",
-  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
-  "as_of": "2026-01-01"
- },
- {
   "id": "c3a4658f-9885-4108-ba81-fc02595f9b2e",
   "item_name": "농ㆍ수ㆍ축산물포장용발포스티렌상자",
   "verdict": "O",
@@ -726,6 +716,166 @@
   "category": "전기·전자제품·",
   "subitem": "소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",
   "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "ac041b51-0116-4f71-8a84-b51929515ce4",
+  "item_name": "사기·도자기류",
+  "verdict": "X",
+  "category": "유리병",
+  "subitem": "음료수병, 기타병류",
+  "basis": "비해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "032f86b7-5b6b-4880-a66d-227fd999d401",
+  "item_name": "공기청정기",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "대형전기·전자제품",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "04a2d918-af7c-405d-9f74-31d895903274",
+  "item_name": "데스크탑PC세트",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "대형전기·전자제품",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "58c3706f-1a25-46a3-9a1a-184f47c1ba27",
+  "item_name": "러닝머신",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "대형전기·전자제품",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "dee181ae-0e59-47da-91af-14156ce84661",
+  "item_name": "복사기",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "대형전기·전자제품",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "77c064c7-a8f4-461c-aa2c-c26548047dc1",
+  "item_name": "식기건조기",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "대형전기·전자제품",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "00cc4853-9e6e-4374-8f80-53dca76d1163",
+  "item_name": "식기세척기",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "대형전기·전자제품",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "c940039d-fd39-44f3-bb1d-7959b4121cea",
+  "item_name": "오디오세트",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "대형전기·전자제품",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "abd50da5-7eaa-4448-b0d3-0f63227461b1",
+  "item_name": "전기자전거",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "대형전기·전자제품",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "66f414ff-06c8-43df-9d30-2f66c8a45bf5",
+  "item_name": "전기정수기",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "대형전기·전자제품",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "4c6d2ec7-a34b-4158-b54e-820932ae9d19",
+  "item_name": "전동킥보드",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "대형전기·전자제품",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "c0e98fd0-51b5-4466-9d25-00dd6e357d76",
+  "item_name": "전자레인지",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "대형전기·전자제품",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "59385d5b-c5da-4ba9-ab2c-6c35961c122b",
+  "item_name": "제습기",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "대형전기·전자제품",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "7746024a-61f6-40bf-94f0-aeb7766891d1",
+  "item_name": "멀티탭",
+  "verdict": "O",
+  "category": "전기·전자제품·",
+  "subitem": "소형 전기·전자제품 (전지내장형 제품, 전기·전자완구, 기타 소형가전등)",
+  "basis": "해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "63ca2859-298f-41af-bd50-c5f8b3d392de",
+  "item_name": "섬유류",
+  "verdict": "X",
+  "category": "합성수지 비닐류",
+  "subitem": "비닐포장재, 1회용비 닐봉투",
+  "basis": "비해당품목",
+  "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
+  "as_of": "2026-01-01"
+ },
+ {
+  "id": "616feb69-7cf3-409a-a542-6a424834ae54",
+  "item_name": "골프가방",
+  "verdict": "X",
+  "category": "합성수지용기· 트레이류",
+  "subitem": "무색투명한먹는샘물, 음료 폴리에틸렌테레 프탈레이트(PET)병을 제외한PET 용기(병을 포함한다)ㆍ트레이류 · PVC, PE, PP, PS, PSP 재질등의용기· 트레이류",
+  "basis": "비해당품목",
   "source_url": "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON",
   "as_of": "2026-01-01"
  }

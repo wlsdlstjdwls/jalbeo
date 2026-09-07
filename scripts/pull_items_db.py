@@ -3,7 +3,8 @@
 
 site/scripts/pull-data.mjs는 PostgREST(SUPABASE_URL/ANON_KEY)를 쓰는데 이 환경엔
 그 키가 없다. 대신 db_apply.py와 같은 세션 풀러로 붙어 같은 질의를 낸다.
-정렬도 pull-data.mjs와 맞춘다: monthly_volume desc nulls last, name asc.
+정렬도 들여쓰기도 pull-data.mjs와 맞춘다
+(monthly_volume desc nulls last, name asc / JSON.stringify indent 1).
 """
 import json
 import os
@@ -46,7 +47,7 @@ def main():
         out.append(rec)
 
     open(OUT, "w", encoding="utf-8").write(
-        json.dumps(out, ensure_ascii=False, indent=2) + "\n")
+        json.dumps(out, ensure_ascii=False, indent=1) + "\n")
     nulls = sum(1 for r in out if r["monthly_volume"] is None)
     print("품목 %d개 (monthly_volume null %d개) -> %s" % (len(out), nulls, OUT))
 
