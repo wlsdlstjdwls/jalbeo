@@ -325,7 +325,10 @@
    "패드",
    "극세사 이불",
    "겨울이불",
-   "차렵이불"
+   "차렵이불",
+   "침대커버",
+   "이불커버",
+   "침대시트"
   ],
   "verdict": "대형폐기물",
   "verdict_line": "의류수거함에 넣으면 안 됩니다. 부피가 커서 대부분 대형폐기물입니다.",
@@ -335,7 +338,7 @@
   "monthly_volume": 3980,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-07T05:16:33.853225+00:00"
  },
  {
   "slug": "geonjeonji",
@@ -768,7 +771,8 @@
    "플라스틱 장난감",
    "완구",
    "나무장난감",
-   "블록"
+   "블록",
+   "피규어"
   ],
   "verdict": "조건부",
   "verdict_line": "플라스틱 완구는 2026년부터 재활용 대상입니다. 봉제, 복합재질은 종량제입니다.",
@@ -778,7 +782,7 @@
   "monthly_volume": 1630,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-07T05:16:33.853225+00:00"
  },
  {
   "slug": "aekja",
@@ -835,6 +839,26 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-04T07:52:55.358612+00:00"
+ },
+ {
+  "slug": "sogot",
+  "name": "속옷",
+  "aliases": [
+   "팬티",
+   "브래지어",
+   "브라",
+   "내복",
+   "런닝셔츠"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "입던 것은 종량제봉투입니다. 안 뜯은 새것만 의류수거함입니다.",
+  "category": "섬유류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 1550,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-07T05:16:33.853225+00:00"
  },
  {
   "slug": "jeonjareinji",
