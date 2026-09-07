@@ -56,3 +56,52 @@ export function searchKey(row: ItemRow): string {
   const cho = [row.name, ...aliases].map(chosung).join(' ');
   return `${plain} ${packed} ${cho}`.toLowerCase();
 }
+
+const JUNG = [
+  'ㅏ', 'ㅐ', 'ㅑ', 'ㅒ', 'ㅓ', 'ㅔ', 'ㅕ', 'ㅖ', 'ㅗ', 'ㅘ', 'ㅙ',
+  'ㅚ', 'ㅛ', 'ㅜ', 'ㅝ', 'ㅞ', 'ㅟ', 'ㅠ', 'ㅡ', 'ㅢ', 'ㅣ',
+];
+
+const JONG = [
+  '', 'ㄱ', 'ㄲ', 'ㄳ', 'ㄴ', 'ㄵ', 'ㄶ', 'ㄷ', 'ㄹ', 'ㄺ', 'ㄻ', 'ㄼ', 'ㄽ',
+  'ㄾ', 'ㄿ', 'ㅀ', 'ㅁ', 'ㅂ', 'ㅄ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ',
+  'ㅌ', 'ㅍ', 'ㅎ',
+];
+
+const JUNG_SPAN = 28;  // 중성 하나가 차지하는 음절 수 (종성 28)
+
+/**
+ * '공기청덩' -> 'ㄱㅗㅇㄱㅣㅊㅓㅇㄷㅓㅇ'. 오타를 재려고 음절을 자모로 푼다.
+ *
+ * 음절째로 재면 '정'과 '덩'이 그냥 다른 글자라 거리가 1이고, '정'과 '청'도
+ * 거리가 1이다. 초성 하나만 어긋난 오타와 아예 다른 품목이 같은 값이 된다.
+ * 자모로 풀면 앞은 11자 중 1자, 뒤도 11자 중 1자지만 길이가 길어져
+ * 임계값을 글자수에 비례해 줄 수 있다.
+ */
+export function jamo(text: string): string {
+  let out = '';
+  for (const ch of text) {
+    const code = ch.charCodeAt(0);
+    if (code >= HANGUL_BASE && code <= HANGUL_LAST) {
+      const at = code - HANGUL_BASE;
+      out += CHO[Math.floor(at / CHO_SPAN)];
+      out += JUNG[Math.floor((at % CHO_SPAN) / JUNG_SPAN)];
+      out += JONG[at % JUNG_SPAN];
+    } else if (ch !== ' ') {
+      out += ch;
+    }
+  }
+  return out;
+}
+
+/**
+ * 오타 검색용 키. 이름과 별칭만 자모로 풀어 공백으로 잇는다.
+ *
+ * searchKey와 달리 판정, 분류, 초성열을 빼는 이유: 오타 비교는 토막마다
+ * 편집거리를 재는데, '전용수거함' 같은 공용 낱말이 섞여 있으면 아무 오타나
+ * 그 낱말에 걸려 전 품목이 다 뜬다.
+ */
+export function fuzzyKey(row: ItemRow): string {
+  const aliases = row.aliases ?? [];
+  return [row.name, ...aliases].map((w) => jamo(normalize(w))).join(' ');
+}

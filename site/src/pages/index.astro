@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 import { items as dbItems } from '../lib/items';
 import { bg, VERDICT_ORDER } from '../lib/verdict';
 import { HOME_PAGE_SIZE } from '../lib/constants';
-import { searchKey } from '../lib/search';
+import { fuzzyKey, searchKey } from '../lib/search';
 import { SUPABASE_URL, SUPABASE_ANON_KEY } from '../lib/supabase-public';
 
 // 검색어 로그용 엔드포인트. 키가 없으면 빈 문자열이 나가고, 클라이언트가
@@ -84,6 +84,7 @@ const chips = [
             href={`/${row.slug}/`}
             data-v={row.verdict}
             data-key={searchKey(row)}
+            data-fz={fuzzyKey(row)}
           >
             <span class="nm">
               <span class="n">{row.name}</span>
@@ -164,25 +165,109 @@ const chips = [
         }
       }
 
+      // 아래 셋은 lib/search.ts와 같은 규칙을 클라이언트에서 다시 쓴다.
+      // define:vars 스크립트는 인라인이라 모듈을 import 할 수 없다.
+      // search.ts의 normalize / jamo 를 고치면 여기도 같이 고친다.
+      var CHO = 'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ';
+      var JUNG = 'ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ';
+      var JONG = ['', 'ㄱ', 'ㄲ', 'ㄳ', 'ㄴ', 'ㄵ', 'ㄶ', 'ㄷ', 'ㄹ', 'ㄺ', 'ㄻ', 'ㄼ',
+                  'ㄽ', 'ㄾ', 'ㄿ', 'ㅀ', 'ㅁ', 'ㅂ', 'ㅄ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ',
+                  'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'];
+
+      function jamo(text) {
+        var out = '';
+        for (var i = 0; i < text.length; i++) {
+          var at = text.charCodeAt(i) - 0xac00;
+          if (at >= 0 && at <= 0xd7a3 - 0xac00) {
+            out += CHO.charAt(Math.floor(at / 588));
+            out += JUNG.charAt(Math.floor((at % 588) / 28));
+            out += JONG[at % 28];
+          } else if (text.charAt(i) !== ' ') {
+            out += text.charAt(i);
+          }
+        }
+        return out;
+      }
+
+      // 오타 허용 폭. 자모 길이에 비례해 준다 - 짧은 말에 1을 주면
+      // '플스'가 아무 품목에나 걸려 '못 찾은 검색'이라는 신호가 사라진다.
+      function slack(len) {
+        return len >= 9 ? 2 : (len >= 5 ? 1 : 0);
+      }
+
+      // pat이 txt "어딘가에" 거리 max 이내로 들어가면 참.
+      // 첫 행을 0으로 두는 것이 부분일치를 만든다 - 검색어는 대개
+      // 이름의 앞토막이라(디바운스로 '냉장꼬'까지만 온다) 꼬리를 안 벌해야 한다.
+      function near(pat, txt, max) {
+        var m = pat.length, n = txt.length;
+        if (!m || !n) return false;
+        var prev = [], cur = [], i, j;
+        for (j = 0; j <= n; j++) prev[j] = 0;
+        for (i = 1; i <= m; i++) {
+          cur[0] = i;
+          var best = i;
+          for (j = 1; j <= n; j++) {
+            var cost = pat.charAt(i - 1) === txt.charAt(j - 1) ? 0 : 1;
+            var v = prev[j - 1] + cost;
+            if (prev[j] + 1 < v) v = prev[j] + 1;
+            if (cur[j - 1] + 1 < v) v = cur[j - 1] + 1;
+            cur[j] = v;
+            if (v < best) best = v;
+          }
+          if (best > max) return false;   // 이 행에서 이미 벌어졌으면 더 볼 것 없다
+          var swap = prev; prev = cur; cur = swap;
+        }
+        for (j = 0; j <= n; j++) if (prev[j] <= max) return true;
+        return false;
+      }
+
       // 질의도 키와 같은 규칙으로 눌러 준다 (lib/search.ts의 normalize).
       // '보조 배터리' -> '보조배터리', 'SOPA' -> 'sopa'.
       function apply() {
         var term = q.value.replace(/\s+/g, '').toLowerCase();
         var narrowed = !!(filter || term);
+        var hits = [];
+        var exact = 0;      // 부분일치로 통과한 개수 - 검색 로그에 쏘는 값
+        var i, el;
+        for (i = 0; i < list.children.length; i++) {
+          el = list.children[i];
+          hits[i] = (!filter || el.dataset.v === filter) &&
+                    (!term || el.dataset.key.toLowerCase().indexOf(term) !== -1);
+          if (hits[i]) exact++;
+        }
+
+        // 부분일치가 하나도 없을 때만 오타를 봐준다. 정상 검색은 건드리지 않고,
+        // 로그에 쏘는 값은 exact 그대로 둔다 - 오타 구제가 hit=0을 덮으면
+        // 품목 확장 후보가 안 보인다 (docs/20).
+        var fuzzed = false;
+        if (term && exact === 0) {
+          var pat = jamo(term);
+          var max = slack(pat.length);
+          if (max) {
+            for (i = 0; i < list.children.length; i++) {
+              el = list.children[i];
+              if (filter && el.dataset.v !== filter) continue;
+              var toks = (el.dataset.fz || '').split(' ');
+              for (var t = 0; t < toks.length; t++) {
+                if (near(pat, toks[t], max)) { hits[i] = true; fuzzed = true; break; }
+              }
+            }
+          }
+        }
+
         var shown = 0;      // 조건을 통과한 개수
         var drawn = 0;      // 실제로 화면에 그린 개수
-        for (var i = 0; i < list.children.length; i++) {
-          var el = list.children[i];
-          var hit = (!filter || el.dataset.v === filter) &&
-                    (!term || el.dataset.key.toLowerCase().indexOf(term) !== -1);
-          if (hit) shown++;
-          var show = hit && (narrowed || shown <= limit);
+        for (i = 0; i < list.children.length; i++) {
+          el = list.children[i];
+          if (hits[i]) shown++;
+          var show = hits[i] && (narrowed || shown <= limit);
           el.hidden = !show;
           if (show) drawn++;
         }
         count.textContent = shown + ' / ' + total;
-        lastShown = shown;
+        lastShown = exact;
         head.textContent = filter ? filter + ' ' + shown + '개'
+          : fuzzed ? '혹시 이걸 찾으셨나요 ' + shown + '개'
           : term ? '검색 결과 ' + shown + '개'
           : '전체 품목 (많이 찾는 순)';
         empty.hidden = shown !== 0;
