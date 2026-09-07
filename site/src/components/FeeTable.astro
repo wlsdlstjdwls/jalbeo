@@ -30,6 +30,8 @@ const EXAMPLE: Partial<Record<FeeUnitName, { times: number; how: string }>> = {
   area: { times: 3.3, how: '3.3㎡(1평)면' },
   length: { times: 5, how: '5m면' },
   weight: { times: 10, how: '10kg이면' },
+  // 부피는 100ℓ 마대가 기본 단위다. 지자체가 그렇게 적어 놨다.
+  volume: { times: 100, how: '100ℓ 마대 한 개면' },
 };
 const example = EXAMPLE[mainName];
 const totalRegions = stat.units.reduce((n, u) => n + u.stat.regions, 0);

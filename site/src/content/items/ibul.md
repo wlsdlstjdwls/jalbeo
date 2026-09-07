@@ -13,6 +13,7 @@ sources:
     url: "https://www.gwanak.go.kr/site/gwanak/08/10803010800002021012201.jsp"
     asOf: "2026-09-07"
 related: ["somibul", "begae", "heonot", "keoteun"]
+relatedGuides: ["heonot-bangmun-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 ---
 
@@ -57,7 +58,7 @@ updated: "2026-09-07"
 
 ## 수수료
 
-31개 시군구 품목표를 확인한 결과 이불 수수료는 **중앙값 2,000원**, 범위는 **1,500\~4,000원**
+30개 시군구 품목표를 확인한 결과 이불 수수료는 **중앙값 2,000원**, 범위는 **1,500\~4,000원**
 입니다. 대부분 <strong>'장당'</strong>으로 셉니다. 두 장이면 두 장 값을 냅니다.
 
 '솜이불(장당)'과 '홑이불(장당)'에 값을 다르게 매기는 곳, <strong>'대(겨울용)'</strong>로 계절을 나누는 곳도

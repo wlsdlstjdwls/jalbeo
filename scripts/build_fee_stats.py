@@ -53,15 +53,27 @@ EXTRA_ALIAS = {
 UNIT_RE = re.compile(r"(1?\s*쪽\s*당|\(?1\s*쪽\)?|쪽당|1\s*짝|짝문|당\s*1쪽"
                      r"|짝당|폭당|칸당|한\s*짝당)")
 
+# 마대, 자루, 포대, 묶음처럼 담는 그릇을 세는 표기. 그릇 자체는 규격이 없지만
+# 지자체가 그릇 크기를 ℓ이나 kg으로 적어 둔다 ('100ℓ 자루당', '20㎏마대기준').
+# 적어 둔 그 규격이 곧 환산 기준이다 (docs/29).
+SACK = r"(?:마대|자루|포대|봉투|묶음|박스)"
+# '당', '기준', '1개당'처럼 단위임을 알리는 꼬리. 이게 없으면 규격 구간이다.
+TAIL = r"(?:\s*(?:자루|마대|포대|봉투|묶음)?\s*(?:1\s*개)?\s*(?:당|기준))"
+
 # (단위 이름, 기준 단위, 수량+단위 정규식, 기준 단위 환산 계수)
 # 수량이 안 적힌 'kg당', '㎡당'은 1로 본다.
 MEASURED = [
-    ("weight", "kg", re.compile(r"(\d+(?:\.\d+)?)?\s*(kg|㎏|킬로그램|킬로|톤|t)\s*당",
-                                re.I), {"톤": 1000, "t": 1000}),
+    # 무게. 'kg당' 말고 '20㎏마대기준', 'PP포대 당(25킬로그램)'도 같은 뜻이다.
+    ("weight", "kg", re.compile(
+        r"(\d+(?:\.\d+)?)?\s*(kg|㎏|킬로그램|킬로|톤|t)\s*(?:%s)?\s*(?:당|기준)" % SACK,
+        re.I), {"톤": 1000, "t": 1000}),
     ("area", "㎡", re.compile(r"(\d+(?:\.\d+)?)?\s*(㎡|m2|제곱미터|평)"
                              r"\s*(?:\([^)]*\))?\s*당", re.I), {"평": 3.3}),
     ("length", "m", re.compile(r"(\d+(?:\.\d+)?)?\s*(m|미터|cm|㎝)\s*당", re.I),
      {"cm": 0.01, "㎝": 0.01}),
+    # 부피. '100ℓ 자루당', '100리터 봉투기준', '20ℓ당'. 기준 단위는 1ℓ다.
+    # 냉장고 '500ℓ 이상'은 꼬리가 없어서 여기 안 걸린다 (확정 판단 24번).
+    ("volume", "ℓ", re.compile(r"(\d+(?:\.\d+)?)\s*(ℓ|l|리터|L)%s" % TAIL), {}),
 ]
 
 
@@ -87,8 +99,8 @@ def unit_of(item, spec):
 
 
 # 화면과 본문에서 쓰는 단위 이름.
-UNIT_LABEL = {"whole": "전후", "panel": "1쪽당",
-              "area": "1㎡당", "length": "1m당", "weight": "1kg당"}
+UNIT_LABEL = {"whole": "전후", "panel": "1쪽당", "area": "1㎡당",
+              "length": "1m당", "weight": "1kg당", "volume": "1ℓ당"}
 
 
 SPLIT = re.compile(r"[,/·]|및|그리고")
@@ -192,7 +204,7 @@ def main():
             continue
         # 어느 단위가 다수인지. 쪽당이 다수면 화면에서 그걸 먼저 말해야 한다.
         # 같은 지역 수면 통짜를 앞에 둔다. 읽는 사람이 기대하는 쪽이다.
-        order = ["whole", "panel", "area", "length", "weight"]
+        order = ["whole", "panel", "area", "length", "weight", "volume"]
         primary = max(order, key=lambda u: (stats.get(u, {}).get("regions", 0),
                                             -order.index(u)))
         entry = {
@@ -217,7 +229,7 @@ def main():
             print("  %-8s  —" % it["name"])
             continue
         parts = []
-        for unit in ("whole", "panel", "area", "length", "weight"):
+        for unit in ("whole", "panel", "area", "length", "weight", "volume"):
             if unit in e:
                 st = e[unit]
                 parts.append("%s %s원(%d지역)"
