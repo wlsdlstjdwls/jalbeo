@@ -125,6 +125,8 @@ def main():
     if args.undo:
         if not done:
             sys.exit("%s 기록이 비어 있다. 취소할 게 없다." % eng)
+        # 묶음은 날짜가 아니라 초 단위 시각으로 가른다. 하루에 두 번 뽑는
+        # 일이 있고(할당량 초과로 다시 냄), 날짜로 묶으면 앞 묶음까지 날아간다.
         last = max(done.values())
         removed = [u for u, d in done.items() if d == last]
         for u in removed:
@@ -141,8 +143,10 @@ def main():
         print("%s 는 %d개 전부 넣었다. 더 넣을 게 없다." % (eng, len(urls)))
         return
 
-    today = datetime.date.today().isoformat()
-    print("# %s 색인 요청 %d개 (%s)" % (eng, len(batch), today))
+    # 기록값은 초까지 남긴다 - 같은 날 두 번째 묶음을 --undo 로 따로 취소하려면
+    # 날짜만으로는 앞 묶음과 구별이 안 된다.
+    stamp = datetime.datetime.now().isoformat(timespec="seconds")
+    print("# %s 색인 요청 %d개 (%s)" % (eng, len(batch), stamp[:10]))
     print()
     for i, u in enumerate(batch, 1):
         print("%2d. %s" % (i, u))
@@ -152,7 +156,7 @@ def main():
         print("(--dry 라 기록 안 했다. 실제로 넣었으면 --dry 빼고 다시 돌려라)")
     else:
         for u in batch:
-            done[u] = today
+            done[u] = stamp
         save_state(state)
         print("기록함 -> %s" % os.path.relpath(STATE, ROOT))
     print()
