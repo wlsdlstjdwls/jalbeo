@@ -17,7 +17,7 @@ sources:
     url: "https://www.data.go.kr/tcs/dss/selectStdDataDetailView.do?publicDataPk=15021108"
     asOf: "2026-09-04"
 related: ["sopa", "jangrong", "chimdae", "seorapjang", "chaeksang"]
-relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
+relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo", "heonot-bangmun-sugeo"]
 updated: "2026-09-04"
 ---
 

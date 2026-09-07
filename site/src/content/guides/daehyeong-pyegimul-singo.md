@@ -17,7 +17,7 @@ sources:
     url: "https://www.data.go.kr/tcs/dss/selectDataSetList.do?dType=FILE&keyword=%EB%8C%80%ED%98%95%ED%8F%90%EA%B8%B0%EB%AC%BC%20%EC%88%98%EC%88%98%EB%A3%8C"
     asOf: "2026-07-01"
 related: ["chimdae", "maeteuriseu", "sopa", "jangrong", "chaeksang"]
-relatedGuides: ["pyegajeon-musang-sugeo", "pyegagu-mulyo-sugeo"]
+relatedGuides: ["pyegajeon-musang-sugeo", "pyegagu-mulyo-sugeo", "jongryangje-bongtu"]
 updated: "2026-09-04"
 ---
 

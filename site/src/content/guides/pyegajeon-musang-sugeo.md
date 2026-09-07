@@ -14,7 +14,7 @@ sources:
     url: "https://www.gangnam.go.kr/waste/apply/info.do?mid=ID03_030702"
     asOf: "2026-09-04"
 related: ["naengjanggo", "setakgi", "tibeu", "cheongsogi", "anmauija", "jeseupgi"]
-relatedGuides: ["daehyeong-pyegimul-singo", "pyegagu-mulyo-sugeo"]
+relatedGuides: ["daehyeong-pyegimul-singo", "pyegagu-mulyo-sugeo", "jongryangje-bongtu"]
 updated: "2026-09-04"
 ---
 
