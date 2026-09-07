@@ -13,6 +13,7 @@
     { "source": "/yeongyangje", "destination": "/yak", "permanent": true },
     { "source": "/yeongyangje/", "destination": "/yak/", "permanent": true },
     { "source": "/hoil", "destination": "/eunbakji", "permanent": true },
-    { "source": "/hoil/", "destination": "/eunbakji/", "permanent": true }
+    { "source": "/hoil/", "destination": "/eunbakji/", "permanent": true },
+    { "source": "/sitemap.xml", "destination": "/sitemap-index.xml", "permanent": true }
   ]
 }
