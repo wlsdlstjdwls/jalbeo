@@ -7,7 +7,7 @@ sources:
     url: "https://www.data.go.kr/data/15094076/fileData.do"
     asOf: "2025-12-08"
 related: ["haenggeo"]
-relatedGuides: ["daehyeong-pyegimul-singo"]
+relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-03"
 ---
 

@@ -53,6 +53,22 @@ RULES = [
 ]
 MAX_LINKS = 2
 
+# 신호 단어 뒤에 부정 표현이 붙으면 그 문장은 "이 절차를 안 쓴다"는 뜻이다.
+# 예: 블라인드의 "의류수거함 대상이 아닙니다", 슬리퍼의 "수거 불가 품목".
+# 매치 뒤 NEG_WINDOW자 안에 이 표현이 있으면 그 매치는 안 센다.
+NEGATION = re.compile(r"(아니|아닙니다|안\s?받|못\s?받|불가|없습니다|없어요)")
+NEG_WINDOW = 35
+
+
+def count_hits(pat, body):
+    n = 0
+    for m in pat.finditer(body):
+        tail = body[m.end():m.end() + NEG_WINDOW]
+        if NEGATION.search(tail):
+            continue
+        n += 1
+    return n
+
 
 def split_md(text):
     parts = text.split("---", 2)
@@ -80,7 +96,7 @@ def reciprocal():
 def pick(body, forced):
     scored = []
     for i, (slug, pat, floor) in enumerate(RULES):
-        n = len(pat.findall(body))
+        n = count_hits(pat, body)
         if n >= floor:
             scored.append((-n, i, slug))
     scored.sort()

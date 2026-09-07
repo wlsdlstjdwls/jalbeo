@@ -10,7 +10,7 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000266748&type=JSON"
     asOf: "2025-10-01"
 related: ["aekja", "sajin", "pyemokjae", "jongi"]
-relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
+relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-07"
 ---
 

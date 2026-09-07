@@ -10,7 +10,7 @@ sources:
     url: "https://www.data.go.kr/data/15153890/fileData.do"
     asOf: "2024-11-28"
 related: ["binil", "haenggeo", "hwabun", "seutiropom"]
-relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 ---
 

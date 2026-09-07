@@ -13,7 +13,7 @@ sources:
     url: "https://www.data.go.kr/data/15097803/fileData.do"
     asOf: "2026-01-01"
 related: ["geureut", "hwabun", "doenjang", "hwabyeong"]
-relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
+relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 ---
 

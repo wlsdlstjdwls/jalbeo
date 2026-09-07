@@ -13,7 +13,7 @@ sources:
     url: "https://www.gwangjin.go.kr/portal/bbs/B0000001/view.do?nttId=5312082&deptId=100106&menuNo=200190&pSiteId=portal&pageIndex=4"
     asOf: "2021-05-28"
 related: ["yogamaeteu", "beompeochimdae", "reogeu"]
-relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
+relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
 updated: "2026-09-07"
 optionsNote: "퍼즐매트는 재질이 아니라 장수가 기준입니다. 어느 쪽이든 재활용은 안 됩니다."
 options:

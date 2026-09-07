@@ -10,7 +10,7 @@ sources:
     url: "https://www.sd.go.kr/main/contents.do?key=1676"
     asOf: "2026-09-03"
 related: ["geonjeonji", "bojobaeteori", "hyudaepon", "sonseonpunggi"]
-relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
+relatedGuides: ["pyegajeon-musang-sugeo"]
 updated: "2026-09-03"
 ---
 

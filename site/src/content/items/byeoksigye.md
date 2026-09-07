@@ -10,7 +10,7 @@ sources:
     url: "https://www.data.go.kr/data/15093805/fileData.do"
     asOf: "2026-07-01"
 related: ["geonjeonji", "chejunggye", "yuri", "aekja"]
-relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
+relatedGuides: ["jongryangje-bongtu", "pyegajeon-musang-sugeo"]
 updated: "2026-09-07"
 ---
 

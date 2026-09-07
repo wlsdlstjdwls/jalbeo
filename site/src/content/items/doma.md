@@ -7,7 +7,7 @@ sources:
     url: "https://www.ydp.go.kr/reserve/selectWstePrdWebPopList.do?key=5495"
     asOf: "2026-09-03"
 related: ["sillikon", "namujeotgarak", "geureut", "gomu"]
-relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
+relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-07"
 ---
 

@@ -10,7 +10,7 @@ sources:
     url: "https://www.data.go.kr/data/15040943/fileData.do"
     asOf: "2025-07-09"
 related: ["reogeu", "jangpan", "tenteu", "yogamaeteu"]
-relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
+relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
 updated: "2026-09-07"
 ---
 

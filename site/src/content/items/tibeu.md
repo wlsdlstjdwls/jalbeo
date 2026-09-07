@@ -10,7 +10,7 @@ sources:
     url: "https://15990903.or.kr/portal/reserve/reserve.do"
     asOf: "2026-09-03"
 related: ["moniteo", "naengjanggo", "setakgi", "keompyuteo"]
-relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
+relatedGuides: ["pyegajeon-musang-sugeo", "pyegagu-mulyo-sugeo"]
 updated: "2026-09-04"
 ---
 

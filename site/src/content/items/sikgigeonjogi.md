@@ -19,7 +19,7 @@ sources:
     url: "https://www.data.go.kr/data/15153890/fileData.do"
     asOf: "2024-11-28"
 related: ["jeonjareinji", "geonjogi", "jeongsugi", "mikseogi"]
-relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
+relatedGuides: ["pyegajeon-musang-sugeo", "pyegagu-mulyo-sugeo"]
 updated: "2026-09-07"
 ---
 
