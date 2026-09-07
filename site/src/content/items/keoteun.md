@@ -3,9 +3,12 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
+  - title: "분리의정석(생활폐기물 분리배출 누리집, 환경부/한국폐기물협회) — 품목사전 '샤워커튼'"
+    url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=398"
+    asOf: "2026-09-07"
 related: ["beullaindeu", "heonot", "ibul", "bangchungmang"]
 relatedGuides: ["heonot-bangmun-sugeo", "daehyeong-pyegimul-singo"]
-updated: "2026-09-04"
+updated: "2026-09-07"
 ---
 
 커튼은 **천과 부속을 나누면 답이 나옵니다.** 천은 의류수거함이 될 수도 있고,
@@ -27,12 +30,15 @@ updated: "2026-09-04"
 
 - **암막커튼** — 뒷면에 폴리우레탄이나 아크릴 코팅층이 붙어 있습니다.
   섬유 재활용에 안 들어갑니다
+- **샤워커튼** — 면이 아니라 PVC, PEVA 같은 방수 재질입니다. 상태와
+  무관하게 항상 종량제봉투입니다. 의류수거함에 넣으면 안 됩니다
 - **곰팡이가 핀 것** — 다른 옷까지 오염시킵니다
 - **햇빛에 삭아 찢어지는 것** — 상품 가치가 없습니다
 - **방염 처리된 것** — 화학 처리 때문에 받지 않는 곳이 있습니다
 
 암막커튼은 겉으로는 그냥 천 같지만, 뒤집어 보면 고무 같은 막이 보입니다.
-이게 있으면 종량제봉투입니다.
+이게 있으면 종량제봉투입니다. 샤워커튼도 마찬가지로, 접었을 때 안쪽이
+매끈한 비닐 느낌이면 종량제봉투로 보내세요.
 
 ## 부속은 이렇게 나눕니다
 

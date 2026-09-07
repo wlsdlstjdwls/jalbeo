@@ -9,9 +9,12 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
+  - title: "분리의정석(생활폐기물 분리배출 누리집, 환경부/한국폐기물협회) — 품목사전 '고무장화'"
+    url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=436"
+    asOf: "2026-09-07"
 related: ["heonot", "gabang", "moja", "sugeon"]
 relatedGuides: ["heonot-bangmun-sugeo", "jongryangje-bongtu"]
-updated: "2026-09-03"
+updated: "2026-09-07"
 ---
 
 신발은 **상태로 갈립니다.** 신을 만하면 의류수거함, 못 신으면 종량제봉투입니다.
@@ -46,9 +49,16 @@ updated: "2026-09-03"
 | 롤러스케이트, 인라인, 휠리스 | 종량제봉투 또는 대형폐기물 |
 | 스키부츠, 스케이트화 | 종량제봉투 또는 대형폐기물 |
 | 밑창이 떨어진 운동화 | 종량제봉투 |
+| 고무장화, 장화, 우비 | 종량제봉투(항상) |
 
 부츠는 부피와 무게 때문에 수거함 투입구에 잘 들어가지도 않습니다. 억지로 밀어넣지
 마세요.
+
+**고무장화는 상태와 무관하게 항상 종량제봉투입니다.** 다른 신발과 기준이
+다릅니다. 상태가 좋아도 재질(EVA, PVC) 때문에 의류수거함이 아예 안 받습니다.
+분리의정석 품목사전도 <strong>"고무장화는 종량제봉투로 배출합니다"</strong>,
+<strong>"의류수거함에 배출 불가능"</strong>이라고 못박아 둡니다. 새 장화라도
+마찬가지입니다.
 
 ## 반드시 한 켤레로 묶으세요
 

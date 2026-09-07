@@ -184,7 +184,10 @@
    "구두",
    "크록스 신발",
    "헌신발",
-   "운동화"
+   "운동화",
+   "장화",
+   "고무장화",
+   "우비"
   ],
   "verdict": "조건부",
   "verdict_line": "상태가 좋으면 의류수거함, 낡았으면 일반쓰레기입니다.",
@@ -194,7 +197,7 @@
   "monthly_volume": 6820,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-07T09:25:54.803479+00:00"
  },
  {
   "slug": "begae",
@@ -1339,7 +1342,8 @@
   "name": "커튼",
   "aliases": [
    "암막커튼",
-   "커튼봉"
+   "커튼봉",
+   "샤워커튼"
   ],
   "verdict": "조건부",
   "verdict_line": "천은 의류수거함이 될 수도 있습니다. 봉과 레일은 고철입니다.",
@@ -1349,7 +1353,7 @@
   "monthly_volume": 1200,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-07T09:25:54.803479+00:00"
  },
  {
   "slug": "oksusudae",
@@ -2960,6 +2964,25 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "gongyugi",
+  "name": "공유기",
+  "aliases": [
+   "인터넷공유기",
+   "와이파이공유기",
+   "무선공유기",
+   "모뎀"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "임대 장비면 반납해야 위약금이 안 붙습니다. 산 것이면 소형가전 수거함입니다.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 175,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T09:25:54.803479+00:00"
+ },
+ {
   "slug": "seorapjang",
   "name": "서랍장",
   "aliases": [],
@@ -3077,6 +3100,24 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "jeongimogichae",
+  "name": "전기모기채",
+  "aliases": [
+   "모기채",
+   "전기파리채",
+   "충전식모기채"
+  ],
+  "verdict": "전용수거함",
+  "verdict_line": "소형가전 수거함입니다. 건전지식은 배터리를 먼저 뺍니다.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 145,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T09:25:54.803479+00:00"
+ },
+ {
   "slug": "jeongijangpan",
   "name": "전기장판",
   "aliases": [
@@ -3154,6 +3195,24 @@
   "updated_at": "2026-09-04T08:17:27.095298+00:00"
  },
  {
+  "slug": "gibseu",
+  "name": "깁스",
+  "aliases": [
+   "석고깁스",
+   "캐스트",
+   "깁스붕대"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "소량은 종량제봉투, 다량은 불연성 특수마대입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 110,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T09:25:54.803479+00:00"
+ },
+ {
   "slug": "saengseonppyeo",
   "name": "생선뼈",
   "aliases": [
@@ -3169,6 +3228,24 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "eeomaeteu",
+  "name": "에어매트",
+  "aliases": [
+   "에어풀장",
+   "비치매트리스",
+   "캠핑에어매트"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "공기를 빼고 종량제봉투, 크기가 크면 대형폐기물입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 110,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T09:25:54.803479+00:00"
  },
  {
   "slug": "hwanpunggi",
@@ -3244,6 +3321,25 @@
   "updated_at": "2026-09-07T07:44:01.345867+00:00"
  },
  {
+  "slug": "rimokeon",
+  "name": "리모컨",
+  "aliases": [
+   "TV리모컨",
+   "에어컨리모컨",
+   "셋톱박스리모컨",
+   "만능리모컨"
+  ],
+  "verdict": "전용수거함",
+  "verdict_line": "소형가전 수거함입니다. 건전지부터 빼세요.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 100,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T09:25:54.803479+00:00"
+ },
+ {
   "slug": "multisyu",
   "name": "물티슈",
   "aliases": [
@@ -3260,6 +3356,46 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "ingkeukateuriji",
+  "name": "잉크카트리지",
+  "aliases": [
+   "카트리지",
+   "토너",
+   "프린터카트리지",
+   "잉크통",
+   "레이저토너"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "깨끗하면 플라스틱류나 제조사 회수, 남았으면 밀봉해 종량제봉투입니다.",
+  "category": "플라스틱류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 100,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T09:25:54.803479+00:00"
+ },
+ {
+  "slug": "jujeonja",
+  "name": "주전자",
+  "aliases": [
+   "전기포트",
+   "커피포트",
+   "차주전자",
+   "법랑주전자",
+   "무쇠주전자"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "전기주전자는 소형가전, 법랑이나 스테인리스 주전자는 고철입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 100,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T09:25:54.803479+00:00"
+ },
+ {
   "slug": "chaekjang",
   "name": "책장",
   "aliases": [
@@ -3274,6 +3410,24 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-07T07:44:01.345867+00:00"
+ },
+ {
+  "slug": "udeurak",
+  "name": "우드락",
+  "aliases": [
+   "폼보드",
+   "우드락보드",
+   "전시보드"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "흰색이어도 재활용이 안 됩니다. 종량제봉투입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 95,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-07T09:25:54.803479+00:00"
  },
  {
   "slug": "geonjogi",
