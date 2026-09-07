@@ -95,6 +95,16 @@
   17,425) 상위 16주제를 판정해 13 발행(라이터 5,740, 와이퍼, 전자담배, 아령,
   슬리퍼, 고양이모래, 마우스, 락스, 샤워기, 구명조끼, 캔버스, 주사기, 축구공),
   별칭 5(뚝배기, 냄비뚜껑, 수영복, 지퍼백, 침낭). 라이터 하나가 72주제의 3분의 1
+- **IndexNow 워크플로 smokespot 규격화 (2026-09-07, fc91a07)** — 트리거를
+  `deployment_status`(Vercel Production 성공) + `workflow_dispatch`만으로 바꾸고 주간
+  cron·push 경로 필터 제거. `site/src/pages/deploy.json.ts`가 빌드 커밋 SHA를 정적으로
+  내고, 워크플로는 `/deploy.json`의 commit이 배포 SHA와 같아질 때까지(5초×24회) 기다린
+  뒤 `scripts/indexnow_submit.py` 실행, 기록은 `data/indexing/indexnow_log.json`에 커밋.
+  **검증 미완 — 다음 세션이 할 것**: GitHub Actions "IndexNow 제출"에서 fc91a07 이후
+  `deployment_status` 런이 생겼는지, 로그에 "ready after N"과 "신규 URL 없음" 또는
+  "N개 전송 -> HTTP 200"이 찍혔는지 확인. `curl https://jalbeo.com/deploy.json`이
+  최신 커밋 SHA를 돌려주는지도 본다. 런이 안 생기면 Vercel의 GitHub Deployment
+  environment 이름이 `Production`인지(API `repos/.../deployments`) 재확인
 - 다음 단계: 실측 12차 100~199 구간 10주제, 품목사전 미판정 378개로 실측 13차,
   색인 관측, 검색어 로그
 
