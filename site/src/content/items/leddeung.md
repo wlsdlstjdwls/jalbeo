@@ -10,6 +10,7 @@ sources:
     url: "https://www.data.go.kr/data/15153890/fileData.do"
     asOf: "2024-11-28"
 related: ["ledjeongu", "hyeonggwangdeung", "jeonseon"]
+relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
 updated: "2026-09-04"
 ---
 

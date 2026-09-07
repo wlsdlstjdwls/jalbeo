@@ -4,6 +4,7 @@ sources:
     url: "https://www.gangdong.go.kr/web/newportal/contents/gdp_005_004_010_004_001"
     asOf: "2026-09-03"
 related: ["geoul", "yuri", "sajin", "aelbeom"]
+relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-07"
 ---
 

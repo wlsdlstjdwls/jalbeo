@@ -7,6 +7,7 @@ sources:
     url: "https://www.gangdong.go.kr/web/newportal/contents/gdp_005_004_010_001"
     asOf: "2026-09-03"
 related: ["maeteuriseu", "heukchimdae", "beompeochimdae", "sopa"]
+relatedGuides: ["daehyeong-pyegimul-singo", "pyegagu-mulyo-sugeo"]
 updated: "2026-09-07"
 ---
 

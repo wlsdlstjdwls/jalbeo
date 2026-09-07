@@ -7,6 +7,7 @@ sources:
     url: "https://www.junggu.seoul.kr/content.do?cmsid=14190"
     asOf: "2026-09-03"
 related: ["ledjeongu", "leddeung", "geonjeonji", "yuri"]
+relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-03"
 ---
 

@@ -7,6 +7,7 @@ sources:
     url: "https://www.gunpo.go.kr/waste/selectWstePrdWebList.do?key=4893"
     asOf: "2026-09-03"
 related: ["golpeuchae", "gabang", "kaerieo"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-03"
 ---
 

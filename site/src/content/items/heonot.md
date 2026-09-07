@@ -10,6 +10,7 @@ sources:
     url: "https://news.seoul.go.kr/env/archives/564022"
     asOf: "2025-08-06"
 related: ["ibul", "somibul", "sinbal", "gabang"]
+relatedGuides: ["heonot-bangmun-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-03"
 ---
 

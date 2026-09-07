@@ -7,6 +7,7 @@ sources:
     url: "https://www.gwangjin.go.kr/portal/main/contents.do?menuNo=200838"
     asOf: "2026-09-04"
 related: ["chungjeongi", "meoltitaep", "keompyuteo", "baeteori"]
+relatedGuides: ["heonot-bangmun-sugeo"]
 updated: "2026-09-04"
 optionsNote: "전선은 양이 기준입니다. 한두 가닥과 한 뭉치는 가는 길이 다릅니다."
 options:

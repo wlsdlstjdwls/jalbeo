@@ -7,6 +7,7 @@ sources:
     url: "https://www.ydp.go.kr/reserve/selectWstePrdWebPopList.do?key=5495"
     asOf: "2026-09-04"
 related: ["yumocha", "kasiteu", "jangnangam"]
+relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
 updated: "2026-09-04"
 optionsNote: "재질은 플라스틱이 맞지만 플라스틱류로는 못 냅니다. 자를 수 있는지로 갈립니다."
 options:

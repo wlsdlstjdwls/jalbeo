@@ -40,6 +40,12 @@ const related = (picked.length > 0
   : dbItems.filter((x) => x.slug !== row.slug && x.verdict === row.verdict)
 ).slice(0, RELATED_LIMIT);
 
+// 이 품목이 말하는 절차를 실제로 가진 가이드. 없으면 아무것도 안 붙인다.
+const allGuides = await getCollection('guides');
+const guideLinks = meta.relatedGuides
+  .map((id) => allGuides.find((g) => g.id === id))
+  .filter((g) => g !== undefined);
+
 // 어미가 '버리는법'과 '분리수거'로 갈려 있다 (docs/07). 페이지는 하나로 두고
 // 타이틀에 둘 다 태운다. 어미별로 URL을 나누면 중복 페이지가 된다.
 const title = `${row.name} 버리는법, 분리수거 방법 | 잘버려`;
@@ -145,6 +151,20 @@ const jsonLd = {
                 <a class="press hard rcard" href={`/${r.slug}/`}>
                   <span class="rn">{r.name}</span>
                   <span class="badge sm" style={`--bg:${bg(r.verdict)}`}>{r.verdict}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {guideLinks.length > 0 && (
+          <div class="related rise">
+            <p class="caption divider">절차는 여기</p>
+            <div class="rgrid">
+              {guideLinks.map((g) => (
+                <a class="press hard rcard gl" href={`/guides/${g.id}/`}>
+                  <span class="rn">{g.data.title}</span>
+                  <span class="badge sm">가이드</span>
                 </a>
               ))}
             </div>

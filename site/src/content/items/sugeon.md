@@ -10,6 +10,7 @@ sources:
     url: "https://www.gwanak.go.kr/site/gwanak/08/10803010800002021012201.jsp"
     asOf: "2026-09-03"
 related: ["heonot", "ibul", "sinbal", "multisyu"]
+relatedGuides: ["heonot-bangmun-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-03"
 ---
 

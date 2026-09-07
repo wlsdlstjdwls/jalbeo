@@ -4,6 +4,7 @@ sources:
     url: "https://www.junggu.seoul.kr/content.do?cmsid=14187"
     asOf: "2026-09-03"
 related: ["namutgaji", "topbap", "hwabun", "gwailkkeopjil"]
+relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-03"
 ---
 

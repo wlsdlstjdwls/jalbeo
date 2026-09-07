@@ -10,6 +10,7 @@ sources:
     url: "https://www.data.go.kr/data/15087486/fileData.do"
     asOf: "2024-05-08"
 related: ["siktak", "uija", "chaeksang"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-04"
 ---
 

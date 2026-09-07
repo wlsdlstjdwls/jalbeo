@@ -7,6 +7,7 @@ sources:
     url: "http://www.boannews.com/news/articleView.html?idxno=104220"
     asOf: "2022-01-21"
 related: ["keompyuteo", "moniteo", "hyudaepon", "bojobaeteori"]
+relatedGuides: ["daehyeong-pyegimul-singo", "pyegajeon-musang-sugeo"]
 updated: "2026-09-03"
 ---
 

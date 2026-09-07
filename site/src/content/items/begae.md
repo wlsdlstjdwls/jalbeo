@@ -10,6 +10,7 @@ sources:
     url: "https://www.gwangjin.go.kr/portal/main/contents.do?menuNo=201332"
     asOf: "2026-09-03"
 related: ["somibul", "ibul", "maeteuriseu", "heonot"]
+relatedGuides: ["heonot-bangmun-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 ---
 

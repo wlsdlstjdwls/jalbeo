@@ -13,6 +13,7 @@ sources:
     url: "https://www.sd.go.kr/main/sub.do?key=1670"
     asOf: "2026-09-03"
 related: ["uija", "chimdae", "maeteuriseu", "seorapjang"]
+relatedGuides: ["daehyeong-pyegimul-singo", "pyegagu-mulyo-sugeo"]
 updated: "2026-09-07"
 ---
 

@@ -7,6 +7,7 @@ sources:
     url: "https://www.korea.kr/news/policyNewsView.do?newsId=148958832"
     asOf: "2026-09-03"
 related: ["naengjanggo", "gimchi", "setakgi"]
+relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-03"
 ---
 

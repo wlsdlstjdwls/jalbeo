@@ -7,6 +7,7 @@ sources:
     url: "https://news.seoul.go.kr/env/archives/563504"
     asOf: "2025-06-18"
 related: ["reogeu", "peojeulmaeteu", "maeteuriseu"]
+relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
 updated: "2026-09-04"
 optionsNote: "요가매트는 재질이 아니라 두께로 갈립니다. 말았을 때 봉투에 들어가는지부터 보세요."
 options:

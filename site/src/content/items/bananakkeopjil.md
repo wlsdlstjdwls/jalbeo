@@ -7,6 +7,7 @@ sources:
     url: "https://www.gangseo.seoul.kr/env/env010201"
     asOf: "2026-09-03"
 related: ["gyerankkeopjil"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-03"
 ---
 

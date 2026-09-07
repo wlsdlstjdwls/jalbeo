@@ -7,6 +7,7 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
 related: ["sillikon", "sinbal", "jajeongeo"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-04"
 optionsNote: "고무는 크기로만 갈립니다. 재질이 천연이든 합성이든 재활용은 안 됩니다."
 options:

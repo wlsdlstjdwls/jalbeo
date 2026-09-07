@@ -7,6 +7,7 @@ sources:
     url: "https://www.icbp.go.kr/main/life/clean/paperpack.jsp"
     asOf: "2026-09-07"
 related: ["jongikeop", "kotingjongi", "jongi", "peteubyeong"]
+relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-07"
 ---
 

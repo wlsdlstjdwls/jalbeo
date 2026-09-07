@@ -7,6 +7,7 @@ sources:
     url: "https://www.15990903.or.kr/portal/cnts/selectContents.do?cntnts_id=A1000005"
     asOf: "2026-09-04"
 related: ["naengjanggo", "setakgi", "seonpunggi", "gonggicheongjeonggi"]
+relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-04"
 optionsNote: "수거는 공짜지만 철거는 별개입니다. 지금 벽에 붙어 있는지부터 확인하세요."
 options:

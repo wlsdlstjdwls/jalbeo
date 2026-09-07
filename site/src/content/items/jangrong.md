@@ -7,6 +7,7 @@ sources:
     url: "https://www.data.go.kr/data/15061842/fileData.do"
     asOf: "2026-07-01"
 related: ["otjang", "seorapjang", "hwajangdae", "geoul"]
+relatedGuides: ["daehyeong-pyegimul-singo", "pyegagu-mulyo-sugeo"]
 updated: "2026-09-04"
 ---
 

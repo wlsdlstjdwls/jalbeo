@@ -13,6 +13,7 @@ sources:
     url: "https://www.data.go.kr/data/15069011/fileData.do"
     asOf: "2025-12-23"
 related: ["namutgaji", "chaeksang", "seonban"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 ---
 

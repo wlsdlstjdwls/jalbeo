@@ -7,6 +7,7 @@ sources:
     url: "https://www.gwanak.go.kr/site/gwanak/09/10903020400002023110105.jsp"
     asOf: "2026-09-03"
 related: ["chimdae", "maeteuriseu", "jeongijangpan", "onsumaeteu"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 ---
 

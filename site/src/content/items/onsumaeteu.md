@@ -7,6 +7,7 @@ sources:
     url: "https://www.busanjin.go.kr/index.busanjin?menuCd=DOM_000000105006002005"
     asOf: "2026-09-03"
 related: ["jeongijangpan", "jangpan", "heukchimdae", "yogamaeteu"]
+relatedGuides: ["daehyeong-pyegimul-singo", "pyegajeon-musang-sugeo"]
 updated: "2026-09-07"
 ---
 

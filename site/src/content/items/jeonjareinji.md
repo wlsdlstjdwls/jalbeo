@@ -10,6 +10,7 @@ sources:
     url: "https://www.15990903.or.kr/portal/cnts/selectContents.do?cntnts_id=A1000005"
     asOf: "2026-09-07"
 related: ["cheongsogi", "seonpunggi", "gonggicheongjeonggi", "eeopeuraieo"]
+relatedGuides: ["pyegajeon-musang-sugeo"]
 updated: "2026-09-07"
 ---
 

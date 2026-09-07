@@ -7,6 +7,7 @@ sources:
     url: "https://waste.suwon.go.kr/lmth/01_intro/intro_0201.asp"
     asOf: "2026-09-03"
 related: ["chimdae", "heukchimdae", "sopa", "begae"]
+relatedGuides: ["daehyeong-pyegimul-singo", "pyegajeon-musang-sugeo"]
 updated: "2026-09-07"
 ---
 

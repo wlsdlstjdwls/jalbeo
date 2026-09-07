@@ -7,6 +7,7 @@ sources:
     url: "https://consumer.gwd.go.kr/?document_srl=47246&listStyle=viewer&mid=board_safety"
     asOf: "2026-09-04"
 related: ["yuri", "geureut", "yogamaeteu"]
+relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-04"
 optionsNote: "이름은 같아도 물건이 둘입니다. 물 한 방울을 떨어뜨려 보면 갈립니다."
 options:

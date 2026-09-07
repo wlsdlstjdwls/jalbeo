@@ -7,6 +7,7 @@ sources:
     url: "https://waste.suwon.go.kr/lmth/01_intro/intro_0201.asp"
     asOf: "2026-09-03"
 related: ["chaeksang", "sopa", "anmauija", "siktak"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 ---
 

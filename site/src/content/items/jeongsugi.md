@@ -7,6 +7,7 @@ sources:
     url: "https://www.15990903.or.kr/portal/cnts/userGuide.do"
     asOf: "2026-09-04"
 related: ["gonggicheongjeonggi", "naengjanggo", "setakgi", "jeseupgi"]
+relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-04"
 optionsNote: "정수기는 내 물건인지부터 갈립니다. 렌탈이면 버리는 물건이 아니라 반납하는 물건입니다."
 options:

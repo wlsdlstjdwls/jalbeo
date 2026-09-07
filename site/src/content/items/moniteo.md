@@ -7,6 +7,7 @@ sources:
     url: "https://www.busanjin.go.kr/index.busanjin?menuCd=DOM_000000105006002005"
     asOf: "2026-09-03"
 related: ["tibeu", "keompyuteo", "noteubuk", "peurinteo"]
+relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 ---
 

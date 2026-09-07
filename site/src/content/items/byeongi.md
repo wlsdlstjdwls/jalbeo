@@ -7,6 +7,7 @@ sources:
     url: "https://www.data.go.kr/data/15061842/fileData.do"
     asOf: "2026-07-01"
 related: ["geureut", "hwabun"]
+relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
 updated: "2026-09-03"
 ---
 

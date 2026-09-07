@@ -10,6 +10,7 @@ sources:
     url: "https://news.seoul.go.kr/env/archives/564022"
     asOf: "2025-08-06"
 related: ["hyangsu", "maenikyueo", "yeomsaegyak", "yak"]
+relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-03"
 ---
 

@@ -7,6 +7,7 @@ sources:
     url: "https://news.seoul.go.kr/env/archives/515834"
     asOf: "2021-12-25"
 related: ["ppokppogi", "seutiropom", "eunbakji", "bonaenggabang"]
+relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-07"
 ---
 

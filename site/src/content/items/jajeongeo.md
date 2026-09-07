@@ -6,8 +6,12 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
+  - title: "서대문구 - 대형폐기물 배출절차 (스티커 구입처와 신고 별도 안내)"
+    url: "https://www.sdm.go.kr/civil/print/waste.do"
+    asOf: "2026-09-07"
 related: ["silnaejajeongeo", "kikbodeu", "golpeuchae", "yumocha"]
-updated: "2026-09-03"
+relatedGuides: ["daehyeong-pyegimul-singo", "heonot-bangmun-sugeo"]
+updated: "2026-09-07"
 ---
 
 자전거는 대형폐기물 스티커를 사서 버리는 게 기본이지만, **돈을 안 내는 방법이 여럿
@@ -40,7 +44,14 @@ updated: "2026-09-03"
 
 ## 4. 대형폐기물 스티커
 
-위 방법이 다 안 되면 이겁니다. 구청 홈페이지에서 인터넷 신고하거나, 주민센터, 편의점, 마트에서 스티커를 삽니다. **수수료는 지자체마다 다릅니다.**
+위 방법이 다 안 되면 이겁니다. 구청 홈페이지에서 인터넷으로 신고하고 결제하면
+납부필증 번호가 나옵니다. **수수료는 지자체마다 다릅니다.**
+
+스티커를 파는 곳은 주민센터, 지역에 따라 편의점과 종량제봉투 지정판매소입니다.
+다만 **스티커를 샀다고 끝이 아닙니다.** 서대문구 안내는 스티커를 산 뒤에도
+신고를 따로 하도록 하고 있고, 신고 없이 붙여 내놓으면 무단투기로 봅니다.
+절차는 [대형폐기물 신고와 스티커](/guides/daehyeong-pyegimul-singo/)에
+정리해 두었습니다.
 
 품목 목록에 '자전거'가 있는 경우가 대부분이고, 성인용, 어린이용을 구분해 값을
 따로 매기는 곳도 있습니다.

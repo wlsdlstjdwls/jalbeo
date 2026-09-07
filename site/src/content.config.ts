@@ -21,6 +21,11 @@ const items = defineCollection({
       asOf: z.string(),
     })).min(1),
     related: z.array(z.string()).default([]),  // 헷갈리는 유사 품목 slug
+    // 이 품목이 절차를 말하고 있을 때 그 절차를 가진 가이드 slug.
+    // 품목 페이지가 신고, 스티커, 무상수거 절차를 저마다 다시 설명하면
+    // 같은 답을 하는 페이지가 늘어난다 (확정 판단 5번). 절차는 가이드가 갖고
+    // 품목은 링크로 넘긴다.
+    relatedGuides: z.array(z.string()).default([]),
     updated: z.string(),                       // 최종 확인일 YYYY-MM-DD
 
     // STEP 2에서 물어볼 갈래. 없으면 주거 형태(아파트 / 단독주택)를 쓴다 (lib/flow.ts).

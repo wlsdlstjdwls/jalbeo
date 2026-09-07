@@ -7,6 +7,7 @@ sources:
     url: "https://www.easylaw.go.kr/CSP/OnhunqueansInfoRetrieve.laf?onhunqnaAstSeq=94&onhunqueSeq=5866"
     asOf: "2026-09-03"
 related: ["hyudaepon", "meoltitaep", "bojobaeteori"]
+relatedGuides: ["pyegajeon-musang-sugeo"]
 updated: "2026-09-04"
 ---
 

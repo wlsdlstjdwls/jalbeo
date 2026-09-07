@@ -7,6 +7,7 @@ sources:
     url: "https://www.15990903.or.kr/portal/cnts/userGuide.do"
     asOf: "2026-09-03"
 related: ["darimi", "keompyuteo", "chaeksang"]
+relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-04"
 ---
 

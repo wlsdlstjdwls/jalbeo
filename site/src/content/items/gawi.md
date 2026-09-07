@@ -7,6 +7,7 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
 related: ["keoteokal", "myeondogi", "suje", "geureut"]
+relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-04"
 optionsNote: "가위와 칼은 재질보다 안전이 먼저입니다. 그다음에 크기를 봅니다."
 options:

@@ -7,6 +7,7 @@ sources:
     url: "https://www.junggu.seoul.kr/content.do?cmsid=15349"
     asOf: "2026-09-03"
 related: ["byeokji", "munjjak", "pyemokjae", "byeongi"]
+relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
 updated: "2026-09-03"
 ---
 

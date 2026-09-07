@@ -7,6 +7,7 @@ sources:
     url: "https://www.guro.go.kr/www/infoExhaust.do?key=2649"
     asOf: "2026-09-03"
 related: ["sohwagi", "haenggeo", "jeonseon"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 ---
 

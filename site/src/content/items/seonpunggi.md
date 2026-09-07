@@ -7,6 +7,7 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
 related: ["sonseonpunggi", "gonggicheongjeonggi", "jeseupgi", "eeokeon"]
+relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 optionsNote: "선풍기는 크기와 무관하게 다량배출 품목입니다. 스탠드형이든 탁상용이든 무상수거는 5개부터라, 갈리는 것은 개수를 채울 수 있느냐입니다."
 options:
