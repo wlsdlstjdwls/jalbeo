@@ -90,15 +90,27 @@ def save_state(state):
         f.write("\n")
 
 
+def today():
+    return datetime.date.today().isoformat()
+
+
+def submitted_today(state, eng):
+    """오늘 그 엔진으로 낸 URL 수. 기록값은 날짜 또는 초 단위 시각이다."""
+    return len([d for d in state.get(eng, {}).values()
+                if str(d)[:10] == today()])
+
+
 def progress(state, urls):
     lines = []
     for eng in ("google", "naver"):
         done = len([u for u in urls if u in state.get(eng, {})])
         left = len(urls) - done
         days = (left + QUOTA[eng] - 1) // QUOTA[eng]
+        n = submitted_today(state, eng)
         lines.append(
-            "%-7s %3d / %3d  남은 %3d개, 하루 %d개면 %d일"
-            % (eng, done, len(urls), left, QUOTA[eng], days)
+            "%-7s %3d / %3d  남은 %3d개, 하루 %d개면 %d일%s"
+            % (eng, done, len(urls), left, QUOTA[eng], days,
+               "  (오늘 %d개 냄)" % n if n else "")
         )
     return "\n".join(lines)
 
@@ -110,6 +122,8 @@ def main():
     ap.add_argument("--dry", action="store_true", help="기록하지 않고 보기만")
     ap.add_argument("--undo", action="store_true", help="그 엔진의 마지막 묶음을 취소")
     ap.add_argument("--status", action="store_true", help="진행률만 출력")
+    ap.add_argument("--again", action="store_true",
+                    help="오늘 이미 냈어도 한 묶음 더 뽑는다")
     args = ap.parse_args()
 
     urls = rank(load_urls())
@@ -135,6 +149,17 @@ def main():
         print("%s 마지막 묶음(%s) %d개를 취소했다." % (eng, last, len(removed)))
         print(progress(state, urls))
         return
+
+    # 할당량은 하루치다. 어제 넣은 걸 오늘 또 넣으면 할당량만 버린다는 게
+    # 이 스크립트를 만든 이유인데, 정작 "오늘 이미 냈는가"를 안 보고 있었다.
+    n_today = submitted_today(state, eng)
+    if n_today and not args.again:
+        sys.exit(chr(10).join([
+            "%s 는 오늘(%s) 이미 %d개 냈다. 할당량은 하루 %d개다."
+            % (eng, today(), n_today, QUOTA[eng]),
+            "  덜 넣었으면 --count 로 개수를 정해 --again,",
+            "  잘못 냈으면 --undo 로 마지막 묶음을 되돌린다.",
+        ]))
 
     n = args.count or QUOTA[eng]
     batch = [u for u in urls if u not in done][:n]
