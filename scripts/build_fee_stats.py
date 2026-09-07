@@ -44,13 +44,51 @@ EXTRA_ALIAS = {
     "형광등": "leddeung", "led등": "leddeung", "전등틀": "leddeung",
 }
 
-# 과금 단위. 다수 지자체가 장롱을 '1쪽당'(문짝 하나당)으로 매긴다.
-# 3쪽 장롱이면 3배가 되므로 통짜 요금과 같은 중앙값에 섞으면 안 된다.
-UNIT_RE = re.compile(r"(1?\s*쪽\s*당|\(?1\s*쪽\)?|쪽당|1\s*짝|짝문|당\s*1쪽)")
+# 과금 단위. 통짜 한 개에 얼마가 아니라 '단위 얼마'로 매기는 품목이 있다.
+# 장롱은 1쪽당, 카펫은 3.3㎡당, 장판은 5m당, 깨진 유리는 kg당이다.
+# 단위가 다른 값을 같은 중앙값에 섞으면 배수만큼 틀린다 (docs/12).
+#
+# '이상', '미만'이 붙은 규격 구간과 구별해야 한다. 냉장고 '300ℓ 이상'은
+# 크기 구간이지 과금 단위가 아니다. 그래서 '당'이 붙은 표기만 단위로 본다.
+UNIT_RE = re.compile(r"(1?\s*쪽\s*당|\(?1\s*쪽\)?|쪽당|1\s*짝|짝문|당\s*1쪽"
+                     r"|짝당|폭당|칸당|한\s*짝당)")
+
+# (단위 이름, 기준 단위, 수량+단위 정규식, 기준 단위 환산 계수)
+# 수량이 안 적힌 'kg당', '㎡당'은 1로 본다.
+MEASURED = [
+    ("weight", "kg", re.compile(r"(\d+(?:\.\d+)?)?\s*(kg|㎏|킬로그램|킬로|톤|t)\s*당",
+                                re.I), {"톤": 1000, "t": 1000}),
+    ("area", "㎡", re.compile(r"(\d+(?:\.\d+)?)?\s*(㎡|m2|제곱미터|평)"
+                             r"\s*(?:\([^)]*\))?\s*당", re.I), {"평": 3.3}),
+    ("length", "m", re.compile(r"(\d+(?:\.\d+)?)?\s*(m|미터|cm|㎝)\s*당", re.I),
+     {"cm": 0.01, "㎝": 0.01}),
+]
 
 
 def unit_of(item, spec):
-    return "panel" if UNIT_RE.search(item + " " + spec) else "whole"
+    """과금 단위와 기준 단위 환산 계수를 돌려준다.
+
+    ('area', 3.3) 이면 그 행의 금액은 3.3㎡ 값이라는 뜻이다. 금액을
+    3.3으로 나눠야 다른 지자체의 1㎡당 값과 같은 자리에 놓인다.
+    """
+    s = item + " " + spec
+    if UNIT_RE.search(s):
+        return "panel", 1.0
+    for name, _base, pat, scale in MEASURED:
+        m = pat.search(s)
+        if not m:
+            continue
+        qty = float(m.group(1)) if m.group(1) else 1.0
+        qty *= scale.get(m.group(2).lower(), scale.get(m.group(2), 1))
+        if qty <= 0:
+            continue
+        return name, qty
+    return "whole", 1.0
+
+
+# 화면과 본문에서 쓰는 단위 이름.
+UNIT_LABEL = {"whole": "전후", "panel": "1쪽당",
+              "area": "1㎡당", "length": "1m당", "weight": "1kg당"}
 
 
 SPLIT = re.compile(r"[,/·]|및|그리고")
@@ -127,7 +165,11 @@ def main():
         fee = int(r["fee"])
         if fee <= 0:
             continue
-        unit = unit_of(r["item"], r["spec"])
+        unit, qty = unit_of(r["item"], r["spec"])
+        if qty != 1.0:
+            fee = int(round(fee / qty))
+            if fee <= 0:
+                continue
         region = (r["sido"] + " " + r["sigungu"]).strip()
         seen = set()
         for tok in tokens(r["item"]):
@@ -148,17 +190,18 @@ def main():
                 stats[unit] = st
         if not stats:
             continue
-        # 어느 쪽이 다수인지. 쪽당이 다수면 화면에서 그걸 먼저 말해야 한다.
-        whole_n = stats.get("whole", {}).get("regions", 0)
-        panel_n = stats.get("panel", {}).get("regions", 0)
+        # 어느 단위가 다수인지. 쪽당이 다수면 화면에서 그걸 먼저 말해야 한다.
+        # 같은 지역 수면 통짜를 앞에 둔다. 읽는 사람이 기대하는 쪽이다.
+        order = ["whole", "panel", "area", "length", "weight"]
+        primary = max(order, key=lambda u: (stats.get(u, {}).get("regions", 0),
+                                            -order.index(u)))
         entry = {
-            "primary": "panel" if panel_n > whole_n else "whole",
+            "primary": primary,
             "base_date": max(base_dates[slug]) if base_dates[slug] else "",
         }
-        if "whole" in stats:
-            entry["whole"] = stats["whole"]
-        if "panel" in stats:
-            entry["panel"] = stats["panel"]
+        for unit in order:
+            if unit in stats:
+                entry[unit] = stats[unit]
         out[slug] = entry
 
     # 키 순서는 CSV를 훑은 순서라 품목이 하나만 늘어도 전체가 밀린다.
@@ -174,12 +217,15 @@ def main():
             print("  %-8s  —" % it["name"])
             continue
         parts = []
-        for unit, label in (("whole", "통짜"), ("panel", "쪽당")):
+        for unit in ("whole", "panel", "area", "length", "weight"):
             if unit in e:
                 st = e[unit]
                 parts.append("%s %s원(%d지역)"
-                             % (label, f"{st['median']:,}", st["regions"]))
-        star = " ←쪽당 우세" if e["primary"] == "panel" else ""
+                             % (UNIT_LABEL[unit], f"{st['median']:,}",
+                                st["regions"]))
+        star = ""
+        if e["primary"] != "whole":
+            star = " <-%s 우세" % UNIT_LABEL[e["primary"]]
         print("  %-8s %s%s" % (it["name"], " / ".join(parts), star))
 
 

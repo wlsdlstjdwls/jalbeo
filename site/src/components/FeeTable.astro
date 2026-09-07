@@ -1,10 +1,11 @@
 ---
 /**
- * 대형폐기물 수수료. 두 가지를 숨기지 않는다 (docs/12).
+ * 대형폐기물 수수료. 두 가지를 숨기지 않는다 (docs/12, docs/26).
  * 1. 지자체마다 몇 배씩 다르다 → 중앙값 + 범위
- * 2. 과금 단위가 갈린다 → 장롱은 다수가 '1쪽당'이라 통짜와 섞으면 3배 틀린다
+ * 2. 과금 단위가 갈린다 → 장롱은 다수가 '1쪽당'이라 통짜와 섞으면 3배 틀린다.
+ *    면적(㎡), 길이(m), 무게(kg)로 매기는 품목도 같은 이유로 따로 낸다
  */
-import type { FeeStat, FeeUnit } from '../lib/fees';
+import { UNIT_LABEL, type FeeStat, type FeeUnit, type FeeUnitName } from '../lib/fees';
 
 interface Props {
   name: string;
@@ -18,9 +19,20 @@ const SOURCE_URL =
 
 const won = (n: number) => n.toLocaleString('ko-KR');
 
-const main: FeeUnit = (stat.primary === 'panel' ? stat.panel : stat.whole)!;
-const other: FeeUnit | null = stat.primary === 'panel' ? stat.whole : stat.panel;
-const perPanel = stat.primary === 'panel';
+const main: FeeUnit = stat.units[0].stat;
+const mainName: FeeUnitName = stat.units[0].name;
+const others = stat.units.slice(1);
+const measured = mainName !== 'whole';
+
+// 단위당 요금은 하나만 보면 감이 안 온다. 흔한 크기로 곱해 보여준다.
+const EXAMPLE: Partial<Record<FeeUnitName, { times: number; how: string }>> = {
+  panel: { times: 3, how: '3쪽짜리 NAME이라면' },
+  area: { times: 3.3, how: '3.3㎡(1평)면' },
+  length: { times: 5, how: '5m면' },
+  weight: { times: 10, how: '10kg이면' },
+};
+const example = EXAMPLE[mainName];
+const totalRegions = stat.units.reduce((n, u) => n + u.stat.regions, 0);
 
 const thin = main.regions < 10;
 const spread = main.max >= main.min * 2;
@@ -33,15 +45,14 @@ const pos = (v: number) =>
 
   <div class="lead">
     <span class="big">{won(main.median)}원</span>
-    <span class="unit">{perPanel ? '1쪽당' : '전후'}</span>
+    <span class="unit">{UNIT_LABEL[mainName]}</span>
   </div>
 
-  {perPanel ? (
+  {measured && example ? (
     <p class="sub unitwarn">
-      <strong>문짝 1쪽마다 부과됩니다.</strong>
-      3쪽짜리 {name}이라면 {won(main.median * 3)}원입니다.
-      요금을 공개한 {main.regions + (other?.regions ?? 0)}곳 중
-      {main.regions}곳이 이 방식입니다.
+      <strong>{UNIT_LABEL[mainName].replace('당', '')}마다 부과됩니다.</strong>
+      {example.how.replace('NAME', name)} {won(Math.round(main.median * example.times))}원입니다.
+      요금을 공개한 {totalRegions}곳 중 {main.regions}곳이 이 방식입니다.
     </p>
   ) : (
     <p class="sub">
@@ -66,12 +77,14 @@ const pos = (v: number) =>
     </p>
   )}
 
-  {other && (
+  {others.map((o) => (
     <p class="alt">
-      나머지 {other.regions}곳은 {perPanel ? '쪽수와 무관하게 한 번만' : '문짝 1쪽마다'}
-      부과하며 중앙값 {won(other.median)}원입니다.
+      {o.stat.regions}곳은 {o.name === 'whole'
+        ? '단위와 무관하게 한 번만'
+        : `${UNIT_LABEL[o.name]}으로`} 부과하며
+      중앙값 {won(o.stat.median)}원입니다.
     </p>
-  )}
+  ))}
 
   <details class="more">
     <summary>지역별 수수료 보기</summary>
@@ -79,7 +92,7 @@ const pos = (v: number) =>
       <thead>
         <tr>
           <th>지역</th>
-          <th>{perPanel ? '1쪽당' : '수수료'}</th>
+          <th>{measured ? UNIT_LABEL[mainName] : '수수료'}</th>
         </tr>
       </thead>
       <tbody>
@@ -89,18 +102,20 @@ const pos = (v: number) =>
       </tbody>
     </table>
 
-    {other && (
+    {others.map((o) => (
       <>
-        <p class="othercap">{perPanel ? '한 번만 부과하는 지역' : '1쪽당 부과하는 지역'}</p>
+        <p class="othercap">
+          {o.name === 'whole' ? '한 번만 부과하는 지역' : `${UNIT_LABEL[o.name]} 부과하는 지역`}
+        </p>
         <table>
           <tbody>
-            {Object.entries(other.byRegion).map(([region, fee]) => (
+            {Object.entries(o.stat.byRegion).map(([region, fee]) => (
               <tr><td>{region}</td><td>{won(fee)}원</td></tr>
             ))}
           </tbody>
         </table>
       </>
-    )}
+    ))}
 
     <p class="note">
       <a href={SOURCE_URL} rel="nofollow noopener" target="_blank">공공데이터포털</a>
