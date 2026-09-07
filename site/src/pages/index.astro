@@ -142,6 +142,11 @@ const chips = [
       // 입력이 멈춘 뒤에만 쏜다 — 매 키 입력마다 보내면 소음만 쌓인다.
       function trackSearch(term, hitCount) {
         if (!SEARCH_ENDPOINT) return;
+        // 봇이 검색창에 타이핑할 일은 없지만, 쏘는 쪽이 우리 스크립트라
+        // 렌더러가 값을 채우면 들어온다. Base.astro와 같은 자로 거른다.
+        var ua = (navigator.userAgent || '').toLowerCase();
+        if (/bot|crawl|spider|slurp|headless|preview|monitor|lighthouse|yeti|daum/.test(ua)) return;
+        if (navigator.webdriver) return;
         try {
           var id = localStorage.getItem('jalbeo_vid');
           if (!id) {

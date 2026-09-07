@@ -606,9 +606,12 @@ for (const g of await getCollection('guides')) {
           $('v-per').textContent = s.total_visitors
             ? (s.total_views / s.total_visitors).toFixed(1)
             : '-';
+          // since_at 아래는 봇 필터가 없던 구간이라 통계에서 끊었다 (0008).
+          // 기록이 없을 때 "0"이 트래픽 탓인지 그 절단 탓인지 구분해 준다.
           $('v-since').textContent = s.first_view_at
-            ? '수집 시작 ' + s.first_view_at.slice(0, 10)
-            : '아직 기록 없음';
+            ? '수집 시작 ' + s.first_view_at.slice(0, 10) + ' (봇 제외)'
+            : (s.since_at ? s.since_at.slice(0, 10) + '부터 집계 (봇 제외)'
+                          : '아직 기록 없음');
 
           drawChart(daily);
           var paths = mix.filter(function (r) { return r.kind === 'path'; });

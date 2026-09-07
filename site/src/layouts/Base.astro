@@ -80,9 +80,19 @@ const trackable = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
     {trackable && (
       <script is:inline define:vars={{ endpoint: `${SUPABASE_URL}/rest/v1/rpc/track_page_view`, key: SUPABASE_ANON_KEY }}>
         // 페이지뷰 1건 기록. 저장하는 건 브라우저별 무작위 UUID, 경로, 유입 호스트뿐이다.
+        //
+        // 봇을 두 겹으로 거른다 (2026-09-07). 색인 요청 다음 날 조회 65건에
+        // 방문자 37명이 찍혔는데 35명이 조회 1건짜리 크롤러였다. 검색엔진
+        // 렌더러는 페이지마다 localStorage가 비어서 매번 새 방문자가 된다.
+        //   1) UA에 봇 표식이 있으면 안 쏜다
+        //   2) 2초를 머물고 탭이 보이는 상태일 때만 쏜다 - 렌더러는 그 전에 끝난다
+        // 서버(track_page_view)도 UA를 한 번 더 본다. 0008 마이그레이션.
         (function () {
           try {
             if (location.pathname.indexOf('/admin') === 0) return;
+            var ua = (navigator.userAgent || '').toLowerCase();
+            if (/bot|crawl|spider|slurp|headless|preview|monitor|lighthouse|yeti|daum/.test(ua)) return;
+            if (navigator.webdriver) return;
             var id = localStorage.getItem('jalbeo_vid');
             if (!id) {
               id = crypto.randomUUID();
@@ -93,12 +103,26 @@ const trackable = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
               var host = new URL(document.referrer).host;
               if (host && host !== location.host) ref = host;
             }
-            fetch(endpoint, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json', apikey: key, Authorization: 'Bearer ' + key },
-              body: JSON.stringify({ p_visitor_id: id, p_path: location.pathname, p_referrer_host: ref }),
-              keepalive: true,
-            }).catch(function () {});
+            var sent = false;
+            function send() {
+              if (sent || document.visibilityState !== 'visible') return;
+              sent = true;
+              fetch(endpoint, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', apikey: key, Authorization: 'Bearer ' + key },
+                body: JSON.stringify({ p_visitor_id: id, p_path: location.pathname, p_referrer_host: ref }),
+                keepalive: true,
+              }).catch(function () {});
+            }
+            // 2초 뒤에도 탭이 숨어 있으면(백그라운드 열기) 돌아올 때 센다.
+            setTimeout(function () {
+              if (document.visibilityState === 'visible') return send();
+              document.addEventListener('visibilitychange', function again() {
+                if (document.visibilityState !== 'visible') return;
+                document.removeEventListener('visibilitychange', again);
+                send();
+              });
+            }, 2000);
           } catch (e) {
             /* 집계 실패가 페이지를 막지 않는다 */
           }
