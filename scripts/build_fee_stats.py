@@ -31,6 +31,7 @@ EXTRA_ALIAS = {
     "전기레인지": "gaseureinji", "가스렌지": "gaseureinji",
     "디지털피아노": "jeonjapiano", "전자올겐": "jeonjapiano",
     "장농": "jangrong",
+    "헬맷": "helmet",   # 하남시 표기. 오타는 별칭이 아니라 여기서 접는다 (판단 33, 36)
     "진공청소기": "cheongsogi",
     "봉제인형": "inhyeong",
     "화장다이": "hwajangdae", "경대": "hwajangdae",

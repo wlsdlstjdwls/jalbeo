@@ -9,7 +9,7 @@ sources:
   - title: "영등포구 — 대형폐기물 배출신청 품목 및 수수료 리스트"
     url: "https://www.ydp.go.kr/reserve/selectWstePrdWebPopList.do?key=5495"
     asOf: "2026-09-03"
-related: ["noteubuk"]
+related: ["noteubuk", "hadeudiseukeu"]
 relatedGuides: ["pyegajeon-musang-sugeo"]
 updated: "2026-09-07"
 ---
@@ -34,7 +34,8 @@ updated: "2026-09-07"
 - **SSD는 제조사 보안 삭제 기능을 쓴다** — 자성을 없애는 방식이 통하지 않습니다
 
 윈도우 재설치만으로 끝냈다고 생각하기 쉬운데, 이전 파티션이 남아 있으면 복구
-도구에 그대로 잡힙니다.
+도구에 그대로 잡힙니다. 구청이 눈앞에서 파쇄해 주는 곳도 있습니다.
+[하드디스크](/hadeudiseukeu/) 페이지에 파기 서비스와 부순 뒤의 배출을 정리했습니다.
 
 ## 무상수거는 개수 조건이 있습니다
 

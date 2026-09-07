@@ -6,7 +6,7 @@ sources:
   - title: "보안뉴스 — [보.알.남] 내 사생활이 인터넷에? 하드디스크와 휴대폰, 안전한 폐기 방법"
     url: "http://www.boannews.com/news/articleView.html?idxno=104220"
     asOf: "2022-01-21"
-related: ["keompyuteo", "moniteo", "hyudaepon", "bojobaeteori"]
+related: ["keompyuteo", "moniteo", "hyudaepon", "bojobaeteori", "hadeudiseukeu"]
 relatedGuides: ["daehyeong-pyegimul-singo", "pyegajeon-musang-sugeo"]
 updated: "2026-09-03"
 ---
@@ -75,7 +75,8 @@ updated: "2026-09-03"
 - **충전 어댑터와 케이블** — 노트북과 같이 폐가전으로 보냅니다. 따로 빼서
   고철이나 플라스틱에 넣지 마세요
 - **마우스, 외장 하드, USB 메모리** — 소형가전 수거함이나 폐가전 추가 품목입니다.
-  외장 하드와 USB는 저장장치이므로 데이터 처리가 먼저입니다
+  외장 하드와 USB는 저장장치이므로 데이터 처리가 먼저입니다.
+  구청 파쇄 서비스와 부순 뒤의 배출은 [하드디스크](/hadeudiseukeu/)에 있습니다
 - **노트북 가방** — 가전이 아닙니다. 상태에 따라 종량제봉투나 재사용입니다
 
 ## 아파트와 단독주택

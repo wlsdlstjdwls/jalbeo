@@ -6,13 +6,13 @@ sources:
   - title: "광진구 — 쓰레기 배출요령 (고철은 품목별로 분리해 투명 비닐봉투에 배출)"
     url: "https://www.gwangjin.go.kr/portal/main/contents.do?menuNo=200838"
     asOf: "2026-09-04"
-related: ["chungjeongi", "meoltitaep", "keompyuteo", "baeteori"]
+related: ["chungjeongi", "meoltitaep", "ieopon", "baeteori"]
 relatedGuides: ["heonot-bangmun-sugeo"]
-updated: "2026-09-04"
+updated: "2026-09-07"
 optionsNote: "전선은 양이 기준입니다. 한두 가닥과 한 뭉치는 가는 길이 다릅니다."
 options:
   - label: "한두 가닥"
-    hint: "충전 케이블, 랜선, 이어폰 줄"
+    hint: "충전 케이블, 랜선, HDMI 선"
     head: "종량제봉투로 갑니다."
     body: "구리가 들어 있긴 하지만 피복을 벗기지 않은 짧은 케이블은 선별장에서 걸러내기 어렵고 값도 안 나옵니다. 돌돌 말아 종량제봉투에 넣으세요. 충전기 본체가 붙어 있으면 소형가전 수거함 쪽이 낫습니다."
   - label: "한 뭉치 이상"
@@ -34,8 +34,11 @@ options:
 
 ## 한두 가닥이면 종량제봉투
 
-충전 케이블, 이어폰 줄, 랜선, HDMI 선 같은 것들입니다. 돌돌 말아서 종량제봉투에
+충전 케이블, 랜선, HDMI 선 같은 것들입니다. 돌돌 말아서 종량제봉투에
 넣으면 끝입니다. 잘라서 구리를 빼낼 이유는 없습니다.
+
+**[이어폰](/ieopon/)은 여기 안 들어갑니다.** 선이 달렸지만 끝에 스피커 유닛이
+든 전자제품이라 소형가전 수거함입니다. 무선 이어폰은 전지까지 들어 있습니다.
 
 다만 **끝에 어댑터나 충전기 본체가 달려 있으면** 그건 소형 폐가전입니다.
 주민센터나 아파트의 소형폐가전 수거함으로 가는 편이 맞습니다.
