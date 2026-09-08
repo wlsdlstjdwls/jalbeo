@@ -28,7 +28,8 @@ if hasattr(sys.stdout, "reconfigure"):
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KW = os.path.join(ROOT, "data", "keywords")
-TARGETS = ("candidates-external.csv", "candidates-bunri.csv")
+TARGETS = ("candidates-external.csv", "candidates-bunri.csv",
+           "candidates-qna.csv")
 
 
 def load_extractor():
