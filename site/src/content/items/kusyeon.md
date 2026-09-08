@@ -7,7 +7,7 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
 related: ["begae", "sopa", "inhyeong", "ibul"]
-relatedGuides: ["daehyeong-pyegimul-singo", "heonot-bangmun-sugeo"]
+relatedGuides: ["heonot-bangmun-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-08"
 optionsNote: "쿠션은 재질이 아니라 크기로 갈립니다. 눌러서 종량제봉투에 들어가면 봉투입니다."
 options:

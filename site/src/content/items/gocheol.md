@@ -7,7 +7,7 @@ sources:
     url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=535"
     asOf: "2026-09-08"
 related: ["naembi", "sikkal", "usan", "eunbakji"]
-relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
+relatedGuides: ["heonot-bangmun-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-08"
 ---
 

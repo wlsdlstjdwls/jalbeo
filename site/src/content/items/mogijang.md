@@ -10,7 +10,7 @@ sources:
     url: "https://www.data.go.kr/data/15071215/fileData.do"
     asOf: "2026-06-25"
 related: ["bangchungmang", "keoteun", "ibul"]
-relatedGuides: ["jongryangje-bongtu", "heonot-bangmun-sugeo"]
+relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-04"
 ---
 

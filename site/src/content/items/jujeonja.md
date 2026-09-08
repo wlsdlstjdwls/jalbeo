@@ -10,7 +10,7 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
 related: ["naembi", "huraipaen", "yuri"]
-relatedGuides: ["jongryangje-bongtu", "pyegajeon-musang-sugeo"]
+relatedGuides: ["pyegajeon-musang-sugeo", "jongryangje-bongtu"]
 updated: "2026-09-07"
 optionsNote: "주전자는 재질로 답이 완전히 갈립니다. 전기가 들어가는지부터 보세요."
 options:

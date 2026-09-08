@@ -13,7 +13,7 @@ sources:
     url: "https://www.sd.go.kr/main/contents.do?key=1676"
     asOf: "2026-09-07"
 related: ["heonot", "sinbal", "ibul", "sugeon"]
-relatedGuides: ["jongryangje-bongtu", "heonot-bangmun-sugeo"]
+relatedGuides: ["heonot-bangmun-sugeo", "jongryangje-bongtu"]
 updated: "2026-09-07"
 ---
 

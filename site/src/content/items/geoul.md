@@ -10,7 +10,7 @@ sources:
     url: "https://news.seoul.go.kr/env/archives/564022"
     asOf: "2025-08-06"
 related: ["yuri", "hwajangdae"]
-relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
+relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 ---
 

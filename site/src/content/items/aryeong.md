@@ -16,7 +16,7 @@ sources:
     url: "https://www.data.go.kr/data/15036341/fileData.do"
     asOf: "2026-07-01"
 related: ["silnaejajeongeo", "reoningmeosin", "yogamaeteu", "naembi"]
-relatedGuides: ["daehyeong-pyegimul-singo"]
+relatedGuides: ["heonot-bangmun-sugeo", "daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 optionsNote: "아령은 무게로 갈립니다. 들어서 고철 수거함에 넣을 수 있느냐가 기준입니다."
 options:

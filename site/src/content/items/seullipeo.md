@@ -16,7 +16,7 @@ sources:
     url: "https://recl.co.kr/guide/view"
     asOf: "2026-09-07"
 related: ["sinbal", "gomu", "sogot", "heonot"]
-relatedGuides: ["jongryangje-bongtu", "heonot-bangmun-sugeo"]
+relatedGuides: ["heonot-bangmun-sugeo"]
 updated: "2026-09-07"
 ---
 

@@ -7,7 +7,7 @@ sources:
     url: "https://www.ydp.go.kr/reserve/selectWstePrdWebPopList.do?key=5495"
     asOf: "2026-09-03"
 related: ["reoningmeosin", "jajeongeo", "uija", "haenggeo"]
-relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
+relatedGuides: ["daehyeong-pyegimul-singo", "pyegajeon-musang-sugeo"]
 updated: "2026-09-04"
 ---
 

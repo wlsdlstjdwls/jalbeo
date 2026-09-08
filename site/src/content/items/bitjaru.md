@@ -10,7 +10,7 @@ sources:
     url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=535"
     asOf: "2026-09-08"
 related: ["sseuregitong", "usan", "pyemokjae", "gocheol"]
-relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-08"
 ---
 

@@ -10,7 +10,7 @@ sources:
     url: "https://news.seoul.go.kr/env/archives/564022"
     asOf: "2025-08-06"
 related: ["dotjari", "butangaseu", "usan", "bonaengbaek"]
-relatedGuides: ["jongryangje-bongtu"]
+relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
 updated: "2026-09-07"
 optionsNote: "텐트는 폴대가 빠지느냐로 갈립니다. 크기는 그다음 문제입니다."
 options:

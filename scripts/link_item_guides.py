@@ -59,18 +59,45 @@ MAX_LINKS = 2
 # 신호 단어 뒤에 부정 표현이 붙으면 그 문장은 "이 절차를 안 쓴다"는 뜻이다.
 # 예: 블라인드의 "의류수거함 대상이 아닙니다", 슬리퍼의 "수거 불가 품목".
 # 매치 뒤 NEG_WINDOW자 안에 이 표현이 있으면 그 매치는 안 센다.
-NEGATION = re.compile(r"(아니|아닙니다|안\s?받|못\s?받|불가|없습니다|없어요)")
+NEGATION = re.compile(
+    r"(아니|아닙니다|안\s?받|못\s?받|불가|없습니다|없어요"
+    r"|안\s?됩니다|안\s?돼|안\s?된다|해당하지)")
 NEG_WINDOW = 35
+# 부정 판정은 **같은 문장 안에서만** 한다. 창을 문장 경계로 자르지 않으면
+# 거울의 "크면 대형폐기물 신고"가 다음 문단의 "중간 선택지가 없습니다"를
+# 끌어와 거부된다.
+#
+# 경계는 마침표류와 **빈 줄**이다. 홑 줄바꿈은 경계가 아니다 - 본문이 80자에서
+# 접혀 있어서 한 문장이 여러 줄에 걸친다. 홑 줄바꿈을 경계로 삼으면 CD의
+# "대형폐기물 신고 대상이\n  아닙니다"에서 부정어가 잘려 나가 반대로 틀린다.
+SENT_END = re.compile(r"[.!?|]|\n\s*\n")
 
 
 def count_hits(pat, body):
     n = 0
     for m in pat.finditer(body):
         tail = body[m.end():m.end() + NEG_WINDOW]
+        cut = SENT_END.search(tail)
+        if cut:
+            tail = tail[:cut.start()]
         if NEGATION.search(tail):
             continue
         n += 1
     return n
+
+
+# 프런트매터에서 '이 페이지가 하는 말'만 뽑는다. options는 결과 화면에 그대로
+# 찍히는 문장이라 본문보다 절차를 더 직접 말한다 - 튜브와 바닥매트가 거기서
+# "대형폐기물로 신고합니다"라고 답하는데 본문에는 그 말이 없었다.
+# sources의 제목은 인용이지 이 페이지가 하는 말이 아니라서 뺀다.
+FM_SPEECH = re.compile(
+    r"^\s*(?:optionsNote|label|hint|head|body):\s*(.*)$", re.M)
+
+
+def spoken(fm, body):
+    """본문 + 프런트매터에서 페이지가 직접 하는 말."""
+    said = "\n".join(m.group(1) for m in FM_SPEECH.finditer(fm))
+    return body + "\n" + said
 
 
 def split_md(text):
@@ -96,16 +123,32 @@ def reciprocal():
     return out
 
 
-def pick(body, forced):
+def verdict_text(fm, body):
+    """이 페이지가 내리는 답. options의 head와 본문 첫 문단이다.
+
+    횟수는 중요도가 아니다. 바닥매트는 <의류수거함>을 네 번 말하지만 그건
+    "거기 넣지 마세요"고, 정작 이 페이지가 시키는 절차는 options head의
+    <대형폐기물로 신고합니다> 한 번뿐이다. 횟수로만 세우면 그 한 번이 밀려
+    나간다. 그래서 답에 걸린 규칙은 따로 세운다.
+    """
+    heads = "\n".join(
+        m.group(1) for m in re.finditer(r"^\s*head:\s*(.*)$", fm, re.M))
+    first = body.strip().split("\n\n", 1)[0]
+    return heads + "\n" + first
+
+
+def pick(body, forced, verdict=""):
     scored = []
     for i, (slug, pat, floor) in enumerate(RULES):
         n = count_hits(pat, body)
         if n >= floor:
-            scored.append((-n, i, slug))
+            # 답에 걸린 규칙이 먼저다. 스치는 언급 횟수보다 위다.
+            in_verdict = 1 if verdict and count_hits(pat, verdict) else 0
+            scored.append((-in_verdict, -n, i, slug))
     scored.sort()
     # 가이드가 먼저 지목한 짝을 앞에 세운다. 나머지는 본문 신호 순.
     out = list(forced)
-    for _, _, s in scored:
+    for _, _, _, s in scored:
         if s not in out:
             out.append(s)
     return out[:MAX_LINKS]
@@ -122,7 +165,8 @@ def main():
         path = os.path.join(ITEM_DIR, fn)
         text = io.open(path, encoding="utf-8").read()
         fm, body = split_md(text)
-        guides = pick(body, back.get(fn[:-3], []))
+        guides = pick(spoken(fm, body), back.get(fn[:-3], []),
+                      verdict_text(fm, body))
         if not guides:
             stat["없음"] += 1
             continue

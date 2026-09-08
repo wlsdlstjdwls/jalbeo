@@ -7,7 +7,7 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
 related: ["maseukeu", "gabang", "heonot", "multisyu"]
-relatedGuides: ["jongryangje-bongtu", "heonot-bangmun-sugeo"]
+relatedGuides: ["heonot-bangmun-sugeo"]
 updated: "2026-09-08"
 ---
 

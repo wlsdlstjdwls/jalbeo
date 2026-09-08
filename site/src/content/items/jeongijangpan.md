@@ -7,7 +7,7 @@ sources:
     url: "https://www.15990903.or.kr/portal/cnts/userGuide.do"
     asOf: "2026-09-03"
 related: ["onsumaeteu", "jangpan", "heukchimdae", "reogeu"]
-relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
+relatedGuides: ["daehyeong-pyegimul-singo", "pyegajeon-musang-sugeo"]
 updated: "2026-09-07"
 ---
 

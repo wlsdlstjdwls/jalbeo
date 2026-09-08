@@ -13,7 +13,7 @@ sources:
     url: "https://www.gangseo.seoul.kr/env/env010201"
     asOf: "2026-09-08"
 related: ["gimchi", "sogeum", "sikyongyu", "keopijjikkeogi"]
-relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
+relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
 updated: "2026-09-08"
 ---
 

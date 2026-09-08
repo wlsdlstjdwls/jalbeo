@@ -10,7 +10,7 @@ sources:
     url: "https://www.15990903.or.kr/portal/cnts/userGuide.do"
     asOf: "2026-09-07"
 related: ["geonjeonji", "darimi", "yuri", "gaseupgi"]
-relatedGuides: ["pyegajeon-musang-sugeo", "jongryangje-bongtu"]
+relatedGuides: ["pyegajeon-musang-sugeo"]
 updated: "2026-09-07"
 optionsNote: "체중계는 전기가 들어가느냐로 갈립니다. 유리판은 그다음 문제입니다."
 options:

@@ -13,7 +13,7 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
 related: ["jajeongeo", "baeteori", "bojobaeteori", "silnaejajeongeo"]
-relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
+relatedGuides: ["daehyeong-pyegimul-singo", "pyegajeon-musang-sugeo"]
 updated: "2026-09-07"
 optionsNote: "전동이냐 아니냐가 전부입니다. 배터리가 들어 있으면 그것부터 떼야 합니다."
 options:
