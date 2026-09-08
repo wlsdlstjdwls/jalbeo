@@ -14,7 +14,7 @@ sources:
     asOf: "2021-05-28"
 related: ["yogamaeteu", "beompeochimdae", "reogeu"]
 relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
-updated: "2026-09-07"
+updated: "2026-09-08"
 optionsNote: "퍼즐매트는 재질이 아니라 장수가 기준입니다. 어느 쪽이든 재활용은 안 됩니다."
 options:
   - label: "1 ~ 4장"
@@ -29,6 +29,10 @@ options:
 
 퍼즐매트는 **낱장이면 종량제봉투, 한 방 분량이면 대형폐기물입니다.** 갈리는
 기준은 재질이 아니라 개수입니다. 재질은 어느 쪽이든 재활용이 안 됩니다.
+
+**쿨매트도 같은 자리입니다.** 안에 든 냉감 젤은 재활용 대상이 아니라 통째로
+종량제봉투입니다. 낱장이면 잘라서 넣고, 침대 크기면 대형폐기물로 신고합니다.
+전기가 들어가는 온수매트, 전기장판과는 답이 다릅니다.
 
 ## 개수가 기준이 되는 이유
 

@@ -10,7 +10,7 @@ sources:
     url: "https://www.data.go.kr/data/15071215/fileData.do"
     asOf: "2026-06-25"
 related: ["piano", "jeonjapiano", "golpeuchae", "jangnangam"]
-relatedGuides: ["jongryangje-bongtu"]
+relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
 updated: "2026-09-08"
 ---
 

@@ -12,15 +12,18 @@ sources:
   - title: "강서구 — 음식물쓰레기 분리배출 요령 (소금 성분이 많은 김치, 된장, 고추장 등은 물에 헹구어 배출)"
     url: "https://www.gangseo.seoul.kr/env/env010201"
     asOf: "2026-09-08"
-related: ["gimchi", "sogeum", "sikyongyu", "keopijjikkeogi"]
-relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
+related: ["ganjang", "gimchi", "sogeum", "sikyongyu", "keopijjikkeogi"]
+relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
 updated: "2026-09-08"
 ---
 
-오래된 된장, 고추장, 간장은 **출처에 따라 답이 갈립니다.** 환경부 분리의정석
+오래된 된장과 고추장은 **출처에 따라 답이 갈립니다.** 환경부 분리의정석
 품목사전은 소량이면 음식물류폐기물이라 하고, 서울시는 물에 헹궈 음식물로 내라
 하고, 괴산군처럼 **염분이 많은 장류는 따로 내라**는 지자체가 있습니다. 갈리는
 이유는 염분입니다. 김치와 같은 이유인데, 장류는 농도가 훨씬 높습니다.
+
+**간장은 따로 적었습니다.** 액체라서 "물기를 빼라"는 규칙을 지킬 수 없고
+병도 따로 나옵니다. [간장](/ganjang/) 쪽을 보세요.
 
 ## 두 출처가 다르게 말합니다
 

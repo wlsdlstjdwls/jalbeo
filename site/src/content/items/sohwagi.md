@@ -7,6 +7,7 @@ sources:
     url: "https://news.seoul.go.kr/env/archives/565249"
     asOf: "2025-11-10"
 related: ["geumgo", "geonjeonji", "baeteori"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-03"
 ---
 

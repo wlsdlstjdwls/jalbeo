@@ -10,7 +10,7 @@ sources:
     url: "https://www.cheongju.go.kr/seowon/contents.do?key=1178"
     asOf: "2026-09-08"
 related: ["leddeung", "hyeonggwangdeung", "chungjeongi", "meoltitaep"]
-relatedGuides: ["jongryangje-bongtu"]
+relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
 updated: "2026-09-08"
 optionsNote: "전구는 안에 무엇이 들었느냐로 갈립니다. 유리 겉모양은 같아도 LED와 백열은 반대 경로입니다."
 options:

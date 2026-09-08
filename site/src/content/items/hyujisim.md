@@ -4,11 +4,14 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
 related: ["jongi", "kotingjongi", "multisyu", "uyupaek"]
-updated: "2026-09-04"
+updated: "2026-09-08"
 ---
 
 휴지심은 **종이류로 재활용됩니다.** 화장실에서 나오는 물건이라 망설이게 되는데,
 젖지만 않았으면 골판지 계열 종이가 맞습니다.
+
+**젖은 것은 반대입니다.** 다 쓴 키친타월, 물에 젖거나 기름이 묻은 휴지는
+종이류가 아니라 종량제봉투입니다. 심만 종이고 감겨 있던 것은 아닙니다.
 
 ## 기타종이류로 냅니다
 

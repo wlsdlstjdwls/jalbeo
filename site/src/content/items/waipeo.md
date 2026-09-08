@@ -7,7 +7,7 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
 related: ["taieo", "gomu", "jeonseon", "sillikon"]
-relatedGuides: ["jongryangje-bongtu"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-07"
 optionsNote: "와이퍼는 갈라지느냐로 갈립니다. 고무가 쏙 빠지는 것과 통짜로 붙은 것이 있습니다."
 options:

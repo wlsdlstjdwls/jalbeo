@@ -13,7 +13,7 @@ sources:
     url: "https://www.data.go.kr/data/15055382/fileData.do"
     asOf: "2026-07-15"
 related: ["darimi", "geonjogi", "bapsang", "uija"]
-relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
+relatedGuides: ["jongryangje-bongtu", "heonot-bangmun-sugeo"]
 updated: "2026-09-08"
 ---
 
