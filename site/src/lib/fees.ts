@@ -8,7 +8,7 @@ import feesJson from '../data/fees.json';
  * 중앙값에 섞으면 배수만큼 틀린다. 파이썬 쪽에서 기준 단위(㎡, m, kg)로
  * 환산해 두므로 여기서는 단위 이름만 붙이면 된다.
  */
-export type FeeUnitName = 'whole' | 'panel' | 'area' | 'length' | 'weight' | 'volume';
+export type FeeUnitName = 'whole' | 'panel' | 'area' | 'length' | 'weight' | 'volume' | 'volume_m3';
 export interface FeeUnit {
   median: number;
   min: number;
@@ -46,7 +46,7 @@ type RawStat = {
   base_date: string;
 } & Partial<Record<FeeUnitName, RawUnit>>;
 
-const UNIT_ORDER: FeeUnitName[] = ['whole', 'panel', 'area', 'length', 'weight', 'volume'];
+const UNIT_ORDER: FeeUnitName[] = ['whole', 'panel', 'area', 'length', 'weight', 'volume', 'volume_m3'];
 
 /** 화면에 그대로 쓰는 단위 이름. 파이썬의 UNIT_LABEL과 같아야 한다. */
 export const UNIT_LABEL: Record<FeeUnitName, string> = {
@@ -56,6 +56,7 @@ export const UNIT_LABEL: Record<FeeUnitName, string> = {
   length: '1m당',
   weight: '1kg당',
   volume: '1ℓ당',
+  volume_m3: '1㎥당',
 };
 
 const raw = feesJson as unknown as Record<string, RawStat>;

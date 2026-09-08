@@ -257,6 +257,38 @@
   "updated_at": "2026-09-08T03:37:33.69672+00:00"
  },
  {
+  "slug": "ssal",
+  "name": "쌀",
+  "aliases": [
+   "묵은쌀",
+   "묵은 쌀",
+   "벌레먹은 쌀",
+   "벌레 먹은 쌀",
+   "쌀벌레",
+   "곰팡이 핀 쌀",
+   "썩은 쌀",
+   "생쌀",
+   "누룽지",
+   "잡곡",
+   "현미",
+   "보리쌀",
+   "콩",
+   "마른 콩",
+   "팥",
+   "쌀포대",
+   "쌀자루"
+  ],
+  "verdict": "음식물",
+  "verdict_line": "벌레가 생겼어도 음식물쓰레기입니다. 포대는 따로 종량제봉투로 갑니다.",
+  "category": "음식물",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 6040,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
+ },
+ {
   "slug": "raiteo",
   "name": "라이터",
   "aliases": [
@@ -356,7 +388,11 @@
    "폐의약품",
    "조제약",
    "알약",
-   "약봉지"
+   "약봉지",
+   "인공눈물",
+   "안약",
+   "점안액",
+   "물약"
   ],
   "verdict": "전용수거함",
   "verdict_line": "종량제봉투와 변기에 버리면 안 됩니다. 약국이나 주민센터의 폐의약품 수거함으로 갑니다.",
@@ -366,7 +402,7 @@
   "monthly_volume": 4265,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
  },
  {
   "slug": "gyerankkeopjil",
@@ -1134,6 +1170,33 @@
   "updated_at": "2026-09-07T05:16:33.853225+00:00"
  },
  {
+  "slug": "milgaru",
+  "name": "밀가루",
+  "aliases": [
+   "고춧가루",
+   "고추가루",
+   "설탕",
+   "부침가루",
+   "튀김가루",
+   "미숫가루",
+   "카레가루",
+   "후추",
+   "분유가루",
+   "밀가루 반죽",
+   "반죽",
+   "녹차가루"
+  ],
+  "verdict": "음식물",
+  "verdict_line": "먹는 가루는 음식물입니다. 설탕도 같고, 옆에 있는 소금만 반대입니다.",
+  "category": "음식물",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 1620,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
+ },
+ {
   "slug": "aekja",
   "name": "액자",
   "aliases": [
@@ -1393,7 +1456,11 @@
    "쿠킹호일",
    "알루미늄 호일",
    "은박 접시",
-   "종이호일"
+   "종이호일",
+   "담뱃갑",
+   "담배갑",
+   "담배 포장지",
+   "은박 포장지"
   ],
   "verdict": "일반쓰레기",
   "verdict_line": "알루미늄인데 캔이 아닙니다. 훈령이 금속캔에서 빼고 조례로 넘겼습니다.",
@@ -1403,7 +1470,7 @@
   "monthly_volume": 1395,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-07T01:33:26.389123+00:00"
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
  },
  {
   "slug": "hyangsu",
@@ -1776,6 +1843,31 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "gamjakkeopjil",
+  "name": "감자껍질",
+  "aliases": [
+   "감자 껍질",
+   "고구마껍질",
+   "고구마 껍질",
+   "채소껍질",
+   "채소 껍질",
+   "당근껍질",
+   "무껍질",
+   "싹난 감자",
+   "썩은 감자",
+   "썩은 고구마"
+  ],
+  "verdict": "음식물",
+  "verdict_line": "음식물쓰레기입니다. 같은 채소 껍질인데 양파와 마늘 껍질만 반대입니다.",
+  "category": "음식물",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 1055,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
+ },
+ {
   "slug": "kasiteu",
   "name": "카시트",
   "aliases": [],
@@ -1842,7 +1934,11 @@
    "고무줄",
    "라텍스장갑",
    "니트릴장갑",
-   "차량매트"
+   "차량매트",
+   "자동차매트",
+   "자동차 매트",
+   "차량 매트",
+   "카매트"
   ],
   "verdict": "일반쓰레기",
   "verdict_line": "천연이든 합성이든 종량제봉투입니다. 가황된 고무는 다시 못 녹입니다.",
@@ -1852,7 +1948,7 @@
   "monthly_volume": 1010,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-04T07:52:55.358612+00:00"
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
  },
  {
   "slug": "jajeongeo",
@@ -2096,7 +2192,11 @@
    "배껍질",
    "감껍질",
    "멜론껍질",
-   "파인애플껍질"
+   "파인애플껍질",
+   "키위껍질",
+   "키위 껍질",
+   "포도껍질",
+   "복숭아껍질"
   ],
   "verdict": "조건부",
   "verdict_line": "수박, 바나나는 음식물, 파인애플, 코코넛처럼 딱딱한 껍질은 일반쓰레기입니다.",
@@ -2106,7 +2206,7 @@
   "monthly_volume": 855,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-08T02:04:18.541008+00:00"
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
  },
  {
   "slug": "peojeulmaeteu",
@@ -2117,7 +2217,11 @@
    "층간소음매트",
    "폼매트",
    "롤매트",
-   "코일매트"
+   "코일매트",
+   "유아매트",
+   "유아용매트",
+   "유아 매트",
+   "아기매트"
   ],
   "verdict": "조건부",
   "verdict_line": "낱장이면 종량제봉투, 한 방 분량이면 대형폐기물입니다.",
@@ -2127,7 +2231,7 @@
   "monthly_volume": 835,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-04T07:52:55.358612+00:00"
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
  },
  {
   "slug": "gocheol",
@@ -2257,6 +2361,28 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-08T00:27:54.708597+00:00"
+ },
+ {
+  "slug": "sonsodokje",
+  "name": "손소독제",
+  "aliases": [
+   "손 소독제",
+   "소독제",
+   "손소독제 용기",
+   "알코올 소독제",
+   "에탄올",
+   "소독용 에탄올",
+   "젤 소독제"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "약국 수거함이 받는 물건이 아닙니다. 액체는 휴지에 흡수, 통은 플라스틱입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 720,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
  },
  {
   "slug": "seullipeo",
@@ -2407,7 +2533,10 @@
    "부직포 앞치마",
    "정장 보관 가방",
    "부직포 행주",
-   "부직포 커버"
+   "부직포 커버",
+   "장바구니",
+   "부직포 장바구니",
+   "부직포 가방"
   ],
   "verdict": "일반쓰레기",
   "verdict_line": "합성섬유를 접착제로 굳힌 것이라 의류수거함도 재활용도 안 됩니다. 종량제봉투.",
@@ -2417,7 +2546,7 @@
   "monthly_volume": 660,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-08T00:27:54.708597+00:00"
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
  },
  {
   "slug": "golpeuchae",
@@ -2449,6 +2578,31 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "gwaja",
+  "name": "과자",
+  "aliases": [
+   "먹던 과자",
+   "안 먹은 과자",
+   "유통기한 지난 과자",
+   "눅눅한 과자",
+   "초콜릿",
+   "초콜렛",
+   "사탕",
+   "젤리",
+   "시리얼",
+   "스낵"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "봉지는 비닐, 안에 든 것은 음식물입니다. 봉지째 내면 둘 다 틀립니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 645,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
  },
  {
   "slug": "onsumaeteu",
@@ -2707,6 +2861,32 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "nokkeun",
+  "name": "노끈",
+  "aliases": [
+   "포장끈",
+   "박스끈",
+   "비닐끈",
+   "플라스틱 노끈",
+   "PP밴딩끈",
+   "밴딩끈",
+   "노끈 뭉치",
+   "빵끈",
+   "칼라타이",
+   "케이블타이",
+   "머리끈"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "종량제봉투입니다. 묶은 채로 내면 묶인 종이까지 재활용에서 빠집니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 505,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
+ },
+ {
   "slug": "mogijang",
   "name": "모기장",
   "aliases": [
@@ -2908,7 +3088,9 @@
    "벽돌",
    "시멘트 벽돌",
    "블록",
-   "콘크리트 조각"
+   "콘크리트 조각",
+   "석고보드",
+   "석고 보드"
   ],
   "verdict": "조건부",
   "verdict_line": "대형폐기물이 아니라 공사장 생활폐기물입니다. 신고 경로 자체가 다릅니다.",
@@ -2918,7 +3100,7 @@
   "monthly_volume": 405,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-08T03:37:33.69672+00:00"
+  "updated_at": "2026-09-08T04:31:58.075135+00:00"
  },
  {
   "slug": "tongjang",
@@ -3064,6 +3246,29 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "saengkeurim",
+  "name": "생크림",
+  "aliases": [
+   "생 크림",
+   "휘핑크림",
+   "상한 우유",
+   "남은 우유",
+   "요구르트",
+   "유제품",
+   "크림치즈",
+   "상한 두유"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "싱크대에 부으면 안 됩니다. 조금이면 휴지에 닦고 많으면 음식물입니다.",
+  "category": "음식물",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 335,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
+ },
+ {
   "slug": "gaseupgi",
   "name": "가습기",
   "aliases": [],
@@ -3197,6 +3402,30 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "seje",
+  "name": "세제",
+  "aliases": [
+   "세탁세제",
+   "주방세제",
+   "가루세제",
+   "액체세제",
+   "섬유유연제",
+   "세탁조 세정제",
+   "캡슐세제",
+   "세정제",
+   "빨래세제"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "가루는 하수구가 아니라 종량제봉투입니다. 락스와 반대입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 275,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
  },
  {
   "slug": "myeondogi",
@@ -3502,6 +3731,27 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-07T08:07:16.063006+00:00"
+ },
+ {
+  "slug": "keuriseumaseuteuri",
+  "name": "크리스마스트리",
+  "aliases": [
+   "크리스마스 트리",
+   "트리",
+   "성탄트리",
+   "크리스마스 장식",
+   "오너먼트",
+   "트리 장식"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "높이 1m이 갈림선입니다. 작으면 분해해서 봉투, 크면 대형폐기물입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 205,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
  },
  {
   "slug": "hyujisim",
@@ -4444,7 +4694,13 @@
   "name": "커피찌꺼기",
   "aliases": [
    "커피박",
-   "원두찌꺼기"
+   "원두찌꺼기",
+   "캡슐커피",
+   "커피캡슐",
+   "커피 캡슐",
+   "캡슐 커피",
+   "드립백",
+   "커피 찌꺼기"
   ],
   "verdict": "조건부",
   "verdict_line": "음식물로 받는 곳과 안 받는 곳이 갈립니다. 별도 수거도 있습니다.",
@@ -4454,7 +4710,7 @@
   "monthly_volume": 60,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-08T04:30:01.827996+00:00"
  },
  {
   "slug": "jeukseokbapyonggi",

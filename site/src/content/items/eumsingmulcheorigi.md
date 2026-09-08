@@ -13,7 +13,7 @@ sources:
     url: "https://www.data.go.kr/data/15055382/fileData.do"
     asOf: "2026-07-15"
 related: ["eeopeuraieo", "cheongsogi", "gaseupgi", "jeongsugi"]
-relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
+relatedGuides: ["pyegajeon-musang-sugeo", "pyegagu-mulyo-sugeo"]
 updated: "2026-09-08"
 ---
 

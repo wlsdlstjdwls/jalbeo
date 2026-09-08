@@ -16,7 +16,7 @@ sources:
     url: "https://www.data.go.kr/data/15071215/fileData.do"
     asOf: "2026-06-25"
 related: ["seorapjang", "aiseubakseu", "bakseu", "chaekjang"]
-relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
 updated: "2026-09-08"
 optionsNote: "손으로 눌러 보면 갈립니다. 딱딱하면 재활용, 접히면 아닙니다."
 options:

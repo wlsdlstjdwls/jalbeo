@@ -13,7 +13,7 @@ sources:
     url: "https://www.data.go.kr/data/15042373/fileData.do"
     asOf: "2026-02-20"
 related: ["leddeung", "jeongu", "hyeonggwangdeung", "meoltitaep"]
-relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
+relatedGuides: ["pyegajeon-musang-sugeo", "jongryangje-bongtu"]
 updated: "2026-09-08"
 ---
 
