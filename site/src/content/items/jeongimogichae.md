@@ -9,7 +9,7 @@ sources:
   - title: "E-순환거버넌스 — 폐가전 무상방문수거 수거품목 및 수거기준"
     url: "https://www.15990903.or.kr/portal/cnts/selectContents.do?cntnts_id=A1000005"
     asOf: "2026-09-07"
-related: ["mogijang", "geonjeonji", "mauseu"]
+related: ["mogijang", "geonjeonji", "kibodeu"]
 relatedGuides: ["pyegajeon-musang-sugeo"]
 updated: "2026-09-07"
 ---

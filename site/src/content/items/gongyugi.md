@@ -12,7 +12,7 @@ sources:
   - title: "소비자가 만드는 신문 — 통신사 장비 위약금 부과에 소비자 분통 (반납기한, 손실보상금 사례)"
     url: "https://www.consumernews.co.kr/news/articleView.html?idxno=744597"
     asOf: "2026-09-07"
-related: ["mauseu", "peurinteo", "jeonseon"]
+related: ["kibodeu", "peurinteo", "jeonseon"]
 relatedGuides: ["pyegajeon-musang-sugeo"]
 updated: "2026-09-07"
 optionsNote: "공유기는 버려도 되는지부터 소유 관계로 갈립니다. 통신사가 설치한 것이면 반납 대상입니다."

@@ -9,7 +9,7 @@ sources:
   - title: "분리의정석(생활폐기물 분리배출 누리집, 환경부/한국폐기물협회) — 품목사전 '종이 쇼핑백' 종이류 (손잡이 제거, 코팅은 종량제)"
     url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=36"
     asOf: "2026-09-08"
-related: ["pasoejongi", "kotingjongi", "jongikeop", "uyupaek"]
+related: ["chaek", "pasoejongi", "kotingjongi", "jongikeop"]
 updated: "2026-09-08"
 ---
 
@@ -19,7 +19,8 @@ updated: "2026-09-08"
 ## 신문지, 책, 상자류가 기본입니다
 
 신문지, 책, 노트, 전단지, 종이상자(택배박스)는 묶거나 펴서 종이류 수거함에
-배출합니다. 상자는 **테이프와 운송장을 떼고** 접어서 부피를 줄이는 게
+배출합니다. 책은 표지를 떼야 하는 경우가 있고 양이 많을 때 내놓는 방법이
+달라서 [책](/chaek/)에 따로 적었습니다. 상자는 **테이프와 운송장을 떼고** 접어서 부피를 줄이는 게
 원칙입니다. 운송장은 비닐 코팅이 있어 종이류가 아닙니다.
 
 ## 걸러야 하는 것

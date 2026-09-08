@@ -9,7 +9,7 @@ sources:
   - title: "KT — 초고속인터넷 이용약관의 주요설명서 (셋톱박스, 리모컨 포함 임대장비 반납)"
     url: "https://corp.kt.com/attach/board/BS00000005/69/%EC%B4%88%EA%B3%A0%EC%86%8D%EC%9D%B8%ED%84%B0%EB%84%B7%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80%EC%9D%98%EC%A3%BC%EC%9A%94%EC%84%A4%EB%AA%85%EC%84%9C_202009%EC%88%98%EC%A0%95.pdf"
     asOf: "2026-09-07"
-related: ["mauseu", "geonjeonji", "eeokeon"]
+related: ["kibodeu", "geonjeonji", "eeokeon"]
 relatedGuides: ["pyegajeon-musang-sugeo"]
 updated: "2026-09-07"
 ---

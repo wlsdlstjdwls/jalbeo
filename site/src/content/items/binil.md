@@ -9,7 +9,7 @@ sources:
   - title: "서울특별시 — 단독주택 지역 비닐, 투명페트병 별도 분리배출 요일제 시행 안내"
     url: "https://news.seoul.go.kr/env/archives/515834"
     asOf: "2021-12-25"
-related: ["ppokppogi", "seutiropom", "eunbakji", "bonaenggabang"]
+related: ["ppokppogi", "seutiropom", "eunbakji", "bonaengbaek"]
 relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-08"
 ---

@@ -3,8 +3,8 @@ sources:
   - title: "뉴스톱 — [팩트체크] 양파껍질, 음식물쓰레기로 버리면 안 된다?"
     url: "https://www.newstopkorea.com/news/articleView.html?idxno=12460"
     asOf: "2026-09-03"
-related: ["subakkkeopjil", "bananakkeopjil", "yangpakkeopjil", "jogaekkeopjil"]
-updated: "2026-09-03"
+related: ["gyulkkeopjil", "subakkkeopjil", "bananakkeopjil", "yangpakkeopjil"]
+updated: "2026-09-08"
 ---
 
 과일껍질은 **종류에 따라 답이 갈립니다.** 부드러운 껍질은 음식물쓰레기,
@@ -21,6 +21,7 @@ updated: "2026-09-03"
 - **수박껍질** — 부드러워 사료화에 문제가 없습니다
 - **바나나껍질** — 마찬가지로 무난하게 처리됩니다
 - **사과, 배, 감 껍질** — 얇고 부드러워 음식물쓰레기가 맞습니다
+- **귤껍질** — 말려도 음식물쓰레기입니다. [귤껍질](/gyulkkeopjil/)에 따로 적었습니다
 
 ## 일반쓰레기로 배출하는 것
 

@@ -9,7 +9,7 @@ sources:
   - title: "분리의정석(생활폐기물 분리배출 누리집, 환경부/한국폐기물협회) — 품목사전 '골판지 상자'"
     url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=30"
     asOf: "2026-09-08"
-related: ["jongi", "kotingjongi", "seutiropom", "bonaenggabang"]
+related: ["jongi", "kotingjongi", "seutiropom", "bonaengbaek"]
 relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-08"
 ---

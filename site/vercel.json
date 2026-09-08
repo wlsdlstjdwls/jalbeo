@@ -16,6 +16,14 @@
     { "source": "/hoil/", "destination": "/eunbakji/", "permanent": true },
     { "source": "/ledjeongu", "destination": "/jeongu", "permanent": true },
     { "source": "/ledjeongu/", "destination": "/jeongu/", "permanent": true },
+    { "source": "/heeodeuraieo", "destination": "/deuraigi", "permanent": true },
+    { "source": "/heeodeuraieo/", "destination": "/deuraigi/", "permanent": true },
+    { "source": "/boonbyeong", "destination": "/teombeulleo", "permanent": true },
+    { "source": "/boonbyeong/", "destination": "/teombeulleo/", "permanent": true },
+    { "source": "/mauseu", "destination": "/kibodeu", "permanent": true },
+    { "source": "/mauseu/", "destination": "/kibodeu/", "permanent": true },
+    { "source": "/bonaenggabang", "destination": "/bonaengbaek", "permanent": true },
+    { "source": "/bonaenggabang/", "destination": "/bonaengbaek/", "permanent": true },
     { "source": "/sitemap.xml", "destination": "/sitemap-index.xml", "permanent": true }
   ]
 }
