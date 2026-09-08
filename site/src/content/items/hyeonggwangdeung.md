@@ -6,7 +6,7 @@ sources:
   - title: "서울특별시 중구청 — 폐형광등, 폐건전지 배출방법"
     url: "https://www.junggu.seoul.kr/content.do?cmsid=14190"
     asOf: "2026-09-03"
-related: ["ledjeongu", "leddeung", "geonjeonji", "yuri"]
+related: ["jeongu", "leddeung", "geonjeonji", "yuri"]
 relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-03"
 ---

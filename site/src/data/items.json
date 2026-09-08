@@ -870,6 +870,30 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "jeongu",
+  "name": "전구",
+  "aliases": [
+   "LED 전구",
+   "엘이디 전구",
+   "LED 벌브",
+   "LED 직관등",
+   "백열전구",
+   "백열등",
+   "할로겐전구",
+   "전구형 형광등",
+   "삼파장 전구"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "LED는 형광등 수거함, 백열전구와 할로겐은 신문지에 싸서 종량제봉투입니다.",
+  "category": "유해폐기물",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 1840,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
+ },
+ {
   "slug": "ppaldae",
   "name": "빨대",
   "aliases": [
@@ -1087,7 +1111,11 @@
    "비닐봉투",
    "은박비닐",
    "지퍼백",
-   "위생팩"
+   "위생팩",
+   "과자봉지",
+   "라면봉지",
+   "과자 봉지",
+   "라면 봉지"
   ],
   "verdict": "조건부",
   "verdict_line": "깨끗한 포장 비닐만 재활용됩니다. 식탁보, 장판 같은 복합재질은 종량제입니다.",
@@ -1097,7 +1125,29 @@
   "monthly_volume": 1445,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-07T08:07:16.063006+00:00"
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
+ },
+ {
+  "slug": "kusyeon",
+  "name": "쿠션",
+  "aliases": [
+   "방석",
+   "등받이쿠션",
+   "바디필로우",
+   "빈백",
+   "소파쿠션",
+   "목쿠션",
+   "전기방석"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "종량제봉투가 기본, 봉투에 안 들어가면 대형폐기물입니다. 의류수거함은 안 됩니다.",
+  "category": "섬유류",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 1445,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
  },
  {
   "slug": "sikkal",
@@ -1281,6 +1331,28 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-07T08:07:16.063006+00:00"
+ },
+ {
+  "slug": "gonggicheongjeonggipilteo",
+  "name": "공기청정기 필터",
+  "aliases": [
+   "헤파필터",
+   "공청기 필터",
+   "활성탄 필터",
+   "에어컨 필터",
+   "정수기 필터",
+   "연수기 필터",
+   "공기청정기 헤파"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "복합재질이라 종량제봉투입니다. 플라스틱 틀이 떨어지면 틀만 플라스틱류.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 1230,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
  },
  {
   "slug": "keompyuteo",
@@ -1474,6 +1546,49 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "tyubeu",
+  "name": "튜브",
+  "aliases": [
+   "물놀이튜브",
+   "수영튜브",
+   "팔튜브",
+   "비치볼",
+   "짐볼",
+   "밸런스볼",
+   "자전거 튜브",
+   "타이어 튜브"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "공기를 빼고 종량제봉투가 기본입니다. 에어풀장처럼 크면 대형폐기물.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 1050,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
+ },
+ {
+  "slug": "pomrolleo",
+  "name": "폼롤러",
+  "aliases": [
+   "폼롤라",
+   "마사지볼",
+   "필라테스 폼롤러",
+   "스파인코렉터",
+   "마사지 롤러"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "EVA, EPP 발포재라 재활용이 안 됩니다. 종량제봉투, 안 들어가면 대형폐기물.",
+  "category": "발포수지류",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 1015,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
  },
  {
   "slug": "gomu",
@@ -1766,6 +1881,30 @@
   "updated_at": "2026-09-04T07:52:55.358612+00:00"
  },
  {
+  "slug": "gocheol",
+  "name": "고철",
+  "aliases": [
+   "고철류",
+   "쇠",
+   "철",
+   "스테인리스",
+   "스텐",
+   "알루미늄",
+   "비철금속",
+   "금속",
+   "쇠붙이"
+  ],
+  "verdict": "재활용",
+  "verdict_line": "고철 수거함이나 끈으로 묶어 배출합니다. 날카로운 것과 복합재질은 종량제봉투.",
+  "category": "고철류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 830,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
+ },
+ {
   "slug": "jangpan",
   "name": "장판",
   "aliases": [
@@ -1845,6 +1984,26 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "peuringgeulseutong",
+  "name": "프링글스통",
+  "aliases": [
+   "감자칩통",
+   "감자칩 용기",
+   "종이캔",
+   "프링글스 캔",
+   "과자통"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "종이, 금속, 플라스틱이 붙은 복합재질이라 통째로 종량제봉투입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 730,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
  },
  {
   "slug": "seullipeo",
@@ -1960,6 +2119,27 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "bujikpo",
+  "name": "부직포",
+  "aliases": [
+   "부직포 포장재",
+   "부직포 옷커버",
+   "부직포 앞치마",
+   "정장 보관 가방",
+   "부직포 행주",
+   "부직포 커버"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "합성섬유를 접착제로 굳힌 것이라 의류수거함도 재활용도 안 됩니다. 종량제봉투.",
+  "category": "섬유류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 660,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
  },
  {
   "slug": "golpeuchae",
@@ -2298,6 +2478,27 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "sogeum",
+  "name": "소금",
+  "aliases": [
+   "굵은소금",
+   "천일염",
+   "맛소금",
+   "꽃소금",
+   "습기 찬 소금",
+   "오래된 소금"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "음식물쓰레기가 아닙니다. 사료도 퇴비도 못 되는 광물이라 종량제봉투입니다.",
+  "category": "음식물",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 465,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
+ },
+ {
   "slug": "gonggicheongjeonggi",
   "name": "공기청정기",
   "aliases": [
@@ -2330,6 +2531,31 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "bakseu",
+  "name": "박스",
+  "aliases": [
+   "택배박스",
+   "택배상자",
+   "종이박스",
+   "골판지",
+   "골판지상자",
+   "종이상자",
+   "라면박스",
+   "피자박스",
+   "치킨박스",
+   "상자"
+  ],
+  "verdict": "재활용",
+  "verdict_line": "골판지는 다른 종이와 따로 묶어 냅니다. 테이프와 송장을 떼고, 보냉박스는 종량제봉투.",
+  "category": "종이류",
+  "housing_split": true,
+  "region_varies": false,
+  "monthly_volume": 440,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
  },
  {
   "slug": "agiyokjo",
@@ -2622,6 +2848,30 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "seupikeo",
+  "name": "스피커",
+  "aliases": [
+   "블루투스스피커",
+   "오디오",
+   "앰프",
+   "사운드바",
+   "우퍼",
+   "전축",
+   "오디오세트",
+   "컴퓨터 스피커",
+   "오디오 스피커"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "손에 드는 크기는 소형가전 수거함, 전축 세트는 무상방문수거, 낱개 큰 것은 대형폐기물.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 280,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
+ },
+ {
   "slug": "otjang",
   "name": "옷장",
   "aliases": [],
@@ -2779,6 +3029,27 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "bitjaru",
+  "name": "빗자루",
+  "aliases": [
+   "쓰레받기",
+   "마당비",
+   "싸리비",
+   "방비",
+   "청소솔",
+   "밀대 걸레"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "복합재질이라 종량제봉투입니다. 마당비처럼 크면 대형폐기물.",
+  "category": "생활용품",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 235,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
+ },
+ {
   "slug": "jeonjapiano",
   "name": "전자피아노",
   "aliases": [],
@@ -2791,6 +3062,28 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
+ },
+ {
+  "slug": "badakmaeteu",
+  "name": "바닥매트",
+  "aliases": [
+   "주방매트",
+   "현관매트",
+   "욕실매트",
+   "폴더매트",
+   "고무매트",
+   "거실매트",
+   "발매트"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "PVC나 고무라 종량제봉투입니다. 방 한 칸 크기면 대형폐기물.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 225,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T00:27:54.708597+00:00"
  },
  {
   "slug": "jusagi",
@@ -3174,25 +3467,6 @@
   "competitor_has": false,
   "published": true,
   "updated_at": "2026-09-04T07:52:55.358612+00:00"
- },
- {
-  "slug": "ledjeongu",
-  "name": "LED 전구",
-  "aliases": [
-   "led",
-   "엘이디 전구",
-   "LED 벌브",
-   "LED 직관등"
-  ],
-  "verdict": "전용수거함",
-  "verdict_line": "2026년 훈령부터 형광등 수거함 대상입니다. 일반쓰레기가 아닙니다.",
-  "category": "유해폐기물",
-  "housing_split": false,
-  "region_varies": false,
-  "monthly_volume": 115,
-  "competitor_has": false,
-  "published": true,
-  "updated_at": "2026-09-04T08:17:27.095298+00:00"
  },
  {
   "slug": "gibseu",

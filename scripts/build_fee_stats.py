@@ -41,6 +41,14 @@ EXTRA_ALIAS = {
     "서랍": "seorapjang", "수납장": "seorapjang",
     "건조대": "ppalraegeonjodae", "빨래걸이": "ppalraegeonjodae",
     "자토바이": None,   # 자전거 오탐 방지용 자리표시
+    # 스피커 페이지 별칭. 오디오(전축)는 세트라 값이 스피커 낱개의 두 배 가까이 된다.
+    # 섞으면 스피커 중앙값이 2,000에서 3,500으로 뛴다 (docs/39, 판단 39).
+    "오디오": None, "전축": None, "오디오세트": None, "앰프": None,
+    # 박스 페이지(골판지)는 수수료 축이 없다. 접미 일치가 아이스박스, 콘솔박스,
+    # 공간박스를 끌어온다 (docs/39).
+    "박스": None, "상자": None, "택배박스": None, "택배상자": None, "종이박스": None,
+    "종이상자": None, "골판지": None, "골판지상자": None, "라면박스": None,
+    "피자박스": None, "치킨박스": None,
     # 대형폐기물 품목표의 '조명', '형광등'은 램프가 아니라 등기구다. 램프는
     # 형광등 수거함으로 가는 물건이라 애초에 대형폐기물 신고 대상이 아니다.
     # 그래서 형광등 페이지가 아니라 LED등(등기구) 페이지로 보낸다.
@@ -136,6 +144,10 @@ def build_matcher(items):
     for k, v in EXTRA_ALIAS.items():
         if v:
             table[k] = v
+        else:
+            # None은 '이 표기는 수수료를 안 모은다'는 뜻이다. items의 별칭에서 들어온
+            # 같은 표기를 지워야 막힌다 (docs/36 판단 42, docs/39 스피커/박스)
+            table.pop(k, None)
     return table, sorted(table, key=len, reverse=True)
 
 

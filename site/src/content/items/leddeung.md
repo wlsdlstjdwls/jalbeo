@@ -9,7 +9,7 @@ sources:
   - title: "강원특별자치도 춘천시_대형폐기물 수거 수수료정보 (공공데이터포털)"
     url: "https://www.data.go.kr/data/15153890/fileData.do"
     asOf: "2024-11-28"
-related: ["ledjeongu", "hyeonggwangdeung", "jeonseon"]
+related: ["jeongu", "hyeonggwangdeung", "jeonseon"]
 relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
 updated: "2026-09-04"
 ---
@@ -22,7 +22,7 @@ LED등은 **무엇이 손에 들려 있느냐로 답이 갈립니다.** 갈아 �
 
 | 나온 것 | 경로 |
 |---|---|
-| 나사식 전구, 직관등 | 형광등 수거함 ([LED 전구](/ledjeongu) 참고) |
+| 나사식 전구, 직관등 | 형광등 수거함 ([전구](/jeongu) 참고) |
 | 천장 방등, 거실등, 평판등 통째 | 대형폐기물 '조명기구' |
 | 등커버(아크릴, 유리) | 유리병 수거함 금지. 마대 또는 대형폐기물 |
 | 알루미늄 프레임 | 고철 |

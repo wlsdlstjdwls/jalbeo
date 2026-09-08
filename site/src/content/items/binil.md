@@ -3,12 +3,15 @@ sources:
   - title: "기후에너지환경부 훈령 — 재활용가능자원의 분리수거 등에 관한 지침 [별표1]"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
+  - title: "분리의정석(생활폐기물 분리배출 누리집, 환경부/한국폐기물협회) — 품목사전 '과자봉지'"
+    url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=97"
+    asOf: "2026-09-08"
   - title: "서울특별시 — 단독주택 지역 비닐, 투명페트병 별도 분리배출 요일제 시행 안내"
     url: "https://news.seoul.go.kr/env/archives/515834"
     asOf: "2021-12-25"
 related: ["ppokppogi", "seutiropom", "eunbakji", "bonaenggabang"]
 relatedGuides: ["jongryangje-bongtu"]
-updated: "2026-09-07"
+updated: "2026-09-08"
 ---
 
 비닐은 **깨끗한 포장재만 재활용됩니다.** 음식이 묻었거나 다른 재질과
@@ -23,6 +26,13 @@ updated: "2026-09-07"
 **지퍼백과 위생팩도 비닐류입니다.** 환경부 분리의정석 품목사전은 <strong>"지퍼백은
 비닐류 수거함으로 배출합니다"</strong>라고 적습니다. 지퍼 부분을 뜯을 필요는 없고,
 음식이 묻었으면 헹구거나 종량제봉투입니다.
+
+**은박 코팅 과자봉지와 라면봉지도 비닐류입니다.** 안쪽이 은색이라 알루미늄으로
+보이는데, 품목사전 과자봉지 항목은 <strong>"비닐은 재질, 색상과 상관없이 한데 모아
+파쇄, 선별, 용융 및 성형과정을 거쳐"</strong> 재활용한다고 적고, 라면 봉지도
+<strong>"비닐류 수거함으로 배출"</strong>하도록 합니다. 증착된 알루미늄은 아주
+얇아서 비닐 재활용을 막지 않습니다. 부스러기만 털어 내면 됩니다. 종이통에 든
+감자칩은 다릅니다. [프링글스통](/peuringgeulseutong/)은 종량제봉투입니다.
 
 ## 재활용이 안 되는 것
 
