@@ -120,6 +120,17 @@
         }
       ],
       "url_count": 9
+    },
+    {
+      "at": "2026-09-08T05:52:42",
+      "ok": true,
+      "results": [
+        {
+          "count": 2,
+          "status": 200
+        }
+      ],
+      "url_count": 2
     }
   ],
   "submitted": {
@@ -190,6 +201,8 @@
     "https://jalbeo.com/gabang/": "2026-09-07T08:15:30",
     "https://jalbeo.com/galbippyeo/": "2026-09-07T08:15:30",
     "https://jalbeo.com/gamjakkeopjil/": "2026-09-08T04:46:10",
+    "https://jalbeo.com/gangajittong/": "2026-09-08T05:52:42",
+    "https://jalbeo.com/ganjang/": "2026-09-08T05:52:42",
     "https://jalbeo.com/gaseupgi/": "2026-09-07T08:15:30",
     "https://jalbeo.com/gaseureinji/": "2026-09-07T08:15:30",
     "https://jalbeo.com/gawi/": "2026-09-07T08:15:30",
