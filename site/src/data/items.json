@@ -717,7 +717,14 @@
   "aliases": [
    "dvd",
    "시디",
-   "블루레이"
+   "블루레이",
+   "카세트테이프",
+   "카세트 테이프",
+   "비디오테이프",
+   "비디오 테이프",
+   "카세트",
+   "VHS",
+   "캠코더 테이프"
   ],
   "verdict": "일반쓰레기",
   "verdict_line": "훈령이 합성수지 재활용에서 명시적으로 뺀 품목입니다.",
@@ -727,7 +734,7 @@
   "monthly_volume": 2270,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-08T01:17:45.507279+00:00"
  },
  {
   "slug": "gireum",
@@ -957,7 +964,13 @@
   "aliases": [
    "굴껍질",
    "소라껍질",
-   "홍합껍데기"
+   "홍합껍데기",
+   "게껍데기",
+   "게 껍데기",
+   "꽃게 껍데기",
+   "새우껍질",
+   "갑각류 껍데기",
+   "랍스터 껍데기"
   ],
   "verdict": "일반쓰레기",
   "verdict_line": "음식물이 아닙니다. 사료로 못 만드는 딱딱한 껍데기입니다.",
@@ -967,7 +980,7 @@
   "monthly_volume": 1595,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-08T01:17:45.507279+00:00"
  },
  {
   "slug": "reogeu",
@@ -1301,7 +1314,11 @@
   "name": "에어프라이어",
   "aliases": [
    "에어프라이기",
-   "튀김기"
+   "튀김기",
+   "토스트기",
+   "토스터",
+   "토스터기",
+   "토스트 기계"
   ],
   "verdict": "무상수거",
   "verdict_line": "중소형이라 단독 신청은 안 됩니다. 5개 이상 모으거나 전용수거함입니다.",
@@ -1311,7 +1328,7 @@
   "monthly_volume": 1240,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-08T01:17:45.507279+00:00"
  },
  {
   "slug": "waipeo",
@@ -1739,7 +1756,11 @@
   "aliases": [
    "소주병",
    "맥주병",
-   "잼병"
+   "잼병",
+   "기름병",
+   "참기름병",
+   "들기름병",
+   "올리브유병"
   ],
   "verdict": "재활용",
   "verdict_line": "빈용기보증금 대상이면 돈을 돌려받습니다. 깨졌으면 얘기가 달라집니다.",
@@ -1749,7 +1770,7 @@
   "monthly_volume": 930,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-08T01:17:45.507279+00:00"
  },
  {
   "slug": "dotjari",
@@ -2108,7 +2129,11 @@
   "aliases": [
    "실리콘도마",
    "플라스틱 도마",
-   "나무도마"
+   "나무도마",
+   "나무쟁반",
+   "나무 쟁반",
+   "원목쟁반",
+   "원목 트레이"
   ],
   "verdict": "일반쓰레기",
   "verdict_line": "재질과 상관없이 대부분 종량제 봉투로 갑니다.",
@@ -2118,7 +2143,7 @@
   "monthly_volume": 665,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-08T01:17:45.507279+00:00"
  },
  {
   "slug": "bujikpo",
@@ -2798,7 +2823,11 @@
    "스프링노트",
    "상장",
    "교과서",
-   "명함"
+   "명함",
+   "쇼핑백",
+   "종이 쇼핑백",
+   "종이가방",
+   "종이봉투"
   ],
   "verdict": "재활용",
   "verdict_line": "신문지, 책, 상자는 재활용입니다. 코팅, 오염된 종이는 걸러야 합니다.",
@@ -2808,7 +2837,7 @@
   "monthly_volume": 300,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-08T01:17:45.507279+00:00"
  },
  {
   "slug": "gumyeongjokki",
@@ -3111,7 +3140,10 @@
   "name": "참치캔",
   "aliases": [
    "통조림",
-   "캔"
+   "캔",
+   "분유통",
+   "분유캔",
+   "분유 통"
   ],
   "verdict": "재활용",
   "verdict_line": "기름을 안 닦으면 재활용에서 빠집니다. 뚜껑 처리가 관건입니다.",
@@ -3121,7 +3153,7 @@
   "monthly_volume": 225,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-04T05:51:40.471884+00:00"
+  "updated_at": "2026-09-08T01:17:45.507279+00:00"
  },
  {
   "slug": "chukgugong",
@@ -3202,6 +3234,29 @@
   "updated_at": "2026-09-07T05:56:37.729401+00:00"
  },
  {
+  "slug": "jaseok",
+  "name": "자석",
+  "aliases": [
+   "냉장고 자석",
+   "냉장고자석",
+   "마그넷",
+   "네오디뮴 자석",
+   "자석 교구",
+   "고무자석",
+   "강력자석",
+   "자석 블록"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "쇠에 붙지만 고철이 아닙니다. 종량제봉투에 넣습니다. 강력 자석은 종이로 감싸세요.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 190,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T01:17:45.507279+00:00"
+ },
+ {
   "slug": "kotingjongi",
   "name": "코팅종이",
   "aliases": [
@@ -3274,6 +3329,29 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-07T09:25:54.803479+00:00"
+ },
+ {
+  "slug": "baedalyonggi",
+  "name": "배달용기",
+  "aliases": [
+   "배달 용기",
+   "배달 플라스틱",
+   "배달음식 용기",
+   "일회용 용기",
+   "검은색 플라스틱",
+   "배달 그릇",
+   "플라스틱 용기",
+   "배달 도시락"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "음식 찌꺼기만 씻어 내면 플라스틱류입니다. 국물 자국과 검은색은 상관없습니다.",
+  "category": "플라스틱류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 175,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T01:17:45.507279+00:00"
  },
  {
   "slug": "seorapjang",
@@ -3376,6 +3454,29 @@
   "updated_at": "2026-09-04T05:51:40.471884+00:00"
  },
  {
+  "slug": "baiollin",
+  "name": "바이올린",
+  "aliases": [
+   "비올라",
+   "첼로",
+   "통기타",
+   "우쿨렐레",
+   "현악기",
+   "악기",
+   "기타 악기",
+   "바이올린 케이스"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "종량제봉투에 들어가면 종량제봉투, 기타와 첼로처럼 크면 대형폐기물입니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": true,
+  "monthly_volume": 155,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-08T01:17:45.507279+00:00"
+ },
+ {
   "slug": "tibaek",
   "name": "티백",
   "aliases": [
@@ -3409,6 +3510,50 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-07T09:25:54.803479+00:00"
+ },
+ {
+  "slug": "pokjuk",
+  "name": "폭죽",
+  "aliases": [
+   "불꽃놀이",
+   "스파클라",
+   "파티 폭죽",
+   "꽃불",
+   "안 쓴 폭죽",
+   "폭죽 처리"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "물에 담가 적신 뒤 종량제봉투입니다. 유해폐기물이 아닙니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 145,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-08T01:17:45.507279+00:00"
+ },
+ {
+  "slug": "banchantong",
+  "name": "반찬통",
+  "aliases": [
+   "김치통",
+   "밀폐용기",
+   "락앤락",
+   "글라스락",
+   "유리 반찬통",
+   "플라스틱 반찬통",
+   "스텐 반찬통",
+   "반찬 용기"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "플라스틱은 플라스틱류, 스테인리스는 고철, 패킹은 종량제봉투. 유리 반찬통은 종량제봉투입니다.",
+  "category": "플라스틱류",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 140,
+  "competitor_has": true,
+  "published": true,
+  "updated_at": "2026-09-08T01:17:45.507279+00:00"
  },
  {
   "slug": "jeongijangpan",
