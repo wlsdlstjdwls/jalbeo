@@ -91,10 +91,20 @@ def chip(d, x, y, text, f, fill):
     """판정 배지. 사이트의 배지와 같은 문법이다 - 라운드 없음, 굵은 테두리."""
     box = d.textbbox((0, 0), text, font=f)
     w = box[2] - box[0]
-    pad_x, h = 20, 54
+    pad_x, h = 16, 48
     d.rectangle([x, y, x + w + pad_x * 2, y + h], fill=fill, outline=INK, width=4)
     d.text((x + pad_x - box[0], y + h / 2 - (box[3] + box[1]) / 2), text, font=f, fill=INK)
     return x + w + pad_x * 2
+
+
+def chip_w(d, text, f):
+    box = d.textbbox((0, 0), text, font=f)
+    return box[2] - box[0] + 32
+
+
+def text_w(d, text, f):
+    box = d.textbbox((0, 0), text, font=f)
+    return box[2] - box[0]
 
 
 def build_og():
@@ -103,35 +113,51 @@ def build_og():
     그래서 브랜드 이름이 아니라 사용자의 질문을 제일 크게 놓고, 어떤 답이
     나오는지를 판정 배지로 늘어놓는다. 색과 순서는 사이트와 같아서, 눌러 들어온
     사람이 처음 보는 화면과 카드가 이어진다.
+
+    가로 1200 을 다 쓰지 않는다. 노션 북마크, 카카오톡 작은 카드처럼 미리보기를
+    정사각으로 가운데 잘라 내는 데가 많아서, 글자와 배지는 전부 가운데 630
+    (x 285~915) 안에 둔다. 바깥 285 씩은 여백과 테두리, 하단 띠 뿐이다.
     """
     W, H = 1200, 630
+    CX = W // 2
+    SAFE = 600  # 정사각 크롭이 남기는 630 에서 좌우 15 씩 뺀 폭
     img = Image.new("RGB", (W, H), PAPER)
     d = ImageDraw.Draw(img)
 
     # 바깥 테두리. 사이트의 2px 선을 공유 카드 크기로 키운 것이다
     d.rectangle([18, 18, W - 19, H - 19], outline=INK, width=8)
 
-    # 좌상단 로크업. 브랜드는 작게, 질문은 크게
-    draw_mark(img, 84, 66, 58)
-    d.text((156, 74), "잘버려", font=font(FONT_BOLD, 40), fill=INK)
+    # 로크업. 마크와 이름을 묶어 가운데 놓는다
+    f_brand = font(FONT_BOLD, 38)
+    mark = 54
+    lock_w = mark + 16 + text_w(d, "잘버려", f_brand)
+    lx = CX - lock_w // 2
+    draw_mark(img, lx, 62, mark)
+    d.text((lx + mark + 16, 68), "잘버려", font=f_brand, fill=INK)
 
-    d.text((80, 156), "이거 어디에", font=font(FONT_BOLD, 92), fill=INK)
-    d.text((80, 248), "버려요?", font=font(FONT_BOLD, 92), fill=INK)
+    # 질문. 카드에서 제일 큰 글자다
+    f_head = font(FONT_BOLD, 84)
+    for i, line in enumerate(("이거 어디에", "버려요?")):
+        d.text((CX - text_w(d, line, f_head) // 2, 152 + i * 96),
+               line, font=f_head, fill=INK)
 
-    # 판정 배지 두 줄. 첫 줄에 자주 나오는 것부터 놓는다
-    f = font(FONT_BOLD, 26)
+    # 판정 배지 두 줄. 각 줄을 가운데 정렬하고 SAFE 폭을 넘기지 않는다
+    f = font(FONT_BOLD, 24)
+    gap = 12
     rows = (VERDICTS[:4], VERDICTS[4:])
     for i, row in enumerate(rows):
-        x = 86
+        row_w = sum(chip_w(d, t, f) for t, _ in row) + gap * (len(row) - 1)
+        assert row_w <= SAFE, "%d행이 안전폭을 넘는다: %d" % (i + 1, row_w)
+        x = CX - row_w // 2
         for text, fill in row:
-            x = chip(d, x, 396 + i * 66, text, f, fill) + 12
-
-    draw_mark(img, 960, 160, 150)
+            x = chip(d, x, 374 + i * 62, text, f, fill) + gap
 
     # 하단 라임 띠. 미리보기가 잘려도 브랜드 색과 주소는 남는다
     d.rectangle([18, H - 88, W - 19, H - 19], fill=LIME)
     d.rectangle([18, H - 88, W - 19, H - 19], outline=INK, width=8)
-    d.text((90, H - 74), "jalbeo.com", font=font(FONT_BOLD, 34), fill=INK)
+    f_url = font(FONT_BOLD, 34)
+    d.text((CX - text_w(d, "jalbeo.com", f_url) // 2, H - 72),
+           "jalbeo.com", font=f_url, fill=INK)
 
     img.save(os.path.join(OUT, "og.png"), optimize=True)
     return "og.png"

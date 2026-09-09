@@ -16,7 +16,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 
 // 공유 카드 이미지. 절대 URL이라야 카카오톡, 트위터, 페이스북이 읽는다.
 // 원본 도형은 public/favicon.svg, 굽는 건 scripts/build_brand_assets.py.
-const ogImage = new URL('/og.png', Astro.site);
+const ogImage = new URL('/og.png?v=2', Astro.site);
 
 // 정식 도메인이 아니면 색인을 막는다. robots.txt와 같은 기준 (lib/site.ts, 게이트 2 오염 방지).
 const indexable = !noindex && isProductionHost(Astro.site?.host ?? '');
