@@ -45,6 +45,10 @@ VERDICTS = [
     ("일반쓰레기", (255, 159, 143)),
 ]
 
+# 공유 카드에 올릴 배지. 판정 일곱을 다 놓으면 작은 썸네일에서 뭉개진다.
+# 재활용 / 대형폐기물 / 일반쓰레기 는 사용자가 갈리는 세 갈래다
+OG_CHIPS = ("재활용", "대형폐기물", "일반쓰레기")
+
 FONT_BOLD = r"C:\Windows\Fonts\malgunbd.ttf"
 FONT_REG = r"C:\Windows\Fonts\malgun.ttf"
 
@@ -87,19 +91,21 @@ def build_icons():
     return made
 
 
-def chip(d, x, y, text, f, fill):
+CHIP_PAD = 18
+
+
+def chip(d, x, y, text, f, fill, h):
     """판정 배지. 사이트의 배지와 같은 문법이다 - 라운드 없음, 굵은 테두리."""
     box = d.textbbox((0, 0), text, font=f)
     w = box[2] - box[0]
-    pad_x, h = 16, 48
-    d.rectangle([x, y, x + w + pad_x * 2, y + h], fill=fill, outline=INK, width=4)
-    d.text((x + pad_x - box[0], y + h / 2 - (box[3] + box[1]) / 2), text, font=f, fill=INK)
-    return x + w + pad_x * 2
+    d.rectangle([x, y, x + w + CHIP_PAD * 2, y + h], fill=fill, outline=INK, width=5)
+    d.text((x + CHIP_PAD - box[0], y + h / 2 - (box[3] + box[1]) / 2), text, font=f, fill=INK)
+    return x + w + CHIP_PAD * 2
 
 
 def chip_w(d, text, f):
     box = d.textbbox((0, 0), text, font=f)
-    return box[2] - box[0] + 32
+    return box[2] - box[0] + CHIP_PAD * 2
 
 
 def text_w(d, text, f):
@@ -141,16 +147,23 @@ def build_og():
         d.text((CX - text_w(d, line, f_head) // 2, 152 + i * 96),
                line, font=f_head, fill=INK)
 
-    # 판정 배지 두 줄. 각 줄을 가운데 정렬하고 SAFE 폭을 넘기지 않는다
-    f = font(FONT_BOLD, 24)
-    gap = 12
-    rows = (VERDICTS[:4], VERDICTS[4:])
-    for i, row in enumerate(rows):
+    # 판정 배지 한 줄. 일곱 개를 두 줄로 놓으면 글자가 24px 까지 내려가는데,
+    # 노션 북마크는 이 카드를 가로 200px 안팎으로 줄여서 그 크기가 4px 이 된다.
+    # 세 개만 큼직하게 놓아 축소를 견디게 한다. 고른 셋은 판정의 세 갈래다
+    gap = 14
+    row = [(t, c) for t, c in VERDICTS if t in OG_CHIPS]
+    f, size = None, None
+    for size in range(44, 19, -1):  # SAFE 안에 들어가는 제일 큰 글자를 쓴다
+        f = font(FONT_BOLD, size)
         row_w = sum(chip_w(d, t, f) for t, _ in row) + gap * (len(row) - 1)
-        assert row_w <= SAFE, "%d행이 안전폭을 넘는다: %d" % (i + 1, row_w)
-        x = CX - row_w // 2
-        for text, fill in row:
-            x = chip(d, x, 374 + i * 62, text, f, fill) + gap
+        if row_w <= SAFE:
+            break
+    else:
+        raise AssertionError("배지 한 줄이 안전폭에 안 들어간다")
+    h = size + 30
+    x = CX - row_w // 2
+    for text, fill in row:
+        x = chip(d, x, 386, text, f, fill, h) + gap
 
     # 하단 라임 띠. 미리보기가 잘려도 브랜드 색과 주소는 남는다
     d.rectangle([18, H - 88, W - 19, H - 19], fill=LIME)
