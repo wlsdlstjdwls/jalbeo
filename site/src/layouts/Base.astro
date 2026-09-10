@@ -59,6 +59,17 @@ const trackable = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
     {jsonLd && (
       <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
     )}
+    <!-- 구글 애드센스 로더. 사이트 검토 크롤러가 원본 HTML에서 이 태그를 찾으므로
+         번들에 맡기지 않고(is:inline) head에 그대로 출력한다.
+         색인 가능한 페이지에만 낸다 - 프리뷰 배포와 /admin/에는 안 붙는다. -->
+    {indexable && (
+      <script
+        is:inline
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3393846164946829"
+        crossorigin="anonymous"
+      ></script>
+    )}
   </head>
   <body>
     <div class="topbar">
