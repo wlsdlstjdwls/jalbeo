@@ -9,14 +9,14 @@ sources:
   - title: "강원특별자치도 춘천시_대형폐기물 수거 수수료정보 (공공데이터포털)"
     url: "https://www.data.go.kr/data/15153890/fileData.do"
     asOf: "2024-11-28"
-related: ["jeongu", "hyeonggwangdeung", "jeonseon"]
+related: ["jeongu", "hyeonggwangdeung", "seutaendeujomyeong", "jeonseon"]
 relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
-updated: "2026-09-04"
+updated: "2026-09-14"
 ---
 
-LED등은 **무엇이 손에 들려 있느냐로 답이 갈립니다.** 갈아 끼우는 램프면
-형광등 수거함이고, 천장에서 뜯어낸 등기구면 대형폐기물입니다. 같은 'LED등'이라는
-말이 두 물건을 가리킵니다.
+전등은 **무엇이 손에 들려 있느냐로 답이 갈립니다.** 갈아 끼우는 램프면
+형광등 수거함이고, 천장에서 뜯어낸 등기구면 대형폐기물입니다. 같은 '전등'이라는
+말이 두 물건을 가리킵니다. LED냐 형광등이냐보다 **램프냐 등기구냐**가 먼저입니다.
 
 ## 먼저 어느 쪽인지 봅니다
 

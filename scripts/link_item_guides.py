@@ -187,6 +187,10 @@ def main():
             # related 바로 다음 줄에 둔다. 둘 다 '이어보기'라 붙어 있는 게 읽힌다.
             new_fm = re.sub(r"^(related:.*)$", r"\1\n" + line, fm, count=1, flags=re.M)
         if new_fm == fm:
+            # 이미 같은 줄이 있으면 바꿀 게 없는 것이고, related 줄이 아예
+            # 없으면 붙일 자리가 없는 것이다. 둘은 다른 사건이다.
+            if re.search(r"^relatedGuides:", fm, re.M):
+                continue
             print("SKIP %s - related 줄을 못 찾았다" % fn)
             continue
         if not dry:

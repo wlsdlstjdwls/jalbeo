@@ -29,7 +29,7 @@ if hasattr(sys.stdout, "reconfigure"):
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KW = os.path.join(ROOT, "data", "keywords")
 TARGETS = ("candidates-external.csv", "candidates-bunri.csv",
-           "candidates-qna.csv")
+           "candidates-qna.csv", "candidates-kin.csv")
 
 
 def load_extractor():
@@ -77,6 +77,8 @@ def main():
 
     for fname in TARGETS:
         path = os.path.join(KW, fname)
+        if not os.path.exists(path):
+            continue
         rows = list(csv.DictReader(io.open(path, encoding="utf-8-sig")))
         fields = list(rows[0].keys())
         filled = {"기존 커버": 0, "실측": 0}

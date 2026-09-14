@@ -9,7 +9,7 @@ sources:
   - title: "청주시 서원구 — 재활용품 배출요령 (백열전구는 불연성 마대)"
     url: "https://www.cheongju.go.kr/seowon/contents.do?key=1178"
     asOf: "2026-09-08"
-related: ["leddeung", "hyeonggwangdeung", "chungjeongi", "meoltitaep"]
+related: ["jeondeung", "hyeonggwangdeung", "chungjeongi", "meoltitaep"]
 relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
 updated: "2026-09-08"
 optionsNote: "전구는 안에 무엇이 들었느냐로 갈립니다. 유리 겉모양은 같아도 LED와 백열은 반대 경로입니다."
@@ -88,7 +88,7 @@ LED는 수은이 없으니 종량제봉투에 버리면 된다는 안내가 오�
 - **LED 전구(벌브)** — 백열등 자리에 끼우는 나사식. 수거함 대상입니다
 - **LED 직관등** — 형광등 자리에 그대로 꽂는 막대형. 대상입니다
 - **LED 평판등, 방등, 거실등** — 천장에 붙는 등기구입니다. 수거함에 안 들어가고
-  대형폐기물로 갑니다. [LED등](/leddeung/)에서 따로 다룹니다
+  대형폐기물로 갑니다. [전등](/jeondeung/)에서 따로 다룹니다
 - **LED 스탠드, 무드등** — 조명제품이 아니라 **소형 전기전자제품**입니다.
   훈령은 <strong>"스탠드와 같이 형광등이 포함된 경우 형광등은 분리하고
   배출"</strong>하도록 합니다. 등만 빼서 수거함, 몸체는 소형가전 수거함입니다

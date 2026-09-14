@@ -14,6 +14,8 @@
     { "source": "/yeongyangje/", "destination": "/yak/", "permanent": true },
     { "source": "/hoil", "destination": "/eunbakji", "permanent": true },
     { "source": "/hoil/", "destination": "/eunbakji/", "permanent": true },
+    { "source": "/leddeung", "destination": "/jeondeung", "permanent": true },
+    { "source": "/leddeung/", "destination": "/jeondeung/", "permanent": true },
     { "source": "/ledjeongu", "destination": "/jeongu", "permanent": true },
     { "source": "/ledjeongu/", "destination": "/jeongu/", "permanent": true },
     { "source": "/heeodeuraieo", "destination": "/deuraigi", "permanent": true },

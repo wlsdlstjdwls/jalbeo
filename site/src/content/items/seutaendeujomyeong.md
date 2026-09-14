@@ -12,7 +12,7 @@ sources:
   - title: "경기도 화성시_대형폐기물 수수료 (스탠드 대형/소형)"
     url: "https://www.data.go.kr/data/15042373/fileData.do"
     asOf: "2026-02-20"
-related: ["leddeung", "jeongu", "hyeonggwangdeung", "meoltitaep"]
+related: ["jeondeung", "jeongu", "hyeonggwangdeung", "meoltitaep"]
 relatedGuides: ["pyegajeon-musang-sugeo", "jongryangje-bongtu"]
 updated: "2026-09-08"
 ---
@@ -102,4 +102,4 @@ LED 모듈이 기판에 붙어 있어 소켓 자체가 없는 제품이 많습�
 
 방등, 거실등, 평판등처럼 천장에 붙어 있던 등기구는 소형가전이 아니라
 대형폐기물 '조명기구'입니다. 같은 'LED등'이라는 말이 두 물건을 가리킵니다.
-그쪽은 [LED등 버리는 법](/leddeung/)에 정리해 두었습니다.
+그쪽은 [전등 버리는 법](/jeondeung/)에 정리해 두었습니다.
