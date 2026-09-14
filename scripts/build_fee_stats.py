@@ -149,7 +149,53 @@ EXTRA_ALIAS = {
     # '화환'으로 이미 받는 행이고, 높이 50cm'마다' 1,000원이라 통짜 값도 아니다.
     # 크리스마스트리 자체 행 4곳만 남긴다 (docs/46, 판단 24, 47).
     "트리": None, "인조나무": None,
+    # --- 짧은 별칭 전수 점검 (docs/55, 판단 83) ---
+    # '욕조' -> 아기욕조. 본체 행이 0건인데 성인 욕조 74행이 40곳짜리 요금표를
+    # 만들고 있었다(최대 20,000원, 부산 동구 '욕 조'). 아기욕조는 플라스틱
+    # 대야다. 유아용 표기만 남긴다 (판단 47).
+    "욕조": None, "반신욕조": None, "월풀욕조": None,
+    "유아용욕조": "agiyokjo",
+    # '보행기' -> 휠체어. 품목표의 '보행기'는 거의 전부 **유모차와 한 칸**이다
+    # (파주 '유모차,보행기', 광진 '유아용 보행기'). 유아용 보행기지 노인
+    # 보행보조기가 아니다. 휠체어는 자기 이름으로 26곳이 있다 (판단 39, 56).
+    "보행기": None,
+    # '식기' -> 그릇. 끌어온 행이 오산 '식기(세척)건조기'와 광진 '반려견 급식기'
+    # 뿐이다. 그릇 자체 행은 남광주 '잡재물류' 한 곳이라, 5곳짜리 요금표의
+    # 4곳이 식기건조기와 개밥그릇이었다 (판단 47).
+    "식기": None, "식기류": None,
+    # '화환' -> 조화. 조화는 자기 이름으로 오른 곳이 0건인데 화환 14곳이
+    # 요금표를 통째로 만들고 있었다. 조화 페이지의 답은 종량제봉투인데
+    # 대형폐기물 요금표가 떠 있었다 (판단 47, docs/54의 축구공과 같다).
+    "화환": None, "근조화환": None, "축하화환": None,
+    # '펜' -> 볼펜. 접미 일치로 연수구 '씰링펜(전등)'을 끌어왔다. 실링팬이다.
+    "펜": None, "볼펜": None, "사인펜": None, "네임펜": None, "형광펜": None,
+    # '장류' -> 된장 고추장. 접미 일치로 함양군 '진열장류(책장+장식장+...)'를
+    # 끌어왔다. 장(醬)이 아니라 진열장이다.
+    "장류": None, "된장": None, "고추장": None, "간장": None, "쌈장": None,
+    # '휠' -> 타이어. 광진구 '캣휠'(고양이 쳇바퀴)을 끌어왔다.
+    "휠": None, "알루미늄휠": None,
+    # '차탁자' -> 밥상. 포항 '차탁자(응접세트)', 광명 '차탁자(티테이블)'는
+    # 소파 앞 테이블이지 밥상이 아니다. 밥상은 자기 이름으로 16곳이 있다.
+    "차탁자": None, "티테이블": None,
 }
+
+# 표기는 우리 것이 맞는데 **그 행**이 다른 물건인 경우. EXTRA_ALIAS의 None은
+# 표기째 막는 것이라 여기엔 못 쓴다 - '건조대'를 막으면 빨래건조대가 자기 행도
+# 잃고, '침대'를 막으면 침대 페이지가 통째로 빈다. 행 쪽에서 거른다 (판단 83).
+DENY_ROWS = [
+    # 신발 별칭 '부츠'. 5곳 중 4곳이 스키 장비와 한 칸이다(광명 '스키+보드+부츠',
+    # 강북 '스키부츠'). 인라인스케이트를 막은 것과 같은 자리다 (docs/45, 판단 42).
+    ("부츠", re.compile(r"스키|보드")),
+    # 침대는 두 글자라 접미 일치가 **받침대**를 통째로 먹는다. 텔레비전 받침대,
+    # 수족관 받침대, 오디오 받침대, 가스레인지 받침대가 침대 요금에 섞여 있었다.
+    # 침대받침대와 매트리스 받침대는 진짜 침대 부품이라 남긴다.
+    ("침대", re.compile(r"(텔레비전|TV|오디오|수족관|수조관|가스레인지|화한|거실장)")),
+    ("침대", re.compile(r"^\(?받침대\)?$")),
+    # 빨래건조대 별칭 '건조대'가 식기건조대(그릇 말리는 선반)를 끌어온다.
+    ("건조대", re.compile(r"식기")),
+    # 스탠드 조명 별칭 '스탠드'. 제주 '옷걸이(스탠드, 행거)'는 세우는 옷걸이다.
+    ("스탠드", re.compile(r"옷걸이")),
+]
 
 # 과금 단위. 통짜 한 개에 얼마가 아니라 '단위 얼마'로 매기는 품목이 있다.
 # 장롱은 1쪽당, 카펫은 3.3㎡당, 장판은 5m당, 깨진 유리는 kg당이다.
@@ -270,14 +316,26 @@ def build_matcher(items):
     return table, sorted(table, key=len, reverse=True)
 
 
-def match(token, table, order):
+def matched_name(token, table, order):
+    """토큰이 어느 표기에 걸렸는지. 접미 일치도 그 표기를 돌려준다."""
     if token in table:
-        return table[token]
+        return token
     # '전기밥솥'처럼 수식어가 붙은 표기는 접미 일치로 받는다. 긴 후보가 우선이다.
     for name in order:
         if len(token) > len(name) and token.endswith(name):
-            return table[name]
+            return name
     return None
+
+
+def match(token, table, order, raw=""):
+    name = matched_name(token, table, order)
+    if name is None:
+        return None
+    # 표기는 맞는데 그 행이 다른 물건이면 안 센다 (DENY_ROWS 참조)
+    for deny_name, pat in DENY_ROWS:
+        if name == deny_name and pat.search(raw):
+            return None
+    return table[name]
 
 
 def summarize(per_region):
@@ -331,7 +389,7 @@ def main():
         region = (r["sido"] + " " + r["sigungu"]).strip()
         seen = set()
         for tok in tokens(r["item"]):
-            slug = match(tok, table, order)
+            slug = match(tok, table, order, r["item"])
             if slug and slug not in seen:
                 seen.add(slug)
                 buckets[slug][unit][region].append(fee)
