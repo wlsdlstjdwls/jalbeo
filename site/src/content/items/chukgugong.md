@@ -6,13 +6,16 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령) — 완구류 해당품목과 비해당품목"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
-related: ["jangnangam", "gomu", "helmet", "yogamaeteu"]
-relatedGuides: ["jongryangje-bongtu"]
-updated: "2026-09-07"
+related: ["bollinggong", "jangnangam", "gomu", "helmet"]
+relatedGuides: ["daehyeong-pyegimul-singo"]
+updated: "2026-09-14"
 ---
 
 공은 **바람을 빼고 종량제봉투입니다.** 축구공, 농구공, 배구공, 테니스공 다
 같습니다. 고무와 가죽과 실이 한 덩어리라 재활용이 없습니다.
+
+**[볼링공](/bollinggong/)만 예외입니다.** 속이 빈 공이 아니라 6~7kg짜리
+덩어리라 대형폐기물 신고 대상이고, 지자체 품목표에 이름이 올라 있습니다.
 
 ## 품목사전이 봉투로 둔 이유
 
@@ -47,6 +50,7 @@ updated: "2026-09-07"
 | 볼풀공(플라스틱) | 속이 빈 단일 플라스틱이라 플라스틱류로 받는 곳이 있습니다. 지역 안내 확인 |
 | 아이 고무공 | 종량제봉투 |
 | 공 펌프 | 플라스틱과 금속. 종량제봉투 |
+| **볼링공** | 여기 해당이 없습니다. [대형폐기물 신고](/bollinggong/)입니다 |
 
 ## 버리기 전에
 

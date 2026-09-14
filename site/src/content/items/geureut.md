@@ -11,7 +11,7 @@ sources:
     asOf: "2026-01-01"
 related: ["yuri", "hwabun", "byeongi", "sillikon"]
 relatedGuides: ["jongryangje-bongtu"]
-updated: "2026-09-07"
+updated: "2026-09-14"
 ---
 
 그릇은 **재활용이 안 됩니다.** 도자기 접시도 안 되고 유리컵도 안 됩니다. 유리와

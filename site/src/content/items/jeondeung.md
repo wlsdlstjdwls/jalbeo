@@ -9,6 +9,9 @@ sources:
   - title: "강원특별자치도 춘천시_대형폐기물 수거 수수료정보 (공공데이터포털)"
     url: "https://www.data.go.kr/data/15153890/fileData.do"
     asOf: "2024-11-28"
+  - title: "분리의정석(생활폐기물 분리배출 누리집, 환경부/한국폐기물협회) — 분리배출 Q&A '소형 LED조명' 답변 (모듈 일체형은 형광등 수거함 불가)"
+    url: "https://xn--oy2b29bd3a601b.kr/front/support/qnaView.do?nqIdx=477"
+    asOf: "2025-03-04"
 related: ["jeongu", "hyeonggwangdeung", "seutaendeujomyeong", "jeonseon"]
 relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
 updated: "2026-09-14"
@@ -101,6 +104,19 @@ LED 등기구가 죽는 이유는 대개 **LED가 아니라 컨버터**입니다
 없다면 컨버터부터 의심하세요.
 
 바꿔서 살아나면 버릴 것이 컨버터 하나로 줄어듭니다.
+
+## 무드등과 수면등은 등기구도 램프도 아닙니다
+
+USB나 건전지로 켜는 작은 조명은 위 표의 어느 칸에도 안 들어갑니다.
+협회 답변이 그 선을 그어 두었습니다. <strong>"LED조명 중 전구형, 직관형은
+EPR 대상 품목으로 재활용되므로 형광등 수거함으로 배출"</strong>하지만,
+<strong>"모듈과 컨버터가 일체형인 LED 조명은 형광등 수거함에 배출할 수
+없습니다."</strong>
+
+무드등은 모듈 일체형입니다. **형광등 수거함에 넣지 마세요.** 건전지나
+충전지가 들었으면 빼서 폐건전지 수거함에 넣고, 몸통은 작으면
+종량제봉투, 크면 대형폐기물입니다. 플러그를 꽂아 쓰는 것은 소형 가전
+수거함이 받는 곳도 있으니 지자체 안내를 보세요.
 
 ## 안정기는 조명이 아닙니다
 

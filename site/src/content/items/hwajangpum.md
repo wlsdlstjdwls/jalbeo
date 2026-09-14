@@ -12,7 +12,7 @@ sources:
   - title: "서울특별시 — [알쓸분잡 #4] 헷갈리는 화장품 용기 분리배출"
     url: "https://news.seoul.go.kr/env/archives/558581"
     asOf: "2024-07-01"
-related: ["hyangsu", "maenikyueo", "yeomsaegyak", "yak"]
+related: ["syampu", "hyangsu", "maenikyueo", "yeomsaegyak"]
 relatedGuides: ["jongryangje-bongtu"]
 updated: "2026-09-14"
 ---
@@ -39,6 +39,10 @@ updated: "2026-09-14"
 
 기름기가 남은 용기는 헹궈도 재활용이 안 됩니다. 안 닦이면 통째로 종량제봉투가
 정답입니다.
+
+**샴푸, 린스, 바디워시, 로션처럼 물에 풀리는 액체**는 이 규칙이 아닙니다.
+한국폐기물협회는 그쪽을 <strong>"내용물을 하수로 배출"</strong>이라고 답합니다.
+성상이 갈리는 자리라 [샴푸](/syampu/) 페이지에 따로 적었습니다.
 
 ## 펌프는 빼야 합니다
 

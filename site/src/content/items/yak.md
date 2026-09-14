@@ -6,8 +6,8 @@ sources:
   - title: "생활계 유해폐기물의 종류 (기후에너지환경부 고시 제2025-165호)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000266748&type=JSON"
     asOf: "2025-10-01"
-related: ["maenikyueo", "yeomsaegyak", "hwajangpum", "baeteori"]
-updated: "2026-09-04"
+related: ["yeongo", "maenikyueo", "yeomsaegyak", "hwajangpum"]
+updated: "2026-09-14"
 ---
 
 먹다 남은 약과 영양제는 **종량제봉투에 넣으면 안 되고, 변기에 내려서도 안 됩니다.**
@@ -44,7 +44,7 @@ updated: "2026-09-04"
 | 알약(PTP 포장) | 포장을 뜯지 말고 그대로 넣는 지역과, 알맹이만 모으라는 지역이 갈립니다 |
 | 가루약 | 봉투째 그대로 |
 | 물약, 시럽 | 한 병에 모아 새지 않게 뚜껑을 닫아서 |
-| 연고, 안약 | 통째로 |
+| 연고, 안약 | 통째로. 단 겉면이 **의약외품**인 연고는 종량제봉투입니다 ([연고](/yeongo/)) |
 | 캡슐 영양제 | 알약과 같습니다 |
 
 **종이 상자와 설명서**는 떼어서 종이류로 냅니다. 그건 약이 아닙니다.
