@@ -11,7 +11,7 @@ sources:
     asOf: "2026-09-03"
 related: ["gwailkkeopjil", "subakkkeopjil", "gyulkkeopjil", "jogaekkeopjil"]
 relatedGuides: ["jongryangje-bongtu"]
-updated: "2026-09-08"
+updated: "2026-09-14"
 ---
 
 복숭아씨는 **음식물쓰레기가 아닙니다.** 과육이 붙어 있어도 씨는 골라내서
@@ -49,7 +49,7 @@ updated: "2026-09-08"
 품목사전이 복숭아 씨와 **배출방법이 동일한 유사품목**으로 걸어 둔 것을 보면
 씨앗만 있는 게 아닙니다.
 
-- 호두 껍데기, 밤 껍데기, 은행 껍데기, 피스타치오 껍데기
+- 호두 껍데기, 밤 껍데기, 은행 껍데기, 피스타치오 껍데기, 해바라기씨 껍데기
 - 코코넛 껍데기
 - 옥수수대, 옥수수껍질
 

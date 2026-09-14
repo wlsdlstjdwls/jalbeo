@@ -8,7 +8,7 @@ sources:
     asOf: "2026-09-08"
 related: ["naembi", "sikkal", "usan", "eunbakji"]
 relatedGuides: ["heonot-bangmun-sugeo", "daehyeong-pyegimul-singo"]
-updated: "2026-09-08"
+updated: "2026-09-14"
 ---
 
 고철은 **재활용입니다.** 고철 수거함이 있으면 거기, 없으면 봉투에 담거나 끈으로
@@ -62,6 +62,7 @@ updated: "2026-09-08"
 | 알루미늄 호일 | 종량제봉투. 훈령이 금속캔에서 뺐습니다. [은박지](/eunbakji/) |
 | 음료캔, 통조림캔 | 고철이 아니라 금속캔 수거함 |
 | 철제 선반, 자전거, 운동기구 | 대형폐기물 |
+| 카메라 삼각대 | 통째로 종량제봉투. 다리만 알루미늄이면 고철 |
 
 ## 캔과 고철은 함이 다릅니다
 

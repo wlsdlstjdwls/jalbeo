@@ -4,7 +4,7 @@ sources:
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
 related: ["gwailkkeopjil", "yangpakkeopjil", "namutgaji", "jogaekkeopjil"]
-updated: "2026-09-04"
+updated: "2026-09-14"
 ---
 
 옥수수는 **알맹이만 음식물**입니다. 심(속대)과 껍질, 수염은 종량제봉투로 갑니다.
@@ -32,6 +32,7 @@ updated: "2026-09-04"
 | 수염 | 종량제봉투 |
 | 찐 옥수수(통째로) | 알맹이를 떼면 음식물, 심은 종량제봉투 |
 | 옥수수대(밭에서 나온 줄기) | 아래 참고 |
+| 죽순 밑동, 죽순 껍질 | 종량제봉투. 먹는 윗부분만 음식물 |
 
 ## 통째로 버리게 되면
 

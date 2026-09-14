@@ -4,7 +4,7 @@ sources:
     url: "https://www.newstopkorea.com/news/articleView.html?idxno=12460"
     asOf: "2026-09-03"
 related: ["gyulkkeopjil", "subakkkeopjil", "bananakkeopjil", "yangpakkeopjil"]
-updated: "2026-09-08"
+updated: "2026-09-14"
 ---
 
 과일껍질은 **종류에 따라 답이 갈립니다.** 부드러운 껍질은 음식물쓰레기,
@@ -24,6 +24,9 @@ updated: "2026-09-08"
 - **귤껍질** — 말려도 음식물쓰레기입니다. [귤껍질](/gyulkkeopjil/)에 따로 적었습니다
 - **키위껍질** — 겉에 털이 있어 망설이는 경우가 많은데 껍질 자체는 얇고
   부드럽습니다. 음식물쓰레기입니다
+- **사과심, 배심** — 껍질이 아니라 먹고 남은 심입니다. 부드러워 음식물쓰레기
+  쪽입니다. 안에 든 사과씨는 이로 씹히는 크기라
+  [복숭아씨](/boksungassi/)가 말하는 단단한 씨와 다릅니다
 
 ## 일반쓰레기로 배출하는 것
 
