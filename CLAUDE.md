@@ -260,6 +260,13 @@
   별칭에 없어서** 실측까지 왔다. 별칭 218개를 붙이며 요금표 오염 열 건
   (복사기 39행, 스타일러 4행, 셋톱박스, 인조잔디, 제빙기, 소파스툴,
   우산 비닐꽂이)을 막았고 diff 0건
+- **배포는 이제 손으로 한다 (2026-09-14)** — main 푸시 자동배포를 껐으므로
+  (`site/vercel.json`의 `git.deploymentEnabled.main: false`) 푸시만으로는
+  안 올라간다. 리포 루트에서 `vercel deploy --prod`로 올린다(프로젝트 설정의
+  Root Directory가 `site`라 `site/`에서 돌리면 실패한다). **CLI 배포는
+  GitHub Deployment를 안 만들어 IndexNow `deployment_status` 트리거가 안
+  생긴다** - 배포 뒤 `gh workflow run "IndexNow 제출"`을 직접 돌리고,
+  워크플로가 제출 기록을 커밋하므로 `git pull --rebase`로 받는다
 - **별칭 감사 (`docs/58`)** — 별칭 2,222개에 충돌 검사를 한 번도 안 했다.
   검색은 부분일치라 충돌해도 둘 다 나오고 기능이 안 깨져서 안 보였다.
   한 표기를 두 품목이 나눠 가진 것 28건 중 14건 정정 - 토너(화장품 대
