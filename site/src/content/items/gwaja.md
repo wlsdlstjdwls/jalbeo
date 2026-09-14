@@ -14,7 +14,7 @@ sources:
     asOf: "2026-09-08"
 related: ["binil", "peuringgeulseutong", "milgaru", "bakseu"]
 relatedGuides: ["jongryangje-bongtu"]
-updated: "2026-09-08"
+updated: "2026-09-14"
 optionsNote: "과자는 안에 든 것과 봉지가 다른 데로 갑니다. 봉지째 버리면 둘 다 틀립니다."
 options:
   - label: "먹다 남은 과자"
@@ -61,6 +61,12 @@ options:
 - **통 모양 스낵 용기** — 몸통은 종이인데 바닥이 금속입니다.
   [프링글스통](/peuringgeulseutong/)에 따로 적었습니다
 - **플라스틱 트레이** — 초콜릿이나 쿠키를 앉히는 받침입니다. 씻어서 플라스틱류
+
+## 팝콘도 과자입니다
+
+남은 팝콘과 튀겨지지 않은 알갱이는 **음식물**입니다. 다만 영화관 팝콘통은
+안쪽에 기름이 배어 있어 종이류로 못 냅니다. 통은 종량제봉투, 내용물은
+음식물로 갈라서 내세요.
 
 ## 이렇게 버리세요
 
