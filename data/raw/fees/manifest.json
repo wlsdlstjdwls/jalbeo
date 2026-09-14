@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-09-07",
+  "collected_at": "2026-09-14",
   "keyword": "대형폐기물 수수료",
   "search_url": "https://www.data.go.kr/tcs/dss/selectDataSetList.do?dType=FILE&keyword=%EB%8C%80%ED%98%95%ED%8F%90%EA%B8%B0%EB%AC%BC%20%EC%88%98%EC%88%98%EB%A3%8C",
   "total": 78,
@@ -436,13 +436,13 @@
     },
     {
       "dataset_id": "15093130",
-      "title": "경상북도 김천시_대형폐기물 처리수수료_20250821",
+      "title": "경상북도 김천시_대형폐기물 처리수수료_20260821",
       "source_url": "https://www.data.go.kr/data/15093130/fileData.do",
       "provider": null,
       "updated": null,
       "base_date": null,
-      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003221943&fileDetailSn=1&insertDataPrcus=N",
-      "saved_as": "경상북도 김천시_대형폐기물 처리수수료_20250821.csv",
+      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000007624686&fileDetailSn=1&insertDataPrcus=N",
+      "saved_as": "경상북도 김천시_대형폐기물 처리수수료_20260821.csv",
       "bytes": 12418
     },
     {
@@ -721,14 +721,14 @@
     },
     {
       "dataset_id": "15090441",
-      "title": "인천광역시 미추홀구_대형폐기물스티커 발주 및 입고 현황_20241213",
+      "title": "인천광역시 미추홀구_대형폐기물스티커 발주 및 입고 현황_20260806",
       "source_url": "https://www.data.go.kr/data/15090441/fileData.do",
       "provider": null,
       "updated": null,
       "base_date": null,
-      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003087213&fileDetailSn=1&insertDataPrcus=N",
-      "saved_as": "인천광역시 미추홀구_대형폐기물스티커 발주 및 입고현황_20241213.csv",
-      "bytes": 292
+      "download": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000007639502&fileDetailSn=1&insertDataPrcus=N",
+      "saved_as": "인천광역시 미추홀구_대형폐기물스티커 발주 및 입고현황_20260806.csv",
+      "bytes": 289
     },
     {
       "dataset_id": "15147674",

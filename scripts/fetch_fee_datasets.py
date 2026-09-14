@@ -183,7 +183,20 @@ def main():
             },
             f, ensure_ascii=False, indent=2,
         )
-    print("완료 — 성공 %d / 실패 %d" % (ok, fail))
+    # 이번 회차 manifest에 없는 CSV는 고아다 - 데이터셋 파일명이 바뀌면
+    # (김천시 _20250821 -> _20260821) 옛 파일이 그대로 남아 normalize가 같은
+    # 지역을 두 번 읽는다. 러너는 매번 새 체크아웃이라 안 겪지만 로컬에서는
+    # 행 수가 러너와 어긋나 "데이터 변경"으로 보인다 (docs/38, 판단 43).
+    keep = {m["saved_as"] for m in manifest if m.get("saved_as")}
+    orphans = [
+        f for f in os.listdir(OUTDIR)
+        if f.lower().endswith(".csv") and f not in keep
+    ]
+    for f in orphans:
+        os.remove(os.path.join(OUTDIR, f))
+        print("  고아 삭제 %s" % f[:58])
+
+    print("완료 — 성공 %d / 실패 %d / 고아 삭제 %d" % (ok, fail, len(orphans)))
 
 
 if __name__ == "__main__":
