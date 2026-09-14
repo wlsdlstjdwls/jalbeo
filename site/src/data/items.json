@@ -4686,6 +4686,56 @@
   "updated_at": "2026-09-04T07:52:55.358612+00:00"
  },
  {
+  "slug": "doeorak",
+  "name": "도어락",
+  "aliases": [
+   "디지털도어락",
+   "디지털 도어락",
+   "도어록",
+   "디지털 도어록",
+   "전자도어락",
+   "번호키",
+   "현관 도어락",
+   "현관 잠금장치",
+   "지문인식 도어락",
+   "카드키 도어락"
+  ],
+  "verdict": "전용수거함",
+  "verdict_line": "건전지를 빼고 소형가전 수거함입니다. 대형폐기물이 아닙니다.",
+  "category": "폐전기전자제품",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 135,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-14T05:05:03.358127+00:00"
+ },
+ {
+  "slug": "yusim",
+  "name": "유심",
+  "aliases": [
+   "유심칩",
+   "유심 칩",
+   "USIM",
+   "유심카드",
+   "유심 카드",
+   "심카드",
+   "SIM카드",
+   "나노유심",
+   "마이크로유심",
+   "유심 어댑터"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "잘라서 종량제봉투입니다. 휴대폰 수거함이 아닙니다.",
+  "category": "복합재질",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 130,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-14T05:05:03.358127+00:00"
+ },
+ {
   "slug": "jeonhwagi",
   "name": "전화기",
   "aliases": [
@@ -4771,6 +4821,30 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-14T04:11:21.658012+00:00"
+ },
+ {
+  "slug": "kkotdabal",
+  "name": "꽃다발",
+  "aliases": [
+   "생화",
+   "시든 꽃",
+   "시든 꽃다발",
+   "꽃 포장지",
+   "꽃다발 포장지",
+   "부케",
+   "꽃바구니",
+   "드라이플라워",
+   "드라이 플라워"
+  ],
+  "verdict": "조건부",
+  "verdict_line": "꽃은 종량제봉투이고 포장은 재질별로 갈립니다.",
+  "category": "생활용품",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 110,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-14T05:05:03.358127+00:00"
  },
  {
   "slug": "saengseonppyeo",
@@ -5133,6 +5207,35 @@
   "competitor_has": true,
   "published": true,
   "updated_at": "2026-09-07T07:44:01.345867+00:00"
+ },
+ {
+  "slug": "saryo",
+  "name": "사료",
+  "aliases": [
+   "강아지 사료",
+   "고양이 사료",
+   "개사료",
+   "반려동물 사료",
+   "애견사료",
+   "햄스터 사료",
+   "건식사료",
+   "습식사료",
+   "유통기한 지난 사료",
+   "곰팡이 핀 사료",
+   "사료 봉투",
+   "사료 포대",
+   "개껌",
+   "강아지 간식"
+  ],
+  "verdict": "일반쓰레기",
+  "verdict_line": "음식물쓰레기가 아닙니다. 종량제봉투입니다.",
+  "category": "생활용품",
+  "housing_split": false,
+  "region_varies": false,
+  "monthly_volume": 70,
+  "competitor_has": false,
+  "published": true,
+  "updated_at": "2026-09-14T05:05:03.358127+00:00"
  },
  {
   "slug": "sikgigeonjogi",

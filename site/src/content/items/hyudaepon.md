@@ -6,7 +6,7 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
-related: ["baeteori", "noteubuk"]
+related: ["yusim", "baeteori", "noteubuk"]
 relatedGuides: ["pyegajeon-musang-sugeo"]
 updated: "2026-09-14"
 ---
@@ -43,7 +43,9 @@ updated: "2026-09-14"
 
 **유심(USIM)은 기기에 붙어 있지 않습니다.** 트레이를 열어 빼내세요.
 번호와 통신사 정보가 들어 있고, 새 기기에 그대로 옮겨 쓸 수 있습니다.
-쓰지 않을 유심은 잘라서 버리거나 대리점에 반납합니다.
+쓰지 않을 유심은 **본체와 같은 수거함에 넣지 마세요.** 잘라서 종량제봉투이거나
+대리점 반납입니다. [유심](/yusim/) 쪽에 자르는 자리와 교통카드 잔액 순서를
+적어 두었습니다.
 
 **마이크로SD 카드**를 꽂아 두었다면 이것도 뺍니다. 기기 초기화로는
 SD 카드가 지워지지 않습니다. 사진이 그대로 남습니다.

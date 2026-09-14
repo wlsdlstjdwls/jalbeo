@@ -3,7 +3,7 @@ sources:
   - title: "재활용가능자원의 분리수거 등에 관한 지침 [별표1] (기후에너지환경부 훈령)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000272746&type=JSON"
     asOf: "2026-01-01"
-related: ["hwabun", "hwabyeong", "nakyeop", "inhyeong"]
+related: ["kkotdabal", "hwabun", "hwabyeong", "nakyeop"]
 relatedGuides: ["jongryangje-bongtu", "daehyeong-pyegimul-singo"]
 updated: "2026-09-04"
 ---
@@ -28,6 +28,7 @@ updated: "2026-09-04"
 걸러 내야 하는 이물질이고, 걸러지지 않으면 그대로 사료에 들어갑니다.
 
 **생화도 음식물이 아닙니다.** 꽃과 줄기는 사료로 못 씁니다. 종량제봉투입니다.
+다만 받은 꽃다발은 포장이 재질별로 갈리므로 [꽃다발](/kkotdabal/) 쪽을 보세요.
 
 ## 화분과 따로 버리세요
 
