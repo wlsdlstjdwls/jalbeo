@@ -72,8 +72,12 @@ END = (r"(?:\s*(?:인가요|인가|이에요|예요|에요|맞나요|맞죠|맞�
        r"되나요|될까요|돼요|되요|하나요|할까요|있나요|요))?")
 
 KIN_TAIL_PATTERNS = [
+    # 끝의 \S*를 '되/괜찮/맞'에 묶어 둔다. 안 묶으면 재질어 뒤의 아무 토막이나
+    # 먹어서 **물건이 통째로 꼬리가 된다** - "곰팡이핀 유리병"에서 KIND가
+    # '유리'에 걸린 뒤 \S*가 '병'을 마저 삼켜 머리말이 '곰팡이핀'만 남았다.
+    # 21차에서 상태 어미를 넣자 수식어가 앞으로 나오면서 드러났다.
     JOSA + KIND + r"\s*(?:로|으로|에|에다|에다가)?\s*(?:버려도|버리면|넣어도|"
-    r"내놔도|배출해도)?\s*(?:되|괜찮|맞)?\S*" + END,
+    r"내놔도|배출해도)?\s*(?:(?:되|괜찮|맞)\S*)?" + END,
     JOSA + KIND + END,
     JOSA + r"버려도\s*\S*" + END,
     JOSA + r"(?:씻어서|헹궈서|말려서)\s*\S*" + END,
@@ -85,11 +89,23 @@ KIN_TAIL_RE = [re.compile(p + r"\s*[?!.~,ㅜㅠ]*$") for p in KIN_TAIL_PATTERNS]
 
 # 물건의 상태. 물건 이름이 아니므로 갈라 둔다.
 MODIFIER = re.compile(
-    r"^(?:고장\s*난?|망가진|깨진|부러진|찢어진|오래된|낡은|헌|중고|새|"
+    r"^(?:고장\s*난?|망가진|깨진|안\s*깨진|부러진|찢어진|오래된|낡은|헌|중고|새|"
     r"안\s*쓰는|안\s*쓴|다\s*쓴|사용한|쓰던|쓴|먹다\s*남은|남은|"
-    r"유통기한\s*지난|기한\s*지난|썩은|상한|곰팡이\s*핀|녹슨|녹은|"
+    r"유통기한\s*지난|기한\s*지난|썩은|상한|녹슨|녹은|"
+    r"곰팡이\s*(?:핀|난|슨|슬은|있는|생긴|먹은)|"
     r"코팅이?\s*벗겨진|구멍\s*난|작아진|못\s*쓰는|버려진|더러운|"
     r"큰|작은|대형|소형|플라스틱|유리|철제|나무)\s+")
+
+# 띄어쓰기 없이 붙여 쓴 상태 수식어. **붙여 쓴 것만 따로 두는 이유**는
+# 판단 36과 같다 - 헛짚으면 신규 품목이 사라진다. '새', '쓴', '큰'을 띄어쓰기
+# 없이 떼면 새우가 우가 되므로, 떼어도 다른 말이 될 수 없는 것만 담는다.
+MODIFIER_GLUED = re.compile(
+    r"^(?:곰팡이(?:핀|난|슨|슬은)|썩은|상한|고장난|망가진|안깨진|"
+    r"다쓴|안쓰는|안쓴|오래된|유통기한지난)(?=[가-힣])")
+
+# 뒤에 붙는 상태. "과일 썩은건 어떻게 버리나요"
+MODIFIER_TAIL = re.compile(
+    r"\s*(?:썩은|상한|고장난|망가진)\s*(?:건|것|거|부분)$")
 
 LEAD = re.compile(r"^(?:저희|우리|제가|저는|혹시|그럼|그리고|이거|이것|그거|"
                   r"요것|얘|이|그|저)\s+")
@@ -211,12 +227,45 @@ def restore_i(name, toks):
 def split_modifier(name):
     mods = []
     for _ in range(3):
-        m = MODIFIER.match(name)
+        m = MODIFIER.match(name) or MODIFIER_GLUED.match(name)
         if not m:
             break
         mods.append(m.group(0).strip())
         name = name[m.end():]
+    m = MODIFIER_TAIL.search(name)
+    if m and name[:m.start()].strip():
+        mods.append(m.group(0).strip())
+        name = name[:m.start()]
     return name.strip(), " ".join(mods)
+
+
+# 기계가 다시 계산할 수 있는 칸. 나머지는 사람이 판단한 장부다.
+MACHINE_DECISIONS = {"", "기존 커버", "지역", "절차", "사업장", "노이즈"}
+
+
+def load_prev():
+    """앞 회차 판정을 읽는다. 씨앗을 다시 캐면 이 파일을 통째로 덮어쓰는데,
+    그러면 '실측20차', '보류', '별칭 -> X'가 사라진다. 그건 기계가 못 되짚는
+    기록이고(판단 50), 없으면 **이미 잰 주제를 다시 재게 된다**(판단 60)."""
+    if not os.path.exists(OUT):
+        return {}
+    qna = load_qna()
+    prev = {}
+    for r in csv.DictReader(io.open(OUT, encoding="utf-8")):
+        d = (r.get("decision") or "").strip()
+        if d:
+            prev[qna.norm(r["item"])] = d
+    return prev
+
+
+def keep_ledger(old, fresh):
+    """사람이 적은 칸은 기계 판정이 못 이긴다. 반대로 기계가 새로 채울 수
+    있는 칸(어휘가 늘어 '기존 커버'가 된 것)은 새 값을 쓴다."""
+    if old and old not in MACHINE_DECISIONS:
+        return old                      # 실측N차, 보류, 발행, 별칭 ->, 개명 ->
+    if old and not fresh:
+        return old                      # 손으로 민 노이즈, 지역, 절차, 사업장
+    return fresh
 
 
 def main():
@@ -236,9 +285,16 @@ def main():
         name = strip_tails(qna, title)
         name = restore_i(name, toks)
         name, mods = split_modifier(name)
+        # 수식어를 뗀 뒤에 한 번 더 본다. 코퍼스는 낱말 단위라 "고장난 스프레"
+        # 로는 못 맞추고 "스프레"로만 맞는다 (판단 66)
+        name = restore_i(name, toks)
         if not name or len(name) < 2 or not re.search(r"[가-힣]", name):
             continue
         if any(w == name for w in DROP_WORDS):
+            continue
+        # 머리말이 통째로 상태 수식어인 것("곰팡이 핀", "다 쓴"). 물건이
+        # 꼬리에 먹혔거나 애초에 없었다는 뜻이다.
+        if MODIFIER.match(name + " ") and not MODIFIER.sub("", name + " ").strip():
             continue
         if len(name) > 20:                   # 문장이 통째로 남은 것
             continue
@@ -252,6 +308,7 @@ def main():
             g["titles"].append(title)
         g.setdefault("name", name)
 
+    prev = load_prev()
     out = []
     for key, g in groups.items():
         hit = next((t for t in vocab_terms if t in key), None)
@@ -264,6 +321,7 @@ def main():
             decision, note = "노이즈", ""
         else:
             decision, note = "", ""
+        decision = keep_ledger(prev.get(qna.norm(g["name"]), ""), decision)
         out.append({
             "item": g["name"],
             "n": g["n"],
