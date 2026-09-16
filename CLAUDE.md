@@ -279,6 +279,16 @@
   09-07 이후 0, 검색 유입은 10건에 품목 착지 2건. 기술 쪽(robots,
   사이트맵 283, canonical, 홈 HTML 품목 링크 279개, IndexNow 289건 200)은
   전부 정상이라 고칠 파일이 없다(판단 30). 크롤러가 홈만 반복해서 온다
+- **RSS 피드 신설 (2026-09-16, `63fadf3`)** — 네이버 유입이 거의 없어 다시
+  쟀는데 `noindex`는 아니었다. robots.txt Allow, meta robots 없음, canonical
+  정상, Yeti UA 200, 사이트맵 285건 전부 멀쩡하다(`docs/58`과 같은 결론).
+  빠진 것은 RSS였다 - 서치어드바이저는 사이트맵과 RSS를 **따로** 받고 신규
+  문서 수집은 RSS 쪽이 빠른데 사이트맵만 넣어 둔 상태였다.
+  `site/src/pages/rss.xml.ts`로 282건(품목 277 + 가이드 5), 정렬은 `updated`
+  내림차순. 색인 판정은 `isProductionHost`로 robots.txt.ts, Base.astro와
+  공유해 미리보기에서는 404다. **제출은 사용자 몫** - RSS `/rss.xml`,
+  사이트맵은 `/sitemap-index.xml`(`/sitemap.xml`은 308이라 리다이렉트를
+  안 타는 쪽을 넣는다). IndexNow는 네이버에 안 간다(빙, 얀덱스, Seznam만)
 - 다음 단계: 로그가 쌓일 때까지 기다리며 감사 계속. 검색어 로그
   (`hit_count = 0`)가 원천이 되면 그때 다음 회차 구성
 
