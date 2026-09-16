@@ -21,6 +21,9 @@ const ogImage = new URL('/og.png?v=3', Astro.site);
 // 정식 도메인이 아니면 색인을 막는다. robots.txt와 같은 기준 (lib/site.ts, 게이트 2 오염 방지).
 const indexable = !noindex && isProductionHost(Astro.site?.host ?? '');
 
+// RSS 피드도 같은 판정을 쓴다. 미리보기에서는 rss.xml.ts가 404라 링크를 안 건다.
+const hasFeed = isProductionHost(Astro.site?.host ?? '');
+
 // 방문자 집계. 키가 없으면 스크립트 자체를 안 내보낸다 (로컬 클론에서도 빌드가 돈다).
 const trackable = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
 ---
@@ -37,6 +40,9 @@ const trackable = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
     <meta name="theme-color" content="#f5f3ee" />
     <!-- 네이버 서치어드바이저 소유확인 (2026-09-07 등록). 확인 후에도 지우지 않는다. -->
     <meta name="naver-site-verification" content="a993cd65560ea17b1fc38b2a10338b16676b54c5" />
+    {hasFeed && (
+      <link rel="alternate" type="application/rss+xml" title="잘버려" href="/rss.xml" />
+    )}
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
