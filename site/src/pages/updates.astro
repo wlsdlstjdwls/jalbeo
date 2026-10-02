@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import Doc from '../layouts/Doc.astro';
 import { items as dbItems } from '../lib/items';
 import { dayLogs } from '../lib/updates';
-import feesMeta from '../data/fees_meta.json';
 
 const names = new Map(dbItems.map((r) => [r.slug, r.name]));
 const guideTitles = new Map((await getCollection('guides')).map((g) => [g.id, g.data.title]));
@@ -24,9 +23,6 @@ const fmt = (d: string) => {
   <p>
     새로 들어온 품목과, 출처를 다시 대조하다 찾은 오류를 고친 내용을 날짜별로
     적습니다. 틀린 곳을 알려 주시면 확인해서 여기에도 남깁니다.
-  </p>
-  <p>
-    {`대형폐기물 수수료는 ${feesMeta.regions}개 시군구 공개 자료이고, ${feesMeta.collected_at}에 마지막으로 받았습니다.`}
   </p>
 
   {logs.map((d) => (

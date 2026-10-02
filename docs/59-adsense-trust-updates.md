@@ -22,7 +22,7 @@
   `site/src/lib/added.json`에 쓴다. 적는 기준은 docs에 기록이 있고 방문자 화면이
   실제로 바뀐 것. 내부 용어(별칭, 실측, 판단 N)는 안 쓴다
 - 홈에 '최근 소식'(최근 고친 내용 3줄, 새 품목 8개)
-- 수수료 표 아래에 마지막으로 받은 날. `build_fee_stats.py`가 `fees_meta.json`을 쓴다
+- 수수료 수집일은 `build_fee_stats.py`가 `fees_meta.json`에 쓴다. 화면 표시는 사용자 요청으로 뺐다
   (manifest는 `site/` 밖이라 빌드가 못 읽는다)
 
 ## 수수료 재수집: 열린 이슈 #6과 파일명 충돌

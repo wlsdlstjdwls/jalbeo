@@ -5,7 +5,6 @@
  * 2. 과금 단위가 갈린다 → 장롱은 다수가 '1쪽당'이라 통짜와 섞으면 3배 틀린다.
  *    면적(㎡), 길이(m), 무게(kg)로 매기는 품목도 같은 이유로 따로 낸다
  */
-import feesMeta from '../data/fees_meta.json';
 import { UNIT_LABEL, ALL_REGIONS, type FeeStat, type FeeUnit, type FeeUnitName } from '../lib/fees';
 
 interface Props {
@@ -158,7 +157,7 @@ const clientData = { unitLabel: UNIT_LABEL, lookup: regionLookup };
     <p class="note">
       <a href={SOURCE_URL} rel="nofollow noopener" target="_blank">공공데이터포털</a>
       공개분만 집계했습니다. 목록에 없는 지자체는 해당 시군구 홈페이지에서
-      확인하세요. 자료 기준일 {stat.baseDate || '데이터셋별 상이'}, 마지막으로 받은 날 {feesMeta.collected_at}.
+      확인하세요. 기준일 {stat.baseDate || '데이터셋별 상이'}.
     </p>
   </details>
 
