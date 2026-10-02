@@ -15,9 +15,12 @@ sources:
   - title: "분리의정석(생활폐기물 분리배출 누리집, 환경부/한국폐기물협회) — 품목사전 '랩' (가정용 PE는 비닐류, 배달/마트 포장랩은 PVC로 재활용 불가, 유사품목에 스틱봉지)"
     url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=119"
     asOf: "2026-09-08"
+  - title: "분리의정석(생활폐기물 분리배출 누리집, 환경부/한국폐기물협회) — 품목사전 '일회용 비닐장갑'"
+    url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=108"
+    asOf: "2026-10-02"
 related: ["ppokppogi", "seutiropom", "eunbakji", "bonaengbaek"]
 relatedGuides: ["jongryangje-bongtu"]
-updated: "2026-09-08"
+updated: "2026-10-02"
 ---
 
 비닐은 **깨끗한 포장재만 재활용됩니다.** 음식이 묻었거나 다른 재질과
@@ -98,6 +101,11 @@ EPE라는 다른 재질이라 종량제봉투로 갑니다.
 깨끗한 비닐이라도 기름이나 음식물이 많이 묻으면 재활용 라인에서 빠집니다.
 물로 헹궈 이물질을 없앨 수 있으면 헹궈서 배출하고, 안 되면 종량제봉투로
 넘기세요.
+
+**일회용 비닐장갑**이 이 경우입니다. 품목사전은 비닐장갑을 비닐류 표제어로 두고
+<strong>"이물질을 제거한 후 배출"</strong>하라고 적습니다. 반찬을 무칠 때 끼던
+장갑은 헹궈서 비닐류로, 양념이나 [염색약](/yeomsaegyak/)처럼 안 씻기는 것이
+묻었으면 종량제봉투입니다. 두꺼운 고무장갑은 위에 적은 대로 비닐이 아닙니다.
 
 ## 배출 순서
 

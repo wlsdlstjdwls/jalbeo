@@ -172,166 +172,199 @@
  {
   "term": "운동기구",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "거치대",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "수납장",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "종이 완충재",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "비닐장갑",
-  "decision": "보류",
-  "page": null
+  "decision": "별칭",
+  "page": "비닐",
+  "note": "2026-10-02 재판정: 품목사전 표제어 일회용 비닐장갑(niIdx=108) 비닐류, 비닐 본문에 한 줄"
  },
  {
   "term": "망치",
-  "decision": "보류",
-  "page": null
+  "decision": "별칭",
+  "page": "고철",
+  "note": "2026-10-02 재판정: 품목사전 못 유사검색어(고무망치), 고철 본문이 이미 답함"
  },
  {
   "term": "보냉 박스",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "아크릴판",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "벤치",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "박스 테이프",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "과일 부직포 포장재",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "안전벨트",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "신발장",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "드릴",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "스테이플러 심",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "소스통",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "비닐 코팅",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "리본",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "고추씨",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "계피",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "하드 케이스",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "종이 용기",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "종이 라벨",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "조미료 가루",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "월계수잎",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "어묵",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "스포이드",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "비닐 포장",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "부천시",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "남은 밥",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "금속 뚜껑",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "극세사 패드",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  },
  {
   "term": "OPP 필름",
   "decision": "보류",
-  "page": null
+  "page": null,
+  "note": "2026-10-02 재판정: 보류 유지"
  }
 ]

@@ -20,7 +20,7 @@
   "monthly_volume": 15000,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-14T03:51:11.50863+00:00"
+  "updated_at": "2026-09-14T03:51:11.508630+00:00"
  },
  {
   "slug": "seonpunggi",
@@ -227,7 +227,7 @@
   "monthly_volume": 6820,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-08T03:37:33.69672+00:00"
+  "updated_at": "2026-09-08T03:37:33.696720+00:00"
  },
  {
   "slug": "begae",
@@ -282,7 +282,7 @@
   "monthly_volume": 6320,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-08T03:37:33.69672+00:00"
+  "updated_at": "2026-09-08T03:37:33.696720+00:00"
  },
  {
   "slug": "ssal",
@@ -397,7 +397,7 @@
   "monthly_volume": 5165,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-08T03:37:33.69672+00:00"
+  "updated_at": "2026-09-08T03:37:33.696720+00:00"
  },
  {
   "slug": "otgeoli",
@@ -1048,7 +1048,7 @@
   "monthly_volume": 2255,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-08T03:37:33.69672+00:00"
+  "updated_at": "2026-09-08T03:37:33.696720+00:00"
  },
  {
   "slug": "eeokeon",
@@ -1493,7 +1493,7 @@
   "monthly_volume": 1540,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-07T01:29:51.66562+00:00"
+  "updated_at": "2026-09-07T01:29:51.665620+00:00"
  },
  {
   "slug": "sillikon",
@@ -1648,7 +1648,9 @@
    "보호필름",
    "액정보호필름",
    "방수팩",
-   "지퍼 방수팩"
+   "지퍼 방수팩",
+   "비닐장갑",
+   "일회용 비닐장갑"
   ],
   "verdict": "조건부",
   "verdict_line": "깨끗한 포장 비닐만 재활용됩니다. 식탁보, 장판 같은 복합재질은 종량제입니다.",
@@ -1906,7 +1908,7 @@
   "monthly_volume": 1240,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-14T03:51:11.50863+00:00"
+  "updated_at": "2026-09-14T03:51:11.508630+00:00"
  },
  {
   "slug": "waipeo",
@@ -2564,7 +2566,7 @@
   "monthly_volume": 920,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-14T03:51:11.50863+00:00"
+  "updated_at": "2026-09-14T03:51:11.508630+00:00"
  },
  {
   "slug": "dotjari",
@@ -2692,7 +2694,7 @@
   "monthly_volume": 835,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-14T03:51:11.50863+00:00"
+  "updated_at": "2026-09-14T03:51:11.508630+00:00"
  },
  {
   "slug": "peojeulmaeteu",
@@ -2757,7 +2759,8 @@
    "면도날",
    "철사 뭉치",
    "스테이플러",
-   "공구"
+   "공구",
+   "망치"
   ],
   "verdict": "재활용",
   "verdict_line": "고철 수거함이나 끈으로 묶어 배출합니다. 날카로운 것과 복합재질은 종량제봉투.",
@@ -3099,7 +3102,7 @@
   "monthly_volume": 670,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-08T03:37:33.69672+00:00"
+  "updated_at": "2026-09-08T03:37:33.696720+00:00"
  },
  {
   "slug": "doma",
@@ -3426,7 +3429,7 @@
   "monthly_volume": 575,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-07T01:29:51.66562+00:00"
+  "updated_at": "2026-09-07T01:29:51.665620+00:00"
  },
  {
   "slug": "piano",
@@ -3474,7 +3477,7 @@
   "monthly_volume": 560,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-08T03:37:33.69672+00:00"
+  "updated_at": "2026-09-08T03:37:33.696720+00:00"
  },
  {
   "slug": "hangari",
@@ -3807,7 +3810,7 @@
   "monthly_volume": 425,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-08T03:37:33.69672+00:00"
+  "updated_at": "2026-09-08T03:37:33.696720+00:00"
  },
  {
   "slug": "rakseu",
@@ -3942,7 +3945,7 @@
   "monthly_volume": 390,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-14T03:51:11.50863+00:00"
+  "updated_at": "2026-09-14T03:51:11.508630+00:00"
  },
  {
   "slug": "bolpen",
@@ -4649,7 +4652,7 @@
   "monthly_volume": 215,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-08T03:37:33.69672+00:00"
+  "updated_at": "2026-09-08T03:37:33.696720+00:00"
  },
  {
   "slug": "darimipan",
@@ -4669,7 +4672,7 @@
   "monthly_volume": 210,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-08T03:37:33.69672+00:00"
+  "updated_at": "2026-09-08T03:37:33.696720+00:00"
  },
  {
   "slug": "chukgugong",
@@ -5065,7 +5068,7 @@
   "monthly_volume": 160,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-08T03:37:33.69672+00:00"
+  "updated_at": "2026-09-08T03:37:33.696720+00:00"
  },
  {
   "slug": "baiollin",
@@ -5158,7 +5161,7 @@
   "monthly_volume": 145,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-08T03:37:33.69672+00:00"
+  "updated_at": "2026-09-08T03:37:33.696720+00:00"
  },
  {
   "slug": "pokjuk",
@@ -5763,7 +5766,7 @@
   "monthly_volume": 85,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-14T03:51:11.50863+00:00"
+  "updated_at": "2026-09-14T03:51:11.508630+00:00"
  },
  {
   "slug": "hwajangdae",
@@ -6142,7 +6145,7 @@
   "monthly_volume": 20,
   "competitor_has": false,
   "published": true,
-  "updated_at": "2026-09-07T01:29:51.66562+00:00"
+  "updated_at": "2026-09-07T01:29:51.665620+00:00"
  },
  {
   "slug": "boilreo",
@@ -6220,6 +6223,6 @@
   "monthly_volume": null,
   "competitor_has": true,
   "published": true,
-  "updated_at": "2026-09-14T03:51:11.50863+00:00"
+  "updated_at": "2026-09-14T03:51:11.508630+00:00"
  }
 ]
