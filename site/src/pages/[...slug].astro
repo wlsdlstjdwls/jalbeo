@@ -50,14 +50,12 @@ const guideLinks = meta.relatedGuides
 // 타이틀에 둘 다 태운다. 어미별로 URL을 나누면 중복 페이지가 된다.
 const title = `${row.name} 버리는법, 분리수거 방법 | 잘버려`;
 const description = `${row.name}은(는) ${row.verdict}. ${row.verdict_line}`;
-const aliases = row.aliases ?? [];
+// 별칭은 검색용이라 오타, 띄어쓰기 변형까지 수십 개다. 다 늘어놓으면 키워드 나열로
+// 보인다. 앞의 몇 개만 보이고 나머지는 검색이 받는다.
+const aliases = (row.aliases ?? []).slice(0, 3);
 
-const vol = row.monthly_volume;
-const hint3 = [
-  '분리수거 방법',
-  vol ? `월 검색량 ${vol.toLocaleString('ko-KR')}` : null,
-  `최종 확인 ${meta.updated}`,
-].filter(Boolean).join(' / ');
+// 검색량은 우리가 우선순위를 정하는 숫자지 방문자가 볼 정보가 아니다.
+const hint3 = `분리수거 방법 / 최종 확인 ${meta.updated}`;
 
 const titleStep3 = `${row.name}\n버리는법`;
 // STEP 2 캡션. h1과 달리 한 줄이라 개행을 넣지 않는다.
