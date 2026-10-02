@@ -156,6 +156,11 @@ def main():
             continue
 
         fname = filename_from(headers, did)
+        # 지자체가 파일명에 지역을 안 넣으면 이름이 겹친다. 함안군, 오산시,
+        # 속초시가 다 "대형폐기물 처리 수수료 정보.csv"로 내려와서 뒤에 받은
+        # 속초가 앞의 둘을 덮어썼고, 오산시 220행이 통째로 사라졌다.
+        if fname in {m.get("saved_as") for m in manifest}:
+            fname = "%s_%s" % (did, fname)
         with open(os.path.join(OUTDIR, fname), "wb") as f:
             f.write(raw)
         meta["saved_as"] = fname

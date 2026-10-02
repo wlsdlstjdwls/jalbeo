@@ -24,8 +24,14 @@ FEES = os.path.join(ROOT, "site", "src", "data", "fees.json")
 ITEMS = os.path.join(ROOT, "site", "src", "data", "items.json")
 CONTENT = os.path.join(ROOT, "site", "src", "content", "items", "*.md")
 
-# 수수료표를 수집한 시군구 총수. "47개 시군구 가운데 8곳" 같은 문장의 앞 숫자다.
-TOTAL_REGIONS = 47
+# 수수료표를 수집한 시군구 총수. "48개 시군구 가운데 8곳" 같은 문장의 앞 숫자다.
+# 손으로 적어 두면 지역이 늘 때 본문의 낡은 총수가 통과한다. 데이터에서 센다.
+def _count_regions():
+    import csv as _csv, os as _os
+    path = _os.path.join(_os.path.dirname(__file__), "..", "data", "processed", "fees.csv")
+    with open(path, encoding="utf-8") as f:
+        return len({(r["sido"], r["sigungu"]) for r in _csv.DictReader(f)})
+TOTAL_REGIONS = _count_regions()
 
 # (라벨, 정규식, fees.json에서 비교할 필드)
 CLAIMS = [

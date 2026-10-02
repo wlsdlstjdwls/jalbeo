@@ -207,6 +207,9 @@ EXTRA_ALIAS = {
     # '차탁자' -> 밥상. 포항 '차탁자(응접세트)', 광명 '차탁자(티테이블)'는
     # 소파 앞 테이블이지 밥상이 아니다. 밥상은 자기 이름으로 16곳이 있다.
     "차탁자": None, "티테이블": None,
+    # '카세트' -> CD. 품목표의 '카세트'는 카세트 라디오(가전)라 테이프가 아니다.
+    # CD는 본체 행이 0건인데, 함안군이 들어와 3곳이 되자 표가 통째로 생겼다 (판단 47).
+    "카세트": None,
 }
 
 # 표기는 우리 것이 맞는데 **그 행**이 다른 물건인 경우. EXTRA_ALIAS의 None은
@@ -455,6 +458,17 @@ def main():
     # 값이 그대로인데 파일 전체가 diff로 잡히면 뭐가 바뀌었는지 안 보인다.
     io.open(OUT, "w", encoding="utf-8").write(
         json.dumps(dict(sorted(out.items())), ensure_ascii=False, indent=2) + "\n"
+    )
+    # 화면에 "언제 받은 자료인가"를 보이려면 수집일이 사이트 안에 있어야 한다.
+    # manifest는 site/ 밖이라 빌드가 못 읽는다. fees.json에 섞으면 품목 키와
+    # 구분이 안 되므로 따로 둔다.
+    manifest = json.load(io.open(os.path.join(ROOT, "data", "raw", "fees", "manifest.json"), encoding="utf-8"))
+    io.open(os.path.join(os.path.dirname(OUT), "fees_meta.json"), "w", encoding="utf-8").write(
+        json.dumps({
+            "collected_at": manifest["collected_at"],
+            "regions": len({(r["sido"], r["sigungu"]) for r in rows}),
+            "datasets": manifest["downloaded"],
+        }, ensure_ascii=False, indent=2) + "\n"
     )
 
     print("품목 %d개 집계" % len(out))

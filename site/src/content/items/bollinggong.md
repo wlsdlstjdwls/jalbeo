@@ -6,12 +6,12 @@ sources:
   - title: "분리의정석 — 품목사전 '축구공' (공은 복합재질이라 재활용이 어렵다)"
     url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=338"
     asOf: "2026-09-07"
-  - title: "공공데이터포털 — 전국 대형폐기물 품목별 수수료 (47개 시군구 수집분)"
+  - title: "공공데이터포털 — 전국 대형폐기물 품목별 수수료 (48개 시군구 수집분)"
     url: "https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=%EB%8C%80%ED%98%95%ED%8F%90%EA%B8%B0%EB%AC%BC"
     asOf: "2026-06-25"
 related: ["chukgugong", "golpeuchae", "gocheol", "helmet"]
 relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
-updated: "2026-09-14"
+updated: "2026-10-02"
 ---
 
 볼링공은 **대형폐기물 신고**입니다. 다른 공은 바람을 빼서 종량제봉투인데

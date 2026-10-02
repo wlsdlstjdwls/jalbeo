@@ -11,7 +11,7 @@ sources:
     asOf: "2026-09-14"
 related: ["pomrolleo", "yogamaeteu", "golpeuchae", "gocheol"]
 relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
-updated: "2026-09-14"
+updated: "2026-10-02"
 optionsNote: "연결 부위를 비틀어 보면 갈립니다. 딸깍 빠지면 조립식입니다."
 options:
   - label: "조립식 훌라후프"
@@ -94,7 +94,7 @@ options:
 
 ## 수수료가 걱정된다면
 
-수집한 47개 시군구 품목표에 '훌라후프'라는 이름은 **한 곳도 없습니다.**
+수집한 48개 시군구 품목표에 '훌라후프'라는 이름은 **한 곳도 없습니다.**
 [폼롤러](/pomrolleo/)도 마찬가지입니다. 대형폐기물로 내야 할 만큼 큰
 물건이 아니라는 뜻이고, 대부분 봉투로 끝난다는 뜻이기도 합니다.
 

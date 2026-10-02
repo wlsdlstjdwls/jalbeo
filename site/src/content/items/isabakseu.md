@@ -14,7 +14,7 @@ sources:
     asOf: "2026-07-15"
 related: ["bakseu", "ribingbakseu", "aiseubakseu", "seutiropom"]
 relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
-updated: "2026-09-14"
+updated: "2026-10-02"
 optionsNote: "손톱으로 옆면을 긁어 보면 갈립니다. 골이 우글우글 눌리면 종이, 딱딱하고 미끄러우면 단프라입니다."
 options:
   - label: "종이 이사박스"
@@ -82,7 +82,7 @@ options:
   찾지 마세요 ([종량제봉투 가격과 규격](/guides/jongryangje-bongtu/))
 
 품목표에 '이사박스'라는 이름을 그대로 올린 지자체가 있습니다. 수집한
-47개 시군구 가운데 **서울 강북구와 광진구** 두 곳입니다. 강북구는 규격을
+48개 시군구 가운데 **서울 강북구와 광진구** 두 곳입니다. 강북구는 규격을
 호수로 갈라 놓았습니다.
 
 | 지역 | 규격 | 수수료 |

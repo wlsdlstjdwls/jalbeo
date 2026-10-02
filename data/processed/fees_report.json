@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-14",
-  "total_rows": 8597,
-  "files_ok": 52,
-  "files_skipped": 21,
-  "regions": 47,
-  "distinct_items": 1655,
+  "generated_at": "2026-10-02",
+  "total_rows": 8691,
+  "files_ok": 53,
+  "files_skipped": 22,
+  "regions": 48,
+  "distinct_items": 1661,
   "files": [
     {
       "file": "(양식) 대형폐기물 처리 수수료 정보.csv",
@@ -30,9 +30,9 @@
       ]
     },
     {
-      "file": "20251208_경기도 광명시_대형폐기물 처리 수수료 정보.csv",
+      "file": "15093805_대형폐기물 처리 수수료 정보.csv",
       "status": "ok",
-      "rows": 176,
+      "rows": 88,
       "mapped": [
         "base_date",
         "category",
@@ -42,16 +42,27 @@
       ]
     },
     {
-      "file": "SUSEONG_GABI_PAY_APP_20250902.csv",
-      "status": "skipped_transaction_log",
-      "header": [
-        "앱식별자",
-        "사용자식별자",
-        "번호",
-        "개수",
-        "품목명",
-        "규격",
-        "금액(원)"
+      "file": "15097803_대형폐기물 처리 수수료 정보.csv",
+      "status": "ok",
+      "rows": 219,
+      "mapped": [
+        "base_date",
+        "category",
+        "fee",
+        "item",
+        "spec"
+      ]
+    },
+    {
+      "file": "20251208_경기도 광명시_대형폐기물 처리 수수료 정보.csv",
+      "status": "ok",
+      "rows": 176,
+      "mapped": [
+        "base_date",
+        "category",
+        "fee",
+        "item",
+        "spec"
       ]
     },
     {
@@ -89,7 +100,7 @@
       ]
     },
     {
-      "file": "경기도 부천시_대형폐기물결제방식별통계_20250701.csv",
+      "file": "경기도 부천시_대형폐기물결제방식별통계.csv",
       "status": "skipped_transaction_log",
       "header": [
         "기준",
@@ -319,7 +330,7 @@
       ]
     },
     {
-      "file": "경상남도_함양군_대형폐기물수거수수료정보_20250919.csv",
+      "file": "경상남도_함양군_대형폐기물수거수수료정보_20260825.csv",
       "status": "ok",
       "rows": 129,
       "mapped": [
@@ -370,7 +381,23 @@
       ]
     },
     {
-      "file": "경상북도_경주시_대형폐기물신고현황_20250829_수정.csv",
+      "file": "경상북도_경주시_대형폐기물_신고수요_합성데이터.csv",
+      "status": "skipped_transaction_log",
+      "header": [
+        "번호",
+        "기준연도",
+        "기준월",
+        "요일구분",
+        "시간대",
+        "폐기물분류",
+        "결제방법",
+        "신고건수_합성",
+        "평균결제금액_합성",
+        "총결제금액_합성"
+      ]
+    },
+    {
+      "file": "경상북도_경주시_대형폐기물신고현황_20260831.csv",
       "status": "skipped_transaction_log",
       "header": [
         "배출폐기물",
@@ -383,7 +410,7 @@
       ]
     },
     {
-      "file": "경상북도_고령군_대형폐기물수거수수료정보_20260102.csv",
+      "file": "경상북도_고령군_대형폐기물수거수수료정보_20260902.csv",
       "status": "ok",
       "rows": 113,
       "mapped": [
@@ -479,6 +506,19 @@
       ]
     },
     {
+      "file": "대구광역시 수성구_수성구 홈페이지 대형폐기물 품목_20260829.csv",
+      "status": "skipped_transaction_log",
+      "header": [
+        "앱식별자",
+        "사용자식별자",
+        "번호",
+        "개수",
+        "품목명",
+        "규격",
+        "금액(원)"
+      ]
+    },
+    {
       "file": "대구광역시 중구 대형폐기물 납부필증 판매업소_20201013.csv",
       "status": "skipped_no_fee_table",
       "header": [
@@ -503,7 +543,7 @@
       ]
     },
     {
-      "file": "대전광역시 대덕구_대형폐기물수거정보_20250605.csv",
+      "file": "대전광역시 대덕구_대형폐기물수거정보_20260918.csv",
       "status": "ok",
       "rows": 124,
       "mapped": [
@@ -515,21 +555,18 @@
       ]
     },
     {
-      "file": "대전광역시_서구_대형폐기물 배출 처리 현황_20240926.csv",
+      "file": "대전광역시 서구_대형폐기물 배출 처리현황_20241231.csv",
       "status": "skipped_transaction_log",
       "header": [
-        "순번",
         "배출품명",
         "배출규격",
         "수량",
         "배출동",
         "물품코드",
         "물품명",
-        "물품표준코드",
         "총수수료",
         "배출일",
-        "접수일자",
-        "수거일자"
+        "접수일자"
       ]
     },
     {
@@ -567,21 +604,8 @@
     {
       "file": "대형폐기물 처리 수수료 정보.csv",
       "status": "ok",
-      "rows": 88,
+      "rows": 95,
       "mapped": [
-        "base_date",
-        "category",
-        "fee",
-        "item",
-        "spec"
-      ]
-    },
-    {
-      "file": "대형폐기물 처리 수수료 정보_2025.07.29.csv",
-      "status": "ok",
-      "rows": 220,
-      "mapped": [
-        "base_date",
         "category",
         "fee",
         "item",
@@ -659,7 +683,7 @@
       ]
     },
     {
-      "file": "부산광역시_부산진구_폐기물관련업체현황_20250910.csv",
+      "file": "부산광역시_부산진구_폐기물관련업체현황_20260907.csv",
       "status": "skipped_no_fee_table",
       "header": [
         "업체명",
@@ -793,10 +817,11 @@
       ]
     },
     {
-      "file": "전남광주통합특별시_광양시_대형폐기물수수료현황_20260710.csv",
+      "file": "전남광주통합특별시 함평군_대형폐기물 처리 수수료 정보.csv",
       "status": "ok",
-      "rows": 219,
+      "rows": 165,
       "mapped": [
+        "base_date",
         "category",
         "fee",
         "item",
@@ -804,11 +829,10 @@
       ]
     },
     {
-      "file": "전라남도 함평군_대형폐기물 처리 수수료 정보.csv",
+      "file": "전남광주통합특별시_광양시_대형폐기물수수료현황_20260710.csv",
       "status": "ok",
-      "rows": 165,
+      "rows": 219,
       "mapped": [
-        "base_date",
         "category",
         "fee",
         "item",

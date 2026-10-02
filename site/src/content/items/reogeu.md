@@ -5,7 +5,7 @@ sources:
     asOf: "2026-01-01"
 related: ["yogamaeteu", "peojeulmaeteu", "jangpan", "keoteun"]
 relatedGuides: ["heonot-bangmun-sugeo", "daehyeong-pyegimul-singo"]
-updated: "2026-09-03"
+updated: "2026-10-02"
 ---
 
 러그와 카펫은 **의류수거함에 넣으면 안 됩니다.** 천이라 헷갈리는데, 환경부 훈령이
@@ -44,7 +44,7 @@ updated: "2026-09-03"
 
 | 방식 | 몇 곳 | 환산 중앙값 |
 |---|---|---|
-| 통짜 한 건 | 24곳 | **5,750원** |
+| 통짜 한 건 | 25곳 | **5,500원** |
 | 면적 단위 | 16곳 | **1㎡당 1,060원** |
 
 면적으로 받는 곳은 대부분 <strong>'3.3㎡당'</strong>, 즉 한 평 단위로 적어

@@ -1,6 +1,6 @@
 ---
 sources:
-  - title: "공공데이터포털 — 전국 대형폐기물 품목별 수수료 (47개 시군구 수집분)"
+  - title: "공공데이터포털 — 전국 대형폐기물 품목별 수수료 (48개 시군구 수집분)"
     url: "https://www.data.go.kr/tcs/dss/selectDataSetList.do?keyword=%EB%8C%80%ED%98%95%ED%8F%90%EA%B8%B0%EB%AC%BC"
     asOf: "2026-06-25"
   - title: "E-순환거버넌스 — 단일수거 가능 품목 (전기정수기, 냉온수기 포함)"
@@ -11,7 +11,7 @@ sources:
     asOf: "2026-09-04"
 related: ["gonggicheongjeonggi", "naengjanggo", "setakgi", "jeseupgi"]
 relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
-updated: "2026-09-04"
+updated: "2026-10-02"
 optionsNote: "정수기는 내 물건인지부터 갈립니다. 렌탈이면 버리는 물건이 아니라 반납하는 물건입니다."
 options:
   - label: "렌탈, 멤버십"

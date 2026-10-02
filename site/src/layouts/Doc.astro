@@ -7,14 +7,16 @@ interface Props {
   description: string;
   heading: string;
   updated: string;
+  /** 약관, 방침은 시행일이고 소개, 기록은 고친 날이다. */
+  dateLabel?: string;
 }
-const { title, description, heading, updated } = Astro.props;
+const { title, description, heading, updated, dateLabel = '시행일' } = Astro.props;
 ---
 
 <Base title={title} description={description}>
   <div class="stephead">
     <h1 class="display">{heading}</h1>
-    <p class="hint">시행일 {updated}</p>
+    <p class="hint">{dateLabel} {updated}</p>
   </div>
 
   <article class="doc">

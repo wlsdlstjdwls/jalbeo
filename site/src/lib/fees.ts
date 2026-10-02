@@ -61,7 +61,7 @@ export const UNIT_LABEL: Record<FeeUnitName, string> = {
 
 const raw = feesJson as unknown as Record<string, RawStat>;
 
-/** 수수료 데이터에 등장하는 시군구 전체(47개, 판단 19). 지역 선택 드롭다운에 쓴다. */
+/** 수수료 데이터에 등장하는 시군구 전체(판단 19). 지역 선택 드롭다운에 쓴다. */
 export const ALL_REGIONS: string[] = (() => {
   const set = new Set<string>();
   for (const item of Object.values(raw)) {

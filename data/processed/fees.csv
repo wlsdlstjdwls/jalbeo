@@ -1839,226 +1839,225 @@ sido,sigungu,category,item,spec,fee,base_date,dataset_id,source_url
 경기도,오산시,,화분,소형,1000,,15024724,https://www.data.go.kr/data/15024724/fileData.do
 경기도,오산시,,화일캐비넷,3단이하,2000,,15024724,https://www.data.go.kr/data/15024724/fileData.do
 경기도,오산시,,화일캐비넷,4단이상,3000,,15024724,https://www.data.go.kr/data/15024724/fileData.do
-경기도,오산시,가구,문갑,대리석(높이 또는 폭 1.5m 미만),6000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,문갑,대리석(높이 또는 폭 1.5m~2m),12000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,문갑,대리석(높이 또는 폭 2m 이상),16000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,문갑,일반 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,문짝,목 재,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,문짝,"철재, 유리",4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,비키니옷장,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,서랍장,4단 미만,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,서랍장,4단 이상,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,소파,1인용,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,소파,2인용,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,소파,3인용 이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,소파,6인용 이상,8000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,소파,돌소파,15000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,식탁,대리석(6인용 미만),11000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,식탁,대리석(6인용 이상),16000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,식탁,일반(6인용 미만),3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,식탁,일반(6인용 이상),5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,신발장,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,씽크대,1쪽,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,오디오장(받침대),모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,장롱,쪽 120cm 미만(1쪽당),10000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,장롱,쪽 120cm 이상(1쪽당),15000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,장식장,길이 1m 미만,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,장식장,길이 1m 이상,6000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,주니어장,양 문,10000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,주니어장,한쪽문,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,찬장,대형(4단이상),4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,찬장,소형(4단미만),2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,책상,양수(대형),7000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,책상,편수(소형),4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,책장,1m 미만,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,책장,1m 이상,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,침대,돌침대(1인용),21000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,침대,돌침대(2인용),30000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,침대,"매트리스(더블, 퀸사이즈)",8000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,침대,매트리스(싱글),5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,침대,어린이용(어린이 2층 침대),16000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,침대,어린이용(유아용 침대),4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,침대,일 반(싱글),10000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,침대,일반(매트리스+프레임),15000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,컴퓨터책상,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,콘솔박스,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,탁자,12인용 이상,7000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,탁자,6인용 미만,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,탁자,6인용 이상,6000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,탁자,협 탁,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,텔레비전받침대,길이 1m 미만,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,텔레비전받침대,길이 1m 이상,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,파일캐비닛,3단 이하,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,파일캐비닛,4단 이상,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,파티션,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,평상,1.5mX1.5m 미만,6000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,평상,1.5mX1.5m 이상,7000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,화장대,폭 120cm 미만,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가구,화장대,폭 120cm 이상,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,(소형 가전제품),그 밖에 이에 준하는 소형 가전제품(1m 이상),2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,TV,높이 또는 너비 1m이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,TV.오디오케이스,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,공기청정기,높이 1m이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,냉장고,300리터 미만,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,냉장고,300리터 이상,6000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,냉장고,500리터 이상,8000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,복사기(복합기),높이1m이상,15000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,빙수기,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,세단기,높이 1m이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,세탁기,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,스타일러,모든 규격,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,스탠드,높이 1m이상,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,식기(세척)건조기,높이 1m이상,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,안마기 (종아리용등),높이 또는 너비 1m이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,안마의자,모든 규격,10000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,"에어컨, 온풍기",264㎡ 이상,8000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,"에어컨, 온풍기",66㎡ 미만,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,"에어컨, 온풍기",66㎡ 이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,에어컨실외기,높이 1m이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,오디오,높이 1m이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,전기담요,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,전기장판,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,정수기,높이 1m이상,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,제습기,높이1m이상,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,조명기구,(형광등 제거 후),2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,청소기,대형(업소용),3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,가전제품,탈수기,높이 1m이상,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,가방,"골프용, 낚시용",3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,가방,대형 여행용(캐리어),3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,가방,소형 여행용(캐리어),1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,가방,중형 여행용(캐리어),2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,가스(오븐)레인지,높이 또는 폭 1m이상,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,가스대(선반),1쪽(폭 60cm 이하 ),2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,가정배출소량폐기물,20kg당,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,간판,0.6m x 1.8m 미만,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,간판,0.6m x 1.8m 이상,7000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,간판,입간판,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,개수대,1쪽,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,개집,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,거울,1㎡ 미만,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,거울,1㎡ 이상,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,건조대(빨래),모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,게시판(칠판),"높이 또는 너비 2m이상, 스탠드포함",4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,게시판(칠판),높이 또는 너비1m미만,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,게시판(칠판),높이 또는 너비1m이상,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,고무통,지름 100cm 이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,고무통,지름 50cm 미만,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,고무통,지름 50cm 이상,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,교자상,대형(4인 이상),2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,교자상,소형(4인 미만),1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,금고,높이 또는 너비 100cm 이상,7000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,금고,높이 또는 너비 50cm 미만,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,금고,높이 또는 너비 50cm 이상,6000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,기 타,"커피머신, 스피커, 팩스, 가습기, 카세트라디오, 다리미, 선풍기, 비데, VTR/DVD, 전화기, 족욕기, 헤어드라이기, 전기히터, 전자레인지, 전기밥솥 등 (1m 미만)",0,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,"깨진 유리, 항아리",kg당,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,난로,대 형,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,난로,소 형,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,다리미판,모든 규격,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,도마,모든 규격,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,돗자리,모든 규격,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,마네킹,높이 1m미만,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,마네킹,높이 1m이상,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,물탱크저수조,톤 당,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,바비큐 그릴,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,방석,모든 규격,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,방충망,대형(출입문),3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,방충망,소형(창 문),2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,배기후드,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,"버티컬, 블라인드",1폭 미만,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,"버티컬, 블라인드",2폭 이상,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,베개,1인용,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,변기,양변기,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,병풍,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,보일러,30평 미만,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,보일러,30평 이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,보행기,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,세면대,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,소화기,대형(20kg 이상),7000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,소화기,소 형,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,쇼케이스,높이 또는 너비 1m이상,8000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,수도호스,10m당,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,수족관,1㎡ 미만,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,수족관,1㎡ 이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,수족관 받침대,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,"스키, 보드",모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,시계,대형(1m 이상),5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,시계,소형(50cm 미만),1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,시계,중형(50cm 이상),3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,식기건조대,모든 규격,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,쌀통,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,쓰레기통,가정용,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,쓰레기통,"사무실용, 옥외용",2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,아이스박스,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,액자,1㎡ 미만,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,액자,1㎡ 이상,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,앰프,높이 1m이상,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,오락기,높이1m이상,10000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,오르간(풍금),모든규격,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,옥매트,모든규격,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,온수기,높이 1m이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,옷걸이,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,와인셀러,높이 1m이상,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,욕조,유아용,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,욕조,일반(모든 규격),5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,우산,개 당,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,유류통,톤 당,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,유리,1㎡당,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,유모차,1인용,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,유모차,2인용 이상,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,유아매트,폭 2m 미만,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,유아매트,폭 2m 이상,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,유아용목마,모든 규격,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,유아용변기,모든 규격,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,의자,1인용,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,의자,2인용,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,의자,3인용 이상,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,이불,솜이불(장당),2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,이불,홑이불(장당),1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,이젤,높이 1m 이상,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,이젤,휴대용 또는 높이 1m 미만,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,인라인스케이트,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,자동판매기,소형(사무실용/1m 이상),4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,자동판매기,중형(영업용),12000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,자전거,어른용,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,자전거,어린이용,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,장난감,대 형,5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,장난감,소형(묶음 단위 20리터기준),1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,장판,3㎡당,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,재봉틀,모든 규격(거치대 제외),2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,죽부인,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,차광막,2㎡당,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,창문,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,천막,모든규격,6000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,체중계,대 형,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,체중계,소 형,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,카시트,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,카페트,1㎡ 미만,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,카페트,1㎡ 이상,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,캐비닛,모든 규격,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,캣타워,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,커튼 봉,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,쿠션,1인용,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,킥보드,어린이용,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,킥보드,"전동, 성인용",3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,타이어,대형(휠 20인치이상),5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,타이어,소형(휠 15인치 이하),3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,타이어,중형(휠 16~19인치),4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,타자기,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,"탁구대, 당구대",가정용,11000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,텐트,거실형,10000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,텐트,일반용(3인용 이하),3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,텐트,일반용(4인용 이상),5000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,파라솔,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,파렛트,모든 규격,4000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,페인트통,30L 미만,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,페인트통,30L 이상,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,피아노,모든 규격,15000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,헬스기구,"런닝머신, 싸이클",7000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,화분,대 형,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,화분,소 형,1000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,화환,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,환풍기,모든 규격,2000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
-경기도,오산시,기타,휠체어,모든 규격,3000,2025-07-29,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,문갑,대리석(높이 또는 폭 1.5m 미만),6000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,문갑,대리석(높이 또는 폭 1.5m~2m),12000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,문갑,대리석(높이 또는 폭 2m 이상),16000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,문갑,일반 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,문짝,목 재,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,문짝,"철재, 유리",4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,비키니옷장,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,서랍장,4단 미만,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,서랍장,4단 이상,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,소파,1인용,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,소파,2인용,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,소파,3인용 이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,소파,6인용 이상,8000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,소파,돌소파,15000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,식탁,대리석(6인용 미만),11000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,식탁,대리석(6인용 이상),16000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,식탁,일반(6인용 미만),3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,식탁,일반(6인용 이상),5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,신발장,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,씽크대,1쪽,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,오디오장(받침대),모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,장롱,쪽 120cm 미만(1쪽당),10000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,장롱,쪽 120cm 이상(1쪽당),15000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,장식장,길이 1m 미만,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,장식장,길이 1m 이상,6000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,주니어장,양 문,10000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,주니어장,한쪽문,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,찬장,대형(4단이상),4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,찬장,소형(4단미만),2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,책상,양수(대형),7000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,책상,편수(소형),4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,책장,1m 미만,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,책장,1m 이상,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,침대,돌침대(1인용),21000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,침대,돌침대(2인용),30000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,침대,"매트리스(더블, 퀸사이즈)",8000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,침대,매트리스(싱글),5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,침대,어린이용(어린이 2층 침대),16000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,침대,어린이용(유아용 침대),4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,침대,일 반(싱글),10000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,침대,일반(매트리스+프레임),15000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,컴퓨터책상,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,콘솔박스,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,탁자,12인용 이상,7000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,탁자,6인용 미만,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,탁자,6인용 이상,6000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,탁자,협 탁,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,텔레비전받침대,길이 1m 미만,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,텔레비전받침대,길이 1m 이상,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,파일캐비닛,3단 이하,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,파일캐비닛,4단 이상,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,파티션,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,평상,1.5mX1.5m 미만,6000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,평상,1.5mX1.5m 이상,7000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,화장대,폭 120cm 미만,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가구,화장대,폭 120cm 이상,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,(소형 가전제품),그 밖에 이에 준하는 소형 가전제품(1m 이상),2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,TV,높이 또는 너비 1m이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,TV.오디오케이스,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,공기청정기,높이 1m이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,냉장고,300리터 미만,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,냉장고,300리터 이상,6000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,냉장고,500리터 이상,8000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,복사기(복합기),높이1m이상,15000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,빙수기,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,세단기,높이 1m이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,세탁기,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,스타일러,모든 규격,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,스탠드,높이 1m이상,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,식기(세척)건조기,높이 1m이상,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,안마기 (종아리용등),높이 또는 너비 1m이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,안마의자,모든 규격,10000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,"에어컨, 온풍기",264㎡ 이상,8000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,"에어컨, 온풍기",66㎡ 미만,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,"에어컨, 온풍기",66㎡ 이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,에어컨실외기,높이 1m이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,오디오,높이 1m이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,전기담요,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,전기장판,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,정수기,높이 1m이상,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,제습기,높이1m이상,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,조명기구,(형광등 제거 후),2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,청소기,대형(업소용),3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,가전제품,탈수기,높이 1m이상,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,가방,"골프용, 낚시용",3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,가방,대형 여행용(캐리어),3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,가방,소형 여행용(캐리어),1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,가방,중형 여행용(캐리어),2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,가스(오븐)레인지,높이 또는 폭 1m이상,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,가스대(선반),1쪽(폭 60cm 이하 ),2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,가정배출소량폐기물,20kg당,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,간판,0.6m x 1.8m 미만,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,간판,0.6m x 1.8m 이상,7000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,간판,입간판,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,개수대,1쪽,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,개집,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,거울,1㎡ 미만,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,거울,1㎡ 이상,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,건조대(빨래),모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,게시판(칠판),"높이 또는 너비 2m이상, 스탠드포함",4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,게시판(칠판),높이 또는 너비1m미만,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,게시판(칠판),높이 또는 너비1m이상,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,고무통,지름 100cm 이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,고무통,지름 50cm 미만,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,고무통,지름 50cm 이상,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,교자상,대형(4인 이상),2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,교자상,소형(4인 미만),1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,금고,높이 또는 너비 100cm 이상,7000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,금고,높이 또는 너비 50cm 미만,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,금고,높이 또는 너비 50cm 이상,6000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,기 타,"커피머신, 스피커, 팩스, 가습기, 카세트라디오, 다리미, 선풍기, 비데, VTR/DVD, 전화기, 족욕기, 헤어드라이기, 전기히터, 전자레인지, 전기밥솥 등 (1m 미만)",0,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,"깨진 유리, 항아리",kg당,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,난로,대 형,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,난로,소 형,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,다리미판,모든 규격,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,도마,모든 규격,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,돗자리,모든 규격,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,마네킹,높이 1m미만,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,마네킹,높이 1m이상,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,물탱크저수조,톤 당,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,바비큐 그릴,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,방석,모든 규격,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,방충망,대형(출입문),3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,방충망,소형(창 문),2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,배기후드,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,"버티컬, 블라인드",1폭 미만,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,"버티컬, 블라인드",2폭 이상,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,베개,1인용,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,변기,양변기,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,병풍,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,보일러,30평 미만,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,보일러,30평 이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,보행기,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,세면대,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,소화기,대형(20kg 이상),7000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,소화기,소 형,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,쇼케이스,높이 또는 너비 1m이상,8000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,수도호스,10m당,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,수족관,1㎡ 미만,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,수족관,1㎡ 이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,수족관 받침대,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,"스키, 보드",모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,시계,대형(1m 이상),5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,시계,소형(50cm 미만),1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,시계,중형(50cm 이상),3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,식기건조대,모든 규격,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,쌀통,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,쓰레기통,가정용,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,쓰레기통,"사무실용, 옥외용",2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,아이스박스,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,액자,1㎡ 미만,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,액자,1㎡ 이상,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,앰프,높이 1m이상,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,오락기,높이1m이상,10000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,오르간(풍금),모든규격,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,옥매트,모든규격,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,온수기,높이 1m이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,옷걸이,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,와인셀러,높이 1m이상,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,욕조,유아용,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,욕조,일반(모든 규격),5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,우산,개 당,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,유류통,톤 당,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,유리,1㎡당,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,유모차,1인용,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,유모차,2인용 이상,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,유아매트,폭 2m 미만,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,유아매트,폭 2m 이상,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,유아용목마,모든 규격,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,유아용변기,모든 규격,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,의자,1인용,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,의자,2인용,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,의자,3인용 이상,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,이불,솜이불(장당),2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,이불,홑이불(장당),1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,이젤,높이 1m 이상,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,이젤,휴대용 또는 높이 1m 미만,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,인라인스케이트,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,자동판매기,소형(사무실용/1m 이상),4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,자동판매기,중형(영업용),12000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,자전거,어른용,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,자전거,어린이용,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,장난감,대 형,5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,장난감,소형(묶음 단위 20리터기준),1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,장판,3㎡당,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,재봉틀,모든 규격(거치대 제외),2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,죽부인,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,차광막,2㎡당,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,창문,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,천막,모든규격,6000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,체중계,대 형,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,체중계,소 형,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,카시트,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,카페트,1㎡ 이상,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,캐비닛,모든 규격,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,캣타워,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,커튼 봉,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,쿠션,1인용,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,킥보드,어린이용,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,킥보드,"전동, 성인용",3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,타이어,대형(휠 20인치이상),5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,타이어,소형(휠 15인치 이하),3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,타이어,중형(휠 16~19인치),4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,타자기,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,"탁구대, 당구대",가정용,11000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,텐트,거실형,10000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,텐트,일반용(3인용 이하),3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,텐트,일반용(4인용 이상),5000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,파라솔,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,파렛트,모든 규격,4000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,페인트통,30L 미만,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,페인트통,30L 이상,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,피아노,모든 규격,15000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,헬스기구,"런닝머신, 싸이클",7000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,화분,대 형,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,화분,소 형,1000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,화환,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,환풍기,모든 규격,2000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
+경기도,오산시,기타,휠체어,모든 규격,3000,2026-08-25,15097803,https://www.data.go.kr/data/15097803/fileData.do
 경기도,의정부시,,TV,15인치이상30인치이하,3000,2026-05-31,15100221,https://www.data.go.kr/data/15100221/fileData.do
 경기도,의정부시,,TV,42인치미만,4000,2026-05-31,15100221,https://www.data.go.kr/data/15100221/fileData.do
 경기도,의정부시,,TV,42인치이상,5000,2026-05-31,15100221,https://www.data.go.kr/data/15100221/fileData.do
@@ -3476,248 +3475,343 @@ sido,sigungu,category,item,spec,fee,base_date,dataset_id,source_url
 경상남도,창녕군,,화일캐비닛,높이 1m미만,2000,,15014580,https://www.data.go.kr/data/15014580/fileData.do
 경상남도,창녕군,,화일캐비닛,높이 1m이상,3000,,15014580,https://www.data.go.kr/data/15014580/fileData.do
 경상남도,창녕군,,화장대,모든규격,3000,,15014580,https://www.data.go.kr/data/15014580/fileData.do
-경상남도,함양군,가구류,대리석식탁,1제곱미터 당,8000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,상(床),모든 규격,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,서랍장,1단 당,1000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,소파,1인용 당,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,소파,스툴,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,식탁,4인용 미만,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,식탁,4인용 이상,6000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,씽크대,60센티미터 이하 1쪽 당,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,의자(소파 이외),바의자,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,의자(소파 이외),식탁의자,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,의자(소파 이외),안마의자,15000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,의자(소파 이외),폭 또는 높이 1.2미터 미만,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,의자(소파 이외),폭 또는 높이 1.2미터 이상,5000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,장롱,폭 1미터미만(1쪽 당),11000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,장롱,폭 1미터이상(1쪽 당),17000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,진열장류(책장+장식장+신발장+찬장+렌지대+문갑+TV받침대 등),문이 없는 것 폭 또는 높이 1미터 미만,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,진열장류(책장+장식장+신발장+찬장+렌지대+문갑+TV받침대 등),문이 있는 것 폭 또는 높이 1미터 이상,8000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,책상,상판 1미터 당,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,책상,양수(대형),6000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,책상,편수(소형),4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,침대(옥+돌+황토),1인용,15000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,침대(옥+돌+황토),2인용 이상,20000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,침대받침대,1인용,5000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,침대받침대,2인용 이상,6000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,침대받침대,유아용,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,캐비닛,높이 1미터 미만,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,캐비닛,높이 1미터 이상,6000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가구류,화장대,모든 규격,6000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,공기청정기,높이 1미터 미만,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,공기청정기,높이 1미터 이상,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,난로,전기난로,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,냉장고,1000리터이상,12000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,냉장고,300리터 이상 500리터 미만,7000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,냉장고,300리터미만,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,냉장고,500리터 이상 1000리터미만,9000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,비디오+DVD 플레이어,모든 규격,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,선풍기,모든 규격,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,세탁기,10킬로그램 이하,5000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,세탁기,10킬로그램 초과,7000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,소형가전제품(가습기+전화기+카세트라디오+토스트기+빙수기+헤어드라이기+족욕기+믹서+소형변압기 등),모든 규격,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,식기건조기,모든 규격,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,식기세척기,모든 규격,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,에어컨 실외기,모든 규격,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,에어컨+냉난방기,264제곱미터 이상,9000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,에어컨+냉난방기,66제곱미터 미만,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,에어컨+냉난방기,66제곱미터 이상 264제곱미터 미만,6000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,오디오,스피커,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,오디오,폭 1미터 미만,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,오디오,폭 1미터 이상,5000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,의류관리기,모든 규격,8000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,전기밥솥,모든 규격,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,정수기(냉온수기),폭 또는 높이 1미터 미만,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,정수기(냉온수기),폭 또는 높이 1미터 이상,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,청소기,가정용,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,청소기,업소용,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,컴퓨터,노트북,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,컴퓨터,본체+모니터+프린트(소형),3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,탈수기,모든 규격,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,텔레비전,20인치 미만,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,텔레비전,20인치 이상 42인치 미만,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,가전제품류,텔레비전,42인치 이상,6000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,가방,레저류 가방,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,가방,여행가방 20인치 미만,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,가방,여행가방 20인치 이상,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,간판,1제곱미터 당,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,거울+액자+유리,1제곱미터 당,1000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,그 밖의 잡 품목,PP포대 당(25킬로그램),3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,라텍스,두께 15센티미터 미만,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,라텍스,두께 15센티미터 이상,8000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,마네킹,높이 1.5미터 당,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,매트리스,1인용,5000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,매트리스,2인용 이상,9000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,문짝,1제곱미터 당,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,물통(PE+FRP),1톤 당,10000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,변기,모든 규격,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,병풍,개 당,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,보일러,모든 규격,5000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,빨래건조대,1미터 당,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,세단기,모든 규격,5000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,세면기,모든 규격,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,수족관,폭 또는 높이 1미터 당,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,승용 타이어,폭 195밀리미터 미만,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,승용 타이어,폭 195밀리미터 이상,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,시계,벽걸이,1000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,시계,입식,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,쓰레기통류,폭 또는 높이 40센티미터 당,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,아이스박스,모든 규격,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,어린이용품,유모차+보행기+붕붕차+카시트,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,오락기계,대형(업소용),7000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,오락기계,소형(가정용),3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,옥매트(건강매트),모든 규격,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,욕조,모든 규격,6000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,운동기구,폭 또는 높이 1미터 당,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,유아매트,3.3제곱미터 당,1000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,유아용 미끄럼틀,폭 또는 높이 1미터 당,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,의료기기,폭 또는 높이 1미터 당,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,이불,180센티미터×220센티미터 1장당,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,자동판매기,폭 또는 높이 1미터 미만,11000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,자동판매기,폭 또는 높이 1미터 이상,17000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,자전거,유아용 자전거,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,자전거,자전거,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,장독,모든 규격,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,장판류,3.3제곱미터 당,1000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,재봉틀,모든 규격,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,전기장판,모든 규격,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,전자복사기,폭 또는 높이 1미터 이상,6000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,정화조(PE+FRP),1톤 당,10000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,창틀,1제곱미터 당,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,카펫,2미터×4미터 미만,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,카펫,2미터×4미터 이상,6000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,타악기류,모든 규격,5000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,타자기,모든 규격,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,팩스기,모든 규격,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,팬+후드,모든 규격,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,폐소화기,모든 규격,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,피아노류,그랜드,17000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,피아노류,디지털,7000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,피아노류,업라이트,11000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,피아노류,오르간,5000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,현악기류,모든 규격,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,기타,휠체어,모든 규격,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,생활용품류,난로,가스난로,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,생활용품류,난로,석유난로,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,생활용품류,쌀통,모든 규격,3000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,생활용품류,오븐렌지,폭 또는 높이 1미터 미만,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,생활용품류,오븐렌지,폭 또는 높이 1미터 이상,4000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,생활용품류,옷걸이,모든 규격,1000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,생활용품류,전자+가스레인지,모든 규격,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상남도,함양군,생활용품류,조명+스탠드,모든 규격,2000,2024-10-07,15094078,https://www.data.go.kr/data/15094078/fileData.do
-경상북도,고령군,가구류,매트리스,"더블,퀸사이즈",8000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,매트리스,싱글,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,"문갑,회장대",모든 규격,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,서랍장,4단 미만,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,서랍장,4단 이상,4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,쇼파,1인용,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,쇼파,4인용 미만,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,쇼파,4인용 이상,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,신발장,모든 규격,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,안마의자,모든 규격,20000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,옷걸이,스탠드형,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,의자,모든 규격,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,장롱,120㎝ 미만 1쪽,10000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,장롱,120㎝ 이상 1쪽,15000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,장식장(폭또는높이),1m 미만,4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,장식장(폭또는높이),1m 이상,6000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,책상,양수(대형),5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,책상,편수(소형),4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,책장(폭또는높이),1m 미만,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,책장(폭또는높이),1m 이상,4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,"침대(돌,옥,황토)",1인용,30000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,"침대(돌,옥,황토)",2인용,30000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,침대(매트리스포함),"더블,퀸사이즈",15000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,침대(매트리스포함),싱글,10000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,캐비닛,모든 규격,4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,탁자,모든 규격,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,화일캐비닛,4단 이상,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가구류,화일캐비닛,4단 이하,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,TV,25인치 미만,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,TV,25인치 이상,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,개인용컴퓨터,모니터,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,개인용컴퓨터,본체,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,개인용컴퓨터,스피커,1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,개인용컴퓨터,키보드,1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,개인용컴퓨터,프린터기,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,공기청정기,높이1m 미만,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,공기청정기,높이1m 이상,4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,냉장고,300ℓ 미만,4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,냉장고,300ℓ 이상,6000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,냉장고,500ℓ 이상,8000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,다리미,모든규격,1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,복사기,모든규격,15000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,"선풍기,가습기,청소기",모든규격,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,"세탁기,건조기",모든규격,4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,"에어컨,온풍기",264㎡형 이상,8000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,"에어컨,온풍기",66㎡형 미만,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,"에어컨,온풍기",66㎡형 이상,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,"오디오,비디오",모든 규격,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,전가오락기(게임기),높이1m 미만,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,전가오락기(게임기),높이1m 이상,10000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,가전제품,팩시미리,모든규격,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,가시트,모든규격,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,거울,1㎡미만,1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,거울,1㎡이상,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,"문갑,회장대",실내문,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,"문갑,회장대",유리문,15000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,"문갑,회장대",철문,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,물탱크저수조,1톤당,10000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,배기후드,모든규격,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,벽시계,대형(1m이상),5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,벽시계,소형(0.5m미만),1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,벽시계,중형(0.5m이상 1m미만),3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,변기,비데,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,변기,양변기,10000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,변기,좌변기,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,보일러,20평미만,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,"보행기,유모차",모든규격,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,수족과,1㎥미만,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,수족관,1㎥이상,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,스티로폼(폐건축자재및재활용불가품),0.1㎥마다,1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,스티로폼(폐건축자재및재활용불가품),1㎥ 기준,10000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,액자,1㎡미만,1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,액자,1㎡이상,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,여행용가방,모든규격,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,옷장,모든 규격,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,욕조,모든 규격,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,이불,솜이불(장당),2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,이불,홑이불(장당),1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,자전거,모든규격,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,장판,1㎥당,1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,전화기,모든규격,1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,카펫,1㎡미만,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,카펫,1㎡이상,4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,타이어,림외경19인치미만,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,타이어,림외경19인치이상,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,파티션,2m 미만,4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,파티션,2m 이상,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,폐소화기(규격기준),15㎏ 이상,7000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,폐소화기(규격기준),3.3㎏ 미만,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,폐소화기(규격기준),3.3㎏ 이상,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,폐소화기(규격기준),7㎏이상 15㎏미만,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,화분,높이 50㎝미만,1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,기타,화분,높이 50㎝이상,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,난방용품,난로,대형,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,난방용품,난로,소형,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,난방용품,보일러등유류통,1톤당,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,난방용품,전기스토브,모든규격,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,난방용품,전기장판온수매트,모든규격,4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,악기,오르간,모든 규격,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,악기,피아노,대형,15000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,악기,피아노,소형,10000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,주방용품,가스(오븐)레인지,높이1m 미만,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,주방용품,가스(오븐)레인지,높이1m 이상,4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,주방용품,교자상,대형(4인 이상),2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,주방용품,교자상,소형(4인 미만),1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,주방용품,"믹서기,분쇄기",모든 규격,1000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,주방용품,식기(세척)건조기,인공건조(동력),4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,주방용품,식탁,6인 미만,4000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,주방용품,식탁,6인 이상,5000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,주방용품,싱크대,1쪽,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,주방용품,쌀통,모든 규격,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,주방용품,전기(압력)밥솥,모든 규격,2000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
-경상북도,고령군,주방용품,전자레인지,모든 규격,3000,2026-01-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상남도,함안군,가구류,TV 진열대,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,문갑,모든 규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,상,"가로, 세로 1m미만",2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,상,"가로, 세로 1m이상",3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,서랍장,5단 미만,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,서랍장,5단 이상,4000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,쇼파,1인용,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,쇼파,2인용,5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,쇼파,3인용 이상,7000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,식탁,6인 미만,4000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,식탁,6인 이상,5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,신발장,모든규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,싱크대,모든 규격,5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,싱크대장,모든 규격,4000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,옷걸이,모든 규격,1000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,의자,안마의자(1인용),5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,의자,일반의자(1인용),2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,의자,장의자,5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,장롱,120cm장 1족,15000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,장롱,90cm장 1족,10000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,장식장,모든 규격,5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,진열장,가로 90cm 미만,5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,진열장,가로 90cm 이상,7000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,책상,"양수, 대형",5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,책상,"판수, 소형",4000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,책장,모든규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,캐비닛,모든 규격,4000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,파일캐비넷,4단 미만,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,파일캐비넷,4단 이상,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가구류,화장대,모든 규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,가스렌지,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,가스오븐렌지,높이 1m미만,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,가스오븐렌지,높이 1m이상,4000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,공기청정기,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,냉장고,300L 미만,4000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,냉장고,300~500L 미만,5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,냉장고,500L 이상,8000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,복사기,모든 규격,5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,비디오,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,선풍기,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,세탁기,8KG 미만,4000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,세탁기,8KG 이상,6000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,식기세척기,모든 규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,에어컨,264㎡형 이상,8000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,에어컨,66~264㎡형 미만,5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,에어컨,66㎡형 미만,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,장판,3.3㎡당,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,전기난로,모든 규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,전기밭솥,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,전기장판,모든 규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,전자레인지,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,전축(오디오),폭 1m 미만,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,전축(오디오),폭 1m 이상,5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,전축스피커,모든 규격,1000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,정수기,모든 규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,제습기,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,청소기,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,카세트,모든 규격,1000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,컴퓨터,모니터,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,컴퓨터,본체,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,탈수기,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,텔레비전,42인치 미만,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,텔레비전,42인치 이상,5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,팩시밀리,모든 규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,가전제품,프린터기,모든 규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,거울,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,대형가방,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,문짝,개당,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,보행기,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,세면기,모든 규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,시계,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,쌀통,모든 규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,아이스박스,모든 규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,양변기,모든 규격,5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,오르간,모든 규격,4000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,욕조,모든 규격,10000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,유모차,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,자동판매기,가로 1m 미만,10000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,자동판매기,가로 1m 이상,15000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,창틀,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,판유리,1제곱미터 당,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,폐소화기,3.4kg 미만,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,폐소화기,3.4kg 이상,4000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,피아노,그랜드,15000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,기타,피아노,어프라이트,10000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,침구류,돌침대,1인용(돌매트),15000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,침구류,돌침대,1인용(틀+돌매트),20000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,침구류,돌침대,2인용(돌매트),22000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,침구류,돌침대,2인용(틀+돌매트),30000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,침구류,옥매트,모든 규격,3000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,침구류,침대,1인용(매트리스),5000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,침구류,침대,1인용(틀+매트리스),10000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,침구류,침대,2인용(매트리스),8000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,침구류,침대,2인용(틀+매트리스),15000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함안군,침구류,카페트,모든 규격,2000,,15093765,https://www.data.go.kr/data/15093765/fileData.do
+경상남도,함양군,가구류,대리석식탁,1제곱미터 당,8000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,상(床),모든 규격,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,서랍장,1단 당,1000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,소파,1인용 당,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,소파,스툴,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,식탁,4인용 미만,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,식탁,4인용 이상,6000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,씽크대,60센티미터 이하 1쪽 당,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,의자(소파 이외),바의자,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,의자(소파 이외),식탁의자,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,의자(소파 이외),안마의자,15000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,의자(소파 이외),폭 또는 높이 1.2미터 미만,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,의자(소파 이외),폭 또는 높이 1.2미터 이상,5000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,장롱,폭 1미터미만(1쪽 당),11000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,장롱,폭 1미터이상(1쪽 당),17000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,진열장류(책장+장식장+신발장+찬장+렌지대+문갑+TV받침대 등),문이 없는 것 폭 또는 높이 1미터 미만,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,진열장류(책장+장식장+신발장+찬장+렌지대+문갑+TV받침대 등),문이 있는 것 폭 또는 높이 1미터 이상,8000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,책상,상판 1미터 당,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,책상,양수(대형),6000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,책상,편수(소형),4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,침대(옥+돌+황토),1인용,15000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,침대(옥+돌+황토),2인용 이상,20000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,침대받침대,1인용,5000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,침대받침대,2인용 이상,6000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,침대받침대,유아용,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,캐비닛,높이 1미터 미만,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,캐비닛,높이 1미터 이상,6000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가구류,화장대,모든 규격,6000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,공기청정기,높이 1미터 미만,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,공기청정기,높이 1미터 이상,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,난로,전기난로,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,냉장고,1000리터이상,12000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,냉장고,300리터 이상 500리터 미만,7000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,냉장고,300리터미만,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,냉장고,500리터 이상 1000리터미만,9000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,비디오+DVD 플레이어,모든 규격,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,선풍기,모든 규격,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,세탁기,10킬로그램 이하,5000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,세탁기,10킬로그램 초과,7000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,소형가전제품(가습기+전화기+카세트라디오+토스트기+빙수기+헤어드라이기+족욕기+믹서+소형변압기 등),모든 규격,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,식기건조기,모든 규격,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,식기세척기,모든 규격,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,에어컨 실외기,모든 규격,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,에어컨+냉난방기,264제곱미터 이상,9000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,에어컨+냉난방기,66제곱미터 미만,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,에어컨+냉난방기,66제곱미터 이상 264제곱미터 미만,6000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,오디오,스피커,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,오디오,폭 1미터 미만,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,오디오,폭 1미터 이상,5000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,의류관리기,모든 규격,8000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,전기밥솥,모든 규격,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,정수기(냉온수기),폭 또는 높이 1미터 미만,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,정수기(냉온수기),폭 또는 높이 1미터 이상,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,청소기,가정용,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,청소기,업소용,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,컴퓨터,노트북,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,컴퓨터,본체+모니터+프린트(소형),3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,탈수기,모든 규격,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,텔레비전,20인치 미만,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,텔레비전,20인치 이상 42인치 미만,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,가전제품류,텔레비전,42인치 이상,6000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,가방,레저류 가방,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,가방,여행가방 20인치 미만,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,가방,여행가방 20인치 이상,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,간판,1제곱미터 당,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,거울+액자+유리,1제곱미터 당,1000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,그 밖의 잡 품목,PP포대 당(25킬로그램),3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,라텍스,두께 15센티미터 미만,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,라텍스,두께 15센티미터 이상,8000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,마네킹,높이 1.5미터 당,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,매트리스,1인용,5000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,매트리스,2인용 이상,9000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,문짝,1제곱미터 당,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,물통(PE+FRP),1톤 당,10000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,변기,모든 규격,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,병풍,개 당,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,보일러,모든 규격,5000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,빨래건조대,1미터 당,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,세단기,모든 규격,5000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,세면기,모든 규격,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,수족관,폭 또는 높이 1미터 당,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,승용 타이어,폭 195밀리미터 미만,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,승용 타이어,폭 195밀리미터 이상,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,시계,벽걸이,1000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,시계,입식,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,쓰레기통류,폭 또는 높이 40센티미터 당,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,아이스박스,모든 규격,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,어린이용품,유모차+보행기+붕붕차+카시트,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,오락기계,대형(업소용),7000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,오락기계,소형(가정용),3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,옥매트(건강매트),모든 규격,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,욕조,모든 규격,6000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,운동기구,폭 또는 높이 1미터 당,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,유아매트,3.3제곱미터 당,1000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,유아용 미끄럼틀,폭 또는 높이 1미터 당,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,의료기기,폭 또는 높이 1미터 당,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,이불,180센티미터×220센티미터 1장당,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,자동판매기,폭 또는 높이 1미터 미만,11000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,자동판매기,폭 또는 높이 1미터 이상,17000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,자전거,유아용 자전거,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,자전거,자전거,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,장독,모든 규격,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,장판류,3.3제곱미터 당,1000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,재봉틀,모든 규격,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,전기장판,모든 규격,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,전자복사기,폭 또는 높이 1미터 이상,6000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,정화조(PE+FRP),1톤 당,10000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,창틀,1제곱미터 당,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,카펫,2미터×4미터 미만,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,카펫,2미터×4미터 이상,6000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,타악기류,모든 규격,5000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,타자기,모든 규격,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,팩스기,모든 규격,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,팬+후드,모든 규격,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,폐소화기,모든 규격,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,피아노류,그랜드,17000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,피아노류,디지털,7000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,피아노류,업라이트,11000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,피아노류,오르간,5000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,현악기류,모든 규격,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,기타,휠체어,모든 규격,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,생활용품류,난로,가스난로,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,생활용품류,난로,석유난로,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,생활용품류,쌀통,모든 규격,3000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,생활용품류,오븐렌지,폭 또는 높이 1미터 미만,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,생활용품류,오븐렌지,폭 또는 높이 1미터 이상,4000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,생활용품류,옷걸이,모든 규격,1000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,생활용품류,전자+가스레인지,모든 규격,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상남도,함양군,생활용품류,조명+스탠드,모든 규격,2000,2026-08-25,15094078,https://www.data.go.kr/data/15094078/fileData.do
+경상북도,고령군,가구류,매트리스,"더블,퀸사이즈",8000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,매트리스,싱글,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,"문갑,회장대",모든 규격,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,서랍장,4단 미만,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,서랍장,4단 이상,4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,쇼파,1인용,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,쇼파,4인용 미만,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,쇼파,4인용 이상,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,신발장,모든 규격,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,안마의자,모든 규격,20000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,옷걸이,스탠드형,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,의자,모든 규격,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,장롱,120㎝ 미만 1쪽,10000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,장롱,120㎝ 이상 1쪽,15000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,장식장(폭또는높이),1m 미만,4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,장식장(폭또는높이),1m 이상,6000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,책상,양수(대형),5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,책상,편수(소형),4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,책장(폭또는높이),1m 미만,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,책장(폭또는높이),1m 이상,4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,"침대(돌,옥,황토)",1인용,30000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,"침대(돌,옥,황토)",2인용,30000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,침대(매트리스포함),"더블,퀸사이즈",15000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,침대(매트리스포함),싱글,10000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,캐비닛,모든 규격,4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,탁자,모든 규격,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,화일캐비닛,4단 이상,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가구류,화일캐비닛,4단 이하,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,TV,25인치 미만,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,TV,25인치 이상,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,개인용컴퓨터,모니터,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,개인용컴퓨터,본체,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,개인용컴퓨터,스피커,1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,개인용컴퓨터,키보드,1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,개인용컴퓨터,프린터기,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,공기청정기,높이1m 미만,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,공기청정기,높이1m 이상,4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,냉장고,300ℓ 미만,4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,냉장고,300ℓ 이상,6000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,냉장고,500ℓ 이상,8000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,다리미,모든규격,1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,복사기,모든규격,15000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,"선풍기,가습기,청소기",모든규격,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,"세탁기,건조기",모든규격,4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,"에어컨,온풍기",264㎡형 이상,8000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,"에어컨,온풍기",66㎡형 미만,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,"에어컨,온풍기",66㎡형 이상,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,"오디오,비디오",모든 규격,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,전가오락기(게임기),높이1m 미만,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,전가오락기(게임기),높이1m 이상,10000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,가전제품,팩시미리,모든규격,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,가시트,모든규격,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,거울,1㎡미만,1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,거울,1㎡이상,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,"문갑,회장대",실내문,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,"문갑,회장대",유리문,15000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,"문갑,회장대",철문,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,물탱크저수조,1톤당,10000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,배기후드,모든규격,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,벽시계,대형(1m이상),5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,벽시계,소형(0.5m미만),1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,벽시계,중형(0.5m이상 1m미만),3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,변기,비데,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,변기,양변기,10000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,변기,좌변기,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,보일러,20평미만,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,"보행기,유모차",모든규격,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,수족과,1㎥미만,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,수족관,1㎥이상,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,스티로폼(폐건축자재및재활용불가품),0.1㎥마다,1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,스티로폼(폐건축자재및재활용불가품),1㎥ 기준,10000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,액자,1㎡미만,1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,액자,1㎡이상,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,여행용가방,모든규격,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,옷장,모든 규격,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,욕조,모든 규격,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,이불,솜이불(장당),2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,이불,홑이불(장당),1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,자전거,모든규격,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,장판,1㎥당,1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,전화기,모든규격,1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,카펫,1㎡미만,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,카펫,1㎡이상,4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,타이어,림외경19인치미만,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,타이어,림외경19인치이상,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,파티션,2m 미만,4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,파티션,2m 이상,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,폐소화기(규격기준),15㎏ 이상,7000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,폐소화기(규격기준),3.3㎏ 미만,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,폐소화기(규격기준),3.3㎏ 이상,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,폐소화기(규격기준),7㎏이상 15㎏미만,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,화분,높이 50㎝미만,1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,기타,화분,높이 50㎝이상,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,난방용품,난로,대형,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,난방용품,난로,소형,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,난방용품,보일러등유류통,1톤당,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,난방용품,전기스토브,모든규격,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,난방용품,전기장판온수매트,모든규격,4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,악기,오르간,모든 규격,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,악기,피아노,대형,15000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,악기,피아노,소형,10000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,주방용품,가스(오븐)레인지,높이1m 미만,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,주방용품,가스(오븐)레인지,높이1m 이상,4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,주방용품,교자상,대형(4인 이상),2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,주방용품,교자상,소형(4인 미만),1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,주방용품,"믹서기,분쇄기",모든 규격,1000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,주방용품,식기(세척)건조기,인공건조(동력),4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,주방용품,식탁,6인 미만,4000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,주방용품,식탁,6인 이상,5000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,주방용품,싱크대,1쪽,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,주방용품,쌀통,모든 규격,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,주방용품,전기(압력)밥솥,모든 규격,2000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
+경상북도,고령군,주방용품,전자레인지,모든 규격,3000,2026-09-02,15140993,https://www.data.go.kr/data/15140993/fileData.do
 경상북도,김천시,,(매트리스포함),,10000,2026-08-21,15093130,https://www.data.go.kr/data/15093130/fileData.do
 경상북도,김천시,,(장식장 추가),,3000,2026-08-21,15093130,https://www.data.go.kr/data/15093130/fileData.do
 경상북도,김천시,,PVC파이프,,5000,2026-08-21,15093130,https://www.data.go.kr/data/15093130/fileData.do
@@ -4893,130 +4987,130 @@ sido,sigungu,category,item,spec,fee,base_date,dataset_id,source_url
 대구광역시,수성구,,항 아 리,중형(0.5㎥이상),2000,,15148346,https://www.data.go.kr/data/15148346/fileData.do
 대구광역시,수성구,,화 장 대,거울 미부착,3000,,15148346,https://www.data.go.kr/data/15148346/fileData.do
 대구광역시,수성구,,화 장 대,거울 부착,6000,,15148346,https://www.data.go.kr/data/15148346/fileData.do
-대전광역시,대덕구,가구류,교자상(밥상),모든 규격,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,매트리스,1인용,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,매트리스,2인용,8000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,매트리스,유아용,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,문갑,모든 규격,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,서랍장,5단 미만,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,서랍장,5단 이상,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,소파,1인용,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,소파,2인용,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,소파,3인용,6000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,소파,4인용,8000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,소파,6인용,10000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,식탁,6인용 미만,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,식탁,6인용 이상,6000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,신발장,높이1m미만,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,신발장,높이1m이상,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,씽크대,양수,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,씽크대,편수,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,응접세트(의자),의자,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,응접세트(의자),장의자,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,장롱,120㎝이상 1쪽,15000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,장롱,90㎝~120㎝미만 1쪽,10000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,장롱,90㎝미만 1쪽,8000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,장롱,어린이용 1쪽,8000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,장식장,너비1m×높이2m미만,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,장식장,너비1m×높이2m이상,8000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,책꽂이,모든 규격,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,책상,양수,6000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,책상,컴퓨터용,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,책상,편수,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,책장,높이1m미만,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,책장,높이1m이상,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,침대,1인용 메트리스,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,침대,1인용(메트리스 포함),10000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,침대,2인용 메트리스,8000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,침대,2인용(메트리스 포함),15000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,침대,킹사이즈(메트리스 포함),15000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,침대,킹사이즈메트리스,10000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,캐비닛,120㎝이상,7000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,캐비닛,90㎝~120㎝미만,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,캐비닛,90㎝미만,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,가구류,화장대,모든 규격,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,가방,트렁크가방,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,거울(액자),1㎡이하,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,거울(액자),1㎡초과 시 마다,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,깨진유리,20㎏마대기준,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,난로,모든규격,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,돗(대)자리,5.5㎡미만,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,돗(대)자리,5.5㎡이상,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,마네킹,상/하반신,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,마네킹,전신(F.R.P),6000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,문짝,모든규격,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,물탱크,1톤당(용량기준),10000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,벽시계,모든 규격,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,세면대,모든 규격,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,수족관,1m미만,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,수족관,1m이상,6000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,쌀통,모든규격,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,양변기,모든 규격,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,오락기,높이1m미만,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,오락기,높이1m이상,10000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,옥돌매트(자석요),1인용,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,옥돌매트(자석요),2인용,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,올겐,모든규격,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,옷걸이,모든규격,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,욕조,F.R.P,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,욕조,사기,10000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,유모차,모든규격,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,이불류,솜이불 1채,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,이불류,홑이불 1채,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,자전거,성인용(이륜),3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,자전거,아동용(삼륜),2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,자전거,아동용(이륜),3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,잡쓰레기,나뭇가지(40㎏마대기준),3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,잡쓰레기,나뭇가지(80㎏마대기준),5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,잡쓰레기,"폐스티로폼(40㎏마대기준, 재활용 불가시)",3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,장판,5.5㎡미만,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,장판,5.5㎡이상,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,카펫트,5.5㎡미만,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,카펫트,5.5㎡이상,8000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,피아노,그랜드,15000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,피아노,디지털,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,피아노,어프라이드,10000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,기타,항아리,모든규격,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,가스오븐렌지,높이1m미만,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,가스오븐렌지,높이1m이상,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,가습기,모든규격,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,공기청정기,높이1m미만,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,공기청정기,높이1m이상,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,냉장고,200ℓ 미만,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,냉장고,200ℓ 이상~ 300ℓ 미만,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,냉장고,300ℓ 이상~ 400ℓ 미만,6000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,냉장고,400ℓ 이상~ 600ℓ 미만,8000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,냉장고,600ℓ 이상~ 800ℓ 미만,10000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,냉장고,800ℓ 이상,15000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,비디오,모든규격,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,빨래건조대,모든규격,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,선풍기,가정용,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,선풍기,사업장용,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,세탁기,10㎏ 미만,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,세탁기,10㎏ 이상,8000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,식기건조기,모든규격,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,에어컨,15평형 미만,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,에어컨,15평형 이상~ 25평형 미만,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,에어컨,25평형 이상~ 50평형 미만,8000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,에어컨,50평형 이상,10000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,에어컨,벽걸이형,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,오디오,4단 미만,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,오디오,4단 이상,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,전기밥통,모든규격,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,전자레인지,모든규격,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,청소기,모든규격,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,컴퓨터,모니터,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,컴퓨터,본체,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,컴퓨터,프린터,2000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,탈수기,모든규격,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,텔레비전,15인치 이하,4000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,텔레비전,16인치 이상~ 25인치 이하,5000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,텔레비전,26인치 이상~ 35인치 이하,6000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,텔레비전,36인치 이상~ 45인치 이하,8000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,텔레비전,46인치 이상~ 55인치 미만,10000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,텔레비전,55인치 이상,15000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,텔레비전받침대,모든규격,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
-대전광역시,대덕구,전자제품,팩스기기,모든규격,3000,2025-06-05,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,교자상(밥상),모든 규격,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,매트리스,1인용,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,매트리스,2인용,8000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,매트리스,유아용,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,문갑,모든 규격,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,서랍장,5단 미만,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,서랍장,5단 이상,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,소파,1인용,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,소파,2인용,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,소파,3인용,6000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,소파,4인용,8000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,소파,6인용,10000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,식탁,6인용 미만,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,식탁,6인용 이상,6000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,신발장,높이1m미만,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,신발장,높이1m이상,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,씽크대,양수,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,씽크대,편수,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,응접세트(의자),의자,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,응접세트(의자),장의자,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,장롱,120㎝이상 1쪽,15000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,장롱,90㎝~120㎝미만 1쪽,10000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,장롱,90㎝미만 1쪽,8000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,장롱,어린이용 1쪽,8000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,장식장,너비1m×높이2m미만,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,장식장,너비1m×높이2m이상,8000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,책꽂이,모든 규격,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,책상,양수,6000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,책상,컴퓨터용,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,책상,편수,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,책장,높이1m미만,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,책장,높이1m이상,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,침대,1인용 메트리스,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,침대,1인용(메트리스 포함),10000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,침대,2인용 메트리스,8000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,침대,2인용(메트리스 포함),15000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,침대,킹사이즈(메트리스 포함),15000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,침대,킹사이즈메트리스,10000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,캐비닛,120㎝이상,7000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,캐비닛,90㎝~120㎝미만,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,캐비닛,90㎝미만,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,가구류,화장대,모든 규격,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,가방,트렁크가방,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,거울(액자),1㎡이하,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,거울(액자),1㎡초과 시 마다,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,깨진유리,20㎏마대기준,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,난로,모든규격,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,돗(대)자리,5.5㎡미만,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,돗(대)자리,5.5㎡이상,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,마네킹,상/하반신,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,마네킹,전신(F.R.P),6000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,문짝,모든규격,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,물탱크,1톤당(용량기준),10000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,벽시계,모든 규격,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,세면대,모든 규격,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,수족관,1m미만,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,수족관,1m이상,6000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,쌀통,모든규격,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,양변기,모든 규격,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,오락기,높이1m미만,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,오락기,높이1m이상,10000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,옥돌매트(자석요),1인용,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,옥돌매트(자석요),2인용,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,올겐,모든규격,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,옷걸이,모든규격,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,욕조,F.R.P,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,욕조,사기,10000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,유모차,모든규격,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,이불류,솜이불 1채,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,이불류,홑이불 1채,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,자전거,성인용(이륜),3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,자전거,아동용(삼륜),2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,자전거,아동용(이륜),3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,잡쓰레기,나뭇가지(40㎏마대기준),3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,잡쓰레기,나뭇가지(80㎏마대기준),5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,잡쓰레기,"폐스티로폼(40㎏마대기준, 재활용 불가시)",3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,장판,5.5㎡미만,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,장판,5.5㎡이상,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,카펫트,5.5㎡미만,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,카펫트,5.5㎡이상,8000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,피아노,그랜드,15000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,피아노,디지털,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,피아노,어프라이드,10000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,기타,항아리,모든규격,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,가스오븐렌지,높이1m미만,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,가스오븐렌지,높이1m이상,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,가습기,모든규격,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,공기청정기,높이1m미만,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,공기청정기,높이1m이상,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,냉장고,200ℓ 미만,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,냉장고,200ℓ 이상~ 300ℓ 미만,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,냉장고,300ℓ 이상~ 400ℓ 미만,6000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,냉장고,400ℓ 이상~ 600ℓ 미만,8000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,냉장고,600ℓ 이상~ 800ℓ 미만,10000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,냉장고,800ℓ 이상,15000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,비디오,모든규격,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,빨래건조대,모든규격,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,선풍기,가정용,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,선풍기,사업장용,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,세탁기,10㎏ 미만,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,세탁기,10㎏ 이상,8000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,식기건조기,모든규격,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,에어컨,15평형 미만,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,에어컨,15평형 이상~ 25평형 미만,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,에어컨,25평형 이상~ 50평형 미만,8000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,에어컨,50평형 이상,10000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,에어컨,벽걸이형,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,오디오,4단 미만,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,오디오,4단 이상,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,전기밥통,모든규격,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,전자레인지,모든규격,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,청소기,모든규격,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,컴퓨터,모니터,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,컴퓨터,본체,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,컴퓨터,프린터,2000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,탈수기,모든규격,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,텔레비전,15인치 이하,4000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,텔레비전,16인치 이상~ 25인치 이하,5000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,텔레비전,26인치 이상~ 35인치 이하,6000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,텔레비전,36인치 이상~ 45인치 이하,8000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,텔레비전,46인치 이상~ 55인치 미만,10000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,텔레비전,55인치 이상,15000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,텔레비전받침대,모든규격,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
+대전광역시,대덕구,전자제품,팩스기기,모든규격,3000,2026-09-18,15060955,https://www.data.go.kr/data/15060955/fileData.do
 대전광역시,서구,,TV,15인치이하,4000,,15089837,https://www.data.go.kr/data/15089837/fileData.do
 대전광역시,서구,,TV,25인치이하,5000,,15089837,https://www.data.go.kr/data/15089837/fileData.do
 대전광역시,서구,,TV,35인치이하,6000,,15089837,https://www.data.go.kr/data/15089837/fileData.do
@@ -7235,11 +7329,11 @@ sido,sigungu,category,item,spec,fee,base_date,dataset_id,source_url
 인천광역시,연수구,,환풍기,가정용,2000,,15116346,https://www.data.go.kr/data/15116346/fileData.do
 인천광역시,연수구,,환풍기,업소용,3000,,15116346,https://www.data.go.kr/data/15116346/fileData.do
 인천광역시,연수구,,휠체어,모든 규격,2000,,15116346,https://www.data.go.kr/data/15116346/fileData.do
-전남광주통합특별시,남광주통합특별시,,방문(문짝),방문,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,가스레인지 받침대,모든규격,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,교자상,6인 미만,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,교자상,6인 이상,4000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,다듬이판,모든규격,2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,,방문(문짝),방문,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,가스레인지 받침대,모든규격,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,교자상,6인 미만,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,교자상,6인 이상,4000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,다듬이판,모든규격,2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,돌침대,1인용(받침 별도),10000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,돌침대,2인용(받침 별도),20000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,돌침대 받침,1인용(돌침대 별도),10000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
@@ -7247,103 +7341,103 @@ sido,sigungu,category,item,spec,fee,base_date,dataset_id,source_url
 전남광주통합특별시,남광주통합특별시,가구류,매트리스,1인용(침대 별도),3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,매트리스,2인용이상(침대 별도),5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,문갑,모든 규격,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,문갑,모든규격,3500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,문갑,모든규격,3500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,문짝,1m x 1m 미만,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,문짝,1m x 1m 이상,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,비키니옷장,개당,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,비키니옷장,모든규격,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,비키니옷장,모든규격,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,서랍장,3단 미만,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,서랍장,3단 미만,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,서랍장,3단 미만,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,서랍장,3단 이상,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,서랍장,3단 이상,4500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,서랍장,3단 이상,4500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,서랍장,5단 이상,6000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,서랍장,5단 이상,7000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,서랍장,5단 이상,7000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,쇼파,1인용(개당),2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,쇼파,1인용(개당),2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,쇼파,1인용(개당),2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,쇼파,2인용,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,쇼파,2인용 이상,4000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,쇼파,3인 이상,6000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,쇼파,2인용 이상,4000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,쇼파,3인 이상,6000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,쇼파,3인용,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,쇼파,대형 4인용,6000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,쇼파,대형 6인용,8000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,쇼파,대형 6인용 이상,9500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,스탠드 옷걸이,소 형,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,쇼파,대형 6인용 이상,9500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,스탠드 옷걸이,소 형,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,식탁,6인용 미만,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,식탁,6인용 이상,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,식탁(테이블),6인 미만,4500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,식탁(테이블),6인 이상,6000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,신발장,대 형,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,식탁(테이블),6인 미만,4500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,식탁(테이블),6인 이상,6000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,신발장,대 형,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,신발장,대형,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,신발장,소형,1000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,신발장,중형,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,싱크대,60cm 1짝당,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,싱크대,개수대,4000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,싱크대,60cm 1짝당,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,싱크대,개수대,4000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,쌀통,모든 규격,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,어린이2층 침대,개당,20000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,유아용침대,개당,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,응접세트탁자,5인 미만,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,응접세트탁자,5인 이상,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,응접세트탁자,5인 미만,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,응접세트탁자,5인 이상,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,의자,대형,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,의자,대형,3500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,의자,대형,3500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,의자,소형,1000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,의자,소형(접의자),1500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,의자,소형(접의자),1500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,의자,중형,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,의자,중형,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,의자,중형,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,장롱,90cm미만 장 1쪽(가로길이),10000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,장롱,90cm이상 장 1쪽(가로길이),15000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,장롱,쪽 120cm 장 1쪽,18000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,장롱,쪽 90cm 장 1쪽,12000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,"장식장, 진열장, 그릇장, 책장 등",폭 60cm 미만,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,"장식장, 진열장, 그릇장, 책장 등",폭 60cm 이상,8000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,"장식장, 진열장, 그릇장, 책장 등",폭 90cm 이상,10000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,장롱,쪽 120cm 장 1쪽,18000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,장롱,쪽 90cm 장 1쪽,12000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,"장식장, 진열장, 그릇장, 책장 등",폭 60cm 미만,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,"장식장, 진열장, 그릇장, 책장 등",폭 60cm 이상,8000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,"장식장, 진열장, 그릇장, 책장 등",폭 90cm 이상,10000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,진열장,대형,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,진열장,소형,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,찬장,90cm 이하,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,찬장,90cm 초과,8000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,책꽂이,2단이하,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,책꽂이,4단이하,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,책꽃이,모든 규격,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,책상,양수 대형,7000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,책꽃이,모든 규격,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,책상,양수 대형,7000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,책상,양수 및 대형,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,책상,컴퓨터용 책상(서랍없음),3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,책상,편수 및 소형,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,책상,편수 소형,4000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,책상,편수 소형,4000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,책장,1m 미만,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,책장,1m 이상,8000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,침대,1인용(매트리스 별도),4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,침대,2인용(매트리스 별도),8000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,침대 (매트리스 제외),1인용,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,침대 (매트리스 제외),2인 이상,8000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,침대 2층 침대,개당,20000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,침대 돌침대 받침,1인용,10000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,침대 돌침대 받침,2인 이상,15000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,침대 돌침대(받침 제외),1인용,10000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,침대 돌침대(받침 제외),2인 이상,15000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,침대 매트리스,1인용,3500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,침대 매트리스,2인 이상,6000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,침대 유아용 침대,개당,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,침대 (매트리스 제외),1인용,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,침대 (매트리스 제외),2인 이상,8000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,침대 2층 침대,개당,20000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,침대 돌침대 받침,1인용,10000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,침대 돌침대 받침,2인 이상,15000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,침대 돌침대(받침 제외),1인용,10000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,침대 돌침대(받침 제외),2인 이상,15000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,침대 매트리스,1인용,3500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,침대 매트리스,2인 이상,6000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,침대 유아용 침대,개당,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,캐비닛,대형,6000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,캐비닛,소형,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,화장대,1미터 미만,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가구류,화장대,1미터 이상,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,화장대,1미터 미만,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가구류,화장대,1미터 이상,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가구류,화장대,모든 규격,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,(전자)복사기,모든규격,4500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,가스레인지,모든규격,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,가스오븐레인지,높이 1m미만,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,가스오븐레인지,높이 1m이상,4500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,(전자)복사기,모든규격,4500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,가스레인지,모든규격,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,가스오븐레인지,높이 1m미만,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,가스오븐레인지,높이 1m이상,4500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,가스오븐렌지,높이 1m미만,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,가스오븐렌지,높이 1m이상,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,가습기,개당,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,가습기,모든규격,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,건조기,모든규격,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,검퓨터,모니터(LCD)포함,2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,공기청정기,높이 1m 미만,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,공기청정기,높이 1m 이상,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,가습기,모든규격,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,건조기,모든규격,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,검퓨터,모니터(LCD)포함,2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,공기청정기,높이 1m 미만,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,공기청정기,높이 1m 이상,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,공기청정기,높이 1m미만,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,공기청정기,높이 1m이상,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,기타 가전제품 사무용제품,대형,6000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,기타 가전제품 사무용제품,소형,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,기타 가전제품 사무용제품,중형,4500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,기타 가전제품 사무용제품,대형,6000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,기타 가전제품 사무용제품,소형,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,기타 가전제품 사무용제품,중형,4500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,기타(가전 및 사무용품),대형,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,기타(가전 및 사무용품),소형,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,기타(가전 및 사무용품),중형,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
@@ -7351,209 +7445,209 @@ sido,sigungu,category,item,spec,fee,base_date,dataset_id,source_url
 전남광주통합특별시,남광주통합특별시,가전제품,김치냉장고,130ℓ이상,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,난로,대형(석유난로),4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,난로,"소형(전기,가스난로)",2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,냉온수기,모든규격,3500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,냉온수기,모든규격,3500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,냉장고,300 리터 미만,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,냉장고,300 리터 이상,6000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,냉장고,300ℓ 미만,4500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,냉장고,300ℓ 이상,7000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,냉장고,300ℓ 미만,4500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,냉장고,300ℓ 이상,7000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,냉장고,300리터 미만,5000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,냉장고,300리터 이상,8000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,냉장고,500 리터 이상,8000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,냉장고,500ℓ 이상,9500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,냉장고,500ℓ 이상,9500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,냉장고,500리터 이상,11000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,냉장고,양문형 냉장고(600ℓ이상),12000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,냉장고,양문형 냉장고(700ℓ이상),15000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,냉장고,양문형(500ℓ 이상),12000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,냉장고,양문형(700ℓ 이상),15000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,"녹즙기, 믹서",모든규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,냉장고,양문형(500ℓ 이상),12000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,냉장고,양문형(700ℓ 이상),15000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,"녹즙기, 믹서",모든규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,밥통,개당,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,보일러,20평형 미만,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,보일러,20평형 이상,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,보일러,20평형 미만,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,보일러,20평형 이상,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,보일러통,대형,8000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,보일러통,대형,9500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,보일러통,대형,9500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,보일러통,소형,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,보일러통,소형,3500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,보일러통,소형,3500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,보일러통,중형,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,보일러통,중형,6000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,보일러통,중형,6000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,복사기,모든 규격,9000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,비디오,모든 규격,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,비디오,모든규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,비디오,모든규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,선풍기,개당,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,선풍기,대형(사업장용),3000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,선풍기,모든규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,선풍기,모든규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,세단기,모든 규격,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,세탁기,가정용,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,세탁기,가정용,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,세탁기,모든 규격,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,세탁기,모든규격,4000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,세탁기,업소용,8000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,스캐너,대형,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,스캐너,소형,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,세탁기,업소용,8000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,스캐너,대형,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,스캐너,소형,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,스피커,모든규격,3000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,식기건조기,모든 규격,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,식기건조기,모든규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,식기건조기,모든규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,식기세척기,모든 규격,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,에어컨,264㎡ 이상,8000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,에어컨,264㎥ 이상,9500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,에어컨,264㎥ 이상,9500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,에어컨,66㎡ 미만,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,에어컨,66㎡ 이상,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,에어컨,66㎥ 미만,3500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,에어컨,66㎥ 이상,6000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,에어프라이어,모든규격,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,에어컨,66㎥ 미만,3500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,에어컨,66㎥ 이상,6000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,에어프라이어,모든규격,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,오디오,모든규격,3000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,오락기(브라운관 기준),10인치 미만,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,오락기(브라운관 기준),10인치 이상,4500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,오락기(브라운관 기준),20인치 이상,7000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,오락기(브라운관 기준),10인치 미만,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,오락기(브라운관 기준),10인치 이상,4500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,오락기(브라운관 기준),20인치 이상,7000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,오락기기,대형,6000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,오락기기,소형,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,온풍기,대형,10000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,온풍기,대형,12000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,온풍기,대형,12000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,온풍기,소형,7000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,온풍기,소형,8500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,온풍기,소형,8500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,자판기,개당,8000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,자판기,모든규격,9500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,자판기,모든규격,9500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,전공청소기,개당,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,전기밥솥(통),모든규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,전기스토브,모든규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,전기장판(담요),1인용,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,전기장판(담요),2인용 이상,4000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,전자레인지,모든규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,전기밥솥(통),모든규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,전기스토브,모든규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,전기장판(담요),1인용,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,전기장판(담요),2인용 이상,4000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,전자레인지,모든규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,전축,모든규격,3000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,전축(오디오),대형,15000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,전축(오디오),대형,18000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,전축(오디오),대형,18000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,전축(오디오),소형,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,전축(오디오),소형,6000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,전축(오디오),소형,6000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,전축(오디오),중형,10000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,전축(오디오),중형,12000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,전화기,모든규격,1000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,제습기,모든규격,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,진공청소기,모든규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,전축(오디오),중형,12000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,전화기,모든규격,1000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,제습기,모든규격,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,진공청소기,모든규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,컴퓨터,"모니터(LCD,LED)",2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,컴퓨터,모니터(브라운관),3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,컴퓨터,본체,2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,컴퓨터,본체,2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,컴퓨터,본체,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,컴퓨터,키보드,1000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,컴퓨터,키보드,1000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,컴퓨터,키보드,1000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,탈수기,모든 규격,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,탈수기,모든규격,2000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,탈수기,모든규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,탈수기,모든규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,텔레비전,12~42인치 이상,3000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,텔레비전,12인치 미만,2000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,텔레비전,42인치 미만,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,텔레비전,42인치 이상,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,텔레비전,42인치 이상,5000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,텔레비젼,30인치 미만,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,텔레비젼,30인치 이상,6000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,텔레비젼,50인치 이상(받침포함),10000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,팬히터,모든규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,텔레비젼,30인치 미만,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,텔레비젼,30인치 이상,6000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,텔레비젼,50인치 이상(받침포함),10000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,팬히터,모든규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,팬히트,모든 규격,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,프린터,모든규격,3000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,프린터기,대형,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,가전제품,프린터기,소형,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,프린터기,대형,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,가전제품,프린터기,소형,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,가전제품,프린터기(팩시밀리),모든 규격,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,(고무)호스,10m 당,2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,가방,50cm 미만,2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,가방,50cm 이상,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,(고무)호스,10m 당,2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,가방,50cm 미만,2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,가방,50cm 이상,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,가방,가로 50cm 미만,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,가방,가로 50cm 이상,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,가방,골프가방,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,가정배출 소형폐기물(종량제봉투에 담기 어려운 생활폐기물을 말한다),마대 1개당(20kg 기준),2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,가정배출 소형폐기물(종량제봉투에 담기 어려운 생활폐기물을 말한다),마대 1개당(20kg 기준),2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,간판,3m 미만,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,간판,3m 미만,4500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,간판,3m 미만,4500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,간판,3m 이상,8000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,간판,3m 이상,9500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,간판,3m 이상,9500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,고무통,모든 규격,1000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,고무통,모든규격,1500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,고무통,모든규격,1500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,금고,대형,15000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,금고,대형(50cm 이상),18000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,금고,대형(50cm 이상),18000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,금고,소형,10000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,금고,소형(50cm 미만),12000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,금고,소형(50cm 미만),12000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,나뭇가지,묶음단위(1m x 지름30cm),2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,나뭇가지(목재류)(길이 40cm 이하),kg 당,200,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,나뭇가지(목재류)(길이 40cm 이하),kg 당,200,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,런닝머신,개당,10000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,런닝머신,개당,10000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,런닝머신,개당,10000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,마네킹,개당,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,마네킹,모든 규격,3500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,마네킹,모든 규격,3500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,마대,20kg,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,물탱크,1000리터 미만,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,물탱크,1000리터 이상,8000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,물탱크,2000리터 이상,12000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,물탱크,1000리터 미만,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,물탱크,1000리터 이상,8000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,물탱크,2000리터 이상,12000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,물탱크,FRP(공동주택용 제외),6000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,밥상,90CmX90Cm 미만,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,밥상,90CmX90Cm 이상,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,방문(문짝),문틀포함,4500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,배기(렌지)후드,모든 규격,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,방문(문짝),문틀포함,4500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,배기(렌지)후드,모든 규격,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,벽시계,대형,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,벽시계,소형,1000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,변기,개당,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,변기,양변기,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,변기,화변기(소형),3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,병풍,모든 규격,6000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,변기,양변기,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,변기,화변기(소형),3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,병풍,모든 규격,6000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,보행기,모든 규격,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,보행기,모든 규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,"블라인드, 버티컬",모든규격,2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,빨래건조대,모든 규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,보행기,모든 규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,"블라인드, 버티컬",모든규격,2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,빨래건조대,모든 규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,세면기,개당,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,세면기,모든 규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,소화기,10kg 이상,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,소화기,3.3kg 미만,2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,소화기,3.3kg 이상,3500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,수족관,대형(1M 이상),12000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,세면기,모든 규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,소화기,10kg 이상,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,소화기,3.3kg 미만,2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,소화기,3.3kg 이상,3500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,수족관,대형(1M 이상),12000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,수족관,대형(사업자 제외),10000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,수족관,소형,5000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,수족관,소형(1M 미만),6000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,수족관,소형(1M 미만),6000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,스텐드옷걸이,개당,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,쌀통,모든 규격,4500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,쓰레기통,50리터 미만,1000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,쓰레기통,50리터 이상,2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,쌀통,모든 규격,4500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,쓰레기통,50리터 미만,1000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,쓰레기통,50리터 이상,2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,씽크대,싱크대조리대,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,씽크대,싱크대조리대,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,씽크대,조리대,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,아이스박스,대형,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,아이스박스,소형,1000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,안마의자,모든 규격,10000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,안마의자,모든 규격,10000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,액자,소형(0.5mX1m미만),1000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,액자,소형(0.5mX1m이상),2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,액자(유리 포함),대형(1M 이상),5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,액자(유리 포함),소형(50cm 미만),1500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,액자(유리 포함),중형(50cm 이상),3500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,오르간,모든 규격,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,액자(유리 포함),대형(1M 이상),5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,액자(유리 포함),소형(50cm 미만),1500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,액자(유리 포함),중형(50cm 이상),3500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,오르간,모든 규격,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,옥매트,1인용,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,옥매트,2인용,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,"옷걸이, 행거",모든 규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,"옷걸이, 행거",모든 규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,욕실 수건함,개당,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,욕조,개당,4000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,욕조,모든 규격,4500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,유리(거울 포함),1제곱미터 당,2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,욕조,모든 규격,4500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,유리(거울 포함),1제곱미터 당,2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,유모차,모든 규격,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,유모차,모든 규격,2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,유모차,모든 규격,2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,의류 및 이불,묶음단위(100리터 봉투기준),2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,의류(재활용품 제외),1묶음(100리터 봉투기준),2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,이불(담요 포함),1묶음(100리터 봉투기준),2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,"인형, 장남감류",5kg 기준,2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,의류(재활용품 제외),1묶음(100리터 봉투기준),2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,이불(담요 포함),1묶음(100리터 봉투기준),2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,"인형, 장남감류",5kg 기준,2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,자전거,개당,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,자전거,개당,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,장판 및 카펫,1묶음(20kg 기준),2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,자전거,개당,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,장판 및 카펫,1묶음(20kg 기준),2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,장판(카페트),1묶음(20Kg),2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,재봉틀,개당,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,정수기,개당,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,조명기구,모든 규격,2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,칸막이 판넬(합판),개당,2000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,조명기구,모든 규격,2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,칸막이 판넬(합판),개당,2000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,칸막이판넬,개당,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,캐비닛,높이 1.5m 이상,7000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,캐비닛,높이 1.5m 이하,4000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,캐비닛,높이 1.5m 이상,7000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,캐비닛,높이 1.5m 이하,4000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,판유리(잡재물류),60kg 미만,2000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,판유리(잡재물류),60kg 이상,3000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,피아노,그랜드,15000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,피아노,그랜드 피아노,18000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,피아노,그랜드 피아노,18000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,기타,피아노,어프라이트,10000,,15084135,https://www.data.go.kr/data/15084135/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,피아노,어프라이트 피아노,12000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,피아노,전자 피아노,8000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,항아리,50cm 이상,5000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,항아리,50cm 이하,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,화분,대형(60cm 이상),4000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,화분,소형(40cm 미만),1500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,화분,중형(40cm 이상),2500,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
-전남광주통합특별시,남광주통합특별시,기타,휠체어,모든 규격,3000,2025-07-23,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,피아노,어프라이트 피아노,12000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,피아노,전자 피아노,8000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,항아리,50cm 이상,5000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,항아리,50cm 이하,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,화분,대형(60cm 이상),4000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,화분,소형(40cm 미만),1500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,화분,중형(40cm 이상),2500,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
+전남광주통합특별시,남광주통합특별시,기타,휠체어,모든 규격,3000,2026-09-22,15093651,https://www.data.go.kr/data/15093651/fileData.do
 전남광주통합특별시,남광주통합특별시,냉난방기,공기청정기,66제곱미터 미만,2000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
 전남광주통합특별시,남광주통합특별시,냉난방기,공기청정기,66제곱미터 이상,3000,,15084179,https://www.data.go.kr/data/15084179/fileData.do
 전남광주통합특별시,남광주통합특별시,냉난방기,난로,대형(최장 1m이상 석유난로 등),5000,,15084179,https://www.data.go.kr/data/15084179/fileData.do

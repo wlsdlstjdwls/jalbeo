@@ -14,7 +14,7 @@ sources:
     asOf: "2024-05-08"
 related: ["johwa", "hyeonggwangdeung", "binil", "gomu"]
 relatedGuides: ["daehyeong-pyegimul-singo", "jongryangje-bongtu"]
-updated: "2026-09-08"
+updated: "2026-10-02"
 optionsNote: "트리는 높이 1m이 갈림선입니다. 수수료표를 그 선으로 나눠 놓은 곳이 있습니다."
 options:
   - label: "1m 미만 트리"
@@ -33,7 +33,7 @@ options:
 ## 수수료표에 이름이 올라 있는 곳이 있습니다
 
 신고 화면에서 크리스마스트리를 못 찾아 그냥 내놓는 경우가 많습니다. 그런데
-지금까지 모은 47개 시군구 수수료표 중 **4곳이 이 품목을 이름으로 올려
+지금까지 모은 48개 시군구 수수료표 중 **4곳이 이 품목을 이름으로 올려
 두었습니다.** 그것도 대부분 높이로 나눠서입니다.
 
 | 지역 | 규격 | 수수료 |

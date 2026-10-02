@@ -1,0 +1,69 @@
+---
+import { getCollection } from 'astro:content';
+import Doc from '../layouts/Doc.astro';
+import { items as dbItems } from '../lib/items';
+import { dayLogs } from '../lib/updates';
+import feesMeta from '../data/fees_meta.json';
+
+const names = new Map(dbItems.map((r) => [r.slug, r.name]));
+const guideTitles = new Map((await getCollection('guides')).map((g) => [g.id, g.data.title]));
+const logs = dayLogs();
+const fmt = (d: string) => {
+  const [y, m, day] = d.split('-');
+  return `${y}년 ${Number(m)}월 ${Number(day)}일`;
+};
+---
+
+<Doc
+  title="업데이트 기록 | 잘버려"
+  description="잘버려에 새로 들어온 품목과, 자료를 다시 대조해 고친 내용을 날짜별로 적었습니다."
+  heading={"업데이트 기록"}
+  updated={logs[0].date}
+  dateLabel="최종 수정"
+>
+  <p>
+    새로 들어온 품목과, 출처를 다시 대조하다 찾은 오류를 고친 내용을 날짜별로
+    적습니다. 틀린 곳을 알려 주시면 확인해서 여기에도 남깁니다.
+  </p>
+  <p>
+    {`대형폐기물 수수료는 공공데이터포털의 지자체 자료 ${feesMeta.datasets}건, ${feesMeta.regions}개 시군구 분량이고 마지막으로 받은 날은 ${feesMeta.collected_at}입니다.`}
+  </p>
+
+  {logs.map((d) => (
+    <section class="day">
+      <h2>{fmt(d.date)}</h2>
+      {d.notes.length > 0 && (
+        <ul>{d.notes.map((n) => <li>{n}</li>)}</ul>
+      )}
+      {d.guides.length > 0 && (
+        <p class="added">
+          <strong>새 가이드 {d.guides.length}개</strong>:{' '}
+          {d.guides.map((g, i) => (
+            <>{i > 0 && ', '}<a href={`/guides/${g}/`}>{guideTitles.get(g) ?? g}</a></>
+          ))}
+        </p>
+      )}
+      {d.items.length > 0 && (
+        <details class="added" open={d.items.length <= 20}>
+          <summary><strong>새 품목 {d.items.length}개</strong></summary>
+          <p>
+            {d.items
+              .map((s) => [s, names.get(s) ?? s])
+              .sort((a, b) => a[1].localeCompare(b[1], 'ko'))
+              .map(([s, n], i) => (
+                <>{i > 0 && ', '}<a href={`/${s}/`}>{n}</a></>
+              ))}
+          </p>
+        </details>
+      )}
+    </section>
+  ))}
+</Doc>
+
+<style>
+  .day { border-top: 2px solid var(--ink); padding-top: 4px; margin-top: 28px; }
+  .day :global(h2) { margin-top: 16px; }
+  .added { margin: 0 0 12px; font-size: 15.5px; line-height: 1.9; }
+  .added summary { cursor: pointer; margin-bottom: 6px; }
+  .added :global(a) { border-bottom-width: 1px; font-weight: 600; }
+</style>

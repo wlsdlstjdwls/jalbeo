@@ -8,7 +8,7 @@ sources:
     asOf: "2026-01-01"
 related: ["geonjogi", "naengjanggo", "jeongsugi", "gimchinaengjanggo"]
 relatedGuides: ["pyegajeon-musang-sugeo", "daehyeong-pyegimul-singo"]
-updated: "2026-09-03"
+updated: "2026-10-02"
 ---
 
 세탁기는 **돈을 낼 이유가 거의 없는 품목**입니다. 폐가전 무상방문수거 대상이고,
@@ -69,7 +69,7 @@ E-순환거버넌스 무상방문수거 안내는 해당 품목 예시로 <stron
 - **업소용, 산업용 대형 세탁기** — 가정용 기준을 벗어납니다
 - **수거 지역이 아니거나 일정이 급한 경우**
 
-이때는 지자체 대형폐기물로 신고합니다. 요금을 공개한 38곳의 중앙값은
+이때는 지자체 대형폐기물로 신고합니다. 요금을 공개한 39곳의 중앙값은
 **5,000원**이고, 낮은 곳은 3,000원, 높은 곳은 10,000원입니다.
 <strong>'10kg 이상'과 '10kg 미만'</strong>으로 나눈 곳이 있으니 용량을 확인하고
 신고하세요.

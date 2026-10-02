@@ -17,7 +17,7 @@ sources:
     asOf: "2026-07-01"
 related: ["seutiropom", "bonaengbaek", "aiseupaek", "bakseu"]
 relatedGuides: ["daehyeong-pyegimul-singo"]
-updated: "2026-09-08"
+updated: "2026-10-02"
 optionsNote: "아이스박스는 이름이 하나인데 물건이 둘입니다. 손톱으로 눌러 보면 갈립니다."
 options:
   - label: "스티로폼 상자"
@@ -86,7 +86,7 @@ options:
 
 ## 봉투에 안 들어가면 대형폐기물입니다
 
-하드형 아이스박스를 대형폐기물 품목표에 올려 둔 곳은 **28개 시군구**입니다.
+하드형 아이스박스를 대형폐기물 품목표에 올려 둔 곳은 **29개 시군구**입니다.
 중앙값은 **2,000원**, 가장 낮은 곳은 **1,500원**(경기 화성시), 가장 높은 곳은
 **4,000원**(제주시)입니다.
 

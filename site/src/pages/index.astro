@@ -6,6 +6,7 @@ import { bg, VERDICT_ORDER } from '../lib/verdict';
 import { HOME_PAGE_SIZE } from '../lib/constants';
 import { fuzzyKey, searchKey } from '../lib/search';
 import { SUPABASE_URL, SUPABASE_ANON_KEY } from '../lib/supabase-public';
+import { dayLogs } from '../lib/updates';
 
 // 검색어 로그용 엔드포인트. 키가 없으면 빈 문자열이 나가고, 클라이언트가
 // 빈 값이면 fetch를 안 쏜다 (Base.astro의 trackable과 같은 방어).
@@ -17,6 +18,14 @@ const bodies = new Set((await getCollection('items')).map((b) => b.id));
 // 절차를 묻는 검색어(폐가전무료수거, 대형폐기물스티커)는 품목 페이지가 못 받는다.
 const guides = await getCollection('guides');
 const live = dbItems.filter((row) => bodies.has(row.slug));
+
+// 사이트가 멈춰 있지 않다는 것을 첫 화면에서 보인다. 날짜는 updates.ts가 갖는다.
+const logs = dayLogs();
+const recentNotes = logs.flatMap((d) => d.notes.map((n) => ({ date: d.date, n }))).slice(0, 3);
+const recentItems = logs
+  .flatMap((d) => d.items.map((s) => ({ date: d.date, row: live.find((r) => r.slug === s) })))
+  .filter((x) => x.row)
+  .slice(0, 8);
 
 const counts = live.reduce<Record<string, number>>((acc, r) => {
   acc[r.verdict] = (acc[r.verdict] ?? 0) + 1;
@@ -118,6 +127,29 @@ const chips = [
         </a>
       ))}
     </div>
+  </section>
+
+  <section class="rise newswrap">
+    <p class="caption">최근 소식</p>
+    <div class="news">
+      <div class="nbox">
+        <h2 class="nh">최근 고친 내용</h2>
+        <ul class="nl">
+          {recentNotes.map((x) => (
+            <li><time datetime={x.date}>{x.date.slice(5).replace('-', '.')}</time> {x.n}</li>
+          ))}
+        </ul>
+      </div>
+      <div class="nbox">
+        <h2 class="nh">새로 들어온 품목</h2>
+        <p class="ni">
+          {recentItems.map((x, i) => (
+            <>{i > 0 && ', '}<a href={`/${x.row!.slug}/`}>{x.row!.name}</a></>
+          ))}
+        </p>
+      </div>
+    </div>
+    <a class="nall" href="/updates/">업데이트 기록 전체 보기 →</a>
   </section>
 
   <script define:vars={{ PAGE: HOME_PAGE_SIZE, SEARCH_ENDPOINT: searchEndpoint, SEARCH_KEY: SUPABASE_ANON_KEY }}>
@@ -472,4 +504,20 @@ const chips = [
   }
   .gcard:hover .gl { color: var(--ink); }
   .gcard .go { font-weight: 800; }
+
+  /* --- 최근 소식 --- */
+  .newswrap { padding: 0 var(--pad) clamp(30px,5vw,56px); }
+  .news {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  .nbox { border: 2px solid var(--ink); background: var(--card); padding: 18px 20px 20px; min-width: 0; }
+  .nh { margin: 0 0 10px; font-size: 17px; font-weight: 800; letter-spacing: -.03em; }
+  .nl { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+  .nl li, .ni { margin: 0; font-size: 14px; font-weight: 500; line-height: 1.65; color: var(--body); }
+  .nl time { font-weight: 800; color: var(--ink); margin-right: 4px; }
+  .ni a { font-weight: 700; border-bottom: 1px solid var(--ink); }
+  .nall { display: inline-block; margin-top: 14px; font-weight: 800; border-bottom: 2px solid var(--ink); }
 </style>
