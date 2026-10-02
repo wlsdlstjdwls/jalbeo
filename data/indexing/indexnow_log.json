@@ -186,10 +186,22 @@
         }
       ],
       "url_count": 2
+    },
+    {
+      "at": "2026-10-02T06:47:49",
+      "ok": true,
+      "results": [
+        {
+          "count": 1,
+          "status": 200
+        }
+      ],
+      "url_count": 1
     }
   ],
   "submitted": {
     "https://jalbeo.com/": "2026-09-07T08:15:30",
+    "https://jalbeo.com/about/": "2026-10-02T06:47:49",
     "https://jalbeo.com/aekja/": "2026-09-07T08:15:30",
     "https://jalbeo.com/aelbeom/": "2026-09-07T08:15:30",
     "https://jalbeo.com/agiyokjo/": "2026-09-07T08:15:30",
