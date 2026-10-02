@@ -6,8 +6,11 @@ sources:
   - title: "생활계 유해폐기물의 종류 (기후에너지환경부 고시 제2025-165호)"
     url: "https://www.law.go.kr/DRF/lawService.do?OC=test&target=admrul&ID=2100000266748&type=JSON"
     asOf: "2025-10-01"
+  - title: "분리의정석 — 분리배출 Q&A '알루미늄 튜브형 핸드크림' 답변"
+    url: "https://xn--oy2b29bd3a601b.kr/front/support/qnaView.do?nqIdx=500"
+    asOf: "2025-03-10"
 related: ["maenikyueo", "hwajangpum", "yak"]
-updated: "2026-09-04"
+updated: "2026-10-02"
 ---
 
 염색약은 **다 썼느냐 남았느냐로 갈립니다.** 완전히 비운 튜브와 병은 재활용 경로가
@@ -38,7 +41,7 @@ updated: "2026-09-04"
 
 | 부분 | 경로 |
 |---|---|
-| 알루미늄 튜브(1제) | 종량제봉투. 얇은 알루미늄은 호일과 같습니다 |
+| 알루미늄 튜브(1제) | 끝까지 짜서 비웠으면 금속캔. 뚜껑이 안 떨어지면 그대로 |
 | 플라스틱 튜브(1제) | 완전히 비웠으면 합성수지 재활용 |
 | 2제 플라스틱 병 | 헹궈서 합성수지 재활용 |
 | 뚜껑, 노즐 | 합성수지 재활용 |

@@ -1,0 +1,337 @@
+[
+ {
+  "term": "수도꼭지",
+  "decision": "별칭",
+  "page": "샤워기"
+ },
+ {
+  "term": "스테이플러",
+  "decision": "별칭",
+  "page": "고철"
+ },
+ {
+  "term": "공구",
+  "decision": "별칭",
+  "page": "고철"
+ },
+ {
+  "term": "스티로폼 용기",
+  "decision": "별칭",
+  "page": "스티로폼"
+ },
+ {
+  "term": "멜라민 그릇",
+  "decision": "별칭",
+  "page": "그릇"
+ },
+ {
+  "term": "양푼",
+  "decision": "별칭",
+  "page": "그릇"
+ },
+ {
+  "term": "담요",
+  "decision": "별칭",
+  "page": "이불"
+ },
+ {
+  "term": "소스 컵",
+  "decision": "별칭",
+  "page": "배달용기"
+ },
+ {
+  "term": "좌변기",
+  "decision": "별칭",
+  "page": "변기"
+ },
+ {
+  "term": "소변기",
+  "decision": "별칭",
+  "page": "변기"
+ },
+ {
+  "term": "음료수캔",
+  "decision": "별칭",
+  "page": "참치캔"
+ },
+ {
+  "term": "사료 캔",
+  "decision": "별칭",
+  "page": "사료"
+ },
+ {
+  "term": "자동급식기",
+  "decision": "별칭",
+  "page": "사료"
+ },
+ {
+  "term": "불연성 마대",
+  "decision": "별칭",
+  "page": "마대자루"
+ },
+ {
+  "term": "렌즈 케이스",
+  "decision": "별칭",
+  "page": "렌즈"
+ },
+ {
+  "term": "가루약",
+  "decision": "별칭",
+  "page": "약"
+ },
+ {
+  "term": "화장품 상자",
+  "decision": "별칭",
+  "page": "박스"
+ },
+ {
+  "term": "헤어오일",
+  "decision": "별칭",
+  "page": "샴푸"
+ },
+ {
+  "term": "킥보드 타이어",
+  "decision": "별칭",
+  "page": "타이어"
+ },
+ {
+  "term": "초배지",
+  "decision": "별칭",
+  "page": "벽지"
+ },
+ {
+  "term": "전자기타",
+  "decision": "별칭",
+  "page": "바이올린"
+ },
+ {
+  "term": "전복 껍데기",
+  "decision": "별칭",
+  "page": "조개껍질"
+ },
+ {
+  "term": "일회용 주사기",
+  "decision": "별칭",
+  "page": "주사기"
+ },
+ {
+  "term": "은박 보냉백",
+  "decision": "별칭",
+  "page": "보냉백"
+ },
+ {
+  "term": "살충제 캔",
+  "decision": "별칭",
+  "page": "부탄가스"
+ },
+ {
+  "term": "빨랫줄",
+  "decision": "별칭",
+  "page": "빨래건조대"
+ },
+ {
+  "term": "매니큐어 병",
+  "decision": "별칭",
+  "page": "매니큐어"
+ },
+ {
+  "term": "마늘 껍질",
+  "decision": "별칭",
+  "page": "양파껍질"
+ },
+ {
+  "term": "롱부츠",
+  "decision": "별칭",
+  "page": "신발"
+ },
+ {
+  "term": "로프",
+  "decision": "별칭",
+  "page": "노끈"
+ },
+ {
+  "term": "디지털피아노",
+  "decision": "별칭",
+  "page": "전자피아노"
+ },
+ {
+  "term": "깨진 병",
+  "decision": "별칭",
+  "page": "유리병"
+ },
+ {
+  "term": "파운데이션",
+  "decision": "별칭",
+  "page": "화장품"
+ },
+ {
+  "term": "알루미늄 튜브",
+  "decision": "별칭",
+  "page": "화장품"
+ },
+ {
+  "term": "운동기구",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "거치대",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "수납장",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "종이 완충재",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "비닐장갑",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "망치",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "보냉 박스",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "아크릴판",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "벤치",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "박스 테이프",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "과일 부직포 포장재",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "안전벨트",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "신발장",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "드릴",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "스테이플러 심",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "소스통",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "비닐 코팅",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "리본",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "고추씨",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "계피",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "하드 케이스",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "종이 용기",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "종이 라벨",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "조미료 가루",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "월계수잎",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "어묵",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "스포이드",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "비닐 포장",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "부천시",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "남은 밥",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "금속 뚜껑",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "극세사 패드",
+  "decision": "보류",
+  "page": null
+ },
+ {
+  "term": "OPP 필름",
+  "decision": "보류",
+  "page": null
+ }
+]

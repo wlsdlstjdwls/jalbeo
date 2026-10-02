@@ -9,9 +9,12 @@ sources:
   - title: "대구일보 — 만료된 여권, 안전하게 폐기하세요 (대구 서구청 여권 안심 폐기 서비스)"
     url: "https://www.idaegu.com/news/articleView.html?idxno=451924"
     asOf: "2024-11-05"
+  - title: "분리의정석(생활폐기물 분리배출 누리집, 환경부/한국폐기물협회) — 품목사전 '영수증'"
+    url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=730"
+    asOf: "2026-10-02"
 related: ["tongjang", "sinyongkadeu", "pasoejongi", "chaek"]
 relatedGuides: ["jongryangje-bongtu"]
-updated: "2026-09-14"
+updated: "2026-10-02"
 ---
 
 만료된 여권은 **구청 여권과에 가져가면 대신 폐기해 줍니다.** 이름이
@@ -83,7 +86,8 @@ updated: "2026-09-14"
 | 여권 본체 | 정보면을 파기하고 종량제봉투 |
 | 여권 케이스, 커버(가죽, PVC) | 종량제봉투 |
 | 여권 사진 여분 | 종량제봉투. 사진은 코팅지라 종이류가 아닙니다 |
-| 여권 발급 안내문, 영수증 | 종이류 |
+| 여권 발급 안내문 | 종이류 |
+| 영수증, 카드전표 | 감열지면 종량제봉투. 일반 종이에 인쇄된 것은 종이류 |
 | 비자 스티커가 붙은 낱장 | 여권과 같이 파기 |
 
 ## 기념으로 두는 경우

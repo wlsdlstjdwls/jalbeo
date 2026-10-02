@@ -6,9 +6,12 @@ sources:
   - title: "분리의정석(생활폐기물 분리배출 누리집, 환경부/한국폐기물협회) — 품목사전 '한약 찌꺼기'"
     url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=745"
     asOf: "2026-09-08"
+  - title: "분리의정석(생활폐기물 분리배출 누리집, 환경부/한국폐기물협회) — 품목사전 '육수팩'"
+    url: "https://xn--oy2b29bd3a601b.kr/front/dischargeMethod/dictionaryView.do?niIdx=744"
+    asOf: "2026-10-02"
 related: ["yak", "tibaek", "keopijjikkeogi", "binil"]
 relatedGuides: ["jongryangje-bongtu"]
-updated: "2026-09-08"
+updated: "2026-10-02"
 ---
 
 한약은 **폐의약품 수거함도 음식물도 아닙니다.** 약이니까 약국, 먹는
@@ -83,8 +86,13 @@ updated: "2026-09-08"
 - 육수팩, 옥수수 수염
 
 전부 **우려내고 남은 것**입니다. 성분이 빠져나간 뒤라 음식물 자원이
-아니라는 같은 이유로 종량제봉투입니다. 티백처럼 주머니 재질까지 갈리는
-경우는 [티백 버리는 법](/tibaek/)에 따로 적었습니다.
+아니라는 같은 이유로 종량제봉투입니다. [티백](/tibaek/)은 찻잎째 통째로
+넣으면 됩니다.
+
+육수팩만 하나 다릅니다. 품목사전이 주머니는 종량제봉투로 두면서
+<strong>"육수팩의 멸치, 버섯, 다시마 등 내용물은 음식물류폐기물로
+배출합니다"</strong>라고 따로 적었습니다. 찻잎, 한약재와 달리 멸치와 다시마는
+우린 뒤에도 음식물로 받습니다.
 
 ## 한약 상자와 보온팩
 

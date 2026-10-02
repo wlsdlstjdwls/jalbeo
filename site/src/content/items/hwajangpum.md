@@ -12,9 +12,12 @@ sources:
   - title: "서울특별시 — [알쓸분잡 #4] 헷갈리는 화장품 용기 분리배출"
     url: "https://news.seoul.go.kr/env/archives/558581"
     asOf: "2024-07-01"
+  - title: "분리의정석 — 분리배출 Q&A '알루미늄 튜브형 핸드크림' 답변"
+    url: "https://xn--oy2b29bd3a601b.kr/front/support/qnaView.do?nqIdx=500"
+    asOf: "2025-03-10"
 related: ["syampu", "hyangsu", "maenikyueo", "yeomsaegyak"]
 relatedGuides: ["jongryangje-bongtu"]
-updated: "2026-09-14"
+updated: "2026-10-02"
 ---
 
 화장품 용기는 **한 개가 서너 가지 재질로 되어 있습니다.** 유리병에 플라스틱
@@ -65,7 +68,7 @@ updated: "2026-09-14"
 | 코팅되거나 색이 진한 유리병 | 재활용 비대상. 종량제봉투 또는 특수규격마대 |
 | 플라스틱 몸통(PET, PP) | 플라스틱 |
 | 펌프, 스포이드, 노즐 | 종량제봉투 |
-| 알루미늄 튜브 | 캔류로 받는 지자체가 있습니다 |
+| 알루미늄 튜브 | 비워서 금속캔. 플라스틱 뚜껑이 안 떨어지면 그대로 |
 | 거울 붙은 콤팩트 케이스 | 종량제봉투 |
 | 종이 상자, 설명서 | 종이류 |
 
