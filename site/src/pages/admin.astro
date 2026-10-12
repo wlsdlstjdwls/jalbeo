@@ -32,6 +32,17 @@ for (const row of dbItems) {
 for (const g of await getCollection('guides')) {
   pageNames[`/guides/${g.id}/`] = g.data.title;
 }
+
+// 검색어 후보 판정용 어휘. 검색(lib/search.ts normalize)과 같은 규칙으로 공백을
+// 지우고 소문자로 굽는다. 발행하면 빌드가 이 목록을 새로 굽으므로 이미 받은
+// 검색어는 다음 배포부터 후보에서 저절로 빠진다 (판단 71).
+const norm = (t: string) => t.replace(/\s+/g, '').toLowerCase();
+const vocab: [string, string][] = [];
+for (const row of dbItems) {
+  if (!bodies.has(row.slug)) continue;
+  vocab.push([norm(row.name), row.name]);
+  for (const a of row.aliases ?? []) vocab.push([norm(a), row.name]);
+}
 ---
 
 <Base title="대시보드 — 잘버려" description="관리자 전용 접속 현황." noindex>
@@ -59,14 +70,19 @@ for (const g of await getCollection('guides')) {
 
   <section class="pad" id="gate" hidden>
     <p class="caption">로그인</p>
-    <form class="loginform" id="loginform">
+    <!-- novalidate: 브라우저 기본 검사가 한글 입력 상태로 친 글자나 자동완성이
+         값을 아직 안 넘긴 순간을 '틀림'으로 보고 칸을 빨갛게 칠했다. 빈 칸 확인은
+         스크립트가 하고 안내는 아래 문구 한 줄로만 한다.
+         name 속성은 브라우저 비밀번호 저장이 계정을 알아보는 데 쓴다. -->
+    <form class="loginform" id="loginform" novalidate>
       <label class="field">
         <span>이메일</span>
-        <input type="email" id="email" autocomplete="username" required />
+        <input type="email" id="email" name="email" autocomplete="username"
+               inputmode="email" autocapitalize="off" spellcheck="false" />
       </label>
       <label class="field">
         <span>비밀번호</span>
-        <input type="password" id="password" autocomplete="current-password" required />
+        <input type="password" id="password" name="password" autocomplete="current-password" />
       </label>
       <button type="submit" class="press hard" id="submit">로그인</button>
       <p class="formmsg" id="formmsg" hidden></p>
@@ -123,6 +139,14 @@ for (const g of await getCollection('guides')) {
         <button type="button" class="linkbtn all" id="all-refs" hidden>전체보기</button>
       </div>
     </div>
+
+    <div class="mhead">
+      <p class="caption gap">못 찾은 검색 (90일)</p>
+      <button type="button" class="press" id="miss-load">후보 불러오기</button>
+    </div>
+    <p class="mlede" id="miss-lede">검색창에서 결과 0건이 나온 말 중 지금도 어느 품목에도 안 걸리는 것만 보여 줍니다.</p>
+    <ul class="misses" id="misses" hidden></ul>
+    <button type="button" class="linkbtn all" id="miss-judged" hidden>판정한 것도 보기</button>
   </section>
 
   <dialog class="sheet" id="sheet">
@@ -188,6 +212,47 @@ for (const g of await getCollection('guides')) {
     }
     .loginform button[disabled] { cursor: default; background: var(--hover); }
     .formmsg { margin: 2px 0 0; font-size: 13px; font-weight: 700; }
+    /* 파이어폭스는 검사에 걸린 칸에 빨간 테두리를 그린다. 검사는 스크립트가 한다. */
+    .field input:invalid, .field input:user-invalid { box-shadow: none; outline-color: var(--ink); }
+
+    .mhead { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; }
+    .mhead .press {
+      cursor: pointer;
+      padding: 7px 14px;
+      border: 2px solid var(--ink);
+      background: var(--lime);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .mhead .press[disabled] { cursor: default; background: var(--hover); }
+    .mlede { margin: 8px 0 0; font-size: 12.5px; font-weight: 600; color: var(--faint-2); }
+    .misses { list-style: none; margin: 10px 0 0; padding: 0; font-size: 13.5px; }
+    .misses :global(li) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 4px 10px;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .misses :global(.mt) { font-weight: 800; }
+    .misses :global(.mn) { font-size: 11.5px; font-weight: 700; color: var(--faint-2); font-variant-numeric: tabular-nums; }
+    .misses :global(.mh) { flex-basis: 100%; font-size: 12px; font-weight: 600; color: var(--faint); }
+    .misses :global(.ma) { margin-left: auto; display: flex; gap: 10px; }
+    /* 런타임에 꽂는 버튼이라 scoped .linkbtn이 안 붙는다. 같은 모양을 여기서 준다. */
+    .misses :global(button) {
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      padding: 0;
+      font-size: 12.5px;
+      font-weight: 800;
+      color: var(--faint);
+      border-bottom: 2px solid var(--line);
+    }
+    .misses :global(button:hover) { color: var(--ink); border-bottom-color: var(--ink); }
+    .misses :global(.md) { font-size: 11.5px; font-weight: 800; padding: 1px 6px; background: var(--hover); }
+    .misses :global(.none) { color: var(--faint-2); font-weight: 600; border-bottom: 0; }
 
     .tiles {
       display: grid;
@@ -368,12 +433,13 @@ for (const g of await getCollection('guides')) {
   </style>
 
   {ready && (
-    <script is:inline define:vars={{ origin: SUPABASE_URL, key: SUPABASE_ANON_KEY, pageNames }}>
+    <script is:inline define:vars={{ origin: SUPABASE_URL, key: SUPABASE_ANON_KEY, pageNames, vocab }}>
       (function () {
         var REFRESH_MS = 60000;
         var TOP_N = 5;          // 요약에 세우는 줄 수
         var SHEET_PAGE = 30;    // 시트가 한 번에 받아 오는 줄 수
         var STORE = 'jalbeo_admin_session';
+        var EMAIL_STORE = 'jalbeo_admin_email';
         var $ = function (id) { return document.getElementById(id); };
         var num = function (n) { return Number(n || 0).toLocaleString('ko-KR'); };
         var timer = null;
@@ -406,7 +472,11 @@ for (const g of await getCollection('guides')) {
             body: JSON.stringify(body),
           }).then(function (res) {
             return res.json().then(function (data) {
-              if (!res.ok) throw new Error(data.error_description || data.msg || String(res.status));
+              if (!res.ok) {
+                var err = new Error(data.error_description || data.msg || String(res.status));
+                err.status = res.status;
+                throw err;
+              }
               return data;
             });
           });
@@ -433,7 +503,8 @@ for (const g of await getCollection('guides')) {
             body: JSON.stringify(body || {}),
           }).then(function (res) {
             if (!res.ok) throw new Error('rpc-' + res.status);
-            return res.json();
+            // 반환값이 없는 함수(void)는 204에 본문이 비어 온다.
+            return res.text().then(function (t) { return t ? JSON.parse(t) : null; });
           });
         }
 
@@ -651,9 +722,19 @@ for (const g of await getCollection('guides')) {
             // 세션 문제와 권한 문제는 안내가 달라야 한다.
             if (String(err.message).indexOf('rpc-') === 0) {
               showGate('이 계정은 관리자로 등록돼 있지 않습니다.');
-            } else {
+            } else if (err.status || err.message === 'no-session') {
+              // 서버가 갱신 토큰을 거절했을 때만 세션을 버린다.
               clearSession();
               showGate('');
+            } else {
+              // 노트북을 덮었다 열거나 와이파이가 잠깐 끊긴 것이다. 전에는 이것도
+              // 세션을 지워서 매번 다시 로그인해야 했다. 세션은 두고 다음 주기에 다시 묻는다.
+              if (!$('board').hidden) {
+                $('lede').textContent = '연결이 잠깐 끊겼습니다. 1분 뒤 다시 불러옵니다.';
+                start();
+              } else {
+                showGate('서버에 닿지 못했습니다. 연결을 확인하고 새로고침해 주세요.');
+              }
             }
           });
         }
@@ -666,19 +747,34 @@ for (const g of await getCollection('guides')) {
           e.preventDefault();
           var email = $('email').value.trim();
           var password = $('password').value;
-          if (!email || !password) return;
+          if (!email || !password) {
+            note(!email ? '이메일을 입력해 주세요.' : '비밀번호를 입력해 주세요.', true);
+            $(!email ? 'email' : 'password').focus();
+            return;
+          }
 
           $('submit').disabled = true;
           note('로그인 중...', false);
           auth('token?grant_type=password', { email: email, password: password })
             .then(function (session) {
               saveSession(session);
-              $('password').value = '';
+              try { localStorage.setItem(EMAIL_STORE, email); } catch (e) {}
+              // 비밀번호 칸을 여기서 비우면 브라우저가 저장할 값이 사라져 저장
+              // 제안이 안 떴다. 크롬, 엣지는 저장을 직접 청하고, 나머지는 폼이
+              // 사라지는 것을 보고 제안한다. 칸은 로그아웃 때 비운다.
+              if (window.PasswordCredential && navigator.credentials) {
+                try {
+                  navigator.credentials.store(new PasswordCredential({ id: email, password: password }))
+                    .catch(function () {});
+                } catch (e) {}
+              }
               note('', false);
               return load().then(start);
             })
-            .catch(function () {
-              note('이메일 또는 비밀번호가 맞지 않습니다.', true);
+            .catch(function (err) {
+              note(err && err.status
+                ? '이메일 또는 비밀번호가 맞지 않습니다.'
+                : '서버에 닿지 못했습니다. 연결을 확인하고 다시 눌러 주세요.', true);
             })
             .then(function () { $('submit').disabled = false; });
         });
@@ -693,7 +789,147 @@ for (const g of await getCollection('guides')) {
           }
           clearSession();
           stopTimer();
+          $('password').value = '';
           showGate('');
+        });
+
+        try { $('email').value = localStorage.getItem(EMAIL_STORE) || ''; } catch (e) {}
+
+        // --- 못 찾은 검색 --------------------------------------------------
+        // scripts/search_log_candidates.py와 같은 일을 한다. 같은 방문자가 3분 안에
+        // 친 앞토막('캣', '캣타')을 뒤의 긴 말에 접고, 지금 어휘에 걸리는 말은 뺀다.
+        var FOLD_SEC = 180;
+        var normTerm = function (t) { return String(t).replace(/\s+/g, '').toLowerCase(); };
+        var missRows = null;
+        var showJudged = false;
+
+        function foldPrefixes(rows) {
+          var drop = {};
+          var byVisitor = {};
+          rows.forEach(function (r, i) {
+            var v = r.visitor_id || ('anon' + i);
+            (byVisitor[v] = byVisitor[v] || []).push(i);
+          });
+          Object.keys(byVisitor).forEach(function (v) {
+            var seq = byVisitor[v];
+            for (var a = 0; a < seq.length; a++) {
+              var ra = rows[seq[a]];
+              for (var b = a + 1; b < seq.length; b++) {
+                var rb = rows[seq[b]];
+                if ((new Date(rb.created_at) - new Date(ra.created_at)) / 1000 > FOLD_SEC) break;
+                if (rb.term !== ra.term && rb.term.indexOf(ra.term) === 0) { drop[seq[a]] = true; break; }
+              }
+            }
+          });
+          return rows.filter(function (r, i) { return !drop[i]; });
+        }
+
+        // 검색은 품목명이나 별칭이 검색어를 품을 때 건다. 그러면 지금은 걸린다.
+        function coveredBy(t) {
+          for (var i = 0; i < vocab.length; i++) if (vocab[i][0].indexOf(t) !== -1) return vocab[i][1];
+          return null;
+        }
+        // 반대로 검색어가 품목명을 품는 경우('향수베이스')는 검색이 안 건다.
+        // 후보로 남기되 어느 페이지 이웃인지 적어 준다.
+        function nearBy(t) {
+          var best = null;
+          for (var i = 0; i < vocab.length; i++) {
+            var k = vocab[i][0];
+            if (k.length >= 2 && t.indexOf(k) !== -1 && (!best || k.length > best[0].length)) best = vocab[i];
+          }
+          return best && best[1];
+        }
+
+        function attr(s) {
+          return esc(s).replace(/"/g, '&quot;');
+        }
+
+        function drawMisses() {
+          var agg = {};
+          var covered = 0;
+          foldPrefixes(missRows).forEach(function (r) {
+            var a = agg[r.term] || (agg[r.term] = { term: r.term, n: 0, vis: {}, last: r.created_at, decision: r.decision });
+            a.n += 1;
+            a.vis[r.visitor_id || r.created_at] = 1;
+            if (r.created_at > a.last) a.last = r.created_at;
+          });
+          var list = Object.keys(agg).map(function (k) { return agg[k]; }).filter(function (a) {
+            if (coveredBy(normTerm(a.term))) { covered++; return false; }
+            return true;
+          });
+          var judged = list.filter(function (a) { return a.decision; }).length;
+          if (!showJudged) list = list.filter(function (a) { return !a.decision; });
+          // 사람 수가 먼저다. 한 사람이 표기를 바꿔 여러 번 친 것보다 여러 사람이 친 것이 굵다.
+          list.sort(function (x, y) {
+            return Object.keys(y.vis).length - Object.keys(x.vis).length || y.n - x.n || (y.last > x.last ? 1 : -1);
+          });
+
+          $('miss-lede').textContent = '후보 ' + num(list.length) + '개' +
+            (showJudged ? '' : ', 판정해 둔 ' + num(judged) + '개 숨김') +
+            ', 지금은 검색에 걸리는 ' + num(covered) + '개 제외';
+          $('miss-judged').hidden = !judged;
+          $('miss-judged').textContent = showJudged ? '판정한 것 숨기기' : '판정한 것도 보기';
+          var el = $('misses');
+          el.hidden = false;
+          if (!list.length) {
+            el.innerHTML = '<li class="none">새 후보가 없습니다.</li>';
+            return;
+          }
+          el.innerHTML = list.map(function (a) {
+            var near = nearBy(normTerm(a.term));
+            var day = new Date(a.last).toLocaleDateString('sv-SE', { timeZone: 'Asia/Seoul' }).slice(5);
+            var t = attr(a.term);
+            return '<li>' +
+              '<span class="mt">' + esc(a.term) + '</span>' +
+              '<span class="mn">' + num(a.n) + '회, ' + num(Object.keys(a.vis).length) + '명, ' + day + '</span>' +
+              (a.decision ? '<span class="md">' + esc(a.decision) + '</span>' : '') +
+              '<span class="ma">' +
+                (a.decision
+                  ? '<button type="button" class="linkbtn" data-term="' + t + '" data-d="">되돌리기</button>'
+                  : '<button type="button" class="linkbtn" data-term="' + t + '" data-d="보류">보류</button>' +
+                    '<button type="button" class="linkbtn" data-term="' + t + '" data-d="노이즈">노이즈</button>') +
+              '</span>' +
+              (near ? '<span class="mh">' + esc(near) + ' 페이지가 있는데 이 말로는 안 걸립니다. 별칭 후보</span>' : '') +
+            '</li>';
+          }).join('');
+        }
+
+        function loadMisses() {
+          $('miss-load').disabled = true;
+          $('miss-lede').textContent = '불러오는 중';
+          return validSession().then(function (session) {
+            return rpc(session, 'admin_search_misses', { p_days: 90 });
+          }).then(function (rows) {
+            missRows = rows || [];
+            drawMisses();
+          }).catch(function () {
+            $('miss-lede').textContent = '불러오지 못했습니다. 다시 눌러 주세요.';
+          }).then(function () {
+            $('miss-load').disabled = false;
+            $('miss-load').textContent = '다시 불러오기';
+          });
+        }
+
+        $('miss-load').addEventListener('click', loadMisses);
+        $('miss-judged').addEventListener('click', function () {
+          showJudged = !showJudged;
+          if (missRows) drawMisses();
+        });
+        $('misses').addEventListener('click', function (e) {
+          var btn = e.target.closest('button[data-term]');
+          if (!btn) return;
+          var term = btn.getAttribute('data-term');
+          var d = btn.getAttribute('data-d') || null;
+          btn.disabled = true;
+          validSession().then(function (session) {
+            return rpc(session, 'admin_set_search_decision', { p_term: term, p_decision: d });
+          }).then(function () {
+            missRows.forEach(function (r) { if (r.term === term) r.decision = d; });
+            drawMisses();
+          }).catch(function () {
+            btn.disabled = false;
+            $('miss-lede').textContent = '저장하지 못했습니다. 다시 눌러 주세요.';
+          });
         });
 
         if (loadSession()) {
