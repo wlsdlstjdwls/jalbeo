@@ -208,6 +208,17 @@
         }
       ],
       "url_count": 1
+    },
+    {
+      "at": "2026-10-12T00:43:04",
+      "ok": true,
+      "results": [
+        {
+          "count": 2,
+          "status": 200
+        }
+      ],
+      "url_count": 2
     }
   ],
   "submitted": {
@@ -287,6 +298,7 @@
     "https://jalbeo.com/gaseupgi/": "2026-09-07T08:15:30",
     "https://jalbeo.com/gaseureinji/": "2026-09-07T08:15:30",
     "https://jalbeo.com/gawi/": "2026-09-07T08:15:30",
+    "https://jalbeo.com/geimgi/": "2026-10-12T00:43:04",
     "https://jalbeo.com/geonjeonji/": "2026-09-07T08:15:30",
     "https://jalbeo.com/geonjogi/": "2026-09-07T08:15:30",
     "https://jalbeo.com/geoul/": "2026-09-07T08:15:30",
@@ -341,6 +353,7 @@
     "https://jalbeo.com/hyeonggwangdeung/": "2026-09-07T08:15:30",
     "https://jalbeo.com/hyeonsumak/": "2026-09-14T04:46:14",
     "https://jalbeo.com/hyudaepon/": "2026-09-07T08:15:30",
+    "https://jalbeo.com/hyudaepongeochidae/": "2026-10-12T00:43:04",
     "https://jalbeo.com/hyujisim/": "2026-09-07T08:15:30",
     "https://jalbeo.com/ibul/": "2026-09-07T08:15:30",
     "https://jalbeo.com/ieopon/": "2026-09-07T08:15:30",
