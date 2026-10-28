@@ -17,3 +17,6 @@ data/raw/fees/*.csv
 
 # 파이썬 캐시
 __pycache__/
+
+# 휴면 백업의 방문/검색 로그와 관리자 명단 (공개 저장소라 커밋 안 함, docs/65)
+db/backup/*/private/
